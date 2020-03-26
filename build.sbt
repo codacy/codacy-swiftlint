@@ -1,4 +1,4 @@
-import com.typesafe.sbt.packager.docker.{Cmd, ExecCmd}
+import com.typesafe.sbt.packager.docker.Cmd
 import sjsonnew._
 import sjsonnew.BasicJsonProtocol._
 import sjsonnew.support.scalajson.unsafe._
@@ -9,7 +9,7 @@ name := "codacy-swiftlint"
 
 scalaVersion := "2.13.1"
 
-libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "4.0.0"
+libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "4.0.3"
 
 enablePlugins(AshScriptPlugin)
 
