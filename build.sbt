@@ -15,7 +15,7 @@ enablePlugins(AshScriptPlugin)
 
 enablePlugins(DockerPlugin)
 
-scalacOptions ++= Seq("-Ywarn-unused:_", "-Xfatal-warnings")
+// scalacOptions ++= Seq("-Ywarn-unused:_", "-Xfatal-warnings")
 
 lazy val toolVersionKey = settingKey[String]("The version of the underlying tool retrieved from patterns.json")
 

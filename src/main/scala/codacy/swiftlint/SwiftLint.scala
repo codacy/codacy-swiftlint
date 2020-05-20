@@ -84,7 +84,7 @@ object SwiftLint extends Tool {
         baseCmd ++ List("--config", opt)
       case None => baseCmd
     }
-    configCmd :+ file
+    configCmd
   }
 
   private def runToolCommand(
