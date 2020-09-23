@@ -11,7 +11,7 @@ RUN adduser --uid 2004 --disabled-password --gecos "" docker
 
 FROM base as dev
 
-RUN apt-get update && apt-get install -y openjdk-8-jre
+RUN apt-get update && apt-get install --no-install-recommends -y openjdk-8-jre
 COPY target/universal/stage/ /workdir/
 RUN chmod +x /workdir/bin/codacy-swiftlint
 USER docker
