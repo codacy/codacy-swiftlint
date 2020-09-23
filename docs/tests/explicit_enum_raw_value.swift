@@ -5,7 +5,7 @@
 //#Issue: {"severity": "Info", "line": 24, "patternId": "explicit_enum_raw_value"}
 //#Issue: {"severity": "Info", "line": 25, "patternId": "explicit_enum_raw_value"}
 //#Issue: {"severity": "Info", "line": 31, "patternId": "explicit_enum_raw_value"}
-
+//#Issue: {"severity": "Info", "line": 37, "patternId": "explicit_enum_raw_value"}
 
 
 enum Numbers: Int {
