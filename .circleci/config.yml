@@ -16,6 +16,7 @@ workflows:
             sbt "scalafmt::test;
                  test:scalafmt::test;
                  sbt:scalafmt::test;
+                 universal:stage;
                  graalvm-native-image:packageBin"
             docker build -t $CIRCLE_PROJECT_REPONAME:latest .
             docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest
