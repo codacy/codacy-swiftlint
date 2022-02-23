@@ -42,15 +42,15 @@ while foo > 1 { }
 ```
 
 ```swift
-while foo + 1 == 2
+while foo + 1 == 2 {}
 ```
 
 ```swift
-if optionalValue?.property ?? 0 == 2
+if optionalValue?.property ?? 0 == 2 {}
 ```
 
 ```swift
-if foo == nil
+if foo == nil {}
 ```
 
 ## Triggering Examples
@@ -83,5 +83,5 @@ if foo == nil
 ```
 
 ```swift
-↓if nil == foo
+↓if nil == foo {}
 ```

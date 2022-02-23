@@ -3,7 +3,7 @@
 When registering for a notification using a block, the opaque observer that is returned should be stored so it can be removed later.
 
 * **Identifier:** discarded_notification_center_observer
-* **Enabled by default:** Enabled
+* **Enabled by default:** Disabled
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No

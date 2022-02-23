@@ -8,7 +8,7 @@ Opening braces should be preceded by a single space and on the same line as the 
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning
+* **Default configuration:** warning, allowMultilineFunc: false
 
 ## Non Triggering Examples
 
@@ -109,6 +109,12 @@ func abc()↓{
 ```swift
 func abc()
 	↓{ }
+```
+
+```swift
+func abc(a: A
+	b: B)
+↓{
 ```
 
 ```swift

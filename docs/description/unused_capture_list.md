@@ -13,6 +13,17 @@ Unused reference in a capture list should be removed.
 ## Non Triggering Examples
 
 ```swift
+[1, 2].map {
+    [ weak
+      delegate,
+      unowned
+      self
+    ] num in
+    delegate.handle(num)
+}
+```
+
+```swift
 [1, 2].map { [weak self] num in
     self?.handle(num)
 }
@@ -47,6 +58,46 @@ withEnvironment(apiService: MockService(fetchProjectResponse: project)) {
 sizes.max().flatMap { [(offset: offset, size: $0)] } ?? []
 ```
 
+```swift
+[1, 2].map { [self] num in
+    handle(num)
+}
+```
+
+```swift
+[1, 2].map { [unowned self] num in
+    handle(num)
+}
+```
+
+```swift
+[1, 2].map { [self, unowned delegate = self.delegate!] num in
+    delegate.handle(num)
+}
+```
+
+```swift
+[1, 2].map { [unowned self, unowned delegate = self.delegate!] num in
+    delegate.handle(num)
+}
+```
+
+```swift
+[1, 2].map {
+    [ weak
+      delegate,
+      self
+    ] num in
+    delegate.handle(num)
+}
+```
+
+```swift
+rx.onViewDidAppear.subscribe(onNext: { [unowned self] in
+      doSomething()
+}).disposed(by: disposeBag)
+```
+
 ## Triggering Examples
 
 ```swift
@@ -70,6 +121,13 @@ let failure: Failure = { [↓weak self, ↓unowned delegate = self.delegate!] fo
 ```swift
 numbers.forEach({
     [weak handler] in
+    print($0)
+})
+```
+
+```swift
+numbers.forEach({
+    [self, weak handler] in
     print($0)
 })
 ```

@@ -16,7 +16,7 @@ Unimplemented functions should be marked as unavailable.
 class ViewController: UIViewController {
   @available(*, unavailable)
   public required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+    preconditionFailure("init(coder:) has not been implemented")
   }
 }
 ```
@@ -31,6 +31,14 @@ func jsonValue(_ jsonString: String) -> NSObject {
     return array
    }
    fatalError()
+}
+```
+
+```swift
+func resetOnboardingStateAndCrash() -> Never {
+    resetUserDefaults()
+    // Crash the app to re-start the onboarding flow.
+    fatalError("Onboarding re-start crash.")
 }
 ```
 
@@ -50,5 +58,21 @@ class ViewController: UIViewController {
     let reason = "init(coder:) has not been implemented"
     fatalError(reason)
   }
+}
+```
+
+```swift
+class ViewController: UIViewController {
+  public required ↓init?(coder aDecoder: NSCoder) {
+    preconditionFailure("init(coder:) has not been implemented")
+  }
+}
+```
+
+```swift
+func resetOnboardingStateAndCrash() {
+    resetUserDefaults()
+    // Crash the app to re-start the onboarding flow.
+    fatalError("Onboarding re-start crash.")
 }
 ```

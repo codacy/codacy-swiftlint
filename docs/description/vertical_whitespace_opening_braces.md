@@ -23,12 +23,13 @@ Don't include vertical whitespace (empty line) after opening braces.
 ```
 
 ```swift
-// [1, 2].map { $0 }.filter { num in
+// [1, 2].map { $0 }.filter { num in true }
 ```
 
 ```swift
 KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { image, _, _, _ in
     guard let img = image else { return }
+}
 ```
 
 ```swift
@@ -40,7 +41,7 @@ KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: n
 ```
 
 ```swift
-[1, 2].map { $0 }.filter { num in
+[1, 2].map { $0 }.filter { num in true }
 ```
 
 ```swift
@@ -48,63 +49,52 @@ KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: n
 ```
 
 ```swift
-class Name {
-    run(5) { x in print(x) }
+class X {
+  struct Y {
+    class Z {
+    }
+  }
 }
 ```
 
 ```swift
-class X {
-    struct Y {
-    class Z {
-
-```
-
-```swift
 foo(
-x: 5,
-y:6
+  x: 5,
+  y:6
 )
 ```
 
 ```swift
-if x == 5 {
-	print("x is 5")
+foo({ }) { _ in
+  self.dismiss(animated: false, completion: {
+  })
+}
 ```
 
 ```swift
-if x == 5 {
-    print("x is 5")
-```
-
-```swift
-if x == 5 {
-    print("x is 5")
+func foo() {
+  run(5) { x in
+    print(x)
+  }
+}
 ```
 
 ```swift
 if x == 5 {
   print("x is 5")
+}
 ```
 
 ```swift
-struct MyStruct {
-	let x = 5
-```
-
-```swift
-struct MyStruct {
-    let x = 5
+if x == 5 {
+  print("x is 5")
+}
 ```
 
 ```swift
 struct MyStruct {
   let x = 5
-```
-
-```swift
-}) { _ in
-    self.dismiss(animated: false, completion: {
+}
 ```
 
 ## Triggering Examples
@@ -113,6 +103,7 @@ struct MyStruct {
 KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { image, _, _, _ in
 ↓
     guard let img = image else { return }
+}
 ```
 
 ```swift
@@ -125,73 +116,58 @@ KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: n
 ```
 
 ```swift
-class Name {
-↓
-    run(5) { x in print(x) }
-}
-```
-
-```swift
 class X {
-    struct Y {
+  struct Y {
 ↓
     class Z {
-
+    }
+  }
+}
 ```
 
 ```swift
 foo(
 ↓
-x: 5,
-y:6
+  x: 5,
+  y:6
 )
 ```
 
 ```swift
-if x == 5 {
+foo({ }) { _ in
 ↓
-	print("x is 5")
+  self.dismiss(animated: false, completion: {
+  })
+}
+```
+
+```swift
+func foo() {
+↓
+  run(5) { x in
+    print(x)
+  }
+}
 ```
 
 ```swift
 if x == 5 {
 ↓
 
-    print("x is 5")
-```
-
-```swift
-if x == 5 {
-↓
-    print("x is 5")
+  print("x is 5")
+}
 ```
 
 ```swift
 if x == 5 {
 ↓
   print("x is 5")
-```
-
-```swift
-struct MyStruct {
-↓
-	let x = 5
-```
-
-```swift
-struct MyStruct {
-↓
-    let x = 5
+}
 ```
 
 ```swift
 struct MyStruct {
 ↓
   let x = 5
-```
-
-```swift
-}) { _ in
-↓
-    self.dismiss(animated: false, completion: {
+}
 ```

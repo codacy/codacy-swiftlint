@@ -8,7 +8,7 @@ All imported modules should be required to make the file compile.
 * **Kind:** lint
 * **Analyzer rule:** Yes
 * **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** severity: warning, require_explicit_imports: false, allowed_transitive_imports: []
+* **Default configuration:** severity: warning, require_explicit_imports: false, allowed_transitive_imports: [], always_keep_imports: []
 
 ## Non Triggering Examples
 
@@ -75,9 +75,4 @@ class A {}
 ↓import Foundation
 import UnknownModule
 func foo(error: Swift.Error) {}
-```
-
-```swift
-↓import Foundation
-typealias Foo = CFData
 ```

@@ -8,4 +8,4 @@ File name should match a type or extension declared in the file (if any).
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** (severity) warning, excluded: ["LinuxMain.swift", "main.swift"], prefixPattern: , suffixPattern: \+.*, nestedTypeSeparator: .
+* **Default configuration:** (severity) warning, excluded: ["LinuxMain.swift", "main.swift"], prefix_pattern: , suffix_pattern: \+.*, nested_type_separator: .

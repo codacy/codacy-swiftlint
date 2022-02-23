@@ -8,7 +8,7 @@ Operators should be surrounded by a single whitespace when they are being used.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning
+* **Default configuration:** warning, lines_look_around: 2, skip_aligned_constants: true
 
 ## Non Triggering Examples
 
@@ -110,6 +110,17 @@ let foo = SignalProducer<Signal<Value, Error>, Error>([ self.signal, next ]).fla
 
 ```
 
+```swift
+"let foo =  1"
+```
+
+```swift
+  enum Enum {
+  case hello   = 1
+  case hello2  = 1
+  }
+```
+
 ## Triggering Examples
 
 ```swift
@@ -186,4 +197,40 @@ let v8 = 1↓ <<  (6)
 let v8 = 1↓ <<  (6)
  let foo = 1 > 2
 
+```
+
+```swift
+let foo↓  = [1]
+
+```
+
+```swift
+let foo↓  = "1"
+
+```
+
+```swift
+let foo↓ =  "1"
+
+```
+
+```swift
+  enum Enum {
+  case one↓  =  1
+  case two  = 1
+  }
+```
+
+```swift
+  enum Enum {
+  case one  = 1
+  case two↓  =  1
+  }
+```
+
+```swift
+  enum Enum {
+  case one↓   = 1
+  case two↓  = 1
+  }
 ```

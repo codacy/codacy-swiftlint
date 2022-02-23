@@ -17,6 +17,10 @@ let a = 0
 
 ```
 
+```swift
+let a = 0; let b = 0
+```
+
 ## Triggering Examples
 
 ```swift
@@ -27,20 +31,5 @@ let a = 0↓;
 ```swift
 let a = 0↓;
 let b = 1
-
-```
-
-```swift
-let a = 0↓;;
-
-```
-
-```swift
-let a = 0↓;    ;;
-
-```
-
-```swift
-let a = 0↓; ; ;
 
 ```

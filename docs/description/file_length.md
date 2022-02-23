@@ -1,4 +1,4 @@
-# File Line Length
+# File Length
 
 Files should not span too many lines.
 

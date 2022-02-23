@@ -24,6 +24,24 @@ var url: CustomStringConvertible = URL()
 @IBInspectable var color: UIColor = UIColor.white
 ```
 
+```swift
+enum Direction {
+    case up
+    case down
+}
+
+var direction: Direction = .up
+```
+
+```swift
+enum Direction {
+    case up
+    case down
+}
+
+var direction = Direction.up
+```
+
 ## Triggering Examples
 
 ```swift
@@ -56,4 +74,17 @@ class ViewController: UIViewController {
     let myVar↓: Int = Int(5)
   }
 }
+```
+
+```swift
+var isEnabled↓: Bool = true
+```
+
+```swift
+enum Direction {
+    case up
+    case down
+}
+
+var direction↓: Direction = Direction.up
 ```

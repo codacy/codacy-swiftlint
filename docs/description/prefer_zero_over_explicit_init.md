@@ -17,7 +17,7 @@ CGRect(x: 0, y: 0, width: 0, height: 1)
 ```
 
 ```swift
-CGPoint(x: 0, y: -1
+CGPoint(x: 0, y: -1)
 ```
 
 ```swift

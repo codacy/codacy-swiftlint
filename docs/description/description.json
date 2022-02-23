@@ -14,9 +14,19 @@
   "description" : "Attributes should be on their own lines in functions and types, but on the same line as variables and imports.",
   "parameters" : [ ]
 }, {
+  "patternId" : "balanced_xctest_lifecycle",
+  "title" : "Balanced XCTest life-cycle",
+  "description" : "Test classes must implement balanced setUp and tearDown methods.",
+  "parameters" : [ ]
+}, {
   "patternId" : "block_based_kvo",
   "title" : "Block Based KVO",
   "description" : "Prefer the new block based KVO API with keypaths when using Swift 3.2 or later.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "capture_variable",
+  "title" : "Capture Variable",
+  "description" : "Non-constant variables should not be listed in a closure's capture list to avoid confusion about closures capturing variables at creation time.",
   "parameters" : [ ]
 }, {
   "patternId" : "class_delegate_protocol",
@@ -62,6 +72,11 @@
   "patternId" : "comma",
   "title" : "Comma Spacing",
   "description" : "There should be no space before and one after any comma.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "comment_spacing",
+  "title" : "Comment Spacing",
+  "description" : "Prefer at least one space after slashes for comments.",
   "parameters" : [ ]
 }, {
   "patternId" : "compiler_protocol_init",
@@ -129,6 +144,11 @@
   "description" : "When registering for a notification using a block, the opaque observer that is returned should be stored so it can be removed later.",
   "parameters" : [ ]
 }, {
+  "patternId" : "discouraged_assert",
+  "title" : "Discouraged Assert",
+  "description" : "Prefer `assertionFailure()` and/or `preconditionFailure()` over `assert(false)`",
+  "parameters" : [ ]
+}, {
   "patternId" : "discouraged_direct_init",
   "title" : "Discouraged Direct Initialization",
   "description" : "Discouraged direct initialization of types that can be harmful.",
@@ -176,7 +196,7 @@
 }, {
   "patternId" : "empty_enum_arguments",
   "title" : "Empty Enum Arguments",
-  "description" : "Arguments can be omitted when matching enums with associated types if they are not used.",
+  "description" : "Arguments can be omitted when matching enums with associated values if they are not used.",
   "parameters" : [ ]
 }, {
   "patternId" : "empty_parameters",
@@ -260,7 +280,7 @@
   "parameters" : [ ]
 }, {
   "patternId" : "file_length",
-  "title" : "File Line Length",
+  "title" : "File Length",
   "description" : "Files should not span too many lines.",
   "parameters" : [ ]
 }, {
@@ -359,6 +379,11 @@
   "description" : "Implicitly unwrapped optionals should be avoided when possible.",
   "parameters" : [ ]
 }, {
+  "patternId" : "inclusive_language",
+  "title" : "Inclusive Language",
+  "description" : "    Identifiers should use inclusive language that avoids discrimination against groups of people based on     race, gender, or socioeconomic status",
+  "parameters" : [ ]
+}, {
   "patternId" : "indentation_width",
   "title" : "Indentation Width",
   "description" : "Indent code using either one tab or the configured amount of spaces, unindent to match previous indentations. Don't indent the first line.",
@@ -422,6 +447,11 @@
   "patternId" : "legacy_nsgeometry_functions",
   "title" : "Legacy NSGeometry Functions",
   "description" : "Struct extension properties and methods are preferred over legacy functions",
+  "parameters" : [ ]
+}, {
+  "patternId" : "legacy_objc_type",
+  "title" : "Legacy Objective-C Reference Type",
+  "description" : "Prefer Swift value types to bridged Objective-C reference types",
   "parameters" : [ ]
 }, {
   "patternId" : "legacy_random",
@@ -501,7 +531,7 @@
 }, {
   "patternId" : "nesting",
   "title" : "Nesting",
-  "description" : "Types should be nested at most 1 level deep, and statements should be nested at most 5 levels deep.",
+  "description" : "Types should be nested at most 1 level deep, and functions should be nested at most 2 levels deep.",
   "parameters" : [ ]
 }, {
   "patternId" : "nimble_operator",
@@ -536,7 +566,7 @@
 }, {
   "patternId" : "nslocalizedstring_key",
   "title" : "NSLocalizedString Key",
-  "description" : "Static strings should be used as key in NSLocalizedString in order to genstrings work.",
+  "description" : "Static strings should be used as key/comment in NSLocalizedString in order for genstrings to work.",
   "parameters" : [ ]
 }, {
   "patternId" : "nslocalizedstring_require_bundle",
@@ -599,6 +629,11 @@
   "description" : "Combine multiple pattern matching bindings by moving keywords out of tuples.",
   "parameters" : [ ]
 }, {
+  "patternId" : "prefer_nimble",
+  "title" : "Prefer Nimble",
+  "description" : "Prefer Nimble matchers over XCTAssert functions.",
+  "parameters" : [ ]
+}, {
   "patternId" : "prefer_self_type_over_type_of_self",
   "title" : "Prefer Self Type Over Type of Self",
   "description" : "Prefer `Self` over `type(of: self)` when accessing properties or calling methods.",
@@ -627,6 +662,11 @@
   "patternId" : "private_over_fileprivate",
   "title" : "Private over fileprivate",
   "description" : "Prefer `private` over `fileprivate` declarations.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "private_subject",
+  "title" : "Private Combine Subject",
+  "description" : "Combine Subject should be private.",
   "parameters" : [ ]
 }, {
   "patternId" : "private_unit_test",
@@ -794,6 +834,11 @@
   "description" : "Shorthand syntactic sugar should be used, i.e. [Int] instead of Array<Int>.",
   "parameters" : [ ]
 }, {
+  "patternId" : "test_case_accessibility",
+  "title" : "Test case accessibility",
+  "description" : "Test cases should only contain private non-test members.",
+  "parameters" : [ ]
+}, {
   "patternId" : "todo",
   "title" : "Todo",
   "description" : "TODOs and FIXMEs should be resolved.",
@@ -852,11 +897,6 @@
   "patternId" : "unneeded_break_in_switch",
   "title" : "Unneeded Break in Switch",
   "description" : "Avoid using unneeded break statements.",
-  "parameters" : [ ]
-}, {
-  "patternId" : "unneeded_notification_center_removal",
-  "title" : "Unneeded NotificationCenter Removal",
-  "description" : "Observers are automatically unregistered on dealloc (iOS 9 / macOS 10.11) so you should't call `removeObserver(self)` in the deinit.",
   "parameters" : [ ]
 }, {
   "patternId" : "unneeded_parentheses_in_closure_argument",

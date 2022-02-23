@@ -28,22 +28,22 @@ func foo(completion: () -> Void)
 ```
 
 ```swift
-let foo: (ConfigurationTests) -> () throws -> Void)
+let foo: (ConfigurationTests) -> () throws -> Void
 
 ```
 
 ```swift
-let foo: (ConfigurationTests) ->   () throws -> Void)
+let foo: (ConfigurationTests) ->   () throws -> Void
 
 ```
 
 ```swift
-let foo: (ConfigurationTests) ->() throws -> Void)
+let foo: (ConfigurationTests) ->() throws -> Void
 
 ```
 
 ```swift
-let foo: (ConfigurationTests) -> () -> Void)
+let foo: (ConfigurationTests) -> () -> Void
 
 ```
 
@@ -80,6 +80,6 @@ func foo(completion: () -> ↓(Void))
 ```
 
 ```swift
-let foo: (ConfigurationTests) -> () throws -> ↓())
+let foo: (ConfigurationTests) -> () throws -> ↓()
 
 ```

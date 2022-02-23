@@ -4,7 +4,7 @@
 
 * **Identifier:** strong_iboutlet
 * **Enabled by default:** Disabled
-* **Supports autocorrection:** No
+* **Supports autocorrection:** Yes
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 3.0.0
@@ -28,18 +28,18 @@ class ViewController: UIViewController {
 
 ```swift
 class ViewController: UIViewController {
-    @IBOutlet weak ↓var label: UILabel?
+    @IBOutlet ↓weak var label: UILabel?
 }
 ```
 
 ```swift
 class ViewController: UIViewController {
-    @IBOutlet unowned ↓var label: UILabel!
+    @IBOutlet ↓unowned var label: UILabel!
 }
 ```
 
 ```swift
 class ViewController: UIViewController {
-    @IBOutlet weak ↓var textField: UITextField?
+    @IBOutlet ↓weak var textField: UITextField?
 }
 ```

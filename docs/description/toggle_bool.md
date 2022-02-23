@@ -36,6 +36,10 @@ disconnected = !connected
 
 ```
 
+```swift
+result = !result.toggle()
+```
+
 ## Triggering Examples
 
 ```swift

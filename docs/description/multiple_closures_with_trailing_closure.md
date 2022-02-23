@@ -40,6 +40,14 @@ UIView.animate(withDuration: 1.0) {
 }
 ```
 
+```swift
+foo.method { print(0) } arg2: { print(1) }
+```
+
+```swift
+foo.methodWithParenArgs((0, 1), arg2: (0, 1, 2)) { $0 } arg4: { $0 }
+```
+
 ## Triggering Examples
 
 ```swift
@@ -52,4 +60,12 @@ UIView.animate(withDuration: 1.0, animations: {
 }) ↓{ _ in
     someView.removeFromSuperview()
 }
+```
+
+```swift
+foo.multipleTrailing(arg1: { $0 }) { $0 } arg3: { $0 }
+```
+
+```swift
+foo.methodWithParenArgs(param1: { $0 }, param2: (0, 1), (0, 1)) { $0 }
 ```

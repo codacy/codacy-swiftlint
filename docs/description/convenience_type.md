@@ -42,6 +42,42 @@ struct Math { // type with non-static declarations
 class DummyClass {}
 ```
 
+```swift
+class Foo: NSObject { // class with Obj-C class property
+    class @objc let foo = 1
+}
+```
+
+```swift
+class Foo: NSObject { // class with Obj-C static property
+    static @objc let foo = 1
+}
+```
+
+```swift
+class Foo { // @objc class func can't exist on an enum
+   @objc class func foo() {}
+}
+```
+
+```swift
+class Foo { // @objc static func can't exist on an enum
+   @objc static func foo() {}
+}
+```
+
+```swift
+final class Foo { // final class, but @objc class func can't exist on an enum
+   @objc class func foo() {}
+}
+```
+
+```swift
+final class Foo { // final class, but @objc static func can't exist on an enum
+   @objc static func foo() {}
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -51,14 +87,32 @@ class DummyClass {}
 ```
 
 ```swift
-↓class Math {
+↓struct Math {
   public static let pi = 3.14
+  @available(*, unavailable) init() {}
 }
 ```
 
 ```swift
-↓struct Math {
-  public static let pi = 3.14
-  @available(*, unavailable) init() {}
+final ↓class Foo { // final class can't be inherited
+    class let foo = 1
+}
+```
+
+```swift
+↓class Foo {
+    class let foo = 1
+}
+```
+
+```swift
+↓class Foo {
+    final class let foo = 1
+}
+```
+
+```swift
+↓class SomeClass {
+    static func foo() {}
 }
 ```

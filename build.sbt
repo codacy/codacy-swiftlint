@@ -2,19 +2,7 @@ organization := "com.codacy"
 
 name := "codacy-swiftlint"
 
-scalaVersion := "2.13.3"
-
-lazy val swiftlintVersion = Def.setting("1.10.0")
-
-Compile / sourceGenerators += Def.task {
-  val file = (Compile / sourceManaged).value / "codacy" / "swiftlint" / "Versions.scala"
-  IO.write(file, s"""package codacy.swiftlint
-                    |object Versions {
-                    |  val swiftlintVersion: String = "${swiftlintVersion.value}"
-                    |}
-                    |""".stripMargin)
-  Seq(file)
-}.taskValue
+scalaVersion := "2.13.8"
 
 enablePlugins(GraalVMNativeImagePlugin)
 

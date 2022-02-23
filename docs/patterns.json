@@ -1,6 +1,6 @@
 {
   "name" : "swiftlint",
-  "version" : "0.40.0",
+  "version" : "0.43.1",
   "patterns" : [ {
     "patternId" : "anyobject_protocol",
     "level" : "Warning",
@@ -23,12 +23,26 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "balanced_xctest_lifecycle",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "block_based_kvo",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
+  }, {
+    "patternId" : "capture_variable",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
   }, {
     "patternId" : "class_delegate_protocol",
     "level" : "Warning",
@@ -89,6 +103,13 @@
     "patternId" : "comma",
     "level" : "Warning",
     "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
+    "patternId" : "comment_spacing",
+    "level" : "Warning",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
@@ -182,7 +203,14 @@
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
-    "enabled" : true
+    "enabled" : false
+  }, {
+    "patternId" : "discouraged_assert",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
   }, {
     "patternId" : "discouraged_direct_init",
     "level" : "Info",
@@ -506,6 +534,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "inclusive_language",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
     "patternId" : "indentation_width",
     "level" : "Info",
     "category" : "CodeStyle",
@@ -597,6 +632,13 @@
     "languages" : [ ],
     "enabled" : true
   }, {
+    "patternId" : "legacy_objc_type",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "legacy_random",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -682,7 +724,7 @@
     "enabled" : false
   }, {
     "patternId" : "multiline_parameters",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
@@ -787,14 +829,14 @@
     "enabled" : false
   }, {
     "patternId" : "opening_brace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "operator_usage_whitespace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
@@ -842,6 +884,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "prefer_nimble",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "prefer_self_type_over_type_of_self",
     "level" : "Warning",
     "category" : "CodeStyle",
@@ -883,6 +932,13 @@
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
+  }, {
+    "patternId" : "private_subject",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
   }, {
     "patternId" : "private_unit_test",
     "level" : "Info",
@@ -1115,6 +1171,13 @@
     "languages" : [ ],
     "enabled" : true
   }, {
+    "patternId" : "test_case_accessibility",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "todo",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -1193,13 +1256,6 @@
     "enabled" : false
   }, {
     "patternId" : "unneeded_break_in_switch",
-    "level" : "Warning",
-    "category" : "ErrorProne",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : true
-  }, {
-    "patternId" : "unneeded_notification_center_removal",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],

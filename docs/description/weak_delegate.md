@@ -78,6 +78,12 @@ class Foo {
 }
 ```
 
+```swift
+struct Foo {
+ @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate 
+}
+```
+
 ## Triggering Examples
 
 ```swift

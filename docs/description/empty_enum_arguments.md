@@ -1,6 +1,6 @@
 # Empty Enum Arguments
 
-Arguments can be omitted when matching enums with associated types if they are not used.
+Arguments can be omitted when matching enums with associated values if they are not used.
 
 * **Identifier:** empty_enum_arguments
 * **Enabled by default:** Enabled

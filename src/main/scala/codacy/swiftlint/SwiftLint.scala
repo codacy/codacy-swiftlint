@@ -1,6 +1,6 @@
 package codacy.swiftlint
 
-import java.nio.file.{Path, Paths}
+import java.nio.file.Paths
 
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
 import com.codacy.plugins.api.{ErrorMessage, Options, Source}
@@ -51,23 +51,12 @@ object SwiftLint extends Tool {
     FileHelper.findConfigurationFile(Paths.get(source.path), nativeConfigFileNames).map(_.toString)
   }
 
-  def configsFromCodacyConfiguration(
-      configuration: Option[List[Pattern.Definition]]
-  )(implicit specification: Tool.Specification): Option[String] = {
-    val patternsToLintOpt = configuration.withDefaultParameters
-
-    patternsToLintOpt.fold(Option.empty[String]) {
-      case patternsToLint if patternsToLint.nonEmpty =>
-        Some(writeConfigFile(patternsToLint).toString)
-    }
-  }
-
   def lintConfiguration(source: Source.Directory, configuration: Option[List[Pattern.Definition]])(
       implicit specification: Tool.Specification
   ): Option[String] = {
     lazy val nativeConfig = nativeConfigurationFile(source)
 
-    val config = configsFromCodacyConfiguration(configuration)
+    val config = configuration.withDefaultParameters.map(writeConfigFile)
 
     config.orElse(nativeConfig)
   }
@@ -137,14 +126,17 @@ object SwiftLint extends Tool {
     }
   }
 
-  private def writeConfigFile(patternsToLint: List[Pattern.Definition]): Path = {
-    val rules = patternsToLint.map(_.patternId.toString)
-    val content =
-      s"""whitelist_rules:
-         |  - ${rules.mkString("\n  - ")}\n
-      """.stripMargin
+  private def writeConfigFile(patternsToLint: List[Pattern.Definition]): String = {
+    val content = patternsToLint match {
+      case Nil => ""
+      case _ =>
+        val rules = patternsToLint.map(_.patternId.toString)
+        s"""whitelist_rules:
+             |  - ${rules.mkString("\n  - ")}\n
+          """.stripMargin
+    }
 
-    FileHelper.createTmpFile(content, ".swiftlint-ci", ".yml")
+    FileHelper.createTmpFile(content, ".swiftlint-ci", ".yml").toString
   }
 
   private def parseToolResult(output: List[String]): Try[List[Result]] = {

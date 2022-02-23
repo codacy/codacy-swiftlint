@@ -8,7 +8,7 @@ Functions and methods parameters should be either on the same line, or one per l
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning
+* **Default configuration:** warning, allowsSingleLine: true
 
 ## Non Triggering Examples
 
@@ -324,6 +324,40 @@ class Foo {
 }
 ```
 
+```swift
+func foo() { }
+```
+
+```swift
+func foo(param1: Int) { }
+```
+
+```swift
+protocol Foo {
+    func foo(param1: Int,
+             param2: Bool,
+             param3: [String]) { }
+}
+```
+
+```swift
+protocol Foo {
+    func foo(
+        param1: Int
+    ) { }
+}
+```
+
+```swift
+protocol Foo {
+    func foo(
+        param1: Int,
+        param2: Bool,
+        param3: [String]
+    ) { }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -471,4 +505,12 @@ class Foo {
    class func ↓foo(param1: Int,
                   param2: Bool, param3: @escaping (Int) -> Void = { (x: Int) in }) { }
 }
+```
+
+```swift
+func ↓foo(param1: Int, param2: Bool) { }
+```
+
+```swift
+func ↓foo(param1: Int, param2: Bool, param3: [String]) { }
 ```

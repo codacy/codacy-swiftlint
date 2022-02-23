@@ -76,6 +76,7 @@ protocol Foo {
 ```swift
 protocol Foo {
     var foo: Int { get set }
+}
 ```
 
 ```swift

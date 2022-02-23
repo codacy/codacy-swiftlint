@@ -24,6 +24,16 @@ import A.C
 ```
 
 ```swift
+@_implementationOnly import A
+@_implementationOnly import B
+```
+
+```swift
+@testable import A
+@testable import B
+```
+
+```swift
 #if DEBUG
     @testable import KsApi
 #else
@@ -53,6 +63,16 @@ import Dispatch
 ```swift
 import Foundation
 ↓import Foundation.NSString
+```
+
+```swift
+@_implementationOnly import A
+@_implementationOnly import A
+```
+
+```swift
+@testable import A
+@testable import A
 ```
 
 ```swift

@@ -7,7 +7,7 @@ Unused parameter in a closure should be replaced with _.
 * **Supports autocorrection:** Yes
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 4.2.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -103,6 +103,12 @@ viewModel?.profileImage.didSet(weak: self) { (self, profileImage) in
 }
 ```
 
+```swift
+let failure: Failure = { task, error in
+    observer.sendFailed(error, task)
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -168,5 +174,11 @@ func foo () {
 ```swift
 viewModel?.profileImage.didSet(weak: self) { (↓self, profileImage) in
     profileImageView.image = profileImage
+}
+```
+
+```swift
+let failure: Failure = { ↓task, error in
+    observer.sendFailed(error)
 }
 ```

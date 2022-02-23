@@ -13,28 +13,6 @@ Don't include vertical whitespace (empty line) before closing braces.
 ## Non Triggering Examples
 
 ```swift
-        )
-}
-    }
-}
-```
-
-```swift
-    print("x is 5")
-}
-```
-
-```swift
-    print("x is 5")
-}
-```
-
-```swift
-    print("x is 5")
-}
-```
-
-```swift
 /*
     class X {
 
@@ -53,54 +31,47 @@ Don't include vertical whitespace (empty line) before closing braces.
 ```
 
 ```swift
-[1, 2].map { $0 }.filter {
+[1, 2].map { $0 }.filter { num in true }
 ```
 
 ```swift
-[1, 2].map { $0 }.filter { num in
+[1, 2].map { $0 }.filter { true }
 ```
 
 ```swift
-class Name {
-    run(5) { x in print(x) }
+do {
+  print("x is 5")
+}
+```
+
+```swift
+do {
+  print("x is 5")
+}
+```
+
+```swift
+do {
+  print("x is 5")
 }
 ```
 
 ```swift
 foo(
-x: 5,
-y:6
+    x: 5,
+    y:6
 )
 ```
 
+```swift
+func foo() {
+  run(5) { x in
+    print(x)
+  }
+}
+```
+
 ## Triggering Examples
-
-```swift
-        )
-}
-↓
-    }
-}
-```
-
-```swift
-    print("x is 5")
-↓
-
-}
-```
-
-```swift
-    print("x is 5")
-↓
-}
-```
-
-```swift
-    print("x is 5")
-↓    
-}
-```
 
 ```swift
 [
@@ -112,16 +83,41 @@ y:6
 ```
 
 ```swift
-class Name {
-    run(5) { x in print(x) }
+do {
+  print("x is 5")
+↓
+
+}
+```
+
+```swift
+do {
+  print("x is 5")
+↓
+  
+}
+```
+
+```swift
+do {
+  print("x is 5")
 ↓
 }
 ```
 
 ```swift
 foo(
-x: 5,
-y:6
+    x: 5,
+    y:6
 ↓
 )
+```
+
+```swift
+func foo() {
+  run(5) { x in
+    print(x)
+  }
+↓
+}
 ```

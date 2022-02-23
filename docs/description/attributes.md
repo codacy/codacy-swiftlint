@@ -68,33 +68,33 @@ Attributes should be on their own lines in functions and types, but on the same 
 ```
 
 ```swift
-@available(iOS 9.0, *, message="A message")
+@available(*, deprecated, message: "A message")
  func animate(view: UIStackView)
 ```
 
 ```swift
 @nonobjc
- final class X
+ final class X {}
 ```
 
 ```swift
 @available(iOS 9.0, *)
- class UIStackView
+ class UIStackView {}
 ```
 
 ```swift
 @NSApplicationMain
- class AppDelegate: NSObject, NSApplicationDelegate
+ class AppDelegate: NSObject, NSApplicationDelegate {}
 ```
 
 ```swift
 @UIApplicationMain
- class AppDelegate: NSObject, UIApplicationDelegate
+ class AppDelegate: NSObject, UIApplicationDelegate {}
 ```
 
 ```swift
 @IBDesignable
- class MyCustomView: UIView
+ class MyCustomView: UIView {}
 ```
 
 ```swift
@@ -120,7 +120,7 @@ Attributes should be on their own lines in functions and types, but on the same 
 ```swift
 @objc(ABCThing)
  @available(iOS 9.0, *)
- class Thing
+ class Thing {}
 ```
 
 ```swift
@@ -282,35 +282,35 @@ func printBoolOrTrue(_ expression: @autoclosure () throws -> Bool?) rethrows {
 ```
 
 ```swift
-@nonobjc final ↓class X
+@nonobjc final ↓class X {}
 ```
 
 ```swift
-@available(iOS 9.0, *) ↓class UIStackView
+@available(iOS 9.0, *) ↓class UIStackView {}
 ```
 
 ```swift
 @available(iOS 9.0, *)
- @objc ↓class UIStackView
+ @objc ↓class UIStackView {}
 ```
 
 ```swift
 @available(iOS 9.0, *) @objc
- ↓class UIStackView
+ ↓class UIStackView {}
 ```
 
 ```swift
 @available(iOS 9.0, *)
 
- ↓class UIStackView
+ ↓class UIStackView {}
 ```
 
 ```swift
-@UIApplicationMain ↓class AppDelegate: NSObject, UIApplicationDelegate
+@UIApplicationMain ↓class AppDelegate: NSObject, UIApplicationDelegate {}
 ```
 
 ```swift
-@IBDesignable ↓class MyCustomView: UIView
+@IBDesignable ↓class MyCustomView: UIView {}
 ```
 
 ```swift
@@ -323,10 +323,6 @@ func printBoolOrTrue(_ expression: @autoclosure () throws -> Bool?) rethrows {
 
 
 ↓import SourceKittenFramework
-```
-
-```swift
-@objc(foo_x) ↓var x: String
 ```
 
 ```swift
@@ -347,7 +343,7 @@ func printBoolOrTrue(_ expression: @autoclosure () throws -> Bool?) rethrows {
 
 ```swift
 @available(iOS 9.0, *)
- @objc(ABCThing) ↓class Thing
+ @objc(ABCThing) ↓class Thing {}
 ```
 
 ```swift

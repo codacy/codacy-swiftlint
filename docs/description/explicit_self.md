@@ -30,6 +30,26 @@ struct A {
 }
 ```
 
+```swift
+@propertyWrapper
+struct Wrapper<Value> {
+    let wrappedValue: Value
+    var projectedValue: [Value] {
+        [self.wrappedValue]
+    }
+}
+struct A {
+    @Wrapper var p1: Int
+    func f1() {
+        self.$p1
+        self._p1
+    }
+}
+func f1() {
+    A(p1: 10).$p1
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -47,5 +67,34 @@ struct A {
     func f1() {
         _ = ↓p1
     }
+}
+```
+
+```swift
+struct A {
+    func f1(a b: Int) {}
+    func f2() {
+        ↓f1(a: 0)
+    }
+}
+```
+
+```swift
+@propertyWrapper
+struct Wrapper<Value> {
+    let wrappedValue: Value
+    var projectedValue: [Value] {
+        [self.wrappedValue]
+    }
+}
+struct A {
+    @Wrapper var p1: Int
+    func f1() {
+        ↓$p1
+        ↓_p1
+    }
+}
+func f1() {
+    A(p1: 10).$p1
 }
 ```

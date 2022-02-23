@@ -40,6 +40,14 @@ list.sorted { $0.0 < $1.0 }.map { $0.value }
 self.init(rgb: (Int) (colorInt))
 ```
 
+```swift
+Button {
+    print("Button tapped")
+} label: {
+    Text("Button")
+}
+```
+
 ## Triggering Examples
 
 ```swift

@@ -8,7 +8,7 @@ Some overridden methods should always call super
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning, excluded: [[]], included: [["*"]]
+* **Default configuration:** warning, excluded: [], included: ["*"]
 
 ## Non Triggering Examples
 

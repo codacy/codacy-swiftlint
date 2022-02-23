@@ -29,6 +29,10 @@ let kFoo = true
 ```
 
 ```swift
+let Foo = true
+```
+
+```swift
 struct Foo {
    let bar = 20.0
 }
