@@ -1,8 +1,17 @@
-FROM norionomura/swiftlint:0.43.1_swift-5.4.0 as builder
+FROM swift:5.4.3-amazonlinux2 AS builder
 
-FROM swift:5.5.0-xenial-slim
+RUN yum update && yum install -y libcurl-devel libxml2-devel
 
-RUN apt-get update && apt-get install -y openjdk-8-jre
+RUN git clone https://github.com/realm/SwiftLint.git
+WORKDIR /SwiftLint
+RUN git checkout 0.43.1
+ENV SWIFT_FLAGS="--configuration release -Xswiftc -static-stdlib -Xlinker -lCFURLSessionInterface -Xlinker -lCFXMLInterface -Xlinker -lcurl -Xlinker -lxml2"
+RUN swift build ${SWIFT_FLAGS} --product swiftlint && install -v `swift build ${SWIFT_FLAGS} --show-bin-path`/swiftlint /usr/bin
+
+
+FROM swift:5.4.3-amazonlinux2-slim
+
+RUN yum update && yum install -y java-1.8.0-openjdk shadow-utils adduser && adduser -s /bin/false -u 2004 docker
 
 COPY --from=builder /usr/bin/swiftlint /usr/bin/swiftlint
 COPY --from=builder /usr/lib/libsourcekitdInProc.so /usr/lib/libsourcekitdInProc.so
@@ -10,7 +19,6 @@ COPY --from=builder /usr/lib/libsourcekitdInProc.so /usr/lib/libsourcekitdInProc
 COPY docs /docs
 COPY target/universal/stage/ /workdir/
 RUN chmod +x /workdir/bin/codacy-swiftlint
-RUN adduser --uid 2004 --disabled-password --gecos "" docker
 USER docker
 WORKDIR /src
 ENTRYPOINT ["/workdir/bin/codacy-swiftlint"]
