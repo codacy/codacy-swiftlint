@@ -1,6 +1,6 @@
 FROM norionomura/swiftlint:0.50.1_swift-5.7.0 as builder
 
-FROM swift:5.7.0-xenial-slim
+FROM swift:5.7.0-jammy-slim
 
 COPY --from=builder /usr/bin/swiftlint /usr/bin/swiftlint
 COPY --from=builder /usr/lib/libsourcekitdInProc.so /usr/lib/libsourcekitdInProc.so

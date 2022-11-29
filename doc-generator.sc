@@ -1,4 +1,4 @@
-import $ivy.`com.codacy::codacy-engine-scala-seed:5.0.3`
+import $ivy.`com.codacy::codacy-engine-scala-seed:6.0.1`
 
 import com.codacy.plugins.api._
 import com.codacy.plugins.api.results._
