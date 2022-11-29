@@ -19,7 +19,7 @@ val baseCommand = Seq(
 )
 
 os.proc(baseCommand :+ "generate-docs").call()
-// Hack: docker in CircleCI makes files only available to the root user 
+// Hack: docker in CircleCI makes files only available to the root user
 os.proc("sudo", "chmod", "-R", "777", tempDir).call()
 
 val rulesOutput = os.proc(baseCommand :+ "rules").call().out.lines().map(_.split('|').map(_.trim).toList.tail).tail
