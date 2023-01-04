@@ -20,6 +20,7 @@ object Main extends App {
   os.proc(baseCommand :+ "generate-docs").call()
 // Hack: docker in CircleCI makes files only available to the root user
   os.proc("sudo", "chmod", "-R", "777", tempDir).call()
+  println("Generated docs using swiftlint generate-docs")
 
   val rulesOutput = os.proc(baseCommand :+ "rules").call().out.lines().map(_.split('|').map(_.trim).toList.tail).tail
 
@@ -31,6 +32,7 @@ object Main extends App {
   val descriptionDirectory = docsDirectory / "description"
 
   val patternDescriptions = mdFiles.map { file =>
+    println(s"Generating patterns description from ${file.last}")
     val patternId = file.last.stripSuffix(".md")
     val lines = os.read(file).linesIterator
     val title = lines.next().stripPrefix("# ")
@@ -77,6 +79,7 @@ object Main extends App {
   }
 
   val patternSpecifications = swiftLintRules.map { swiftLintRule =>
+    println(s"Generating patterns specification for ${swiftLintRule.identifier}")
     Pattern.Specification(
       Pattern.Id(swiftLintRule.identifier),
       configurationToLevel(swiftLintRule.configuration),
