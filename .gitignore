@@ -10,4 +10,4 @@ target
 .bloop
 .vscode
 .bsp
-.ammonite
+.scala-build

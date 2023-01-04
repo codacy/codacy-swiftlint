@@ -1,4 +1,6 @@
-import $ivy.`com.codacy::codacy-engine-scala-seed:6.0.1`
+//> using scala "2"
+//> using lib "com.codacy::codacy-engine-scala-seed:6.0.1"
+//> using lib "com.lihaoyi::os-lib:0.9.0"
 
 import com.codacy.plugins.api._
 import com.codacy.plugins.api.results._
