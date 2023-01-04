@@ -16,9 +16,9 @@ workflows:
             sbt "scalafmtCheckAll;
                  scalafmtSbtCheck;
                  graalvm-native-image:packageBin"
-            docker build -t $CIRCLE_PROJECT_REPONAME:latest .
+            docker build -t $CIRCLE_PROJECT_REPONAME:latest -f Dockerfile.dev .
             # Run doc-generator
-            sudo ./scala-cli doc-generator.sc
+            sudo sbt doc-generator/run
             # Update docker image with generated docs
             docker build -t $CIRCLE_PROJECT_REPONAME:latest .
             docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest

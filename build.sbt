@@ -2,7 +2,7 @@ organization := "com.codacy"
 
 name := "codacy-swiftlint"
 
-scalaVersion := "2.13.10"
+ThisBuild / scalaVersion := "2.13.10"
 
 enablePlugins(GraalVMNativeImagePlugin)
 
@@ -20,3 +20,11 @@ graalVMNativeImageOptions ++= Seq(
   "--report-unsupported-elements-at-runtime",
   "--static"
 )
+
+lazy val `doc-generator` = project
+  .settings(
+    libraryDependencies ++= Seq(
+      "com.codacy" %% "codacy-engine-scala-seed" % "6.0.1",
+      "com.lihaoyi" %% "os-lib" % "0.9.0"
+    )
+  )
