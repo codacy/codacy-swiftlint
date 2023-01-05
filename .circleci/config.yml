@@ -22,9 +22,10 @@ workflows:
             - run:
                 name: Build Documentation generator
                 command: sbt doc-generator/stage
-            - run:
-                name: Run Documentation generator
-                command: doc-generator/target/universal/stage/bin/doc-generator
+            # Hangs when run in CI
+            # - run:
+            #     name: Run Documentation generator
+            #     command: doc-generator/target/universal/stage/bin/doc-generator
             - run:
                 name: Build Graalvm native-image
                 command: sbt graalvm-native-image:packageBin
