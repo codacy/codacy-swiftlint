@@ -24,7 +24,7 @@ docker run -it -v $srcDir:/src  <DOCKER_NAME>:<DOCKER_VERSION>
 ```
 
 ## Generate docs
-Run `amm doc-generator.sc`
+Run `sbt doc-generator/run`
 
 ## Test
 
