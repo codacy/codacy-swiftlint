@@ -12,7 +12,6 @@ object Main extends App {
     "run",
     s"--volume=$tempDir:$workdir",
     s"-w=$workdir",
-    s"--user=root",
     "norionomura/swiftlint:0.50.1_swift-5.7.0",
     "swiftlint"
   )
