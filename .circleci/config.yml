@@ -20,17 +20,14 @@ workflows:
                 name: Check Scalafmt on Sbt sources
                 command: sbt scalafmtSbtCheck
             - run:
-                name: Build Graalvm native-image
-                command: sbt graalvm-native-image:packageBin
-            - run:
-                name: Build Docker image for doc-generator
-                command: docker build -t $CIRCLE_PROJECT_REPONAME:latest .
-            - run:
                 name: Build Documentation generator
                 command: sbt doc-generator/stage
             - run:
                 name: Run Documentation generator
                 command: doc-generator/target/universal/stage/bin/doc-generator
+            - run:
+                name: Build Graalvm native-image
+                command: sbt graalvm-native-image:packageBin
             - run:
                 name: Build release Docker image
                 command: docker build -t $CIRCLE_PROJECT_REPONAME:latest .

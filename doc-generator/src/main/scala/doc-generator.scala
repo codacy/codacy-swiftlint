@@ -14,7 +14,7 @@ object Main extends App {
     s"-w=$workdir",
     s"--user=root",
     "--entrypoint=swiftlint",
-    "codacy-swiftlint"
+    "norionomura/swiftlint:0.50.1_swift-5.7.0"
   )
 
   os.proc(baseCommand :+ "generate-docs").call()
