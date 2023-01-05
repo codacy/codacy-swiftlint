@@ -45,6 +45,12 @@ foo = aMethod(bar - foo)
 ```
 
 ```swift
+public func -= (lhs: inout Foo, rhs: Int) {
+    lhs = lhs - rhs
+}
+```
+
+```swift
 foo /= 1
 ```
 
@@ -74,6 +80,12 @@ foo = aMethod(foo / bar)
 
 ```swift
 foo = aMethod(bar / foo)
+```
+
+```swift
+public func /= (lhs: inout Foo, rhs: Int) {
+    lhs = lhs / rhs
+}
 ```
 
 ```swift
@@ -109,6 +121,12 @@ foo = aMethod(bar + foo)
 ```
 
 ```swift
+public func += (lhs: inout Foo, rhs: Int) {
+    lhs = lhs + rhs
+}
+```
+
+```swift
 foo *= 1
 ```
 
@@ -138,6 +156,12 @@ foo = aMethod(foo * bar)
 
 ```swift
 foo = aMethod(bar * foo)
+```
+
+```swift
+public func *= (lhs: inout Foo, rhs: Int) {
+    lhs = lhs * rhs
+}
 ```
 
 ```swift

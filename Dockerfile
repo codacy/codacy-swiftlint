@@ -1,4 +1,4 @@
-FROM norionomura/swiftlint:0.50.1_swift-5.7.0 as builder
+FROM norionomura/swiftlint:0.50.3_swift-5.7.0 as builder
 
 FROM swift:5.7.0-jammy-slim
 

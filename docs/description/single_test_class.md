@@ -8,7 +8,7 @@ Test files should contain a single QuickSpec or XCTestCase class.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:** warning, test_parent_classes: ["QuickSpec", "XCTestCase"]
 
 ## Non Triggering Examples
 

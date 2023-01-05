@@ -92,3 +92,7 @@ return Foo(bar: .baz, title: fuzz,
           another: parameter, doIt: true,
           alignment: .center)
 ```
+
+```swift
+Logger.logError("Hat is too large"↓,  info: [])
+```

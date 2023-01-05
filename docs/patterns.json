@@ -1,6 +1,6 @@
 {
   "name" : "swiftlint",
-  "version" : "0.50.1",
+  "version" : "0.50.3",
   "patterns" : [ {
     "patternId" : "accessibility_label_for_image",
     "level" : "Warning",
@@ -45,7 +45,7 @@
     "enabled" : false
   }, {
     "patternId" : "balanced_xctest_lifecycle",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
@@ -346,7 +346,7 @@
     "enabled" : false
   }, {
     "patternId" : "empty_xctest_method",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
@@ -1193,7 +1193,7 @@
     "enabled" : false
   }, {
     "patternId" : "single_test_class",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],

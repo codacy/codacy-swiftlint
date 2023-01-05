@@ -56,6 +56,18 @@ case (let f as () -> String)?: break
 
 ```swift
 switch foo {
+case .bar(Baz()): break
+}
+```
+
+```swift
+switch foo {
+case .bar(.init()): break
+}
+```
+
+```swift
+switch foo {
 default: break
 }
 ```
@@ -116,6 +128,18 @@ case .bar↓(_), .bar2↓(_): break
 ```swift
 switch foo {
 case .bar↓() where method() > 2: break
+}
+```
+
+```swift
+switch foo {
+case .bar(.baz↓()): break
+}
+```
+
+```swift
+switch foo {
+case .bar(.baz↓(_)): break
 }
 ```
 

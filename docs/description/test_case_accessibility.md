@@ -8,7 +8,7 @@ Test cases should only contain private non-test members.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, allowed_prefixes: [[]], test_parent_classes: [["XCTestCase"]]
+* **Default configuration:** warning, allowed_prefixes: [], test_parent_classes: ["QuickSpec", "XCTestCase"]
 
 ## Non Triggering Examples
 

@@ -12,7 +12,7 @@ object Main extends App {
     "run",
     s"--volume=$tempDir:$workdir",
     s"-w=$workdir",
-    "norionomura/swiftlint:0.50.1_swift-5.7.0",
+    "norionomura/swiftlint:0.50.3_swift-5.7.0",
     "swiftlint"
   )
 
