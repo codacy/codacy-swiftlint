@@ -13,8 +13,8 @@ object Main extends App {
     s"--volume=$tempDir:$workdir",
     s"-w=$workdir",
     s"--user=root",
-    "--entrypoint=swiftlint",
-    "norionomura/swiftlint:0.50.1_swift-5.7.0"
+    "norionomura/swiftlint:0.50.1_swift-5.7.0",
+    "swiftlint"
   )
 
   os.proc(baseCommand :+ "generate-docs").call()
