@@ -3,11 +3,11 @@
 An object should only remove itself as an observer in `deinit`.
 
 * **Identifier:** notification_center_detachment
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

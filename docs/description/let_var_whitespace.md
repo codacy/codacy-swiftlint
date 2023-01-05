@@ -3,11 +3,11 @@
 Let and var should be separated from other statements by a blank line.
 
 * **Identifier:** let_var_whitespace
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -120,6 +120,15 @@ let x = bar as! Bar
 ```
 
 ```swift
+    @available(swift 4)
+    @UserDefault("param", defaultValue: true)
+    var isEnabled = true
+
+    @Attribute
+    func f() {}
+```
+
+```swift
 var x: Int {
 	let a = 0
 	return a
@@ -168,4 +177,15 @@ var x = 0
 }
 ↓var x = 0
 
+```
+
+```swift
+    struct S {
+        func f() {}
+        ↓@Wapper
+        let isNumber = false
+        @Wapper
+        var isEnabled = true
+        ↓func g() {}
+    }
 ```

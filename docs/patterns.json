@@ -1,7 +1,28 @@
 {
   "name" : "swiftlint",
-  "version" : "0.43.1",
+  "version" : "0.50.1",
   "patterns" : [ {
+    "patternId" : "accessibility_label_for_image",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "accessibility_trait_for_button",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "anonymous_argument_in_multiline_closure",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "anyobject_protocol",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -106,6 +127,13 @@
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
+  }, {
+    "patternId" : "comma_inheritance",
+    "level" : "Warning",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
   }, {
     "patternId" : "comment_spacing",
     "level" : "Warning",
@@ -219,6 +247,13 @@
     "languages" : [ ],
     "enabled" : true
   }, {
+    "patternId" : "discouraged_none_name",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "discouraged_object_literal",
     "level" : "Info",
     "category" : "ErrorProne",
@@ -248,6 +283,13 @@
     "enabled" : true
   }, {
     "patternId" : "duplicate_imports",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
+    "patternId" : "duplicated_key_in_dictionary_literal",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],
@@ -437,7 +479,7 @@
     "enabled" : false
   }, {
     "patternId" : "for_where",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
@@ -644,7 +686,7 @@
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
-    "enabled" : false
+    "enabled" : true
   }, {
     "patternId" : "let_var_whitespace",
     "level" : "Warning",
@@ -663,6 +705,13 @@
     "patternId" : "literal_expression_end_indentation",
     "level" : "Warning",
     "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "local_doc_comment",
+    "level" : "Warning",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -779,6 +828,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "no_magic_numbers",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "no_space_in_method_call",
     "level" : "Warning",
     "category" : "CodeStyle",
@@ -787,6 +843,13 @@
     "enabled" : true
   }, {
     "patternId" : "notification_center_detachment",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
+    "patternId" : "ns_number_init_as_function_reference",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],
@@ -887,6 +950,13 @@
     "patternId" : "prefer_nimble",
     "level" : "Warning",
     "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "prefer_self_in_static_references",
+    "level" : "Warning",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -1087,12 +1157,40 @@
     "languages" : [ ],
     "enabled" : true
   }, {
+    "patternId" : "return_value_from_void_function",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "self_binding",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "self_in_property_initialization",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
     "patternId" : "shorthand_operator",
     "level" : "Error",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
+  }, {
+    "patternId" : "shorthand_optional_binding",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
   }, {
     "patternId" : "single_test_class",
     "level" : "Warning",
@@ -1248,6 +1346,20 @@
     "languages" : [ ],
     "enabled" : true
   }, {
+    "patternId" : "typesafe_array_init",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "unavailable_condition",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
     "patternId" : "unavailable_function",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -1382,11 +1494,18 @@
     "enabled" : false
   }, {
     "patternId" : "vertical_whitespace_opening_braces",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
+  }, {
+    "patternId" : "void_function_in_ternary",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
   }, {
     "patternId" : "void_return",
     "level" : "Warning",
@@ -1400,7 +1519,7 @@
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
-    "enabled" : true
+    "enabled" : false
   }, {
     "patternId" : "xct_specific_matcher",
     "level" : "Warning",

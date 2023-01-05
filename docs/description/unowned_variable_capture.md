@@ -3,7 +3,7 @@
 Prefer capturing references as weak to avoid potential crashes.
 
 * **Identifier:** unowned_variable_capture
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No

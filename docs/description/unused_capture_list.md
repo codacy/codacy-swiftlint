@@ -3,11 +3,11 @@
 Unused reference in a capture list should be removed.
 
 * **Identifier:** unused_capture_list
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.2.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -127,7 +127,7 @@ numbers.forEach({
 
 ```swift
 numbers.forEach({
-    [self, weak handler] in
+    [self, ↓weak handler] in
     print($0)
 })
 ```

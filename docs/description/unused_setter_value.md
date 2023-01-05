@@ -3,11 +3,11 @@
 Setter value is not used.
 
 * **Identifier:** unused_setter_value
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -42,6 +42,15 @@ var aValue: String {
     set(value) {
         Persister.shared.aValue = value
     }
+}
+```
+
+```swift
+override var aValue: String {
+ get {
+     return Persister.shared.aValue
+ }
+ set { }
 }
 ```
 
@@ -98,6 +107,17 @@ var aValue: String {
         return Persister.shared.aValue
     }
     ↓set(value) {
+        Persister.shared.aValue = aValue
+    }
+}
+```
+
+```swift
+override var aValue: String {
+    get {
+        return Persister.shared.aValue
+    }
+    ↓set {
         Persister.shared.aValue = aValue
     }
 }

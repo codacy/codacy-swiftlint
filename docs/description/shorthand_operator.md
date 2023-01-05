@@ -3,11 +3,11 @@
 Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning.
 
 * **Identifier:** shorthand_operator
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** error
 
 ## Non Triggering Examples
@@ -256,9 +256,9 @@ seconds = seconds * 60 + value
 ```
 
 ```swift
-n = n + i / outputLength
+↓n = n + i / outputLength
 ```
 
 ```swift
-n = n - i / outputLength
+↓n = n - i / outputLength
 ```

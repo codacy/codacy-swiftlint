@@ -3,11 +3,11 @@
 Types used for hosting only static members should be implemented as a caseless enum to avoid instantiation.
 
 * **Identifier:** convenience_type
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.1.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -67,6 +67,12 @@ class Foo { // @objc static func can't exist on an enum
 ```
 
 ```swift
+@objcMembers class Foo { // @objc static func can't exist on an enum
+   static func foo() {}
+}
+```
+
+```swift
 final class Foo { // final class, but @objc class func can't exist on an enum
    @objc class func foo() {}
 }
@@ -75,6 +81,12 @@ final class Foo { // final class, but @objc class func can't exist on an enum
 ```swift
 final class Foo { // final class, but @objc static func can't exist on an enum
    @objc static func foo() {}
+}
+```
+
+```swift
+@globalActor actor MyActor {
+  static let shared = MyActor()
 }
 ```
 

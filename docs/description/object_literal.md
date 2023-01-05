@@ -3,11 +3,11 @@
 Prefer object literals over image and color inits.
 
 * **Identifier:** object_literal
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, image_literal: true, color_literal: true
 
 ## Non Triggering Examples

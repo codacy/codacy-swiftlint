@@ -3,11 +3,11 @@
 Closure end should have the same indentation as the line that started it.
 
 * **Identifier:** closure_end_indentation
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -75,6 +75,10 @@ function(parameter: param, closure: { x in
     anotherClosure: { y in
         print(y)
     })
+```
+
+```swift
+(-variable).foo()
 ```
 
 ## Triggering Examples

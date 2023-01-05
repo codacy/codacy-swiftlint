@@ -3,11 +3,11 @@
 Prefer `contains` over `range(of:) != nil` and `range(of:) == nil`.
 
 * **Identifier:** contains_over_range_nil_comparison
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

@@ -3,11 +3,11 @@
 Empty XCTest method should be avoided.
 
 * **Identifier:** empty_xctest_method
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -19,6 +19,10 @@ class TotoTests: XCTestCase {
     override func setUp() {
         super.setUp()
         foobar = Foobar()
+    }
+
+    override func setUpWithError() throws {
+        foobar = nil
     }
 
     override func tearDown() {
@@ -36,6 +40,10 @@ class TotoTests: XCTestCase {
         XCTAssertFalse(foobar?.bar)
 
         // comment...
+    }
+
+    func testBaz() {
+        _ = 4 + 4
     }
 }
 ```
@@ -67,6 +75,16 @@ class TotoTests: XCTestCase {
     func testFoo() { XCTAssertTrue(foobar?.foo) }
 
     func testBar() { XCTAssertFalse(foobar?.bar) }
+}
+```
+
+```swift
+class TotoTests: XCTestCase {
+    override class var runsForEachTargetApplicationUIConfiguration: Bool { true }
+
+    static var allTests = [("testFoo", testFoo)]
+
+    func testFoo() { XCTAssert(true) }
 }
 ```
 

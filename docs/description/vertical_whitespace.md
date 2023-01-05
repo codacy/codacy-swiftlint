@@ -3,11 +3,11 @@
 Limit vertical whitespace to a single empty line.
 
 * **Identifier:** vertical_whitespace
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, max_empty_lines: 1
 
 ## Non Triggering Examples

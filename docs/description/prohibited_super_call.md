@@ -3,11 +3,11 @@
 Some methods should not call super
 
 * **Identifier:** prohibited_super_call
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, excluded: [[]], included: [["*"]]
 
 ## Non Triggering Examples

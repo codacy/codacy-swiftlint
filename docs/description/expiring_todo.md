@@ -1,14 +1,14 @@
-# ExpiringTodo
+# Expiring Todo
 
 TODOs and FIXMEs should be resolved prior to their expiry date.
 
 * **Identifier:** expiring_todo
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** (approaching_expiry_severity) warning, (reached_or_passed_expiry_severity) error
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** approaching_expiry_severity: warning, expired_severity: error, bad_formatting_severity: error, approaching_expiry_threshold: 15, date_format: MM/dd/yyyy, date_delimiters: { opening: [, closing: ] }, date_separator: /
 
 ## Non Triggering Examples
 
@@ -60,11 +60,26 @@ TODOs and FIXMEs should be resolved prior to their expiry date.
 ## Triggering Examples
 
 ```swift
-// TODO: [10/14/2019]
+// TODO: [↓10/14/2019]
 
 ```
 
 ```swift
-// FIXME: [10/14/2019]
+// FIXME: [↓10/14/2019]
+
+```
+
+```swift
+// FIXME: [↓1/14/2019]
+
+```
+
+```swift
+// FIXME: [↓10/14/2019]
+
+```
+
+```swift
+// TODO: [↓9999/14/10]
 
 ```

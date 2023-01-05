@@ -3,11 +3,11 @@
 Prefer Swift value types to bridged Objective-C reference types
 
 * **Identifier:** legacy_objc_type
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -21,12 +21,52 @@ var array = Array<Int>()
 var calendar: Calendar? = nil
 ```
 
-## Triggering Examples
-
 ```swift
-var array = NSArray()
+var formatter: NSDataDetector
 ```
 
 ```swift
-var calendar: NSCalendar? = nil
+var className: String = NSStringFromClass(MyClass.self)
+```
+
+```swift
+_ = URLRequest.CachePolicy.reloadIgnoringLocalCacheData
+```
+
+```swift
+_ = Notification.Name("com.apple.Music.playerInfo")
+```
+
+## Triggering Examples
+
+```swift
+var array = ↓NSArray()
+```
+
+```swift
+var calendar: ↓NSCalendar? = nil
+```
+
+```swift
+_ = ↓NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData
+```
+
+```swift
+_ = ↓NSNotification.Name("com.apple.Music.playerInfo")
+```
+
+```swift
+let keyValuePair: (Int) -> (↓NSString, ↓NSString) = {
+  let n = "\($0)" as ↓NSString; return (n, n)
+}
+dictionary = [↓NSString: ↓NSString](uniqueKeysWithValues:
+  (1...10_000).lazy.map(keyValuePair))
+```
+
+```swift
+extension Foundation.Notification.Name {
+    static var reachabilityChanged: Foundation.↓NSNotification.Name {
+        return Foundation.Notification.Name("org.wordpress.reachability.changed")
+    }
+}
 ```

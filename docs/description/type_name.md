@@ -1,14 +1,15 @@
 # Type Name
 
 Type name should only contain alphanumeric characters, start with an uppercase character and span between 3 and 40 characters in length.
+Private types may start with an underscore.
 
 * **Identifier:** type_name
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** (min_length) w/e: 3/0, (max_length) w/e: 40/1000, excluded: [], allowed_symbols: [], validates_start_with_lowercase: true
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** (min_length) w/e: 3/0, (max_length) w/e: 40/1000, excluded: [], allowed_symbols: [], validates_start_with_lowercase: true, validate_protocols: true
 
 ## Non Triggering Examples
 
@@ -17,59 +18,11 @@ class MyType {}
 ```
 
 ```swift
-private class _MyType {}
-```
-
-```swift
-class AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA {}
-```
-
-```swift
-class MyView_Previews: PreviewProvider
-```
-
-```swift
-private class _MyView_Previews: PreviewProvider
-```
-
-```swift
-struct MyType {}
-```
-
-```swift
 private struct _MyType {}
 ```
 
 ```swift
-struct AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA {}
-```
-
-```swift
-struct MyView_Previews: PreviewProvider
-```
-
-```swift
-private struct _MyView_Previews: PreviewProvider
-```
-
-```swift
-enum MyType {}
-```
-
-```swift
-private enum _MyType {}
-```
-
-```swift
 enum AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA {}
-```
-
-```swift
-enum MyView_Previews: PreviewProvider
-```
-
-```swift
-private enum _MyView_Previews: PreviewProvider
 ```
 
 ```swift
@@ -98,6 +51,18 @@ case value
 }
 ```
 
+```swift
+protocol P {}
+```
+
+```swift
+struct SomeStruct {
+  enum `Type` {
+    case x, y, z
+  }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -105,39 +70,7 @@ class ↓myType {}
 ```
 
 ```swift
-class ↓_MyType {}
-```
-
-```swift
-private class ↓MyType_ {}
-```
-
-```swift
-class ↓My {}
-```
-
-```swift
-class ↓AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA {}
-```
-
-```swift
-class ↓MyView_Previews
-```
-
-```swift
-private class ↓_MyView_Previews
-```
-
-```swift
-class ↓MyView_Previews_Previews: PreviewProvider
-```
-
-```swift
-struct ↓myType {}
-```
-
-```swift
-struct ↓_MyType {}
+enum ↓_MyType {}
 ```
 
 ```swift
@@ -153,47 +86,11 @@ struct ↓AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA {}
 ```
 
 ```swift
-struct ↓MyView_Previews
+class ↓MyView_Previews
 ```
 
 ```swift
 private struct ↓_MyView_Previews
-```
-
-```swift
-struct ↓MyView_Previews_Previews: PreviewProvider
-```
-
-```swift
-enum ↓myType {}
-```
-
-```swift
-enum ↓_MyType {}
-```
-
-```swift
-private enum ↓MyType_ {}
-```
-
-```swift
-enum ↓My {}
-```
-
-```swift
-enum ↓AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA {}
-```
-
-```swift
-enum ↓MyView_Previews
-```
-
-```swift
-private enum ↓_MyView_Previews
-```
-
-```swift
-enum ↓MyView_Previews_Previews: PreviewProvider
 ```
 
 ```swift
@@ -228,4 +125,8 @@ protocol Foo {
 protocol Foo {
   associatedtype ↓AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 }
+```
+
+```swift
+protocol ↓X {}
 ```

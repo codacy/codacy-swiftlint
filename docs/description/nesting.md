@@ -3,11 +3,11 @@
 Types should be nested at most 1 level deep, and functions should be nested at most 2 levels deep.
 
 * **Identifier:** nesting
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** (type_level) w: 1, (function_level) w: 2, (check_nesting_in_closures_and_statements) true, (always_allow_one_type_in_functions) false
 
 ## Non Triggering Examples

@@ -3,7 +3,7 @@
 Prefer using the `isMultiple(of:)` function instead of using the remainder operator (`%`).
 
 * **Identifier:** legacy_multiple
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
@@ -46,6 +46,10 @@ let secretValue = (value % 3) + 2
 
 ```swift
 cell.contentView.backgroundColor = indexPath.row ↓% 2 == 0 ? .gray : .white
+```
+
+```swift
+cell.contentView.backgroundColor = 0 == indexPath.row ↓% 2 ? .gray : .white
 ```
 
 ```swift

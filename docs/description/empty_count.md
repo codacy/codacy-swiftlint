@@ -3,11 +3,11 @@
 Prefer checking `isEmpty` over comparing `count` to zero.
 
 * **Identifier:** empty_count
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** error, only_after_dot: false
 
 ## Non Triggering Examples
@@ -61,6 +61,16 @@ order.discount == 0
 
 ```swift
 [Int]().↓count == 0
+
+```
+
+```swift
+0 == [Int]().↓count
+
+```
+
+```swift
+[Int]().↓count==0
 
 ```
 

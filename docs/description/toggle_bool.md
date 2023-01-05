@@ -3,11 +3,11 @@
 Prefer `someBool.toggle()` over `someBool = !someBool`.
 
 * **Identifier:** toggle_bool
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.2.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

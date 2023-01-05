@@ -3,18 +3,18 @@
 Modifier order should be consistent.
 
 * **Identifier:** modifier_order
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.1.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, preferred_modifier_order: [override, acl, setterACL, dynamic, mutators, lazy, final, required, convenience, typeMethods, owned]
 
 ## Non Triggering Examples
 
 ```swift
 public class Foo {
-   public convenience required init() {}
+   public required convenience init() {}
 }
 ```
 

@@ -3,11 +3,11 @@
 Delegates should be weak to avoid reference cycles.
 
 * **Identifier:** weak_delegate
-* **Enabled by default:** Enabled
-* **Supports autocorrection:** Yes
+* **Enabled by default:** No
+* **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -79,8 +79,38 @@ class Foo {
 ```
 
 ```swift
+class Foo {
+    var computedDelegate: ComputedDelegate {
+        get {
+            return bar()
+        }
+   }
+```
+
+```swift
 struct Foo {
  @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate 
+}
+```
+
+```swift
+struct Foo {
+ @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate 
+}
+```
+
+```swift
+struct Foo {
+ @WKExtensionDelegateAdaptor(ExtensionDelegate.self) var extensionDelegate 
+}
+```
+
+```swift
+class Foo {
+    func makeDelegate() -> SomeDelegate {
+        let delegate = SomeDelegate()
+        return delegate
+    }
 }
 ```
 
@@ -98,4 +128,13 @@ class Foo {
   ↓var scrollDelegate: ScrollDelegate?
 }
 
+```
+
+```swift
+class Foo {
+    ↓var delegate: SomeProtocol? {
+        didSet {
+            print("Updated delegate")
+        }
+   }
 ```

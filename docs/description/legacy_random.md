@@ -3,11 +3,11 @@
 Prefer using `type.random(in:)` over legacy functions.
 
 * **Identifier:** legacy_random
-* **Enabled by default:** Disabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.2.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

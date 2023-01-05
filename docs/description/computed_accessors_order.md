@@ -3,11 +3,11 @@
 Getter and setters in computed properties and subscripts should be in a consistent order.
 
 * **Identifier:** computed_accessors_order
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.1.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, order: get_set
 
 ## Non Triggering Examples

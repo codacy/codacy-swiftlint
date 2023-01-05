@@ -3,11 +3,11 @@
 Prefer Nimble operator overloads over free matcher functions.
 
 * **Identifier:** nimble_operator
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -52,6 +52,14 @@ expect(10) == 10
 
 ```swift
 expect(success) == true
+```
+
+```swift
+expect(value) == nil
+```
+
+```swift
+expect(value) != nil
 ```
 
 ```swift
@@ -125,6 +133,16 @@ foo.method {
 
 ```swift
 ↓expect(success).to(beFalse())
+
+```
+
+```swift
+↓expect(value).to(beNil())
+
+```
+
+```swift
+↓expect(value).toNot(beNil())
 
 ```
 

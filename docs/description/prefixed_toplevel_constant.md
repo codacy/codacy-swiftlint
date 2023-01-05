@@ -3,11 +3,11 @@
 Top-level constants should be prefixed by `k`.
 
 * **Identifier:** prefixed_toplevel_constant
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, only_private: false
 
 ## Non Triggering Examples
@@ -79,6 +79,30 @@ let kFoo = {
 }()
 ```
 
+```swift
+var foo: String {
+    let bar = ""
+    return bar
+}
+```
+
+```swift
+if condition() {
+    let result = somethingElse()
+    print(result)
+    exit()
+}
+```
+
+```swift
+[1, 2, 3, 1000, 4000].forEach { number in
+    let isSmall = number < 10
+    if isSmall {
+        print("\(number) is a small number")
+    }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -99,10 +123,6 @@ let ↓Foo = true
 
 ```swift
 let ↓foo = 2, ↓bar = true
-```
-
-```swift
-var foo = true, let ↓Foo = true
 ```
 
 ```swift

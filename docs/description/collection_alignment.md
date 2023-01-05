@@ -3,11 +3,11 @@
 All elements in a collection literal should be vertically aligned
 
 * **Identifier:** collection_alignment
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, align_colons: false
 
 ## Non Triggering Examples

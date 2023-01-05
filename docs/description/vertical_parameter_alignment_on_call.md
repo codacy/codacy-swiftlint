@@ -3,11 +3,11 @@
 Function parameters should be aligned vertically if they're in multiple lines in a method call.
 
 * **Identifier:** vertical_parameter_alignment_on_call
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

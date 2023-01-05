@@ -3,11 +3,11 @@
 Unused parameter in a closure should be replaced with _.
 
 * **Identifier:** unused_closure_parameter
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.2.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -109,6 +109,30 @@ let failure: Failure = { task, error in
 }
 ```
 
+```swift
+List($names) { $name in
+    Text(name)
+}
+```
+
+```swift
+List($names) { $name in
+    TextField($name)
+}
+```
+
+```swift
+_ = ["a"].filter { `class` in `class`.hasPrefix("a") }
+```
+
+```swift
+let closure: (Int) -> Void = { `foo` in _ = foo }
+```
+
+```swift
+let closure: (Int) -> Void = { foo in _ = `foo` }
+```
+
 ## Triggering Examples
 
 ```swift
@@ -181,4 +205,15 @@ viewModel?.profileImage.didSet(weak: self) { (↓self, profileImage) in
 let failure: Failure = { ↓task, error in
     observer.sendFailed(error)
 }
+```
+
+```swift
+List($names) { ↓$name in
+    Text("Foo")
+}
+```
+
+```swift
+let class1 = "a"
+_ = ["a"].filter { ↓`class` in `class1`.hasPrefix("a") }
 ```

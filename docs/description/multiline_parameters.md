@@ -3,11 +3,11 @@
 Functions and methods parameters should be either on the same line, or one per line.
 
 * **Identifier:** multiline_parameters
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, allowsSingleLine: true
 
 ## Non Triggering Examples
@@ -325,6 +325,14 @@ class Foo {
 ```
 
 ```swift
+class Foo {
+   init(param1: Int,
+        param2: Bool,
+        param3: @escaping ((Int) -> Void)? = { _ in }) { }
+}
+```
+
+```swift
 func foo() { }
 ```
 
@@ -504,6 +512,13 @@ class Foo {
 class Foo {
    class func ↓foo(param1: Int,
                   param2: Bool, param3: @escaping (Int) -> Void = { (x: Int) in }) { }
+}
+```
+
+```swift
+class Foo {
+  ↓init(param1: Int, param2: Bool,
+        param3: @escaping ((Int) -> Void)? = { _ in }) { }
 }
 ```
 

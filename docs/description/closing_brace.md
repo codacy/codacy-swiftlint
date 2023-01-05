@@ -3,11 +3,11 @@
 Closing brace with closing parenthesis should not have any whitespaces in the middle.
 
 * **Identifier:** closing_brace
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

@@ -3,11 +3,11 @@
 Arguments can be omitted when matching enums with associated values if they are not used.
 
 * **Identifier:** empty_enum_arguments
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -70,6 +70,29 @@ guard case .bar = foo else {
 }
 ```
 
+```swift
+if foo == .bar() {}
+```
+
+```swift
+guard foo == .bar() else { return }
+```
+
+```swift
+if case .appStore = self.appInstaller, !UIDevice.isSimulator() {
+  viewController.present(self, animated: false)
+} else {
+  UIApplication.shared.open(self.appInstaller.url)
+}
+```
+
+```swift
+let updatedUserNotificationSettings = deepLink.filter { nav in
+  guard case .settings(.notifications(_, nil)) = nav else { return false }
+  return true
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -112,5 +135,30 @@ if case .bar↓(_) = foo {
 
 ```swift
 guard case .bar↓(_) = foo else {
+}
+```
+
+```swift
+if case .bar↓() = foo {
+}
+```
+
+```swift
+guard case .bar↓() = foo else {
+}
+```
+
+```swift
+if case .appStore↓(_) = self.appInstaller, !UIDevice.isSimulator() {
+  viewController.present(self, animated: false)
+} else {
+  UIApplication.shared.open(self.appInstaller.url)
+}
+```
+
+```swift
+let updatedUserNotificationSettings = deepLink.filter { nav in
+  guard case .settings(.notifications↓(_, _)) = nav else { return false }
+  return true
 }
 ```

@@ -3,11 +3,11 @@
 Complexity of function bodies should be limited.
 
 * **Identifier:** cyclomatic_complexity
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning: 10, error: 20, ignores_case_statements: false
 
 ## Non Triggering Examples

@@ -3,11 +3,11 @@
 Conditional statements should always return on the next line
 
 * **Identifier:** conditional_returns_on_newline
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, if_only: false
 
 ## Non Triggering Examples
@@ -47,7 +47,8 @@ if true { // return }
 ```
 
 ```swift
-/*if true { */ return }
+guard something
+else { return }
 ```
 
 ## Triggering Examples
@@ -70,4 +71,8 @@ if true { // return }
 
 ```swift
 ↓if true { return "YES" } else { return "NO" }
+```
+
+```swift
+↓guard condition else { XCTFail(); return }
 ```

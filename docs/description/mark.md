@@ -3,11 +3,11 @@
 MARK comment should be in valid format. e.g. '// MARK: ...' or '// MARK: - ...'
 
 * **Identifier:** mark
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -37,6 +37,16 @@ MARK comment should be in valid format. e.g. '// MARK: ...' or '// MARK: - ...'
 
 ```swift
 // BOOKMARKS
+```
+
+```swift
+/*
+func test1() {
+}
+//MARK: mark
+func test2() {
+}
+*/
 ```
 
 ## Triggering Examples

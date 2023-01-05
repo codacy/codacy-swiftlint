@@ -3,11 +3,11 @@
 Enums should be explicitly assigned their raw values.
 
 * **Identifier:** explicit_enum_raw_value
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -77,5 +77,13 @@ enum Numbers: String {
 ```swift
 enum Numbers: Decimal {
   case ↓one, ↓two
+}
+```
+
+```swift
+enum Outer {
+    enum Numbers: Decimal {
+      case ↓one, ↓two
+    }
 }
 ```

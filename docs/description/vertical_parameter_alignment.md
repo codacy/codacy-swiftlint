@@ -3,11 +3,11 @@
 Function parameters should be aligned vertically if they're in multiple lines in a declaration.
 
 * **Identifier:** vertical_parameter_alignment
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -72,6 +72,19 @@ func foo(data: Data,
          @ViewBuilder content: @escaping (Data.Element.IdentifiedValue) -> Content) {}
 ```
 
+```swift
+class A {
+    init(bar: Int)
+}
+```
+
+```swift
+class A {
+    init(foo: Int,
+         bar: String)
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -93,4 +106,11 @@ func validateFunction(_ file: SwiftLintFile,
 ```swift
 func foo(data: Data,
             ↓@ViewBuilder content: @escaping (Data.Element.IdentifiedValue) -> Content) {}
+```
+
+```swift
+class A {
+    init(data: Data,
+                ↓@ViewBuilder content: @escaping (Data.Element.IdentifiedValue) -> Content) {}
+}
 ```

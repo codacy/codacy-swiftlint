@@ -3,11 +3,11 @@
 Initializing an optional variable with nil is redundant.
 
 * **Identifier:** redundant_optional_initialization
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -97,6 +97,12 @@ var myVar: Int?↓=nil
 ```swift
 var myVar: Optional<Int>↓=nil
 )
+```
+
+```swift
+var myVar: String?↓ = nil {
+  didSet { print("didSet") }
+}
 ```
 
 ```swift

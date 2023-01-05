@@ -3,12 +3,12 @@
 Specifies how the types within a file should be ordered.
 
 * **Identifier:** file_types_order
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning, order: [[SwiftLintFramework.FileType.supportingType], [SwiftLintFramework.FileType.mainType], [SwiftLintFramework.FileType.extension], [SwiftLintFramework.FileType.previewProvider]]
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** warning, order: [[SwiftLintFramework.FileType.supportingType], [SwiftLintFramework.FileType.mainType], [SwiftLintFramework.FileType.extension], [SwiftLintFramework.FileType.previewProvider], [SwiftLintFramework.FileType.libraryContentProvider]]
 
 ## Non Triggering Examples
 
@@ -128,14 +128,23 @@ extension Bar {
 ```
 
 ```swift
+// Main Type
 struct ContentView: View {
     var body: some View {
         Text("Hello, World!")
     }
 }
 
+// Preview Provider
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View { ContentView() }
+}
+
+// Library Content Provider
+struct ContentView_LibraryContent: LibraryContentProvider {
+    var views: [LibraryItem] {
+        LibraryItem(ContentView())
+    }
 }
 ```
 
@@ -200,8 +209,30 @@ extension TestViewController: UITableViewDataSource {
 
 ```swift
 // Preview Provider
-↓struct ContentView_Previews: PreviewProvider {}
+↓struct ContentView_Previews: PreviewProvider {
+    static var previews: some View { ContentView() }
+}
 
 // Main Type
-struct ContentView: View {}
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, World!")
+    }
+}
+```
+
+```swift
+// Library Content Provider
+↓struct ContentView_LibraryContent: LibraryContentProvider {
+    var views: [LibraryItem] {
+        LibraryItem(ContentView())
+    }
+}
+
+// Main Type
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, World!")
+    }
+}
 ```

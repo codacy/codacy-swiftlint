@@ -3,11 +3,11 @@
 Specifies the order of subtypes, properties, methods & more within a type.
 
 * **Identifier:** type_contents_order
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, order: [[SwiftLintFramework.TypeContent.case], [SwiftLintFramework.TypeContent.typeAlias, SwiftLintFramework.TypeContent.associatedType], [SwiftLintFramework.TypeContent.subtype], [SwiftLintFramework.TypeContent.typeProperty], [SwiftLintFramework.TypeContent.instanceProperty], [SwiftLintFramework.TypeContent.ibInspectable], [SwiftLintFramework.TypeContent.ibOutlet], [SwiftLintFramework.TypeContent.initializer], [SwiftLintFramework.TypeContent.typeMethod], [SwiftLintFramework.TypeContent.viewLifeCycleMethod], [SwiftLintFramework.TypeContent.ibAction], [SwiftLintFramework.TypeContent.otherMethod], [SwiftLintFramework.TypeContent.subscript], [SwiftLintFramework.TypeContent.deinitializer]]
 
 ## Non Triggering Examples
@@ -68,6 +68,13 @@ class TestViewController: UIViewController {
         view1.setNeedsLayout()
         view1.layoutIfNeeded()
         hasLayoutedView1 = true
+    }
+
+    override func willMove(toParent parent: UIViewController?) {
+        super.willMove(toParent: parent)
+        if parent == nil {
+            viewModel.willMoveToParent()
+        }
     }
 
     override func viewDidLayoutSubviews() {

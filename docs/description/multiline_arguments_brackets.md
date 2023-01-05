@@ -3,11 +3,11 @@
 Multiline arguments should have their surrounding brackets in a new line.
 
 * **Identifier:** multiline_arguments_brackets
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -78,6 +78,40 @@ SomeType(a: [
 ], b: [1, 2])
 ```
 
+```swift
+SomeType(
+  a: 1
+) { print("completion") }
+```
+
+```swift
+SomeType(
+  a: 1
+) {
+  print("completion")
+}
+```
+
+```swift
+SomeType(
+  a: .init() { print("completion") }
+)
+```
+
+```swift
+SomeType(
+  a: .init() {
+    print("completion")
+  }
+)
+```
+
+```swift
+SomeType(
+  a: 1
+) {} onError: {}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -89,6 +123,12 @@ foo(↓param1: "Param1", param2: "Param2",
 ```swift
 foo(
     param1: "Param1",
+    param2: "Param2",
+    param3: "Param3"↓)
+```
+
+```swift
+foo(↓param1: "Param1",
     param2: "Param2",
     param3: "Param3"↓)
 ```
@@ -114,4 +154,16 @@ SomeOtherType(↓a: [
         1, 2, 3
     ],
     b: "two"↓)
+```
+
+```swift
+SomeOtherType(
+  a: 1↓) {}
+```
+
+```swift
+SomeOtherType(
+  a: 1↓) {
+  print("completion")
+}
 ```

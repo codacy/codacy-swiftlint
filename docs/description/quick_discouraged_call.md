@@ -3,11 +3,11 @@
 Discouraged call inside 'describe' and/or 'context' block.
 
 * **Identifier:** quick_discouraged_call
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -301,6 +301,19 @@ class TotoTests: QuickSpec {
 
 ```swift
 class TotoTests: QuickSpec {
+   override func spec() {
+       xcontext("foo") {
+           let foo = ↓Foo()
+       }
+       fcontext("foo") {
+           let foo = ↓Foo()
+       }
+   }
+}
+```
+
+```swift
+class TotoTests: QuickSpecSubclass {
    override func spec() {
        xcontext("foo") {
            let foo = ↓Foo()

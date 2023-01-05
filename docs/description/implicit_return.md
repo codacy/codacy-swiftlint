@@ -3,12 +3,12 @@
 Prefer implicit returns in closures, functions and getters.
 
 * **Identifier:** implicit_return
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning, included: [getter, function, closure]
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** warning, included: [closure, function, getter]
 
 ## Non Triggering Examples
 
@@ -45,6 +45,16 @@ func foo() -> Int {
 ```swift
 class Foo {
     func foo() -> Int { 0 }
+}
+```
+
+```swift
+func fetch() -> Data? {
+    do {
+        return try loadData()
+    } catch {
+        return nil
+    }
 }
 ```
 

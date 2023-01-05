@@ -3,11 +3,11 @@
 Opening braces should be preceded by a single space and on the same line as the declaration.
 
 * **Identifier:** opening_brace
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, allowMultilineFunc: false
 
 ## Non Triggering Examples

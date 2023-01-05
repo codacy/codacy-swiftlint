@@ -3,11 +3,11 @@
 Shorthand syntactic sugar should be used, i.e. [Int] instead of Array<Int>.
 
 * **Identifier:** syntactic_sugar
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -61,11 +61,31 @@ unsafeBitCast(nonOptionalT, to: Optional<T>.self)
 ```
 
 ```swift
+unsafeBitCast(someType, to: Swift.Array<T>.self)
+```
+
+```swift
+IndexingIterator<Array<Dictionary<String, AnyObject>>>.self
+```
+
+```swift
+let y = Optional<String>.Type
+```
+
+```swift
 type is Optional<String>.Type
 ```
 
 ```swift
 let x: Foo.Optional<String>
+```
+
+```swift
+let x = case Optional<Any>.none = obj
+```
+
+```swift
+let a = Swift.Optional<String?>.none
 ```
 
 ## Triggering Examples
@@ -83,7 +103,7 @@ let x: ↓Optional<Int>
 ```
 
 ```swift
-let x: ↓ImplicitlyUnwrappedOptional<Int>
+let x: ↓Swift.Array<String>
 ```
 
 ```swift
@@ -91,11 +111,43 @@ func x(a: ↓Array<Int>, b: Int) -> [Int: Any]
 ```
 
 ```swift
+func x(a: ↓Swift.Array<Int>, b: Int) -> [Int: Any]
+```
+
+```swift
 func x(a: [Int], b: Int) -> ↓Dictionary<Int, String>
 ```
 
 ```swift
-func x(a: ↓Array<Int>, b: Int) -> ↓Dictionary<Int, String>
+let x = y as? ↓Array<[String: Any]>
+```
+
+```swift
+let x = Box<Array<T>>()
+```
+
+```swift
+func x() -> Box<↓Array<T>>
+```
+
+```swift
+func x() -> ↓Dictionary<String, Any>?
+```
+
+```swift
+typealias Document = ↓Dictionary<String, T?>
+```
+
+```swift
+func x(_ y: inout ↓Array<T>)
+```
+
+```swift
+let x:↓Dictionary<String, ↓Dictionary<Int, Int>>
+```
+
+```swift
+func x() -> Any { return ↓Dictionary<Int, String>()}
 ```
 
 ```swift
@@ -103,5 +155,15 @@ let x = ↓Array<String>.array(of: object)
 ```
 
 ```swift
-let x: ↓Swift.Optional<String>
+let x = ↓Swift.Array<String>.array(of: object)
+```
+
+```swift
+@_specialize(where S == ↓Array<Character>)
+public init<S: Sequence>(_ elements: S)
+```
+
+```swift
+let dict: [String: Any] = [:]
+_ = dict["key"] as? ↓Optional<String?> ?? Optional<String?>.none
 ```

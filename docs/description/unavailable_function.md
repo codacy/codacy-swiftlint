@@ -3,11 +3,11 @@
 Unimplemented functions should be marked as unavailable.
 
 * **Identifier:** unavailable_function
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.1.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
 ```
 
 ```swift
-func resetOnboardingStateAndCrash() {
+↓func resetOnboardingStateAndCrash() {
     resetUserDefaults()
     // Crash the app to re-start the onboarding flow.
     fatalError("Onboarding re-start crash.")

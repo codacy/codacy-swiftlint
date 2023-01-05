@@ -3,11 +3,11 @@
 Force unwrapping should be avoided.
 
 * **Identifier:** force_unwrapping
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -107,11 +107,17 @@ let url = NSURL(string: "http://www.google.com")↓!
 ```
 
 ```swift
-let dict = ["Boooo": "👻"]func bla() -> String { return dict["Boooo"]↓! }
+let dict = ["Boooo": "👻"]
+func bla() -> String {
+    return dict["Boooo"]↓!
+}
 ```
 
 ```swift
-let dict = ["Boooo": "👻"]func bla() -> String { return dict["Boooo"]↓!.contains("B") }
+let dict = ["Boooo": "👻"]
+func bla() -> String {
+    return dict["Boooo"]↓!.contains("B")
+}
 ```
 
 ```swift
@@ -123,11 +129,15 @@ dict["abc"]↓!.bar("B")
 ```
 
 ```swift
-if dict["a"]↓!!!! {
+if dict["a"]↓!↓!↓!↓! {}
 ```
 
 ```swift
 var foo: [Bool]! = dict["abc"]↓!
+```
+
+```swift
+realm.objects(SwiftUTF8Object.self).filter("%K == %@", "柱нǢкƱаم👍", utf8TestString).first↓!
 ```
 
 ```swift
@@ -142,4 +152,12 @@ open var computed: String { return foo.bar↓! }
 
 ```swift
 return self↓!
+```
+
+```swift
+[1, 3, 5, 6].first { $0.isMultiple(of: 2) }↓!
+```
+
+```swift
+map["a"]↓!↓!
 ```

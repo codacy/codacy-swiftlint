@@ -3,11 +3,11 @@
 Top-level declarations should specify Access Control Level keywords explicitly.
 
 * **Identifier:** explicit_top_level_acl
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -58,27 +58,27 @@ extension A {}
 ## Triggering Examples
 
 ```swift
-enum A {}
+↓enum A {}
 
 ```
 
 ```swift
-final class B {}
+final ↓class B {}
 
 ```
 
 ```swift
-struct C {}
+↓struct C {}
 
 ```
 
 ```swift
-func a() {}
+↓func a() {}
 
 ```
 
 ```swift
 internal let a = 0
-func b() {}
+↓func b() {}
 
 ```

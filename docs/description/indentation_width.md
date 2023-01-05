@@ -3,12 +3,12 @@
 Indent code using either one tab or the configured amount of spaces, unindent to match previous indentations. Don't indent the first line.
 
 * **Identifier:** indentation_width
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** severity: warning, indentation_width: 4include_comments: true
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** severity: warning, indentation_width: 4, include_comments: true
 
 ## Non Triggering Examples
 
@@ -34,7 +34,7 @@ firstLine
 firstLine
 	secondLine
 		thirdLine
-//test
+	//test
 		fourthLine
 ```
 
@@ -48,7 +48,7 @@ fourthLine
 ## Triggering Examples
 
 ```swift
-    firstLine
+↓    firstLine
 ```
 
 ```swift
@@ -60,12 +60,12 @@ firstLine
 firstLine
 	secondLine
 
-			fourthLine
+↓			fourthLine
 ```
 
 ```swift
 firstLine
     secondLine
         thirdLine
- fourthLine
+↓ fourthLine
 ```

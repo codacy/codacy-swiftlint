@@ -3,11 +3,11 @@
 Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function.
 
 * **Identifier:** redundant_discardable_let
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -34,6 +34,10 @@ let _: ExplicitType = foo()
 ```swift
 while let _ = SplashStyle(rawValue: maxValue) { maxValue += 1 }
 
+```
+
+```swift
+async let _ = await foo()
 ```
 
 ## Triggering Examples

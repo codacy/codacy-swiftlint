@@ -3,11 +3,11 @@
 Avoid using unneeded break statements.
 
 * **Identifier:** unneeded_break_in_switch
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -44,6 +44,20 @@ case .bar:
 switch foo {
 case .bar:
     something()
+}
+```
+
+```swift
+let items = [Int]()
+for item in items {
+    if bar() {
+        do {
+            try foo()
+        } catch {
+            bar()
+            break
+        }
+    }
 }
 ```
 
