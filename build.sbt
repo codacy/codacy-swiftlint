@@ -28,3 +28,4 @@ lazy val `doc-generator` = project
       "com.lihaoyi" %% "os-lib" % "0.9.0"
     )
   )
+  .enablePlugins(JavaAppPackaging)
