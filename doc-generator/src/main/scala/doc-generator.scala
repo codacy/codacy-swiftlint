@@ -25,7 +25,9 @@ object Main extends App {
 
   val version = os.proc(baseCommand :+ "version").call().out.text().trim
 
-  val mdFiles = os.list(tempDir / "rule_docs").filter(_.last != "Rule Directory.md")
+  val excludeList = Set("Rule Directory.md", "Swift Syntax Dashboard.md")
+
+  val mdFiles = os.list(tempDir / "rule_docs").filterNot(file => excludeList.contains(file.last))
 
   val docsDirectory = os.pwd / "docs"
   val descriptionDirectory = docsDirectory / "description"

@@ -1,9 +1,4 @@
 [ {
-  "patternId" : "Swift Syntax Dashboard",
-  "title" : "Swift Syntax Dashboard",
-  "description" : "Efforts are actively under way to migrate most rules off SourceKit to use SwiftSyntax instead.",
-  "parameters" : [ ]
-}, {
   "patternId" : "accessibility_label_for_image",
   "title" : "Accessibility Label for Image",
   "description" : "All Images that provide context should have an accessibility label. Purely decorative images can be hidden from accessibility.",
