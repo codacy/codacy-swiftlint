@@ -26,8 +26,11 @@ workflows:
                 name: Build Docker image for doc-generator
                 command: docker build -t $CIRCLE_PROJECT_REPONAME:latest .
             - run:
+                name: Build Documentation generator
+                command: sbt doc-generator/stage
+            - run:
                 name: Run Documentation generator
-                command: SBT_NATIVE_CLIENT=false sudo sbt doc-generator/run
+                command: doc-generator/target/universal/stage/bin/doc-generator
             - run:
                 name: Build release Docker image
                 command: docker build -t $CIRCLE_PROJECT_REPONAME:latest .
