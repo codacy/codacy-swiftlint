@@ -3,33 +3,21 @@ import com.codacy.plugins.api.results._
 import play.api.libs.json.Json
 
 object Main extends App {
-  val tempDir = os.temp.dir(dir = os.pwd / "target")
+  val tempDir = os.temp.dir()
 
-  val workdir = "/workdir"
+  os.proc("swiftlint", "generate-docs").call(cwd = tempDir)
 
-  val baseCommand = Seq(
-    "docker",
-    "run",
-    s"--volume=$tempDir:$workdir",
-    s"-w=$workdir",
-    "norionomura/swiftlint:0.50.3_swift-5.7.0",
-    "swiftlint"
-  )
-
-  os.proc(baseCommand :+ "generate-docs").call()
-// Hack: docker in CircleCI makes files only available to the root user
-  os.proc("sudo", "chmod", "-R", "777", tempDir).call()
   println("Generated docs using swiftlint generate-docs")
 
-  val rulesOutput = os.proc(baseCommand :+ "rules").call().out.lines().map(_.split('|').map(_.trim).toList.tail).tail
+  val rulesOutput = os.proc("swiftlint", "rules").call().out.lines().map(_.split('|').map(_.trim).toList.tail).tail
 
-  val version = os.proc(baseCommand :+ "version").call().out.text().trim
+  val version = os.proc("swiftlint", "version").call().out.text().trim
 
   val excludeList = Set("Rule Directory.md", "Swift Syntax Dashboard.md")
 
   val mdFiles = os.list(tempDir / "rule_docs").filterNot(file => excludeList.contains(file.last))
 
-  val docsDirectory = os.pwd / "docs"
+  val docsDirectory = os.root / "docs"
   val descriptionDirectory = docsDirectory / "description"
 
   val patternDescriptions = mdFiles.map { file =>
@@ -93,7 +81,7 @@ object Main extends App {
   val specification =
     Tool.Specification(Tool.Name("swiftlint"), Some(Tool.Version(version)), patternSpecifications.toSet)
 
-  os.write.over(os.pwd / "docs" / "patterns.json", Json.prettyPrint(Json.toJson(specification)) + "\n")
+  os.write.over(docsDirectory / "patterns.json", Json.prettyPrint(Json.toJson(specification)) + "\n")
   os.remove.all(descriptionDirectory)
   mdFiles.foreach(os.copy.into(_, descriptionDirectory, replaceExisting = true, createFolders = true))
   os.write.over(descriptionDirectory / "description.json", Json.prettyPrint(Json.toJson(patternDescriptions)) + "\n")

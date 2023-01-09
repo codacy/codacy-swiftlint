@@ -22,10 +22,9 @@ workflows:
             - run:
                 name: Build Documentation generator
                 command: sbt doc-generator/stage
-            # Hangs when run in CI
-            # - run:
-            #     name: Run Documentation generator
-            #     command: doc-generator/target/universal/stage/bin/doc-generator
+            - run:
+                name: Build DEV image (runs doc-generator)
+                command: docker build -t codacy-swiftlint-dev -f Dockerfile.dev .
             - run:
                 name: Build Graalvm native-image
                 command: sbt graalvm-native-image:packageBin

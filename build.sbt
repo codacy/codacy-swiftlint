@@ -7,7 +7,7 @@ ThisBuild / scalaVersion := "2.13.10"
 enablePlugins(GraalVMNativeImagePlugin)
 
 libraryDependencies ++= Seq(
-  "com.codacy" %% "codacy-engine-scala-seed" % "5.0.1",
+  "com.codacy" %% "codacy-engine-scala-seed" % "6.0.1",
   "org.scalameta" %% "svm-subs" % "20.2.0"
 )
 
