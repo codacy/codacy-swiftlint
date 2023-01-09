@@ -4,15 +4,13 @@ name := "codacy-swiftlint"
 
 ThisBuild / scalaVersion := "2.13.10"
 
-enablePlugins(GraalVMNativeImagePlugin)
+enablePlugins(NativeImagePlugin)
 
-libraryDependencies ++= Seq(
-  "com.codacy" %% "codacy-engine-scala-seed" % "6.0.1",
-  "org.scalameta" %% "svm-subs" % "20.2.0"
-)
+libraryDependencies ++= Seq("com.codacy" %% "codacy-engine-scala-seed" % "6.0.1")
 
-graalVMNativeImageGraalVersion := Some("21.0.0")
-graalVMNativeImageOptions ++= Seq(
+Compile / mainClass := Some("codacy.Engine")
+
+nativeImageOptions ++= Seq(
   "-O1",
   "-H:+ReportExceptionStackTraces",
   "--no-fallback",
