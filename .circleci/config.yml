@@ -20,6 +20,9 @@ workflows:
                 name: Check Scalafmt on Sbt sources
                 command: sbt scalafmtSbtCheck
             - run:
+                name: Build DEV java tool
+                command: sbt stage
+            - run:
                 name: Build Documentation generator
                 command: sbt doc-generator/stage
             - run:
