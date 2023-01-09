@@ -10,7 +10,7 @@ workflows:
     jobs:
       - codacy/checkout_and_version:
           write_sbt_version: true
-      - codacy/sbt:
+      - codacy/sbt_docker:
           name: publish_docker_local
           steps:
             - run:
