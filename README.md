@@ -10,10 +10,18 @@ See the [codacy-engine-scala-seed](https://github.com/codacy/codacy-engine-scala
 
 ## Usage
 
-You can create the docker by doing:
+You need to create the DEV image:
 
 ```bash
-sbt graalvm-native-image:packageBin
+sbt stage
+docker build -t codacy-swiftlint-dev -f Dockerfile.dev .
+```
+
+then you can create the docker by doing:
+**note**  The works only on Linux for now, for local test use the DEV image
+
+```bash
+sbt nativeImage
 docker build -t codacy-swiftlint .
 ```
 
@@ -24,7 +32,12 @@ docker run -it -v $srcDir:/src  <DOCKER_NAME>:<DOCKER_VERSION>
 ```
 
 ## Generate docs
-Run `sbt doc-generator/run`
+Build the DEV image and then run:
+```
+CONTAINER=$(docker run -d --entrypoint sh -it --rm codacy-swiftlint-dev)
+docker cp $CONTAINER:/docs .
+docker kill $CONTAINER
+```
 
 ## Test
 
@@ -32,7 +45,7 @@ For a faster development loop you can create a Docker image based on the JVM ins
 
 ```bash
 sbt universal:stage
-docker build -t codacy-swiftlint -f Dockerfile.dev .
+docker build -t codacy-swiftlint-dev -f Dockerfile.dev .
 ```
 
 We use the [codacy-plugins-test](https://github.com/codacy/codacy-plugins-test) to test our external tools integration.
