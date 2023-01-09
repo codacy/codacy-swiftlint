@@ -6,6 +6,8 @@ ThisBuild / scalaVersion := "2.13.10"
 
 enablePlugins(NativeImagePlugin)
 
+enablePlugins(JavaAppPackaging)
+
 libraryDependencies ++= Seq("com.codacy" %% "codacy-engine-scala-seed" % "6.0.1")
 
 Compile / mainClass := Some("codacy.Engine")
