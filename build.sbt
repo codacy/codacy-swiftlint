@@ -12,14 +12,7 @@ libraryDependencies ++= Seq("com.codacy" %% "codacy-engine-scala-seed" % "6.0.1"
 
 Compile / mainClass := Some("codacy.Engine")
 
-nativeImageOptions ++= Seq(
-  "-O1",
-  "-H:+ReportExceptionStackTraces",
-  "--no-fallback",
-  "--no-server",
-  "--report-unsupported-elements-at-runtime",
-  "--static"
-)
+nativeImageOptions ++= Seq("-O1", "-H:+ReportExceptionStackTraces", "--no-fallback", "--no-server")
 
 lazy val `doc-generator` = project
   .settings(
