@@ -3,11 +3,11 @@
 Lines should not span too many characters.
 
 * **Identifier:** line_length
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning: 120, error: 200, ignores urls: false, ignores function declarations: false, ignores comments: false, ignores interpolated strings: false
 
 ## Non Triggering Examples

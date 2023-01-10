@@ -3,11 +3,11 @@
 IBOutlets should be private to avoid leaking UIKit to higher layers.
 
 * **Identifier:** private_outlet
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, allow_private_set: false
 
 ## Non Triggering Examples
@@ -47,6 +47,48 @@ class Foo {
 
 ```
 
+```swift
+class Foo {
+  @IBOutlet fileprivate weak var label: UILabel?
+}
+
+```
+
+```swift
+class Foo {
+  @IBOutlet private(set) var label: UILabel?
+}
+
+```
+
+```swift
+class Foo {
+  @IBOutlet private(set) var label: UILabel!
+}
+
+```
+
+```swift
+class Foo {
+  @IBOutlet weak private(set) var label: UILabel?
+}
+
+```
+
+```swift
+class Foo {
+  @IBOutlet private(set) weak var label: UILabel?
+}
+
+```
+
+```swift
+class Foo {
+  @IBOutlet fileprivate(set) weak var label: UILabel?
+}
+
+```
+
 ## Triggering Examples
 
 ```swift
@@ -59,6 +101,20 @@ class Foo {
 ```swift
 class Foo {
   @IBOutlet ↓var label: UILabel!
+}
+
+```
+
+```swift
+class Foo {
+  @IBOutlet private(set) ↓var label: UILabel?
+}
+
+```
+
+```swift
+class Foo {
+  @IBOutlet fileprivate(set) ↓var label: UILabel?
 }
 
 ```

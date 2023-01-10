@@ -2,8 +2,9 @@
 **
 
 # Allow files and directories
-!/target/graalvm-native-image/codacy-swiftlint
+!target/native-image/codacy-swiftlint
 !/target/universal/stage/
+!/doc-generator/target/universal/stage/
 !/docs
 
 # Ignore unnecessary files inside allowed directories

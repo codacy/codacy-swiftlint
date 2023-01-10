@@ -3,11 +3,11 @@
 Prefer using `.allSatisfy()` or `.contains()` over `reduce(true)` or `reduce(false)`
 
 * **Identifier:** reduce_boolean
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** performance
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.2.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

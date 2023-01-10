@@ -3,11 +3,11 @@
 All imported modules should be required to make the file compile.
 
 * **Identifier:** unused_import
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** lint
 * **Analyzer rule:** Yes
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** severity: warning, require_explicit_imports: false, allowed_transitive_imports: [], always_keep_imports: []
 
 ## Non Triggering Examples
@@ -74,5 +74,11 @@ class A {}
 ```swift
 ↓import Foundation
 import UnknownModule
+func foo(error: Swift.Error) {}
+```
+
+```swift
+↓import Swift
+↓import SwiftShims
 func foo(error: Swift.Error) {}
 ```

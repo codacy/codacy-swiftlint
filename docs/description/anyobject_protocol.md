@@ -3,11 +3,11 @@
 Prefer using `AnyObject` over `class` for class-only protocols.
 
 * **Identifier:** anyobject_protocol
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.1.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

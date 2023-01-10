@@ -3,11 +3,11 @@
 Arguments should be either on the same line, or one per line.
 
 * **Identifier:** multiline_arguments
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, first_argument_location: any_line, only_enforce_after_first_closure_on_first_line: false
 
 ## Non Triggering Examples

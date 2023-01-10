@@ -3,11 +3,11 @@
 Struct extension properties and methods are preferred over legacy functions
 
 * **Identifier:** legacy_nsgeometry_functions
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -65,7 +65,7 @@ rect1.union(rect2)
 ```
 
 ```swift
-rect1.intersect(rect2)
+rect1.intersection(rect2)
 ```
 
 ```swift

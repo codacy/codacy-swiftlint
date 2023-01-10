@@ -3,11 +3,11 @@
 Implicitly unwrapped optionals should be avoided when possible.
 
 * **Identifier:** implicitly_unwrapped_optional
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, mode: allExceptIBOutlets
 
 ## Non Triggering Examples
@@ -68,10 +68,6 @@ let int: Int! = nil
 
 ```swift
 var int: Int! = 42
-```
-
-```swift
-let int: ImplicitlyUnwrappedOptional<Int>
 ```
 
 ```swift

@@ -3,11 +3,11 @@
 Objective-C attribute (@objc) is redundant in declaration.
 
 * **Identifier:** redundant_objc_attribute
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.1.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -111,6 +111,13 @@ class Foo {
 @objcMembers
 class Foo {
     @objc class Bar {}
+}
+```
+
+```swift
+extension BlockEditorSettings {
+    @objc(addElementsObject:)
+    @NSManaged public func addToElements(_ value: BlockEditorSettingElement)
 }
 ```
 

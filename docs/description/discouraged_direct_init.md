@@ -3,12 +3,12 @@
 Discouraged direct initialization of types that can be harmful.
 
 * **Identifier:** discouraged_direct_init
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning, types: ["Bundle", "Bundle.init", "UIDevice", "UIDevice.init"]
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** warning, types: ["Bundle", "Bundle.init", "NSError", "NSError.init", "UIDevice", "UIDevice.init"]
 
 ## Non Triggering Examples
 
@@ -36,6 +36,18 @@ let foo = Bundle.init(path: "bar")
 let foo = Bundle.init(identifier: "bar")
 ```
 
+```swift
+let foo = NSError(domain: "bar", code: 0)
+```
+
+```swift
+let foo = NSError.init(domain: "bar", code: 0)
+```
+
+```swift
+func testNSError()
+```
+
 ## Triggering Examples
 
 ```swift
@@ -55,7 +67,11 @@ let foo = ↓Bundle()
 ```
 
 ```swift
-let foo = bar(bundle: ↓Bundle(), device: ↓UIDevice())
+let foo = ↓NSError()
+```
+
+```swift
+let foo = bar(bundle: ↓Bundle(), device: ↓UIDevice(), error: ↓NSError())
 ```
 
 ```swift
@@ -67,6 +83,10 @@ let foo = bar(bundle: ↓Bundle(), device: ↓UIDevice())
 ```
 
 ```swift
+↓NSError.init()
+```
+
+```swift
 let foo = ↓UIDevice.init()
 ```
 
@@ -75,5 +95,5 @@ let foo = ↓Bundle.init()
 ```
 
 ```swift
-let foo = bar(bundle: ↓Bundle.init(), device: ↓UIDevice.init())
+let foo = bar(bundle: ↓Bundle.init(), device: ↓UIDevice.init(), error: ↓NSError.init())
 ```

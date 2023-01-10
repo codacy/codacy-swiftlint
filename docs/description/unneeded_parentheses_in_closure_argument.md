@@ -3,11 +3,11 @@
 Parentheses are not needed when declaring closure arguments.
 
 * **Identifier:** unneeded_parentheses_in_closure_argument
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -30,6 +30,12 @@ let foo = { bar in }
 ```swift
 let foo = { bar -> Bool in return true }
 
+```
+
+```swift
+DispatchQueue.main.async { () -> Void in
+    doSomething()
+}
 ```
 
 ## Triggering Examples

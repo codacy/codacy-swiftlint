@@ -1,13 +1,13 @@
 # Yoda condition rule
 
-The variable should be placed on the left, the constant on the right of a comparison operator.
+The constant literal should be placed on the right-hand side of the comparison operator.
 
 * **Identifier:** yoda_condition
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -53,35 +53,47 @@ if optionalValue?.property ?? 0 == 2 {}
 if foo == nil {}
 ```
 
+```swift
+if flags & 1 == 1 {}
+```
+
 ## Triggering Examples
 
 ```swift
-↓if 42 == foo {}
+if ↓42 == foo {}
 
 ```
 
 ```swift
-↓if 42.42 >= foo {}
+if ↓42.42 >= foo {}
 
 ```
 
 ```swift
-↓guard 42 <= foo else { return }
+guard ↓42 <= foo else { return }
 
 ```
 
 ```swift
-↓guard "str str" != foo else { return }
+guard ↓"str str" != foo else { return }
 ```
 
 ```swift
-↓while 10 > foo { }
+while ↓10 > foo { }
 ```
 
 ```swift
-↓while 1 < foo { }
+while ↓1 < foo { }
 ```
 
 ```swift
-↓if nil == foo {}
+if ↓nil == foo {}
+```
+
+```swift
+while ↓1 > i + 5 {}
+```
+
+```swift
+if ↓200 <= i && i <= 299 || ↓600 <= i {}
 ```

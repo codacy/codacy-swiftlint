@@ -3,11 +3,11 @@
 Declarations should be referenced at least once within all files linted.
 
 * **Identifier:** unused_declaration
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** Yes
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** severity: error, include_public_and_open: false, related_usrs_to_skip: ["s:7SwiftUI15PreviewProviderP"]
 
 ## Non Triggering Examples
@@ -36,11 +36,11 @@ extension Sequence {
 }
 
 let changes = [Change.insert(0), .delete(0)]
-changes.deletes()
+_ = changes.deletes()
 ```
 
 ```swift
-struct Item {}
+struct Item: Codable {}
 struct ResponseModel: Codable {
     let items: [Item]
 
@@ -97,18 +97,46 @@ enum Component {
   indirect case optional(Component?)
 }
 
-@_functionBuilder
+@resultBuilder
 struct ComponentBuilder {
-  static func buildExpression(_ string: StaticString) -> Component {
-    return .string(string)
-  }
-
   static func buildBlock(_ components: Component...) -> Component {
     return .array(components)
   }
 
-  static func buildIf(_ value: Component?) -> Component {
-    return .optional(value)
+  static func buildExpression(_ string: StaticString) -> Component {
+    return .string(string)
+  }
+
+  static func buildOptional(_ component: Component?) -> Component {
+    return .optional(component)
+  }
+
+  static func buildEither(first component: Component) -> Component {
+    return component
+  }
+
+  static func buildEither(second component: Component) -> Component {
+    return component
+  }
+
+  static func buildArray(_ components: [Component]) -> Component {
+    return .array(components)
+  }
+
+  static func buildLimitedAvailability(_ component: Component) -> Component {
+    return component
+  }
+
+  static func buildFinalResult(_ component: Component) -> Component {
+    return component
+  }
+
+  static func buildPartialBlock(first component: Component) -> Component {
+    return component
+  }
+
+  static func buildPartialBlock(accumulated component: Component, next: Component) -> Component {
+    return component
   }
 }
 

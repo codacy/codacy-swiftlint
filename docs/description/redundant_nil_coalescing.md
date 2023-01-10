@@ -3,11 +3,11 @@
 nil coalescing operator is only evaluated if the lhs is nil, coalescing operator with nil as rhs is redundant
 
 * **Identifier:** redundant_nil_coalescing
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -20,11 +20,6 @@ var myVar: Int?; myVar ?? 0
 ## Triggering Examples
 
 ```swift
-var myVar: Int? = nil; myVar↓ ?? nil
-
-```
-
-```swift
-var myVar: Int? = nil; myVar↓??nil
+var myVar: Int? = nil; myVar ↓?? nil
 
 ```

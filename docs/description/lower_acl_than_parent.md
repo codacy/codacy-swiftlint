@@ -1,13 +1,13 @@
 # Lower ACL than parent
 
-Ensure definitions have a lower access control level than their enclosing parent
+Ensure declarations have a lower access control level than their enclosing parent
 
 * **Identifier:** lower_acl_than_parent
-* **Enabled by default:** Disabled
-* **Supports autocorrection:** No
+* **Enabled by default:** No
+* **Supports autocorrection:** Yes
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -22,6 +22,10 @@ internal struct Foo { func bar() {} }
 
 ```swift
 struct Foo { func bar() {} }
+```
+
+```swift
+struct Foo { internal func bar() {} }
 ```
 
 ```swift
@@ -56,24 +60,100 @@ private func foo(id: String) {}
 private class Foo { func bar() {} }
 ```
 
+```swift
+public extension Foo { struct Bar { public func baz() {} }}
+```
+
+```swift
+public extension Foo { struct Bar { internal func baz() {} }}
+```
+
+```swift
+internal extension Foo { struct Bar { internal func baz() {} }}
+```
+
+```swift
+extension Foo { struct Bar { internal func baz() {} }}
+```
+
 ## Triggering Examples
 
 ```swift
-struct Foo { public ↓func bar() {} }
+struct Foo { ↓public func bar() {} }
 ```
 
 ```swift
-enum Foo { public ↓func bar() {} }
+enum Foo { ↓public func bar() {} }
 ```
 
 ```swift
-public class Foo { open ↓func bar() }
+public class Foo { ↓open func bar() }
 ```
 
 ```swift
-class Foo { public private(set) ↓var bar: String? }
+class Foo { ↓public private(set) var bar: String? }
 ```
 
 ```swift
-private class Foo { internal ↓func bar() {} }
+private struct Foo { ↓public func bar() {} }
+```
+
+```swift
+private class Foo { ↓public func bar() {} }
+```
+
+```swift
+private actor Foo { ↓public func bar() {} }
+```
+
+```swift
+fileprivate struct Foo { ↓public func bar() {} }
+```
+
+```swift
+class Foo { ↓public func bar() {} }
+```
+
+```swift
+actor Foo { ↓public func bar() {} }
+```
+
+```swift
+private struct Foo { ↓internal func bar() {} }
+```
+
+```swift
+fileprivate struct Foo { ↓internal func bar() {} }
+```
+
+```swift
+extension Foo { struct Bar { ↓public func baz() {} }}
+```
+
+```swift
+internal extension Foo { struct Bar { ↓public func baz() {} }}
+```
+
+```swift
+private extension Foo { struct Bar { ↓public func baz() {} }}
+```
+
+```swift
+fileprivate extension Foo { struct Bar { ↓public func baz() {} }}
+```
+
+```swift
+private extension Foo { struct Bar { ↓internal func baz() {} }}
+```
+
+```swift
+fileprivate extension Foo { struct Bar { ↓internal func baz() {} }}
+```
+
+```swift
+public extension Foo { struct Bar { struct Baz { ↓public func qux() {} }}}
+```
+
+```swift
+final class Foo { ↓public func bar() {} }
 ```

@@ -3,11 +3,11 @@
 Catch statements should not declare error variables without type casting.
 
 * **Identifier:** untyped_error_in_catch
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -37,6 +37,16 @@ do {
   try foo()
 } catch var error as MyError {
 } catch {}
+```
+
+```swift
+do {
+    try something()
+} catch let e where e.code == .fileError {
+    // can be ignored
+} catch {
+    print(error)
+}
 ```
 
 ## Triggering Examples

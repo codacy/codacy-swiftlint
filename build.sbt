@@ -2,33 +2,23 @@ organization := "com.codacy"
 
 name := "codacy-swiftlint"
 
-scalaVersion := "2.13.3"
+ThisBuild / scalaVersion := "2.13.10"
 
-lazy val swiftlintVersion = Def.setting("1.10.0")
+enablePlugins(NativeImagePlugin)
 
-Compile / sourceGenerators += Def.task {
-  val file = (Compile / sourceManaged).value / "codacy" / "swiftlint" / "Versions.scala"
-  IO.write(file, s"""package codacy.swiftlint
-                    |object Versions {
-                    |  val swiftlintVersion: String = "${swiftlintVersion.value}"
-                    |}
-                    |""".stripMargin)
-  Seq(file)
-}.taskValue
+enablePlugins(JavaAppPackaging)
 
-enablePlugins(GraalVMNativeImagePlugin)
+libraryDependencies ++= Seq("com.codacy" %% "codacy-engine-scala-seed" % "6.0.1")
 
-libraryDependencies ++= Seq(
-  "com.codacy" %% "codacy-engine-scala-seed" % "5.0.1",
-  "org.scalameta" %% "svm-subs" % "20.2.0"
-)
+Compile / mainClass := Some("codacy.Engine")
 
-graalVMNativeImageGraalVersion := Some("21.0.0")
-graalVMNativeImageOptions ++= Seq(
-  "-O1",
-  "-H:+ReportExceptionStackTraces",
-  "--no-fallback",
-  "--no-server",
-  "--report-unsupported-elements-at-runtime",
-  "--static"
-)
+nativeImageOptions ++= Seq("-O1", "-H:+ReportExceptionStackTraces", "--no-fallback", "--no-server")
+
+lazy val `doc-generator` = project
+  .settings(
+    libraryDependencies ++= Seq(
+      "com.codacy" %% "codacy-engine-scala-seed" % "6.0.1",
+      "com.lihaoyi" %% "os-lib" % "0.9.0"
+    )
+  )
+  .enablePlugins(JavaAppPackaging)

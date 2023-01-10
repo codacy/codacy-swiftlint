@@ -3,11 +3,11 @@
 Computed read-only properties and subscripts should avoid using the get keyword.
 
 * **Identifier:** implicit_getter
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -71,6 +71,7 @@ class Foo {
 ```swift
 protocol Foo {
     var foo: Int { get }
+}
 ```
 
 ```swift
@@ -192,6 +193,30 @@ protocol Foo {
 ```swift
 protocol Foo {
     subscript(i: Int) -> Int { get set }
+}
+```
+
+```swift
+class DatabaseEntity {
+    var isSynced: Bool {
+        get async {
+            await database.isEntitySynced(self)
+        }
+    }
+}
+```
+
+```swift
+struct Test {
+    subscript(value: Int) -> Int {
+        get throws {
+            if value == 0 {
+                throw NSError()
+            } else {
+                return value
+            }
+        }
+    }
 }
 ```
 

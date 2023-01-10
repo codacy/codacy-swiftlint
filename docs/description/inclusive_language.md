@@ -1,13 +1,13 @@
 # Inclusive Language
 
-    Identifiers should use inclusive language that avoids discrimination against groups of people based on     race, gender, or socioeconomic status
+Identifiers should use inclusive language that avoids discrimination against groups of people based on race, gender, or socioeconomic status
 
 * **Identifier:** inclusive_language
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, additional_terms: [], override_terms: [], override_allowed_terms: []
 
 ## Non Triggering Examples
@@ -61,7 +61,7 @@ enum ListType {
 ```
 
 ```swift
-↓init(master: String, slave: String) {}
+init(↓master: String, ↓slave: String) {}
 ```
 
 ```swift

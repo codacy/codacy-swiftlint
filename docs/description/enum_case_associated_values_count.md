@@ -3,11 +3,11 @@
 Number of associated values in an enum case should be low
 
 * **Identifier:** enum_case_associated_values_count
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** metrics
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning: 5, error: 6
 
 ## Non Triggering Examples

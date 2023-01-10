@@ -3,11 +3,11 @@
 Combine multiple pattern matching bindings by moving keywords out of tuples.
 
 * **Identifier:** pattern_matching_keywords
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -83,6 +83,18 @@ switch foo {
 ```swift
 switch foo {
     case (↓let x,  ↓let y): break
+}
+```
+
+```swift
+switch foo {
+    case (↓let x,  ↓let y, .foo): break
+}
+```
+
+```swift
+switch foo {
+    case (↓let x,  ↓let y, _): break
 }
 ```
 

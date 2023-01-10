@@ -3,11 +3,11 @@
 Prefer `reduce(into:_:)` over `reduce(_:_:)` for copy-on-write types
 
 * **Identifier:** reduce_into
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -72,6 +72,14 @@ values.↓reduce(Array<Int>()) { result, value in
 ```
 
 ```swift
+[1, 2, 3].↓reduce(Set<Int>()) { acc, value in
+    var result = acc
+    result.insert(value)
+    return result
+}
+```
+
+```swift
 let rows = violations.enumerated().↓reduce("") { rows, indexAndViolation in
     return rows + generateSingleRow(for: indexAndViolation.1, at: indexAndViolation.0 + 1)
 }
@@ -102,5 +110,15 @@ let bar = values.↓reduce(Dictionary<String, Int>.init()) { result, value in
 ```swift
 let bar = values.↓reduce([Int](repeating: 0, count: 10)) { result, value in
     return result + [value]
+}
+```
+
+```swift
+extension Data {
+    var hexString: String {
+        return ↓reduce("") { (output, byte) -> String in
+            output + String(format: "%02x", byte)
+        }
+    }
 }
 ```

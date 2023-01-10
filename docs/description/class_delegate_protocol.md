@@ -3,11 +3,11 @@
 Delegate protocols should be class-only so they can be weakly referenced.
 
 * **Identifier:** class_delegate_protocol
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -58,6 +58,21 @@ protocol FooDelegate: NSObjectProtocol {}
 
 ```
 
+```swift
+protocol FooDelegate where Self: BarDelegate {}
+
+```
+
+```swift
+protocol FooDelegate where Self: AnyObject {}
+
+```
+
+```swift
+protocol FooDelegate where Self: NSObjectProtocol {}
+
+```
+
 ## Triggering Examples
 
 ```swift
@@ -67,5 +82,10 @@ protocol FooDelegate: NSObjectProtocol {}
 
 ```swift
 ↓protocol FooDelegate: Bar {}
+
+```
+
+```swift
+↓protocol FooDelegate where Self: StringProtocol {}
 
 ```

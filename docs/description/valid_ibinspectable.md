@@ -3,11 +3,11 @@
 @IBInspectable should be applied to variables only, have its type explicit and be of a supported type
 
 * **Identifier:** valid_ibinspectable
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -68,6 +68,16 @@ extension Foo {
 }
 ```
 
+```swift
+class Foo {
+    @IBInspectable var borderColor: UIColor? = nil {
+        didSet {
+            updateAppearance()
+        }
+    }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -102,12 +112,6 @@ class Foo {
 
 ```swift
 class Foo {
-  @IBInspectable private ↓var x: ImplicitlyUnwrappedOptional<Int>
-}
-```
-
-```swift
-class Foo {
   @IBInspectable private ↓var count: Optional<Int>
 }
 ```
@@ -115,11 +119,5 @@ class Foo {
 ```swift
 class Foo {
   @IBInspectable private ↓var x: Optional<String>
-}
-```
-
-```swift
-class Foo {
-  @IBInspectable private ↓var x: ImplicitlyUnwrappedOptional<String>
 }
 ```

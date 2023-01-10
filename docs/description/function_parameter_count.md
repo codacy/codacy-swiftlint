@@ -3,11 +3,11 @@
 Number of function parameters should be low.
 
 * **Identifier:** function_parameter_count
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning: 5, error: 8ignores_default_parameters: true
 
 ## Non Triggering Examples
@@ -64,7 +64,7 @@ override func f(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int) {}
 ```
 
 ```swift
-↓func f(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int = 2, g: Int) {}
+private ↓func f(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int = 2, g: Int) {}
 ```
 
 ```swift

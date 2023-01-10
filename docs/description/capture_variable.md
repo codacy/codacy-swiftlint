@@ -3,11 +3,11 @@
 Non-constant variables should not be listed in a closure's capture list to avoid confusion about closures capturing variables at creation time.
 
 * **Identifier:** capture_variable
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** Yes
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -120,29 +120,10 @@ class C {
 
 ```swift
 class C {
-    class var iClass: Int {
-        get { iStatic }
-        set { iStatic = newValue }
-    }
-    static var iStatic: Int = 0
-
-    func callTest() {
-        test { [iClass=C.iClass] j in
-            print(iClass, j)
-        }
-    }
-
-    func test(_ completionHandler: @escaping (Int) -> Void) {
-    }
-}
-```
-
-```swift
-class C {
     static var iStatic: Int = 0
 
     static func callTest() {
-        test { [iStatic] j in
+        test { [↓iStatic] j in
             print(iStatic, j)
         }
     }

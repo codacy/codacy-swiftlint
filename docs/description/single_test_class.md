@@ -3,12 +3,12 @@
 Test files should contain a single QuickSpec or XCTestCase class.
 
 * **Identifier:** single_test_class
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** warning, test_parent_classes: ["QuickSpec", "XCTestCase"]
 
 ## Non Triggering Examples
 
@@ -58,6 +58,12 @@ class FooTests: XCTestCase {  }
 
 ```swift
 ↓class FooTests: QuickSpec {  }
+↓class BarTests: XCTestCase {  }
+class TotoTests {  }
+```
+
+```swift
+final ↓class FooTests: QuickSpec {  }
 ↓class BarTests: XCTestCase {  }
 class TotoTests {  }
 ```

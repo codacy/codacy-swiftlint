@@ -3,11 +3,11 @@
 Closure expressions should have a single space inside each brace.
 
 * **Identifier:** closure_spacing
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -29,6 +29,10 @@ extension UITableViewCell: ReusableView {}
 ```
 
 ## Triggering Examples
+
+```swift
+[].filter↓{ $0.contains(location) }
+```
 
 ```swift
 [].filter(↓{$0.contains(location)})

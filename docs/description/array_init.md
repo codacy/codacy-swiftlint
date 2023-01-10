@@ -3,11 +3,11 @@
 Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Array.
 
 * **Identifier:** array_init
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -65,54 +65,50 @@ foo.map { /* a comment */ !$0 }
 ## Triggering Examples
 
 ```swift
-↓foo.map({ $0 })
+foo.↓map({ $0 })
 
 ```
 
 ```swift
-↓foo.map { $0 }
+foo.↓map { $0 }
 
 ```
 
 ```swift
-↓foo.map { return $0 }
+foo.↓map { return $0 }
 
 ```
 
 ```swift
-↓foo.map { elem in
-   elem
-}
+    foo.↓map { elem in
+        elem
+    }
+```
+
+```swift
+    foo.↓map { elem in
+        return elem
+    }
+```
+
+```swift
+    foo.↓map { (elem: String) in
+        elem
+    }
+```
+
+```swift
+    foo.↓map { elem -> String in
+        elem
+    }
+```
+
+```swift
+foo.↓map { $0 /* a comment */ }
 
 ```
 
 ```swift
-↓foo.map { elem in
-   return elem
-}
-
-```
-
-```swift
-↓foo.map { (elem: String) in
-   elem
-}
-
-```
-
-```swift
-↓foo.map { elem -> String in
-   elem
-}
-
-```
-
-```swift
-↓foo.map { $0 /* a comment */ }
-
-```
-
-```swift
-↓foo.map { /* a comment */ $0 }
+foo.↓map { /* a comment */ $0 }
 
 ```

@@ -3,11 +3,11 @@
 There should be no space before and one after any comma.
 
 * **Identifier:** comma
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -46,6 +46,11 @@ func abc(
 #imageLiteral(resourceName: "foo,bar,baz")
 ```
 
+```swift
+kvcStringBuffer.advanced(by: rootKVCLength)
+  .storeBytes(of: 0x2E /* '.' */, as: CChar.self)
+```
+
 ## Triggering Examples
 
 ```swift
@@ -70,4 +75,24 @@ let result = plus(
     second: 4
 )
 
+```
+
+```swift
+Foo(
+  parameter: a.b.c,
+  tag: a.d,
+  value: a.identifier.flatMap { Int64($0) }↓ ,
+  reason: Self.abcd()
+)
+```
+
+```swift
+return Foo(bar: .baz, title: fuzz,
+          message: My.Custom.message↓ ,
+          another: parameter, doIt: true,
+          alignment: .center)
+```
+
+```swift
+Logger.logError("Hat is too large"↓,  info: [])
 ```

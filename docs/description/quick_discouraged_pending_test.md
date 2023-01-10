@@ -3,11 +3,11 @@
 Discouraged pending test. This test won't run while it's marked as pending.
 
 * **Identifier:** quick_discouraged_pending_test
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -95,6 +95,14 @@ class TotoTests: QuickSpec {
 
 ```swift
 class TotoTests: QuickSpec {
+   override func spec() {
+       ↓xitBehavesLike("foo")
+   }
+}
+```
+
+```swift
+class TotoTests: QuickSpecSubclass {
    override func spec() {
        ↓xitBehavesLike("foo")
    }

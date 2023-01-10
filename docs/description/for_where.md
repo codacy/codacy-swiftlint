@@ -3,12 +3,12 @@
 `where` clauses are preferred over a single `if` inside a `for`.
 
 * **Identifier:** for_where
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** warning, allow_for_as_filter: false
 
 ## Non Triggering Examples
 
@@ -69,9 +69,30 @@ for user in users {
 ```
 
 ```swift
+for user in users {
+  if user.id == 1, user.age > 18 { }
+}
+```
+
+```swift
 for (index, value) in array.enumerated() {
   if case .valueB(_) = value {
     return index
+  }
+}
+```
+
+```swift
+for user in users {
+  if user.id == 1 { return true }
+}
+```
+
+```swift
+for user in users {
+  if user.id == 1 {
+    let derivedValue = calculateValue(from: user)
+    return derivedValue != 0
   }
 }
 ```
@@ -81,5 +102,23 @@ for (index, value) in array.enumerated() {
 ```swift
 for user in users {
   ↓if user.id == 1 { return true }
+}
+```
+
+```swift
+for subview in subviews {
+    ↓if !(subview is UIStackView) {
+        subview.removeConstraints(subview.constraints)
+        subview.removeFromSuperview()
+    }
+}
+```
+
+```swift
+for subview in subviews {
+    ↓if !(subview is UIStackView) {
+        subview.removeConstraints(subview.constraints)
+        subview.removeFromSuperview()
+    }
 }
 ```

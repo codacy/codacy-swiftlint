@@ -1,4 +1,19 @@
 [ {
+  "patternId" : "accessibility_label_for_image",
+  "title" : "Accessibility Label for Image",
+  "description" : "All Images that provide context should have an accessibility label. Purely decorative images can be hidden from accessibility.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "accessibility_trait_for_button",
+  "title" : "Accessibility Trait for Button",
+  "description" : "All views with tap gestures added should include the .isButton accessibility trait. If a tap opens an external link the .isLink trait should be used instead.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "anonymous_argument_in_multiline_closure",
+  "title" : "Anonymous Argument in Multiline Closure",
+  "description" : "Use named arguments in multiline closures",
+  "parameters" : [ ]
+}, {
   "patternId" : "anyobject_protocol",
   "title" : "AnyObject Protocol",
   "description" : "Prefer using `AnyObject` over `class` for class-only protocols.",
@@ -65,13 +80,18 @@
   "parameters" : [ ]
 }, {
   "patternId" : "colon",
-  "title" : "Colon",
+  "title" : "Colon Spacing",
   "description" : "Colons should be next to the identifier when specifying a type and next to the key in dictionary literals.",
   "parameters" : [ ]
 }, {
   "patternId" : "comma",
   "title" : "Comma Spacing",
   "description" : "There should be no space before and one after any comma.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "comma_inheritance",
+  "title" : "Comma Inheritance Rule",
+  "description" : "Use commas to separate types in inheritance lists",
   "parameters" : [ ]
 }, {
   "patternId" : "comment_spacing",
@@ -154,6 +174,11 @@
   "description" : "Discouraged direct initialization of types that can be harmful.",
   "parameters" : [ ]
 }, {
+  "patternId" : "discouraged_none_name",
+  "title" : "Discouraged None Name",
+  "description" : "Discourages name cases/static members `none`, which can conflict with `Optional<T>.none`.",
+  "parameters" : [ ]
+}, {
   "patternId" : "discouraged_object_literal",
   "title" : "Discouraged Object Literal",
   "description" : "Prefer initializers over object literals.",
@@ -177,6 +202,11 @@
   "patternId" : "duplicate_imports",
   "title" : "Duplicate Imports",
   "description" : "Imports should be unique.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "duplicated_key_in_dictionary_literal",
+  "title" : "Duplicated Key in Dictionary Literal",
+  "description" : "Dictionary literals with duplicated keys will crash in runtime.",
   "parameters" : [ ]
 }, {
   "patternId" : "dynamic_inline",
@@ -225,7 +255,7 @@
   "parameters" : [ ]
 }, {
   "patternId" : "expiring_todo",
-  "title" : "ExpiringTodo",
+  "title" : "Expiring Todo",
   "description" : "TODOs and FIXMEs should be resolved prior to their expiry date.",
   "parameters" : [ ]
 }, {
@@ -381,7 +411,7 @@
 }, {
   "patternId" : "inclusive_language",
   "title" : "Inclusive Language",
-  "description" : "    Identifiers should use inclusive language that avoids discrimination against groups of people based on     race, gender, or socioeconomic status",
+  "description" : "Identifiers should use inclusive language that avoids discrimination against groups of people based on race, gender, or socioeconomic status",
   "parameters" : [ ]
 }, {
   "patternId" : "indentation_width",
@@ -474,9 +504,14 @@
   "description" : "Array and dictionary literal end should have the same indentation as the line that started it.",
   "parameters" : [ ]
 }, {
+  "patternId" : "local_doc_comment",
+  "title" : "Local Doc Comment",
+  "description" : "Doc comments shouldn't be used in local scopes. Use regular comments.",
+  "parameters" : [ ]
+}, {
   "patternId" : "lower_acl_than_parent",
   "title" : "Lower ACL than parent",
-  "description" : "Ensure definitions have a lower access control level than their enclosing parent",
+  "description" : "Ensure declarations have a lower access control level than their enclosing parent",
   "parameters" : [ ]
 }, {
   "patternId" : "mark",
@@ -554,6 +589,11 @@
   "description" : "Extensions shouldn't be used to group code within the same source file.",
   "parameters" : [ ]
 }, {
+  "patternId" : "no_magic_numbers",
+  "title" : "No Magic Numbers",
+  "description" : "Magic numbers should be replaced by named constants.",
+  "parameters" : [ ]
+}, {
   "patternId" : "no_space_in_method_call",
   "title" : "No Space in Method Call",
   "description" : "Don't add a space between the method name and the parentheses.",
@@ -562,6 +602,11 @@
   "patternId" : "notification_center_detachment",
   "title" : "Notification Center Detachment",
   "description" : "An object should only remove itself as an observer in `deinit`.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "ns_number_init_as_function_reference",
+  "title" : "NSNumber Init as Function Reference",
+  "description" : "Passing `NSNumber.init` or `NSDecimalNumber.init` as a function reference is dangerous as it can cause the wrong initializer to be used, causing crashes. Use `.init(value:)` instead.",
   "parameters" : [ ]
 }, {
   "patternId" : "nslocalizedstring_key",
@@ -632,6 +677,11 @@
   "patternId" : "prefer_nimble",
   "title" : "Prefer Nimble",
   "description" : "Prefer Nimble matchers over XCTAssert functions.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "prefer_self_in_static_references",
+  "title" : "Prefer Self in Static References",
+  "description" : "Use `Self` to refer to the surrounding type name.",
   "parameters" : [ ]
 }, {
   "patternId" : "prefer_self_type_over_type_of_self",
@@ -774,9 +824,29 @@
   "description" : "Return arrow and return type should be separated by a single space or on a separate line.",
   "parameters" : [ ]
 }, {
+  "patternId" : "return_value_from_void_function",
+  "title" : "Return Value from Void Function",
+  "description" : "Returning values from Void functions should be avoided.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "self_binding",
+  "title" : "Self Binding",
+  "description" : "Re-bind `self` to a consistent identifier name.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "self_in_property_initialization",
+  "title" : "Self in Property Initialization",
+  "description" : "`self` refers to the unapplied `NSObject.self()` method, which is likely not expected. Make the variable `lazy` to be able to refer to the current instance or use `ClassName.self`.",
+  "parameters" : [ ]
+}, {
   "patternId" : "shorthand_operator",
   "title" : "Shorthand Operator",
   "description" : "Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "shorthand_optional_binding",
+  "title" : "Shorthand Optional Binding",
+  "description" : "Use shorthand syntax for optional binding",
   "parameters" : [ ]
 }, {
   "patternId" : "single_test_class",
@@ -889,6 +959,16 @@
   "description" : "Type name should only contain alphanumeric characters, start with an uppercase character and span between 3 and 40 characters in length.",
   "parameters" : [ ]
 }, {
+  "patternId" : "typesafe_array_init",
+  "title" : "Type-safe Array Init",
+  "description" : "Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Array.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "unavailable_condition",
+  "title" : "Unavailable Condition",
+  "description" : "Use #unavailable/#available instead of #available/#unavailable with an empty body.",
+  "parameters" : [ ]
+}, {
   "patternId" : "unavailable_function",
   "title" : "Unavailable Function",
   "description" : "Unimplemented functions should be marked as unavailable.",
@@ -989,6 +1069,11 @@
   "description" : "Don't include vertical whitespace (empty line) after opening braces.",
   "parameters" : [ ]
 }, {
+  "patternId" : "void_function_in_ternary",
+  "title" : "Void Function in Ternary",
+  "description" : "Using ternary to call Void functions should be avoided.",
+  "parameters" : [ ]
+}, {
   "patternId" : "void_return",
   "title" : "Void Return",
   "description" : "Prefer `-> Void` over `-> ()`.",
@@ -1011,6 +1096,6 @@
 }, {
   "patternId" : "yoda_condition",
   "title" : "Yoda condition rule",
-  "description" : "The variable should be placed on the left, the constant on the right of a comparison operator.",
+  "description" : "The constant literal should be placed on the right-hand side of the comparison operator.",
   "parameters" : [ ]
 } ]

@@ -3,11 +3,11 @@
 When using trailing closures, empty parentheses should be avoided after the method call.
 
 * **Identifier:** empty_parentheses_with_trailing_closure
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

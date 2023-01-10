@@ -3,11 +3,11 @@
 Case statements should vertically align with their enclosing switch statement, or indented if configured otherwise.
 
 * **Identifier:** switch_case_alignment
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, indented_cases: false
 
 ## Non Triggering Examples

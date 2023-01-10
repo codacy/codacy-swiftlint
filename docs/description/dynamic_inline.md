@@ -3,11 +3,11 @@
 Avoid using 'dynamic' and '@inline(__always)' together.
 
 * **Identifier:** dynamic_inline
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** error
 
 ## Non Triggering Examples

@@ -3,11 +3,11 @@
 Enums conforming to a specified protocol must implement a specific case(s).
 
 * **Identifier:** required_enum_case
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** No protocols configured.  In config add 'required_enum_case' to 'opt_in_rules' and config using :
 
 'required_enum_case:
@@ -49,26 +49,26 @@ enum MyNetworkResponse: String, NetworkResponsable {
 ## Triggering Examples
 
 ```swift
-enum MyNetworkResponse: String, NetworkResponsable {
+↓enum MyNetworkResponse: String, NetworkResponsable {
     case success, error
 }
 ```
 
 ```swift
-enum MyNetworkResponse: String, NetworkResponsable {
+↓enum MyNetworkResponse: String, NetworkResponsable {
     case success, error
 }
 ```
 
 ```swift
-enum MyNetworkResponse: String, NetworkResponsable {
+↓enum MyNetworkResponse: String, NetworkResponsable {
     case success
     case error
 }
 ```
 
 ```swift
-enum MyNetworkResponse: String, NetworkResponsable {
+↓enum MyNetworkResponse: String, NetworkResponsable {
     case success
     case error
 }

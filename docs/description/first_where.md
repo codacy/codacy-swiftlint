@@ -3,11 +3,11 @@
 Prefer using `.first(where:)` over `.filter { }.first` in collections.
 
 * **Identifier:** first_where
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -80,4 +80,12 @@ if let pause = timeTracker.pauses.filter("beginDate < %@", beginDate).first { pr
 ```swift
 (↓myList.filter { $0 == 1 }).first
 
+```
+
+```swift
+↓myListOfDict.filter { dict in dict["1"] }.first
+```
+
+```swift
+↓myListOfDict.filter { $0["someString"] }.first
 ```

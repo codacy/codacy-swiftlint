@@ -3,11 +3,11 @@
 Attributes should be on their own lines in functions and types, but on the same line as variables and imports.
 
 * **Identifier:** attributes
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, always_on_same_line: ["@IBAction", "@NSManaged"], always_on_line_above: []
 
 ## Non Triggering Examples
@@ -205,6 +205,23 @@ internal func foo(identifier: String, completion: @autoclosure (() -> Bool)) {}
 ```swift
 func printBoolOrTrue(_ expression: @autoclosure () throws -> Bool?) rethrows {
   try print(expression() ?? true)
+}
+```
+
+```swift
+import Foundation
+
+class MyClass: NSObject {
+  @objc(
+    first:
+  )
+  static func foo(first: String) {}
+}
+```
+
+```swift
+func refreshable(action: @escaping @Sendable () async -> Void) -> some View {
+    modifier(RefreshableModifier(action: action))
 }
 ```
 

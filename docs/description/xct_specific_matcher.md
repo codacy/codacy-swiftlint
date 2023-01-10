@@ -3,11 +3,11 @@
 Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`
 
 * **Identifier:** xct_specific_matcher
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.1.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples

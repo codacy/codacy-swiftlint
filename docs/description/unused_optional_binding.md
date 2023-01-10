@@ -3,11 +3,11 @@
 Prefer `!= nil` over `let _ =`
 
 * **Identifier:** unused_optional_binding
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, ignore_optional_try: false
 
 ## Non Triggering Examples
@@ -97,8 +97,4 @@ func foo() {
 if let ↓_ = bar {
 }
 
-```
-
-```swift
-if case .some(let ↓_) = self {}
 ```

@@ -3,12 +3,12 @@
 Don't include vertical whitespace (empty line) after opening braces.
 
 * **Identifier:** vertical_whitespace_opening_braces
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** N/A
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** warning
 
 ## Non Triggering Examples
 

@@ -3,11 +3,11 @@
 Enum can't contain multiple cases with the same name.
 
 * **Identifier:** duplicate_enum_cases
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** error
 
 ## Non Triggering Examples
@@ -25,6 +25,28 @@ enum A {
 }
 enum B {
     case add(image: UIImage)
+}
+```
+
+```swift
+enum Tag: String {
+#if CONFIG_A
+    case value = "CONFIG_A"
+#elseif CONFIG_B
+    case value = "CONFIG_B"
+#else
+    case value = "CONFIG_DEFAULT"
+#endif
+}
+```
+
+```swift
+enum Target {
+#if os(iOS)
+  case file
+#else
+  case file(URL)
+#endif
 }
 ```
 

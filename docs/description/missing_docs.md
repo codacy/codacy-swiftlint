@@ -3,12 +3,12 @@
 Declarations should be documented.
 
 * **Identifier:** missing_docs
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.1.0
-* **Default configuration:** warning: open, public
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** warning: open, public, excludes_extensions: true, excludes_inherited_types: true, excludes_trivial_init: false
 
 ## Non Triggering Examples
 
@@ -18,13 +18,13 @@ public class A {
 /// docs
 public func b() {}
 }
-/// docs
+// no docs
 public class B: A { override public func b() {} }
 ```
 
 ```swift
 import Foundation
-/// docs
+// no docs
 public class B: NSObject {
 // no docs
 override public var description: String { fatalError() } }
@@ -39,6 +39,13 @@ public class A {
 
 ```swift
 public extension A {}
+```
+
+```swift
+/// docs
+public class A {
+    public init() {}
+}
 ```
 
 ## Triggering Examples
@@ -69,5 +76,12 @@ var b: Int { get } }
 public struct C: A {
 
 public let b: Int
+}
+```
+
+```swift
+/// docs
+public class A {
+    public init(argument: String) {}
 }
 ```

@@ -3,11 +3,11 @@
 Property setter access level shouldn't be explicit if it's the same as the variable access level.
 
 * **Identifier:** redundant_set_access_control
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 4.1.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -31,6 +31,12 @@ var foo: Int
 ```swift
 private final class A {
   private(set) var value: Int
+}
+```
+
+```swift
+extension Color {
+    public internal(set) static var someColor = Color.anotherColor
 }
 ```
 
@@ -60,6 +66,12 @@ open class Foo {
 
 ```swift
 class A {
+  ↓internal(set) var value: Int
+}
+```
+
+```swift
+internal class A {
   ↓internal(set) var value: Int
 }
 ```

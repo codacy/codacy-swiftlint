@@ -52,9 +52,8 @@ object SwiftLint extends Tool {
   )(implicit specification: Tool.Specification): Option[String] = {
     val patternsToLintOpt = configuration.withDefaultParameters
 
-    patternsToLintOpt.fold(Option.empty[String]) {
-      case patternsToLint if patternsToLint.nonEmpty =>
-        Some(writeConfigFile(patternsToLint).toString)
+    patternsToLintOpt.map { patternsToLint =>
+      writeConfigFile(patternsToLint).toString
     }
   }
 

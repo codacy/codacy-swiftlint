@@ -3,14 +3,18 @@
 Test cases should only contain private non-test members.
 
 * **Identifier:** test_case_accessibility
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning, allowed_prefixes: [[]]
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** warning, allowed_prefixes: [], test_parent_classes: ["QuickSpec", "XCTestCase"]
 
 ## Non Triggering Examples
+
+```swift
+let foo: String?
+```
 
 ```swift
 let foo: String?
@@ -54,6 +58,18 @@ class FooTests: XCTestCase {
     func testFoo() {
         XCTAssertTrue(true)
     }
+
+    func testBar() {
+        func nestedFunc() {}
+    }
+
+    private someFunc(hasParam: Bool) {}
+}
+```
+
+```swift
+class FooTests: XCTestCase {
+    private struct MockSomething: Something {}
 }
 ```
 
@@ -77,6 +93,8 @@ class Foobar {
 
 ```swift
 class FooTests: XCTestCase {
+    ↓typealias Bar = Foo.Bar
+
     ↓var foo: String?
     ↓let bar: String?
 
@@ -93,6 +111,8 @@ class FooTests: XCTestCase {
     ↓static func testFoo() {}
 
     ↓static func allTests() {}
+
+    ↓func testFoo(hasParam: Bool) {}
 }
 
 final class BarTests: XCTestCase {

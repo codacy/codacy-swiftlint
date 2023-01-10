@@ -3,11 +3,11 @@
 Properties should have a type interface
 
 * **Identifier:** explicit_type_interface
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, excluded: [], allow_redundancy: false
 
 ## Non Triggering Examples

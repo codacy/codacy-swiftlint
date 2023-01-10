@@ -1,13 +1,13 @@
-# Colon
+# Colon Spacing
 
 Colons should be next to the identifier when specifying a type and next to the key in dictionary literals.
 
 * **Identifier:** colon
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning, flexible_right_spacing: false, apply_to_dictionaries: true
 
 ## Non Triggering Examples
@@ -142,6 +142,11 @@ class Foo<T: Equatable> {}
 ```
 
 ```swift
+object.method(x: /* comment */ 5)
+
+```
+
+```swift
 switch foo {
 case .bar:
     _ = something()
@@ -185,115 +190,149 @@ return nil
 Example("}
 ```
 
+```swift
+range.flatMap(file.syntaxMap.kinds(inByteRange:)) ?? []
+```
+
+```swift
+@objc(receiveReply:)
+public class func receiveReply(_ reply: bad_instruction_exception_reply_t) -> CInt { 0 }
+```
+
+```swift
+switch str {
+case "adlm", "adlam":             return .adlam
+case "aghb", "caucasianalbanian": return .caucasianAlbanian
+default:                          return nil
+}
+```
+
+```swift
+precedencegroup PipelinePrecedence {
+  associativity: left
+}
+infix operator |> : PipelinePrecedence
+```
+
+```swift
+switch scalar {
+  case 0x000A...0x000D /* LF ... CR */: return true
+  case 0x0085 /* NEXT LINE (NEL) */: return true
+  case 0x2028 /* LINE SEPARATOR */: return true
+  case 0x2029 /* PARAGRAPH SEPARATOR */: return true
+  default: return false
+}
+```
+
 ## Triggering Examples
 
 ```swift
-let ↓abc:Void
+let abc↓:Void
 
 ```
 
 ```swift
-let ↓abc:  Void
+let abc↓:  Void
 
 ```
 
 ```swift
-let ↓abc :Void
+let abc↓ :Void
 
 ```
 
 ```swift
-let ↓abc : Void
+let abc↓ : Void
 
 ```
 
 ```swift
-let ↓abc : [Void: Void]
+let abc↓ : [Void: Void]
 
 ```
 
 ```swift
-let ↓abc : (Void, String, Int)
+let abc↓ : (Void, String, Int)
 
 ```
 
 ```swift
-let ↓abc : ([Void], String, Int)
+let abc↓ : ([Void], String, Int)
 
 ```
 
 ```swift
-let ↓abc : [([Void], String, Int)]
+let abc↓ : [([Void], String, Int)]
 
 ```
 
 ```swift
-let ↓abc:  (Void, String, Int)
+let abc↓:  (Void, String, Int)
 
 ```
 
 ```swift
-let ↓abc:  ([Void], String, Int)
+let abc↓:  ([Void], String, Int)
 
 ```
 
 ```swift
-let ↓abc:  [([Void], String, Int)]
+let abc↓:  [([Void], String, Int)]
 
 ```
 
 ```swift
-let ↓abc :String="def"
+let abc↓ :String="def"
 
 ```
 
 ```swift
-let ↓abc :Int=0
+let abc↓ :Int=0
 
 ```
 
 ```swift
-let ↓abc :Int = 0
+let abc↓ :Int = 0
 
 ```
 
 ```swift
-let ↓abc:Int=0
+let abc↓:Int=0
 
 ```
 
 ```swift
-let ↓abc:Int = 0
+let abc↓:Int = 0
 
 ```
 
 ```swift
-let ↓abc:Enum=Enum.Value
+let abc↓:Enum=Enum.Value
 
 ```
 
 ```swift
-func abc(↓def:Void) {}
+func abc(def↓:Void) {}
 
 ```
 
 ```swift
-func abc(↓def:  Void) {}
+func abc(def↓:  Void) {}
 
 ```
 
 ```swift
-func abc(↓def :Void) {}
+func abc(def↓ :Void) {}
 
 ```
 
 ```swift
-func abc(↓def : Void) {}
+func abc(def↓ : Void) {}
 
 ```
 
 ```swift
-func abc(def: Void, ↓ghi :Void) {}
+func abc(def: Void, ghi↓ :Void) {}
 
 ```
 
@@ -328,87 +367,87 @@ let abc = [1: [3↓ : 2], 3↓:  4]
 ```
 
 ```swift
-let abc: [↓String : Int]
+let abc: [String↓ : Int]
 
 ```
 
 ```swift
-let abc: [↓String:Int]
+let abc: [String↓:Int]
 
 ```
 
 ```swift
-func foo(bar: [↓String : Int]) {}
+func foo(bar: [String↓ : Int]) {}
 
 ```
 
 ```swift
-func foo(bar: [↓String:Int]) {}
+func foo(bar: [String↓:Int]) {}
 
 ```
 
 ```swift
-func foo() -> [↓String : Int] { return [:] }
+func foo() -> [String↓ : Int] { return [:] }
 
 ```
 
 ```swift
-func foo() -> [↓String:Int] { return [:] }
+func foo() -> [String↓:Int] { return [:] }
 
 ```
 
 ```swift
-let ↓abc : Any
+let abc↓ : Any
 
 ```
 
 ```swift
-let abc: [↓Any : Int]
+let abc: [Any↓ : Int]
 
 ```
 
 ```swift
-let abc: [↓String : Any]
+let abc: [String↓ : Any]
 
 ```
 
 ```swift
-class ↓Foo : Bar {}
+class Foo↓ : Bar {}
 
 ```
 
 ```swift
-class ↓Foo:Bar {}
+class Foo↓:Bar {}
 
 ```
 
 ```swift
-class ↓Foo<T> : Bar {}
+class Foo<T>↓ : Bar {}
 
 ```
 
 ```swift
-class ↓Foo<T>:Bar {}
+class Foo<T>↓:Bar {}
 
 ```
 
 ```swift
-class ↓Foo<T, U>:Bar {}
+class Foo<T, U>↓:Bar {}
 
 ```
 
 ```swift
-class ↓Foo<T: Equatable>:Bar {}
+class Foo<T: Equatable>↓:Bar {}
 
 ```
 
 ```swift
-class Foo<↓T:Equatable> {}
+class Foo<T↓:Equatable> {}
 
 ```
 
 ```swift
-class Foo<↓T : Equatable> {}
+class Foo<T↓ : Equatable> {}
 
 ```
 
@@ -441,4 +480,14 @@ class ABC { let def = ghi(jkl↓:mno) } }
 
 ```swift
 func foo() { let dict = [1↓ : 1] }
+```
+
+```swift
+switch foo {
+case .bar↓ : return baz
+}
+```
+
+```swift
+private var action↓:(() -> Void)?
 ```

@@ -3,12 +3,12 @@
 Type bodies should not span too many lines.
 
 * **Identifier:** type_body_length
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
-* **Default configuration:** warning: 200, error: 350
+* **Minimum Swift compiler version:** 5.0.0
+* **Default configuration:** warning: 250, error: 350
 
 ## Non Triggering Examples
 
@@ -213,6 +213,56 @@ let abc = 0
 let abc = 0
 let abc = 0
 let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
 }
 
 ```
@@ -420,6 +470,56 @@ class Abc {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 ```
@@ -627,12 +727,112 @@ class Abc {
 // this is a comment
 // this is a comment
 // this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
 }
 
 ```
 
 ```swift
 class Abc {
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
 let abc = 0
 let abc = 0
 let abc = 0
@@ -1041,6 +1241,56 @@ let abc = 0
 let abc = 0
 let abc = 0
 let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
 }
 
 ```
@@ -1248,6 +1498,56 @@ struct Abc {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 ```
@@ -1455,12 +1755,112 @@ struct Abc {
 // this is a comment
 // this is a comment
 // this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
 }
 
 ```
 
 ```swift
 struct Abc {
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
 let abc = 0
 let abc = 0
 let abc = 0
@@ -1869,6 +2269,56 @@ let abc = 0
 let abc = 0
 let abc = 0
 let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
 }
 
 ```
@@ -2076,6 +2526,56 @@ enum Abc {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 ```
@@ -2283,12 +2783,1140 @@ enum Abc {
 // this is a comment
 // this is a comment
 // this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
 }
 
 ```
 
 ```swift
 enum Abc {
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+
+/* this is
+a multiline comment
+*/
+}
+
+```
+
+```swift
+actor Abc {
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+}
+
+```
+
+```swift
+actor Abc {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+```
+
+```swift
+actor Abc {
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+// this is a comment
+}
+
+```
+
+```swift
+actor Abc {
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
 let abc = 0
 let abc = 0
 let abc = 0
@@ -2701,6 +4329,56 @@ let abc = 0
 let abc = 0
 let abc = 0
 let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
 }
 
 ```
@@ -2908,12 +4586,369 @@ let abc = 0
 let abc = 0
 let abc = 0
 let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
 }
 
 ```
 
 ```swift
 ↓enum Abc {
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+}
+
+```
+
+```swift
+↓actor Abc {
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
+let abc = 0
 let abc = 0
 let abc = 0
 let abc = 0

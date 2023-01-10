@@ -3,18 +3,18 @@
 Multiline literals should have their surrounding brackets in a new line.
 
 * **Identifier:** multiline_literal_brackets
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
 
 ```swift
 let trio = ["harry", "ronald", "hermione"]
-let houseCup = ["gryffinder": 460, "hufflepuff": 370, "ravenclaw": 410, "slytherin": 450]
+let houseCup = ["gryffindor": 460, "hufflepuff": 370, "ravenclaw": 410, "slytherin": 450]
 ```
 
 ```swift
@@ -24,7 +24,7 @@ let trio = [
     "hermione"
 ]
 let houseCup = [
-    "gryffinder": 460,
+    "gryffindor": 460,
     "hufflepuff": 370,
     "ravenclaw": 410,
     "slytherin": 450
@@ -36,7 +36,7 @@ let trio = [
     "harry", "ronald", "hermione"
 ]
 let houseCup = [
-    "gryffinder": 460, "hufflepuff": 370,
+    "gryffindor": 460, "hufflepuff": 370,
     "ravenclaw": 410, "slytherin": 450
 ]
 ```
@@ -62,9 +62,16 @@ let trio = [↓"harry",
 ```
 
 ```swift
-let houseCup = [↓"gryffinder": 460, "hufflepuff": 370,
+let houseCup = [↓"gryffindor": 460, "hufflepuff": 370,
                 "ravenclaw": 410, "slytherin": 450
 ]
+```
+
+```swift
+let houseCup = [↓"gryffindor": 460,
+                "hufflepuff": 370,
+                "ravenclaw": 410,
+                "slytherin": 450↓]
 ```
 
 ```swift
@@ -76,14 +83,14 @@ let trio = [
 
 ```swift
 let houseCup = [
-    "gryffinder": 460, "hufflepuff": 370,
+    "gryffindor": 460, "hufflepuff": 370,
     "ravenclaw": 410, "slytherin": 450↓]
 ```
 
 ```swift
 class Hogwarts {
     let houseCup = [
-        "gryffinder": 460, "hufflepuff": 370,
+        "gryffindor": 460, "hufflepuff": 370,
         "ravenclaw": 410, "slytherin": 450↓]
 }
 ```

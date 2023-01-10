@@ -3,11 +3,11 @@
 Prefer to locate parameters with defaults toward the end of the parameter list.
 
 * **Identifier:** function_default_parameter_at_end
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -56,8 +56,30 @@ func foo(a: String, b: String? = nil,
          c: String? = nil, d: @escaping AlertActionHandler = { _ in }) {}
 ```
 
+```swift
+override init?(for date: Date = Date(), coordinate: CLLocationCoordinate2D) {}
+```
+
+```swift
+func handleNotification(_ userInfo: NSDictionary,
+                        userInteraction: Bool = false,
+                        completionHandler: ((UIBackgroundFetchResult) -> Void)?) {}
+```
+
+```swift
+func write(withoutNotifying tokens: [NotificationToken] =  {}, _ block: (() throws -> Int)) {}
+```
+
 ## Triggering Examples
 
 ```swift
 ↓func foo(bar: Int = 0, baz: String) {}
+```
+
+```swift
+private ↓func foo(bar: Int = 0, baz: String) {}
+```
+
+```swift
+public ↓init?(for date: Date = Date(), coordinate: CLLocationCoordinate2D) {}
 ```

@@ -3,11 +3,11 @@
 Generic type name should only contain alphanumeric characters, start with an uppercase character and span between 1 and 20 characters in length.
 
 * **Identifier:** generic_type_name
-* **Enabled by default:** Enabled
+* **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** (min_length) w/e: 1/0, (max_length) w/e: 20/1000, excluded: [], allowed_symbols: [], validates_start_with_lowercase: true
 
 ## Non Triggering Examples

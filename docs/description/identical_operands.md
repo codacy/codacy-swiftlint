@@ -3,11 +3,11 @@
 Comparing two identical operands is likely a mistake.
 
 * **Identifier:** identical_operands
-* **Enabled by default:** Disabled
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
-* **Minimum Swift compiler version:** 3.0.0
+* **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:** warning
 
 ## Non Triggering Examples
@@ -74,6 +74,14 @@ num == num!.byteSwapped
 ```
 
 ```swift
+1    + 1 ==   1     +    2
+```
+
+```swift
+f(  i :   2) ==   f (i: 3 )
+```
+
+```swift
 1 != 2
 ```
 
@@ -132,6 +140,14 @@ _ = num != nil && num != num?.byteSwapped
 
 ```swift
 num != num!.byteSwapped
+```
+
+```swift
+1    + 1 !=   1     +    2
+```
+
+```swift
+f(  i :   2) !=   f (i: 3 )
 ```
 
 ```swift
@@ -196,6 +212,14 @@ num === num!.byteSwapped
 ```
 
 ```swift
+1    + 1 ===   1     +    2
+```
+
+```swift
+f(  i :   2) ===   f (i: 3 )
+```
+
+```swift
 1 !== 2
 ```
 
@@ -254,6 +278,14 @@ _ = num != nil && num !== num?.byteSwapped
 
 ```swift
 num !== num!.byteSwapped
+```
+
+```swift
+1    + 1 !==   1     +    2
+```
+
+```swift
+f(  i :   2) !==   f (i: 3 )
 ```
 
 ```swift
@@ -318,6 +350,14 @@ num > num!.byteSwapped
 ```
 
 ```swift
+1    + 1 >   1     +    2
+```
+
+```swift
+f(  i :   2) >   f (i: 3 )
+```
+
+```swift
 1 >= 2
 ```
 
@@ -376,6 +416,14 @@ _ = num != nil && num >= num?.byteSwapped
 
 ```swift
 num >= num!.byteSwapped
+```
+
+```swift
+1    + 1 >=   1     +    2
+```
+
+```swift
+f(  i :   2) >=   f (i: 3 )
 ```
 
 ```swift
@@ -440,6 +488,14 @@ num < num!.byteSwapped
 ```
 
 ```swift
+1    + 1 <   1     +    2
+```
+
+```swift
+f(  i :   2) <   f (i: 3 )
+```
+
+```swift
 1 <= 2
 ```
 
@@ -501,6 +557,14 @@ num <= num!.byteSwapped
 ```
 
 ```swift
+1    + 1 <=   1     +    2
+```
+
+```swift
+f(  i :   2) <=   f (i: 3 )
+```
+
+```swift
 func evaluate(_ mode: CommandMode) -> Result<AutoCorrectOptions, CommandantError<CommandantError<()>>>
 ```
 
@@ -522,6 +586,14 @@ type(of: model).cachePrefix == cachePrefix
 
 ```swift
 histogram[156].0 == 0x003B8D96 && histogram[156].1 == 1
+```
+
+```swift
+[Wrapper(type: .three), Wrapper(type: .one)].sorted { "\($0.type)" > "\($1.type)"}
+```
+
+```swift
+array.sorted { "\($0)" < "\($1)" }
 ```
 
 ## Triggering Examples
@@ -563,6 +635,15 @@ if let tab = tabManager.selectedTab, ↓tab.webView == tab.webView
 ```
 
 ```swift
+↓1    + 1 ==   1     +    1
+```
+
+```swift
+ ↓f(  i :   2) ==   f (i: 
+ 2 )
+```
+
+```swift
 ↓1 != 1
 ```
 
@@ -596,6 +677,15 @@ XCTAssertTrue(↓s3 != s3)
 
 ```swift
 if let tab = tabManager.selectedTab, ↓tab.webView != tab.webView
+```
+
+```swift
+↓1    + 1 !=   1     +    1
+```
+
+```swift
+ ↓f(  i :   2) !=   f (i: 
+ 2 )
 ```
 
 ```swift
@@ -635,6 +725,15 @@ if let tab = tabManager.selectedTab, ↓tab.webView === tab.webView
 ```
 
 ```swift
+↓1    + 1 ===   1     +    1
+```
+
+```swift
+ ↓f(  i :   2) ===   f (i: 
+ 2 )
+```
+
+```swift
 ↓1 !== 1
 ```
 
@@ -668,6 +767,15 @@ XCTAssertTrue(↓s3 !== s3)
 
 ```swift
 if let tab = tabManager.selectedTab, ↓tab.webView !== tab.webView
+```
+
+```swift
+↓1    + 1 !==   1     +    1
+```
+
+```swift
+ ↓f(  i :   2) !==   f (i: 
+ 2 )
 ```
 
 ```swift
@@ -707,6 +815,15 @@ if let tab = tabManager.selectedTab, ↓tab.webView > tab.webView
 ```
 
 ```swift
+↓1    + 1 >   1     +    1
+```
+
+```swift
+ ↓f(  i :   2) >   f (i: 
+ 2 )
+```
+
+```swift
 ↓1 >= 1
 ```
 
@@ -740,6 +857,15 @@ XCTAssertTrue(↓s3 >= s3)
 
 ```swift
 if let tab = tabManager.selectedTab, ↓tab.webView >= tab.webView
+```
+
+```swift
+↓1    + 1 >=   1     +    1
+```
+
+```swift
+ ↓f(  i :   2) >=   f (i: 
+ 2 )
 ```
 
 ```swift
@@ -779,6 +905,15 @@ if let tab = tabManager.selectedTab, ↓tab.webView < tab.webView
 ```
 
 ```swift
+↓1    + 1 <   1     +    1
+```
+
+```swift
+ ↓f(  i :   2) <   f (i: 
+ 2 )
+```
+
+```swift
 ↓1 <= 1
 ```
 
@@ -812,4 +947,23 @@ XCTAssertTrue(↓s3 <= s3)
 
 ```swift
 if let tab = tabManager.selectedTab, ↓tab.webView <= tab.webView
+```
+
+```swift
+↓1    + 1 <=   1     +    1
+```
+
+```swift
+ ↓f(  i :   2) <=   f (i: 
+ 2 )
+```
+
+```swift
+    return ↓lhs.foo == lhs.foo &&
+           lhs.bar == rhs.bar
+```
+
+```swift
+    return lhs.foo == rhs.foo &&
+           ↓lhs.bar == lhs.bar
 ```
