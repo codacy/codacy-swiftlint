@@ -1,6 +1,6 @@
 FROM codacy-swiftlint-dev as builder
 
-FROM swift:5.7.0-jammy-slim
+FROM swift:5.7.2-jammy-slim
 
 COPY --from=builder /usr/bin/swiftlint /usr/bin/swiftlint
 COPY --from=builder /usr/lib/libsourcekitdInProc.so /usr/lib/libsourcekitdInProc.so
