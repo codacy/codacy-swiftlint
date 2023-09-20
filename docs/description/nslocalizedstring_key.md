@@ -1,6 +1,6 @@
 # NSLocalizedString Key
 
-Static strings should be used as key/comment in NSLocalizedString in order for genstrings to work.
+Static strings should be used as key/comment in NSLocalizedString in order for genstrings to work
 
 * **Identifier:** nslocalizedstring_key
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Static strings should be used as key/comment in NSLocalizedString in order for g
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

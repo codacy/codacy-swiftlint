@@ -1,6 +1,6 @@
 # Duplicate Enum Cases
 
-Enum can't contain multiple cases with the same name.
+Enum shouldn't contain multiple cases with the same name
 
 * **Identifier:** duplicate_enum_cases
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Enum can't contain multiple cases with the same name.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** error
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  error
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

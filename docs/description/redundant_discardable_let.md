@@ -1,6 +1,6 @@
 # Redundant Discardable Let
 
-Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function.
+Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function
 
 * **Identifier:** redundant_discardable_let
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

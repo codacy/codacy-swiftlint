@@ -1,6 +1,6 @@
 # Empty Parentheses with Trailing Closure
 
-When using trailing closures, empty parentheses should be avoided after the method call.
+When using trailing closures, empty parentheses should be avoided after the method call
 
 * **Identifier:** empty_parentheses_with_trailing_closure
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ When using trailing closures, empty parentheses should be avoided after the meth
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

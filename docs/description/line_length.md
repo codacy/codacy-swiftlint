@@ -8,7 +8,62 @@ Lines should not span too many characters.
 * **Kind:** metrics
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning: 120, error: 200, ignores urls: false, ignores function declarations: false, ignores comments: false, ignores interpolated strings: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  warning
+  </td>
+  <td>
+  120
+  </td>
+  </tr>
+  <tr>
+  <td>
+  error
+  </td>
+  <td>
+  200
+  </td>
+  </tr>
+  <tr>
+  <td>
+  ignores_urls
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
+  ignores_function_declarations
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
+  ignores_comments
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
+  ignores_interpolated_strings
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

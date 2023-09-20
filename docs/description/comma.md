@@ -1,6 +1,6 @@
 # Comma Spacing
 
-There should be no space before and one after any comma.
+There should be no space before and one after any comma
 
 * **Identifier:** comma
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ There should be no space before and one after any comma.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

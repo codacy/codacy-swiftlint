@@ -8,7 +8,38 @@ Complexity of function bodies should be limited.
 * **Kind:** metrics
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning: 10, error: 20, ignores_case_statements: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  warning
+  </td>
+  <td>
+  10
+  </td>
+  </tr>
+  <tr>
+  <td>
+  error
+  </td>
+  <td>
+  20
+  </td>
+  </tr>
+  <tr>
+  <td>
+  ignores_case_statements
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

@@ -1,6 +1,6 @@
-# Overridden methods call super
+# Overridden Method Calls Super
 
-Some overridden methods should always call super
+Some overridden methods should always call super.
 
 * **Identifier:** overridden_super_call
 * **Enabled by default:** No
@@ -8,7 +8,38 @@ Some overridden methods should always call super
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, excluded: [], included: ["*"]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  excluded
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
+  <tr>
+  <td>
+  included
+  </td>
+  <td>
+  [&quot;*&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

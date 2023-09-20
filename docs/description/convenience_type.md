@@ -1,6 +1,6 @@
 # Convenience Type
 
-Types used for hosting only static members should be implemented as a caseless enum to avoid instantiation.
+Types used for hosting only static members should be implemented as a caseless enum to avoid instantiation
 
 * **Identifier:** convenience_type
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Types used for hosting only static members should be implemented as a caseless e
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

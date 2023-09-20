@@ -1,6 +1,6 @@
 # Fatal Error Message
 
-A fatalError call should have a message.
+A fatalError call should have a message
 
 * **Identifier:** fatal_error_message
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ A fatalError call should have a message.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

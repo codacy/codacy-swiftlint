@@ -8,7 +8,46 @@ Declarations should be documented.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning: open, public, excludes_extensions: true, excludes_inherited_types: true, excludes_trivial_init: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  warning
+  </td>
+  <td>
+  [open, public]
+  </td>
+  </tr>
+  <tr>
+  <td>
+  excludes_extensions
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  <tr>
+  <td>
+  excludes_inherited_types
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  <tr>
+  <td>
+  excludes_trivial_init
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

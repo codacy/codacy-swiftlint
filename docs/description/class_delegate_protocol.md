@@ -1,6 +1,6 @@
 # Class Delegate Protocol
 
-Delegate protocols should be class-only so they can be weakly referenced.
+Delegate protocols should be class-only so they can be weakly referenced
 
 * **Identifier:** class_delegate_protocol
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Delegate protocols should be class-only so they can be weakly referenced.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

@@ -1,6 +1,6 @@
-# Raw Value For Camel Cased Codable Enum
+# Raw Value for Camel Cased Codable Enum
 
-Camel cased cases of Codable String enums should have raw value.
+Camel cased cases of Codable String enums should have raw values
 
 * **Identifier:** raw_value_for_camel_cased_codable_enum
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Camel cased cases of Codable String enums should have raw value.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

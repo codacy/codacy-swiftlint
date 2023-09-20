@@ -1,6 +1,6 @@
 # Shorthand Operator
 
-Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning.
+Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning
 
 * **Identifier:** shorthand_operator
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigni
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** error
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  error
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

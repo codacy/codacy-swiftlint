@@ -1,6 +1,6 @@
 # Implicit Return
 
-Prefer implicit returns in closures, functions and getters.
+Prefer implicit returns in closures, functions and getters
 
 * **Identifier:** implicit_return
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Prefer implicit returns in closures, functions and getters.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, included: [closure, function, getter]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  included
+  </td>
+  <td>
+  [closure, function, getter]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

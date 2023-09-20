@@ -1,6 +1,6 @@
 # Colon Spacing
 
-Colons should be next to the identifier when specifying a type and next to the key in dictionary literals.
+Colons should be next to the identifier when specifying a type and next to the key in dictionary literals
 
 * **Identifier:** colon
 * **Enabled by default:** Yes
@@ -8,7 +8,38 @@ Colons should be next to the identifier when specifying a type and next to the k
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, flexible_right_spacing: false, apply_to_dictionaries: true
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  flexible_right_spacing
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
+  apply_to_dictionaries
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

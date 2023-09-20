@@ -1,6 +1,6 @@
 # Orphaned Doc Comment
 
-A doc comment should be attached to a declaration.
+A doc comment should be attached to a declaration
 
 * **Identifier:** orphaned_doc_comment
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ A doc comment should be attached to a declaration.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

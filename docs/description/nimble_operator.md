@@ -1,6 +1,6 @@
 # Nimble Operator
 
-Prefer Nimble operator overloads over free matcher functions.
+Prefer Nimble operator overloads over free matcher functions
 
 * **Identifier:** nimble_operator
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Prefer Nimble operator overloads over free matcher functions.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

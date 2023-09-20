@@ -1,6 +1,6 @@
 # Trailing Closure
 
-Trailing closure syntax should be used whenever possible.
+Trailing closure syntax should be used whenever possible
 
 * **Identifier:** trailing_closure
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Trailing closure syntax should be used whenever possible.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, only_single_muted_parameter: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  only_single_muted_parameter
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

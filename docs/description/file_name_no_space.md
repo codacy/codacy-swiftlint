@@ -1,6 +1,6 @@
-# File Name No Space
+# File Name no Space
 
-File name should not contain any whitespace.
+File name should not contain any whitespace
 
 * **Identifier:** file_name_no_space
 * **Enabled by default:** No
@@ -8,4 +8,27 @@ File name should not contain any whitespace.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** (severity) warning, excluded: []
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  excluded
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
+  </tbody>
+  </table>

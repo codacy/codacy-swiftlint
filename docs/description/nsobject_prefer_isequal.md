@@ -1,6 +1,6 @@
 # NSObject Prefer isEqual
 
-NSObject subclasses should implement isEqual instead of ==.
+NSObject subclasses should implement isEqual instead of ==
 
 * **Identifier:** nsobject_prefer_isequal
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ NSObject subclasses should implement isEqual instead of ==.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

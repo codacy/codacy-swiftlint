@@ -8,7 +8,86 @@ Availability checks or attributes shouldn't be using older versions that are sat
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, iOSApplicationExtension_deployment_target: 7.0, iOS_deployment_target: 7.0, macOSApplicationExtension_deployment_target: 10.9, macOS_deployment_target: 10.9, tvOSApplicationExtension_deployment_target: 9.0, tvOS_deployment_target: 9.0, watchOSApplicationExtension_deployment_target: 1.0, watchOS_deployment_target: 1.0
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  iOSApplicationExtension_deployment_target
+  </td>
+  <td>
+  7.0
+  </td>
+  </tr>
+  <tr>
+  <td>
+  iOS_deployment_target
+  </td>
+  <td>
+  7.0
+  </td>
+  </tr>
+  <tr>
+  <td>
+  macOSApplicationExtension_deployment_target
+  </td>
+  <td>
+  10.9
+  </td>
+  </tr>
+  <tr>
+  <td>
+  macOS_deployment_target
+  </td>
+  <td>
+  10.9
+  </td>
+  </tr>
+  <tr>
+  <td>
+  tvOSApplicationExtension_deployment_target
+  </td>
+  <td>
+  9.0
+  </td>
+  </tr>
+  <tr>
+  <td>
+  tvOS_deployment_target
+  </td>
+  <td>
+  9.0
+  </td>
+  </tr>
+  <tr>
+  <td>
+  watchOSApplicationExtension_deployment_target
+  </td>
+  <td>
+  1.0
+  </td>
+  </tr>
+  <tr>
+  <td>
+  watchOS_deployment_target
+  </td>
+  <td>
+  1.0
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

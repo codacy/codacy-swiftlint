@@ -8,7 +8,74 @@ Types should be nested at most 1 level deep, and functions should be nested at m
 * **Kind:** metrics
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** (type_level) w: 1, (function_level) w: 2, (check_nesting_in_closures_and_statements) true, (always_allow_one_type_in_functions) false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  type_level
+  </td>
+  <td>
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  warning
+  </td>
+  <td>
+  1
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  function_level
+  </td>
+  <td>
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  warning
+  </td>
+  <td>
+  2
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  check_nesting_in_closures_and_statements
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  <tr>
+  <td>
+  always_allow_one_type_in_functions
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

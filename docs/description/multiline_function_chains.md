@@ -1,6 +1,6 @@
 # Multiline Function Chains
 
-Chained function calls should be either on the same line, or one per line.
+Chained function calls should be either on the same line, or one per line
 
 * **Identifier:** multiline_function_chains
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Chained function calls should be either on the same line, or one per line.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

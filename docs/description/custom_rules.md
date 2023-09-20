@@ -8,4 +8,3 @@ Create custom rules by providing a regex string. Optionally specify what syntax 
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** user-defined

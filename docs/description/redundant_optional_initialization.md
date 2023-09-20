@@ -1,6 +1,6 @@
 # Redundant Optional Initialization
 
-Initializing an optional variable with nil is redundant.
+Initializing an optional variable with nil is redundant
 
 * **Identifier:** redundant_optional_initialization
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Initializing an optional variable with nil is redundant.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

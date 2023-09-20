@@ -1,6 +1,6 @@
 # Function Body Length
 
-Functions bodies should not span too many lines.
+Function bodies should not span too many lines
 
 * **Identifier:** function_body_length
 * **Enabled by default:** Yes
@@ -8,4 +8,27 @@ Functions bodies should not span too many lines.
 * **Kind:** metrics
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning: 50, error: 100
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  warning
+  </td>
+  <td>
+  50
+  </td>
+  </tr>
+  <tr>
+  <td>
+  error
+  </td>
+  <td>
+  100
+  </td>
+  </tr>
+  </tbody>
+  </table>

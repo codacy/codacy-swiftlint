@@ -1,6 +1,6 @@
-# Contains Over Filter Count
+# Contains over Filter Count
 
-Prefer `contains` over comparing `filter(where:).count` to 0.
+Prefer `contains` over comparing `filter(where:).count` to 0
 
 * **Identifier:** contains_over_filter_count
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Prefer `contains` over comparing `filter(where:).count` to 0.
 * **Kind:** performance
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

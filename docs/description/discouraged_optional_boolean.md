@@ -1,6 +1,6 @@
 # Discouraged Optional Boolean
 
-Prefer non-optional booleans over optional booleans.
+Prefer non-optional booleans over optional booleans
 
 * **Identifier:** discouraged_optional_boolean
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Prefer non-optional booleans over optional booleans.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

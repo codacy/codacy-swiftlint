@@ -1,6 +1,6 @@
 # Capture Variable
 
-Non-constant variables should not be listed in a closure's capture list to avoid confusion about closures capturing variables at creation time.
+Non-constant variables should not be listed in a closure's capture list to avoid confusion about closures capturing variables at creation time
 
 * **Identifier:** capture_variable
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Non-constant variables should not be listed in a closure's capture list to avoid
 * **Kind:** lint
 * **Analyzer rule:** Yes
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

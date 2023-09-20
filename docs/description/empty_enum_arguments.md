@@ -1,6 +1,6 @@
 # Empty Enum Arguments
 
-Arguments can be omitted when matching enums with associated values if they are not used.
+Arguments can be omitted when matching enums with associated values if they are not used
 
 * **Identifier:** empty_enum_arguments
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Arguments can be omitted when matching enums with associated values if they are 
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

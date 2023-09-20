@@ -8,7 +8,30 @@ Specifies the order of subtypes, properties, methods & more within a type.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, order: [[SwiftLintFramework.TypeContent.case], [SwiftLintFramework.TypeContent.typeAlias, SwiftLintFramework.TypeContent.associatedType], [SwiftLintFramework.TypeContent.subtype], [SwiftLintFramework.TypeContent.typeProperty], [SwiftLintFramework.TypeContent.instanceProperty], [SwiftLintFramework.TypeContent.ibInspectable], [SwiftLintFramework.TypeContent.ibOutlet], [SwiftLintFramework.TypeContent.initializer], [SwiftLintFramework.TypeContent.typeMethod], [SwiftLintFramework.TypeContent.viewLifeCycleMethod], [SwiftLintFramework.TypeContent.ibAction], [SwiftLintFramework.TypeContent.otherMethod], [SwiftLintFramework.TypeContent.subscript], [SwiftLintFramework.TypeContent.deinitializer]]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  order
+  </td>
+  <td>
+  [[case], [type_alias, associated_type], [subtype], [type_property], [instance_property], [ib_inspectable], [ib_outlet], [initializer], [type_method], [view_life_cycle_method], [ib_action], [other_method], [subscript], [deinitializer]]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

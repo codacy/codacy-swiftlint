@@ -1,6 +1,6 @@
 # Unused Control Flow Label
 
-Unused control flow label should be removed.
+Unused control flow label should be removed
 
 * **Identifier:** unused_control_flow_label
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Unused control flow label should be removed.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

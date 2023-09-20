@@ -1,6 +1,6 @@
 # Unused Declaration
 
-Declarations should be referenced at least once within all files linted.
+Declarations should be referenced at least once within all files linted
 
 * **Identifier:** unused_declaration
 * **Enabled by default:** No
@@ -8,7 +8,38 @@ Declarations should be referenced at least once within all files linted.
 * **Kind:** lint
 * **Analyzer rule:** Yes
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** severity: error, include_public_and_open: false, related_usrs_to_skip: ["s:7SwiftUI15PreviewProviderP"]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  error
+  </td>
+  </tr>
+  <tr>
+  <td>
+  include_public_and_open
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
+  related_usrs_to_skip
+  </td>
+  <td>
+  [&quot;s:7SwiftUI15PreviewProviderP&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

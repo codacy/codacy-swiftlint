@@ -1,6 +1,6 @@
 # Discouraged Direct Initialization
 
-Discouraged direct initialization of types that can be harmful.
+Discouraged direct initialization of types that can be harmful
 
 * **Identifier:** discouraged_direct_init
 * **Enabled by default:** Yes
@@ -8,7 +8,30 @@ Discouraged direct initialization of types that can be harmful.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, types: ["Bundle", "Bundle.init", "NSError", "NSError.init", "UIDevice", "UIDevice.init"]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  types
+  </td>
+  <td>
+  [&quot;Bundle&quot;, &quot;Bundle.init&quot;, &quot;NSError&quot;, &quot;NSError.init&quot;, &quot;UIDevice&quot;, &quot;UIDevice.init&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

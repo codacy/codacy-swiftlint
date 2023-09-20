@@ -1,6 +1,6 @@
 # Unneeded Parentheses in Closure Argument
 
-Parentheses are not needed when declaring closure arguments.
+Parentheses are not needed when declaring closure arguments
 
 * **Identifier:** unneeded_parentheses_in_closure_argument
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Parentheses are not needed when declaring closure arguments.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

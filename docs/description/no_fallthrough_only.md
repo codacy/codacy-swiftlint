@@ -1,6 +1,6 @@
-# No Fallthrough Only
+# No Fallthrough only
 
-Fallthroughs can only be used if the `case` contains at least one other statement.
+Fallthroughs can only be used if the `case` contains at least one other statement
 
 * **Identifier:** no_fallthrough_only
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Fallthroughs can only be used if the `case` contains at least one other statemen
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

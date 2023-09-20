@@ -1,6 +1,6 @@
 # Discouraged Optional Collection
 
-Prefer empty collection over optional collection.
+Prefer empty collection over optional collection
 
 * **Identifier:** discouraged_optional_collection
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Prefer empty collection over optional collection.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

@@ -1,6 +1,6 @@
 # Explicit Enum Raw Value
 
-Enums should be explicitly assigned their raw values.
+Enums should be explicitly assigned their raw values
 
 * **Identifier:** explicit_enum_raw_value
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Enums should be explicitly assigned their raw values.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

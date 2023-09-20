@@ -1,6 +1,6 @@
-# Prohibited calls to super
+# Prohibited Calls to Super
 
-Some methods should not call super
+Some methods should not call super.
 
 * **Identifier:** prohibited_super_call
 * **Enabled by default:** No
@@ -8,7 +8,38 @@ Some methods should not call super
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, excluded: [[]], included: [["*"]]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  excluded
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
+  <tr>
+  <td>
+  included
+  </td>
+  <td>
+  [&quot;*&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

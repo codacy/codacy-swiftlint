@@ -8,7 +8,54 @@ Indent code using either one tab or the configured amount of spaces, unindent to
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** severity: warning, indentation_width: 4, include_comments: true
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  indentation_width
+  </td>
+  <td>
+  4
+  </td>
+  </tr>
+  <tr>
+  <td>
+  include_comments
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  <tr>
+  <td>
+  include_compiler_directives
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  <tr>
+  <td>
+  include_multiline_strings
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

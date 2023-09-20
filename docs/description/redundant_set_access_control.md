@@ -1,6 +1,6 @@
-# Redundant Set Access Control Rule
+# Redundant Access Control for Setter
 
-Property setter access level shouldn't be explicit if it's the same as the variable access level.
+Property setter access level shouldn't be explicit if it's the same as the variable access level
 
 * **Identifier:** redundant_set_access_control
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Property setter access level shouldn't be explicit if it's the same as the varia
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

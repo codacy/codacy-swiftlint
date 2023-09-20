@@ -1,6 +1,6 @@
 # Private Outlets
 
-IBOutlets should be private to avoid leaking UIKit to higher layers.
+IBOutlets should be private to avoid leaking UIKit to higher layers
 
 * **Identifier:** private_outlet
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ IBOutlets should be private to avoid leaking UIKit to higher layers.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, allow_private_set: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  allow_private_set
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

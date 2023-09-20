@@ -1,6 +1,6 @@
-# Vertical Parameter Alignment On Call
+# Vertical Parameter Alignment on Call
 
-Function parameters should be aligned vertically if they're in multiple lines in a method call.
+Function parameters should be aligned vertically if they're in multiple lines in a method call
 
 * **Identifier:** vertical_parameter_alignment_on_call
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Function parameters should be aligned vertically if they're in multiple lines in
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

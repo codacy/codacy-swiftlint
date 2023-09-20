@@ -1,14 +1,29 @@
 # Inert Defer
 
-If defer is at the end of its parent scope, it will be executed right where it is anyway.
+If defer is at the end of its parent scope, it will be executed right where it is anyway
 
 * **Identifier:** inert_defer
-* **Enabled by default:** Yes
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

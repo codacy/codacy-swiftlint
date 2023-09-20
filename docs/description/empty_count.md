@@ -1,6 +1,6 @@
 # Empty Count
 
-Prefer checking `isEmpty` over comparing `count` to zero.
+Prefer checking `isEmpty` over comparing `count` to zero
 
 * **Identifier:** empty_count
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Prefer checking `isEmpty` over comparing `count` to zero.
 * **Kind:** performance
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** error, only_after_dot: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  error
+  </td>
+  </tr>
+  <tr>
+  <td>
+  only_after_dot
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

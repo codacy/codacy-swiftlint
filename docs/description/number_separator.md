@@ -1,6 +1,6 @@
 # Number Separator
 
-Underscores should be used as thousand separator in large decimal numbers.
+Underscores should be used as thousand separator in large numbers with a configurable number of digits. In other words, there should be an underscore after every 3 digits in the integral as well as the fractional part of a number.
 
 * **Identifier:** number_separator
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Underscores should be used as thousand separator in large decimal numbers.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, minimum_length: 0, minimum_fraction_length: none
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  minimum_length
+  </td>
+  <td>
+  0
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

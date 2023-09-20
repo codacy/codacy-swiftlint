@@ -1,6 +1,6 @@
 # NSLocalizedString Require Bundle
 
-Calls to NSLocalizedString should specify the bundle which contains the strings file.
+Calls to NSLocalizedString should specify the bundle which contains the strings file
 
 * **Identifier:** nslocalizedstring_require_bundle
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Calls to NSLocalizedString should specify the bundle which contains the strings 
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

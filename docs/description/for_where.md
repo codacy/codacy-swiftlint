@@ -1,6 +1,6 @@
-# For Where
+# Prefer For-Where
 
-`where` clauses are preferred over a single `if` inside a `for`.
+`where` clauses are preferred over a single `if` inside a `for`
 
 * **Identifier:** for_where
 * **Enabled by default:** Yes
@@ -8,7 +8,30 @@
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, allow_for_as_filter: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  allow_for_as_filter
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

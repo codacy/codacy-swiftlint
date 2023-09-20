@@ -1,6 +1,6 @@
 # Multiline Parameters
 
-Functions and methods parameters should be either on the same line, or one per line.
+Functions and methods parameters should be either on the same line, or one per line
 
 * **Identifier:** multiline_parameters
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Functions and methods parameters should be either on the same line, or one per l
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, allowsSingleLine: true
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  allows_single_line
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

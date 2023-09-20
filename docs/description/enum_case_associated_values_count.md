@@ -1,6 +1,6 @@
 # Enum Case Associated Values Count
 
-Number of associated values in an enum case should be low
+The number of associated values in an enum case should be low.
 
 * **Identifier:** enum_case_associated_values_count
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Number of associated values in an enum case should be low
 * **Kind:** metrics
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning: 5, error: 6
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  warning
+  </td>
+  <td>
+  5
+  </td>
+  </tr>
+  <tr>
+  <td>
+  error
+  </td>
+  <td>
+  6
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

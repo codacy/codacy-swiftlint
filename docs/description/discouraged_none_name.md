@@ -1,6 +1,6 @@
 # Discouraged None Name
 
-Discourages name cases/static members `none`, which can conflict with `Optional<T>.none`.
+Enum cases and static members named `none` are discouraged as they can conflict with `Optional<T>.none`.
 
 * **Identifier:** discouraged_none_name
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Discourages name cases/static members `none`, which can conflict with `Optional<
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

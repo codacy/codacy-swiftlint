@@ -1,6 +1,6 @@
 # AnyObject Protocol
 
-Prefer using `AnyObject` over `class` for class-only protocols.
+Prefer using `AnyObject` over `class` for class-only protocols
 
 * **Identifier:** anyobject_protocol
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Prefer using `AnyObject` over `class` for class-only protocols.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

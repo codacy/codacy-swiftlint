@@ -1,6 +1,6 @@
 # Operator Usage Whitespace
 
-Operators should be surrounded by a single whitespace when they are being used.
+Operators should be surrounded by a single whitespace when they are being used
 
 * **Identifier:** operator_usage_whitespace
 * **Enabled by default:** No
@@ -8,7 +8,46 @@ Operators should be surrounded by a single whitespace when they are being used.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, lines_look_around: 2, skip_aligned_constants: true, allowed_no_space_operators: ["...", "..<"]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  lines_look_around
+  </td>
+  <td>
+  2
+  </td>
+  </tr>
+  <tr>
+  <td>
+  skip_aligned_constants
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  <tr>
+  <td>
+  allowed_no_space_operators
+  </td>
+  <td>
+  [&quot;...&quot;, &quot;..<&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -134,7 +173,7 @@ return path.flatMap { path in
 ```
 
 ```swift
-internal static func == (lhs: Vertix, rhs: Vertix) -> Bool {
+internal static func == (lhs: Vertex, rhs: Vertex) -> Bool {
     return lhs.filePath == rhs.filePath
         && lhs.originalRemoteString == rhs.originalRemoteString
         && lhs.rootDirectory == rhs.rootDirectory
@@ -142,7 +181,7 @@ internal static func == (lhs: Vertix, rhs: Vertix) -> Bool {
 ```
 
 ```swift
-internal static func == (lhs: Vertix, rhs: Vertix) -> Bool {
+internal static func == (lhs: Vertex, rhs: Vertex) -> Bool {
     return lhs.filePath == rhs.filePath &&
         lhs.originalRemoteString == rhs.originalRemoteString &&
         lhs.rootDirectory == rhs.rootDirectory

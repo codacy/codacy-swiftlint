@@ -1,6 +1,6 @@
 # Dynamic Inline
 
-Avoid using 'dynamic' and '@inline(__always)' together.
+Avoid using 'dynamic' and '@inline(__always)' together
 
 * **Identifier:** dynamic_inline
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Avoid using 'dynamic' and '@inline(__always)' together.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** error
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  error
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

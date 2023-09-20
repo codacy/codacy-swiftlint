@@ -1,6 +1,6 @@
 # Explicit ACL
 
-All declarations should specify Access Control Level keywords explicitly.
+All declarations should specify Access Control Level keywords explicitly
 
 * **Identifier:** explicit_acl
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ All declarations should specify Access Control Level keywords explicitly.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

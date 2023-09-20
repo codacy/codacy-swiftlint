@@ -1,6 +1,6 @@
 # Explicit Self
 
-Instance variables and functions should be explicitly accessed with 'self.'.
+Instance variables and functions should be explicitly accessed with 'self.'
 
 * **Identifier:** explicit_self
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Instance variables and functions should be explicitly accessed with 'self.'.
 * **Kind:** style
 * **Analyzer rule:** Yes
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
