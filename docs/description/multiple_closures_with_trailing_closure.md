@@ -29,24 +29,20 @@ Trailing closure syntax should not be used when passing more than one closure ar
 
 ```swift
 foo.map { $0 + 1 }
-
 ```
 
 ```swift
 foo.reduce(0) { $0 + $1 }
-
 ```
 
 ```swift
 if let foo = bar.map({ $0 + 1 }) {
 
 }
-
 ```
 
 ```swift
 foo.something(param1: { $0 }, param2: { $0 + 1 })
-
 ```
 
 ```swift

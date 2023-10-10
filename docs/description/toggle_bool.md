@@ -29,12 +29,10 @@ Prefer `someBool.toggle()` over `someBool = !someBool`
 
 ```swift
 isHidden.toggle()
-
 ```
 
 ```swift
 view.clipsToBounds.toggle()
-
 ```
 
 ```swift
@@ -43,12 +41,10 @@ func foo() { abc.toggle() }
 
 ```swift
 view.clipsToBounds = !clipsToBounds
-
 ```
 
 ```swift
 disconnected = !connected
-
 ```
 
 ```swift
@@ -59,12 +55,10 @@ result = !result.toggle()
 
 ```swift
 ↓isHidden = !isHidden
-
 ```
 
 ```swift
 ↓view.clipsToBounds = !view.clipsToBounds
-
 ```
 
 ```swift

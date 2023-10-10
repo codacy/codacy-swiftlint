@@ -29,17 +29,14 @@ MARK comment should be in valid format. e.g. '// MARK: ...' or '// MARK: - ...'
 
 ```swift
 // MARK: good
-
 ```
 
 ```swift
 // MARK: - good
-
 ```
 
 ```swift
 // MARK: -
-
 ```
 
 ```swift

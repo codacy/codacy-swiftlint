@@ -38,14 +38,6 @@ struct MyView: View {
 ```swift
 struct MyView: View {
     var body: some View {
-        Image(systemName: "circle.plus")
-    }
-}
-```
-
-```swift
-struct MyView: View {
-    var body: some View {
         Image("my-image", label: Text("Alt text for my image"))
     }
 }
@@ -313,6 +305,14 @@ struct MyView: View {
                 .renderingMode(.template)
                 .foregroundColor(.blue)
         }
+    }
+}
+```
+
+```swift
+struct MyView: View {
+    var body: some View {
+        ↓Image(systemName: "circle.plus")
     }
 }
 ```

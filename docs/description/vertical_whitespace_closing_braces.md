@@ -50,23 +50,14 @@ do {
 ```
 
 ```swift
-print([foo {
-  var sum = 0
-  for i in 1...5 { sum += i }
-  return sum
-
-}, foo {
-  var mul = 1
-  for i in 1...5 { mul *= i }
-  return mul
-}])
+do {
+  print("x is 5")
+}
 ```
 
 ```swift
-func foo() {
-  run(5) { x in
-    print(x)
-  }
+do {
+  print("x is 5")
 }
 ```
 
@@ -78,21 +69,30 @@ foo(
 ```
 
 ```swift
+func foo() {
+  run(5) { x in
+    print(x)
+  }
+}
+```
+
+```swift
 print([
   1
 ])
 ```
 
 ```swift
-do {
-  print("x is 5")
-}
-```
+print([foo {
+  var sum = 0
+  for i in 1...5 { sum += i }
+  return sum
 
-```swift
-do {
-  print("x is 5")
-}
+}, foo {
+  var mul = 1
+  for i in 1...5 { mul *= i }
+  return mul
+}])
 ```
 
 ```swift
@@ -113,22 +113,6 @@ do {
 */
 ```
 
-```swift
-if bool1 {
-  // do something
-  // do something
-
-} else if bool2 {
-  // do something
-  // do something
-  // do something
-
-} else {
-  // do something
-  // do something
-}
-```
-
 ## Triggering Examples
 
 ```swift
@@ -144,8 +128,47 @@ if bool1 {
 do {
   print("x is 5")
 ↓
+
+}
+```
+
+```swift
+do {
+  print("x is 5")
+↓
   
 }
+```
+
+```swift
+do {
+  print("x is 5")
+↓
+}
+```
+
+```swift
+foo(
+    x: 5,
+    y:6
+↓
+)
+```
+
+```swift
+func foo() {
+  run(5) { x in
+    print(x)
+  }
+↓
+}
+```
+
+```swift
+print([
+  1
+↓
+])
 ```
 
 ```swift
@@ -160,43 +183,4 @@ print([foo {
   return mul
 ↓
 }])
-```
-
-```swift
-func foo() {
-  run(5) { x in
-    print(x)
-  }
-↓
-}
-```
-
-```swift
-foo(
-    x: 5,
-    y:6
-↓
-)
-```
-
-```swift
-print([
-  1
-↓
-])
-```
-
-```swift
-do {
-  print("x is 5")
-↓
-
-}
-```
-
-```swift
-do {
-  print("x is 5")
-↓
-}
 ```

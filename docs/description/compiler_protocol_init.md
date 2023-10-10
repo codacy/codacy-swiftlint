@@ -29,32 +29,26 @@ The initializers declared in compiler protocols such as `ExpressibleByArrayLiter
 
 ```swift
 let set: Set<Int> = [1, 2]
-
 ```
 
 ```swift
 let set = Set(array)
-
 ```
 
 ## Triggering Examples
 
 ```swift
 let set = ↓Set(arrayLiteral: 1, 2)
-
 ```
 
 ```swift
 let set = ↓Set (arrayLiteral: 1, 2)
-
 ```
 
 ```swift
 let set = ↓Set.init(arrayLiteral: 1, 2)
-
 ```
 
 ```swift
 let set = ↓Set.init(arrayLiteral : 1, 2)
-
 ```

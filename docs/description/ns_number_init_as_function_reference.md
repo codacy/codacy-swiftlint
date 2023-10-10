@@ -32,6 +32,10 @@ Passing `NSNumber.init` or `NSDecimalNumber.init` as a function reference is dan
 ```
 
 ```swift
+let value = NSNumber.init(value: 0.0)
+```
+
+```swift
 [0, 0.2].map { NSNumber(value: $0) }
 ```
 

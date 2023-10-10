@@ -45,7 +45,6 @@ func abc(
   bcd: String // comment
 ) {
 }
-
 ```
 
 ```swift
@@ -54,7 +53,6 @@ func abc(
   bcd: String
 ) {
 }
-
 ```
 
 ```swift
@@ -89,7 +87,6 @@ let result = plus(
     first: 3↓ , // #683
     second: 4
 )
-
 ```
 
 ```swift

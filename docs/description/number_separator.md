@@ -30,6 +30,14 @@ Underscores should be used as thousand separator in large numbers with a configu
   0
   </td>
   </tr>
+  <tr>
+  <td>
+  exclude_ranges
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
   </tbody>
   </table>
 

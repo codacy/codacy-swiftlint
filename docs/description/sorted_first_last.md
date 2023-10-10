@@ -29,27 +29,22 @@ Prefer using `min()` or `max()` over `sorted().first` or `sorted().last`
 
 ```swift
 let min = myList.min()
-
 ```
 
 ```swift
 let min = myList.min(by: { $0 < $1 })
-
 ```
 
 ```swift
 let min = myList.min(by: >)
-
 ```
 
 ```swift
 let max = myList.max()
-
 ```
 
 ```swift
 let max = myList.max(by: { $0 < $1 })
-
 ```
 
 ```swift
@@ -104,65 +99,52 @@ myList.sorted().last { $0 == key }
 
 ```swift
 ↓myList.sorted().first
-
 ```
 
 ```swift
 ↓myList.sorted(by: { $0.description < $1.description }).first
-
 ```
 
 ```swift
 ↓myList.sorted(by: >).first
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.sorted().first
-
 ```
 
 ```swift
 ↓myList.sorted(by: someFunction).first
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.sorted { $0.description < $1.description }.first
-
 ```
 
 ```swift
 ↓myList.sorted().last
-
 ```
 
 ```swift
 ↓myList.sorted().last?.something()
-
 ```
 
 ```swift
 ↓myList.sorted(by: { $0.description < $1.description }).last
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.sorted().last
-
 ```
 
 ```swift
 ↓myList.sorted(by: someFunction).last
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.sorted { $0.description < $1.description }.last
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.sorted { $0.first < $1.first }.last
-
 ```

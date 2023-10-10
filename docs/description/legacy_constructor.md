@@ -127,7 +127,6 @@ UIOffset(horizontal: horizontal, vertical: vertical)
 
 ```swift
 ↓CGPointMake(calculateX(), 10)
-
 ```
 
 ```swift

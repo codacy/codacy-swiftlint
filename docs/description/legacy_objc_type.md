@@ -29,7 +29,6 @@ Prefer Swift value types to bridged Objective-C reference types
 
 ```swift
 var array = Array<Int>()
-
 ```
 
 ```swift

@@ -441,7 +441,7 @@
 }, {
   "patternId" : "invalid_swiftlint_command",
   "title" : "Invalid SwiftLint Command",
-  "description" : "swiftlint command does not have a valid action or modifier",
+  "description" : "swiftlint command is invalid",
   "parameters" : [ ]
 }, {
   "patternId" : "is_disjoint",
@@ -619,6 +619,11 @@
   "description" : "Don't add a space between the method name and the parentheses",
   "parameters" : [ ]
 }, {
+  "patternId" : "non_overridable_class_declaration",
+  "title" : "Class Declaration in Final Class",
+  "description" : "Class methods and properties in final classes should themselves be final, just as if the declarations",
+  "parameters" : [ ]
+}, {
   "patternId" : "notification_center_detachment",
   "title" : "Notification Center Detachment",
   "description" : "An object should only remove itself as an observer in `deinit`",
@@ -742,6 +747,11 @@
   "patternId" : "private_subject",
   "title" : "Private Combine Subject",
   "description" : "Combine Subject should be private",
+  "parameters" : [ ]
+}, {
+  "patternId" : "private_swiftui_state",
+  "title" : "Private SwiftUI State Properties",
+  "description" : "SwiftUI state properties should be private",
   "parameters" : [ ]
 }, {
   "patternId" : "private_unit_test",
@@ -931,7 +941,7 @@
 }, {
   "patternId" : "switch_case_alignment",
   "title" : "Switch and Case Statement Alignment",
-  "description" : "Case statements should vertically align with their enclosing switch statement, or indented if configured otherwise.",
+  "description" : "Case statements should vertically align with their closing brace, or indented if configured otherwise.",
   "parameters" : [ ]
 }, {
   "patternId" : "switch_case_on_newline",
@@ -1022,6 +1032,11 @@
   "patternId" : "unneeded_break_in_switch",
   "title" : "Unneeded Break in Switch",
   "description" : "Avoid using unneeded break statements",
+  "parameters" : [ ]
+}, {
+  "patternId" : "unneeded_override",
+  "title" : "Unneeded Overridden Functions",
+  "description" : "Remove overridden functions that don't do anything except call their super",
   "parameters" : [ ]
 }, {
   "patternId" : "unneeded_parentheses_in_closure_argument",

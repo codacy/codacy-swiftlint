@@ -57,7 +57,7 @@ let Foo = true
 
 ```swift
 struct Foo {
-   let bar = 20.0
+    let bar = 20.0
 }
 ```
 
@@ -87,18 +87,18 @@ var foo = true, let kFoo = true
 
 ```swift
 let
-   kFoo = true
+    kFoo = true
 ```
 
 ```swift
 var foo: Int {
-   return a + b
+    return a + b
 }
 ```
 
 ```swift
 let kFoo = {
-   return a + b
+    return a + b
 }()
 ```
 
@@ -155,6 +155,6 @@ let
 
 ```swift
 let ↓foo = {
-   return a + b
+    return a + b
 }()
 ```

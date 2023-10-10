@@ -29,37 +29,30 @@ Prefer using `AnyObject` over `class` for class-only protocols
 
 ```swift
 protocol SomeProtocol {}
-
 ```
 
 ```swift
 protocol SomeClassOnlyProtocol: AnyObject {}
-
 ```
 
 ```swift
 protocol SomeClassOnlyProtocol: AnyObject, SomeInheritedProtocol {}
-
 ```
 
 ```swift
 @objc protocol SomeClassOnlyProtocol: AnyObject, SomeInheritedProtocol {}
-
 ```
 
 ## Triggering Examples
 
 ```swift
 protocol SomeClassOnlyProtocol: ↓class {}
-
 ```
 
 ```swift
 protocol SomeClassOnlyProtocol: ↓class, SomeInheritedProtocol {}
-
 ```
 
 ```swift
 @objc protocol SomeClassOnlyProtocol: ↓class, SomeInheritedProtocol {}
-
 ```

@@ -63,6 +63,11 @@ let meals = [
 ```
 
 ```swift
+NSAttributedString(string: "…", attributes: [.font: UIFont.systemFont(ofSize: 12, weight: .regular),
+                                             .foregroundColor: UIColor(white: 0, alpha: 0.2)])
+```
+
+```swift
 let coordinates = [
     CLLocationCoordinate2D(latitude: 0, longitude: 33),
     CLLocationCoordinate2D(latitude: 0, longitude: 66),

@@ -37,32 +37,26 @@ Trailing closure syntax should be used whenever possible
 
 ```swift
 foo.map { $0 + 1 }
-
 ```
 
 ```swift
 foo.bar()
-
 ```
 
 ```swift
 foo.reduce(0) { $0 + 1 }
-
 ```
 
 ```swift
 if let foo = bar.map({ $0 + 1 }) { }
-
 ```
 
 ```swift
 foo.something(param1: { $0 }, param2: { $0 + 1 })
-
 ```
 
 ```swift
 offsets.sorted { $0.offset < $1.offset }
-
 ```
 
 ```swift
@@ -81,20 +75,16 @@ foo.something(0, { return 1 }())
 
 ```swift
 ↓foo.map({ $0 + 1 })
-
 ```
 
 ```swift
 ↓foo.reduce(0, combine: { $0 + 1 })
-
 ```
 
 ```swift
 ↓offsets.sorted(by: { $0.offset < $1.offset })
-
 ```
 
 ```swift
 ↓foo.something(0, { $0 + 1 })
-
 ```

@@ -29,12 +29,10 @@ When using trailing closures, empty parentheses should be avoided after the meth
 
 ```swift
 [1, 2].map { $0 + 1 }
-
 ```
 
 ```swift
 [1, 2].map({ $0 + 1 })
-
 ```
 
 ```swift
@@ -45,12 +43,10 @@ When using trailing closures, empty parentheses should be avoided after the meth
 [1, 2].map { number in
  number + 1 
 }
-
 ```
 
 ```swift
 let isEmpty = [1, 2].isEmpty()
-
 ```
 
 ```swift
@@ -65,31 +61,26 @@ UIView.animateWithDuration(0.3, animations: {
 
 ```swift
 [1, 2].map↓() { $0 + 1 }
-
 ```
 
 ```swift
 [1, 2].map↓( ) { $0 + 1 }
-
 ```
 
 ```swift
 [1, 2].map↓() { number in
  number + 1 
 }
-
 ```
 
 ```swift
 [1, 2].map↓(  ) { number in
  number + 1 
 }
-
 ```
 
 ```swift
 func foo() -> [Int] {
     return [1, 2].map↓() { $0 + 1 }
 }
-
 ```

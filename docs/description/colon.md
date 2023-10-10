@@ -45,52 +45,42 @@ Colons should be next to the identifier when specifying a type and next to the k
 
 ```swift
 let abc: Void
-
 ```
 
 ```swift
 let abc: [Void: Void]
-
 ```
 
 ```swift
 let abc: (Void, Void)
-
 ```
 
 ```swift
 let abc: ([Void], String, Int)
-
 ```
 
 ```swift
 let abc: [([Void], String, Int)]
-
 ```
 
 ```swift
 let abc: String="def"
-
 ```
 
 ```swift
 let abc: Int=0
-
 ```
 
 ```swift
 let abc: Enum=Enum.Value
-
 ```
 
 ```swift
 func abc(def: Void) {}
-
 ```
 
 ```swift
 func abc(def: Void, ghi: Void) {}
-
 ```
 
 ```swift
@@ -99,82 +89,66 @@ let abc: String = "abc:"
 
 ```swift
 let abc = [Void: Void]()
-
 ```
 
 ```swift
 let abc = [1: [3: 2], 3: 4]
-
 ```
 
 ```swift
 let abc = ["string": "string"]
-
 ```
 
 ```swift
 let abc = ["string:string": "string"]
-
 ```
 
 ```swift
 let abc: [String: Int]
-
 ```
 
 ```swift
 func foo(bar: [String: Int]) {}
-
 ```
 
 ```swift
 func foo() -> [String: Int] { return [:] }
-
 ```
 
 ```swift
 let abc: Any
-
 ```
 
 ```swift
 let abc: [Any: Int]
-
 ```
 
 ```swift
 let abc: [String: Any]
-
 ```
 
 ```swift
 class Foo: Bar {}
-
 ```
 
 ```swift
 class Foo<T>: Bar {}
-
 ```
 
 ```swift
 class Foo<T: Equatable>: Bar {}
-
 ```
 
 ```swift
 class Foo<T, U>: Bar {}
-
 ```
 
 ```swift
 class Foo<T: Equatable> {}
-
 ```
 
 ```swift
 object.method(x: /* comment */ 5)
-
 ```
 
 ```swift
@@ -186,7 +160,6 @@ case .bar:
 
 ```swift
 object.method(x: 5, y: "string")
-
 ```
 
 ```swift
@@ -196,7 +169,6 @@ object.method(x: 5, y:
 
 ```swift
 object.method(5, y: "string")
-
 ```
 
 ```swift
@@ -259,242 +231,194 @@ switch scalar {
 
 ```swift
 let abc↓:Void
-
 ```
 
 ```swift
 let abc↓:  Void
-
 ```
 
 ```swift
 let abc↓ :Void
-
 ```
 
 ```swift
 let abc↓ : Void
-
 ```
 
 ```swift
 let abc↓ : [Void: Void]
-
 ```
 
 ```swift
 let abc↓ : (Void, String, Int)
-
 ```
 
 ```swift
 let abc↓ : ([Void], String, Int)
-
 ```
 
 ```swift
 let abc↓ : [([Void], String, Int)]
-
 ```
 
 ```swift
 let abc↓:  (Void, String, Int)
-
 ```
 
 ```swift
 let abc↓:  ([Void], String, Int)
-
 ```
 
 ```swift
 let abc↓:  [([Void], String, Int)]
-
 ```
 
 ```swift
 let abc↓ :String="def"
-
 ```
 
 ```swift
 let abc↓ :Int=0
-
 ```
 
 ```swift
 let abc↓ :Int = 0
-
 ```
 
 ```swift
 let abc↓:Int=0
-
 ```
 
 ```swift
 let abc↓:Int = 0
-
 ```
 
 ```swift
 let abc↓:Enum=Enum.Value
-
 ```
 
 ```swift
 func abc(def↓:Void) {}
-
 ```
 
 ```swift
 func abc(def↓:  Void) {}
-
 ```
 
 ```swift
 func abc(def↓ :Void) {}
-
 ```
 
 ```swift
 func abc(def↓ : Void) {}
-
 ```
 
 ```swift
 func abc(def: Void, ghi↓ :Void) {}
-
 ```
 
 ```swift
 let abc = [Void↓:Void]()
-
 ```
 
 ```swift
 let abc = [Void↓ : Void]()
-
 ```
 
 ```swift
 let abc = [Void↓:  Void]()
-
 ```
 
 ```swift
 let abc = [Void↓ :  Void]()
-
 ```
 
 ```swift
 let abc = [1: [3↓ : 2], 3: 4]
-
 ```
 
 ```swift
 let abc = [1: [3↓ : 2], 3↓:  4]
-
 ```
 
 ```swift
 let abc: [String↓ : Int]
-
 ```
 
 ```swift
 let abc: [String↓:Int]
-
 ```
 
 ```swift
 func foo(bar: [String↓ : Int]) {}
-
 ```
 
 ```swift
 func foo(bar: [String↓:Int]) {}
-
 ```
 
 ```swift
 func foo() -> [String↓ : Int] { return [:] }
-
 ```
 
 ```swift
 func foo() -> [String↓:Int] { return [:] }
-
 ```
 
 ```swift
 let abc↓ : Any
-
 ```
 
 ```swift
 let abc: [Any↓ : Int]
-
 ```
 
 ```swift
 let abc: [String↓ : Any]
-
 ```
 
 ```swift
 class Foo↓ : Bar {}
-
 ```
 
 ```swift
 class Foo↓:Bar {}
-
 ```
 
 ```swift
 class Foo<T>↓ : Bar {}
-
 ```
 
 ```swift
 class Foo<T>↓:Bar {}
-
 ```
 
 ```swift
 class Foo<T, U>↓:Bar {}
-
 ```
 
 ```swift
 class Foo<T: Equatable>↓:Bar {}
-
 ```
 
 ```swift
 class Foo<T↓:Equatable> {}
-
 ```
 
 ```swift
 class Foo<T↓ : Equatable> {}
-
 ```
 
 ```swift
 object.method(x: 5, y↓ : "string")
-
 ```
 
 ```swift
 object.method(x↓:5, y: "string")
-
 ```
 
 ```swift
 object.method(x↓:  5, y: "string")
-
 ```
 
 ```swift

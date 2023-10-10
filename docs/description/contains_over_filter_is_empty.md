@@ -29,67 +29,54 @@ Prefer `contains` over using `filter(where:).isEmpty`
 
 ```swift
 let result = myList.filter(where: { $0 % 2 == 0 }).count > 1
-
 ```
 
 ```swift
 let result = myList.filter { $0 % 2 == 0 }.count > 1
-
 ```
 
 ```swift
 let result = myList.filter(where: { $0 % 2 == 0 }).count == 1
-
 ```
 
 ```swift
 let result = myList.filter { $0 % 2 == 0 }.count == 1
-
 ```
 
 ```swift
 let result = myList.filter(where: { $0 % 2 == 0 }).count != 1
-
 ```
 
 ```swift
 let result = myList.filter { $0 % 2 == 0 }.count != 1
-
 ```
 
 ```swift
 let result = myList.contains(where: { $0 % 2 == 0 })
-
 ```
 
 ```swift
 let result = !myList.contains(where: { $0 % 2 == 0 })
-
 ```
 
 ```swift
 let result = myList.contains(10)
-
 ```
 
 ## Triggering Examples
 
 ```swift
 let result = ↓myList.filter(where: { $0 % 2 == 0 }).isEmpty
-
 ```
 
 ```swift
 let result = !↓myList.filter(where: { $0 % 2 == 0 }).isEmpty
-
 ```
 
 ```swift
 let result = ↓myList.filter { $0 % 2 == 0 }.isEmpty
-
 ```
 
 ```swift
 let result = ↓myList.filter(where: someFunction).isEmpty
-
 ```

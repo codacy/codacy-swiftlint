@@ -29,37 +29,30 @@ Initializing an optional variable with nil is redundant
 
 ```swift
 var myVar: Int?
-
 ```
 
 ```swift
 let myVar: Int? = nil
-
 ```
 
 ```swift
 var myVar: Int? = 0
-
 ```
 
 ```swift
 func foo(bar: Int? = 0) { }
-
 ```
 
 ```swift
 var myVar: Optional<Int>
-
 ```
 
 ```swift
 let myVar: Optional<Int> = nil
-
 ```
 
 ```swift
 var myVar: Optional<Int> = 0
-
 ```
 
 ```swift
@@ -96,17 +89,14 @@ func funcName() {
 
 ```swift
 var myVar: Int?↓ = nil
-
 ```
 
 ```swift
 var myVar: Optional<Int>↓ = nil
-
 ```
 
 ```swift
 var myVar: Int?↓=nil
-
 ```
 
 ```swift

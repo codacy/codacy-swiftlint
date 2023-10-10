@@ -29,52 +29,44 @@ Closure parameters should be on the same line as opening brace
 
 ```swift
 [1, 2].map { $0 + 1 }
-
 ```
 
 ```swift
 [1, 2].map({ $0 + 1 })
-
 ```
 
 ```swift
 [1, 2].map { number in
  number + 1 
 }
-
 ```
 
 ```swift
 [1, 2].map { number -> Int in
  number + 1 
 }
-
 ```
 
 ```swift
 [1, 2].map { (number: Int) -> Int in
  number + 1 
 }
-
 ```
 
 ```swift
 [1, 2].map { [weak self] number in
  number + 1 
 }
-
 ```
 
 ```swift
 [1, 2].something(closure: { number in
  number + 1 
 })
-
 ```
 
 ```swift
 let isEmpty = [1, 2].isEmpty()
-
 ```
 
 ```swift

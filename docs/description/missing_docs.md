@@ -91,19 +91,16 @@ public class A {
 
 ```swift
 public func a() {}
-
 ```
 
 ```swift
 // regular comment
 public func a() {}
-
 ```
 
 ```swift
 /* regular comment */
 public func a() {}
-
 ```
 
 ```swift

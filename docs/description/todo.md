@@ -29,52 +29,42 @@ TODOs and FIXMEs should be resolved.
 
 ```swift
 // notaTODO:
-
 ```
 
 ```swift
 // notaFIXME:
-
 ```
 
 ## Triggering Examples
 
 ```swift
 // ↓TODO:
-
 ```
 
 ```swift
 // ↓FIXME:
-
 ```
 
 ```swift
 // ↓TODO(note)
-
 ```
 
 ```swift
 // ↓FIXME(note)
-
 ```
 
 ```swift
 /* ↓FIXME: */
-
 ```
 
 ```swift
 /* ↓TODO: */
-
 ```
 
 ```swift
 /** ↓FIXME: */
-
 ```
 
 ```swift
 /** ↓TODO: */
-
 ```

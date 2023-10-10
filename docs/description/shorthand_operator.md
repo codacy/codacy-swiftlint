@@ -32,121 +32,7 @@ foo -= 1
 ```
 
 ```swift
-foo -= variable
-```
-
-```swift
-foo -= bar.method()
-```
-
-```swift
-self.foo = foo - 1
-```
-
-```swift
-foo = self.foo - 1
-```
-
-```swift
-page = ceilf(currentOffset - pageWidth)
-```
-
-```swift
-foo = aMethod(foo - bar)
-```
-
-```swift
-foo = aMethod(bar - foo)
-```
-
-```swift
-public func -= (lhs: inout Foo, rhs: Int) {
-    lhs = lhs - rhs
-}
-```
-
-```swift
-foo /= 1
-```
-
-```swift
-foo /= variable
-```
-
-```swift
-foo /= bar.method()
-```
-
-```swift
-self.foo = foo / 1
-```
-
-```swift
-foo = self.foo / 1
-```
-
-```swift
-page = ceilf(currentOffset / pageWidth)
-```
-
-```swift
-foo = aMethod(foo / bar)
-```
-
-```swift
-foo = aMethod(bar / foo)
-```
-
-```swift
-public func /= (lhs: inout Foo, rhs: Int) {
-    lhs = lhs / rhs
-}
-```
-
-```swift
-foo += 1
-```
-
-```swift
 foo += variable
-```
-
-```swift
-foo += bar.method()
-```
-
-```swift
-self.foo = foo + 1
-```
-
-```swift
-foo = self.foo + 1
-```
-
-```swift
-page = ceilf(currentOffset + pageWidth)
-```
-
-```swift
-foo = aMethod(foo + bar)
-```
-
-```swift
-foo = aMethod(bar + foo)
-```
-
-```swift
-public func += (lhs: inout Foo, rhs: Int) {
-    lhs = lhs + rhs
-}
-```
-
-```swift
-foo *= 1
-```
-
-```swift
-foo *= variable
 ```
 
 ```swift
@@ -154,11 +40,11 @@ foo *= bar.method()
 ```
 
 ```swift
-self.foo = foo * 1
+self.foo = foo / 1
 ```
 
 ```swift
-foo = self.foo * 1
+foo = self.foo + 1
 ```
 
 ```swift
@@ -166,16 +52,16 @@ page = ceilf(currentOffset * pageWidth)
 ```
 
 ```swift
-foo = aMethod(foo * bar)
+foo = aMethod(foo / bar)
 ```
 
 ```swift
-foo = aMethod(bar * foo)
+foo = aMethod(bar + foo)
 ```
 
 ```swift
-public func *= (lhs: inout Foo, rhs: Int) {
-    lhs = lhs * rhs
+public func -= (lhs: inout Foo, rhs: Int) {
+    lhs = lhs - rhs
 }
 ```
 
@@ -195,103 +81,23 @@ seconds = seconds * 60 + value
 ## Triggering Examples
 
 ```swift
-↓foo = foo - 1
-
-```
-
-```swift
-↓foo = foo - aVariable
-
-```
-
-```swift
-↓foo = foo - bar.method()
-
-```
-
-```swift
-↓foo.aProperty = foo.aProperty - 1
-
-```
-
-```swift
-↓self.aProperty = self.aProperty - 1
-
-```
-
-```swift
-↓foo = foo / 1
-
+↓foo = foo * 1
 ```
 
 ```swift
 ↓foo = foo / aVariable
-
 ```
 
 ```swift
-↓foo = foo / bar.method()
-
+↓foo = foo - bar.method()
 ```
 
 ```swift
-↓foo.aProperty = foo.aProperty / 1
-
-```
-
-```swift
-↓self.aProperty = self.aProperty / 1
-
-```
-
-```swift
-↓foo = foo + 1
-
-```
-
-```swift
-↓foo = foo + aVariable
-
-```
-
-```swift
-↓foo = foo + bar.method()
-
-```
-
-```swift
-↓foo.aProperty = foo.aProperty + 1
-
-```
-
-```swift
-↓self.aProperty = self.aProperty + 1
-
-```
-
-```swift
-↓foo = foo * 1
-
-```
-
-```swift
-↓foo = foo * aVariable
-
-```
-
-```swift
-↓foo = foo * bar.method()
-
-```
-
-```swift
-↓foo.aProperty = foo.aProperty * 1
-
+↓foo.aProperty = foo.aProperty - 1
 ```
 
 ```swift
 ↓self.aProperty = self.aProperty * 1
-
 ```
 
 ```swift

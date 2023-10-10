@@ -29,22 +29,18 @@ Parentheses are not needed when declaring closure arguments
 
 ```swift
 let foo = { (bar: Int) in }
-
 ```
 
 ```swift
 let foo = { bar, _  in }
-
 ```
 
 ```swift
 let foo = { bar in }
-
 ```
 
 ```swift
 let foo = { bar -> Bool in return true }
-
 ```
 
 ```swift
@@ -57,17 +53,14 @@ DispatchQueue.main.async { () -> Void in
 
 ```swift
 call(arg: { ↓(bar) in })
-
 ```
 
 ```swift
 call(arg: { ↓(bar, _) in })
-
 ```
 
 ```swift
 let foo = { ↓(bar) -> Bool in return true }
-
 ```
 
 ```swift

@@ -99,72 +99,58 @@ TODOs and FIXMEs should be resolved prior to their expiry date.
 
 ```swift
 // notaTODO:
-
 ```
 
 ```swift
 // notaFIXME:
-
 ```
 
 ```swift
 // TODO: [12/31/9999]
-
 ```
 
 ```swift
 // TODO(note)
-
 ```
 
 ```swift
 // FIXME(note)
-
 ```
 
 ```swift
 /* FIXME: */
-
 ```
 
 ```swift
 /* TODO: */
-
 ```
 
 ```swift
 /** FIXME: */
-
 ```
 
 ```swift
 /** TODO: */
-
 ```
 
 ## Triggering Examples
 
 ```swift
 // TODO: [↓10/14/2019]
-
 ```
 
 ```swift
 // FIXME: [↓10/14/2019]
-
 ```
 
 ```swift
 // FIXME: [↓1/14/2019]
-
 ```
 
 ```swift
 // FIXME: [↓10/14/2019]
-
 ```
 
 ```swift
 // TODO: [↓9999/14/10]
-
 ```

@@ -22,6 +22,14 @@ Explicitly calling .init() should be avoided
   warning
   </td>
   </tr>
+  <tr>
+  <td>
+  include_bare_init
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
   </tbody>
   </table>
 

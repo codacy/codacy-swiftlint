@@ -31,21 +31,18 @@ Extensions shouldn't override declarations
 extension Person {
   var age: Int { return 42 }
 }
-
 ```
 
 ```swift
 extension Person {
   func celebrateBirthday() {}
 }
-
 ```
 
 ```swift
 class Employee: Person {
   override func celebrateBirthday() {}
 }
-
 ```
 
 ```swift
@@ -70,12 +67,10 @@ extension Foo.Bar {
 extension Person {
   override ↓var age: Int { return 42 }
 }
-
 ```
 
 ```swift
 extension Person {
   override ↓func celebrateBirthday() {}
 }
-
 ```

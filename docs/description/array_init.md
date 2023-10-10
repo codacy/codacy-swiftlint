@@ -29,69 +29,56 @@ Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Ar
 
 ```swift
 Array(foo)
-
 ```
 
 ```swift
 foo.map { $0.0 }
-
 ```
 
 ```swift
 foo.map { $1 }
-
 ```
 
 ```swift
 foo.map { $0() }
-
 ```
 
 ```swift
 foo.map { ((), $0) }
-
 ```
 
 ```swift
 foo.map { $0! }
-
 ```
 
 ```swift
 foo.map { $0! /* force unwrap */ }
-
 ```
 
 ```swift
 foo.something { RouteMapper.map($0) }
-
 ```
 
 ```swift
 foo.map { !$0 }
-
 ```
 
 ```swift
 foo.map { /* a comment */ !$0 }
-
 ```
 
 ## Triggering Examples
 
 ```swift
 foo.↓map({ $0 })
-
 ```
 
 ```swift
 foo.↓map { $0 }
-
 ```
 
 ```swift
 foo.↓map { return $0 }
-
 ```
 
 ```swift
@@ -120,10 +107,8 @@ foo.↓map { return $0 }
 
 ```swift
 foo.↓map { $0 /* a comment */ }
-
 ```
 
 ```swift
 foo.↓map { /* a comment */ $0 }
-
 ```

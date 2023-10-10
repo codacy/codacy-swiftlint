@@ -29,17 +29,14 @@ Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function
 
 ```swift
 _ = foo()
-
 ```
 
 ```swift
 if let _ = foo() { }
-
 ```
 
 ```swift
 guard let _ = foo() else { return }
-
 ```
 
 ```swift
@@ -48,7 +45,6 @@ let _: ExplicitType = foo()
 
 ```swift
 while let _ = SplashStyle(rawValue: maxValue) { maxValue += 1 }
-
 ```
 
 ```swift
@@ -59,10 +55,8 @@ async let _ = await foo()
 
 ```swift
 ↓let _ = foo()
-
 ```
 
 ```swift
 if _ = foo() { ↓let _ = bar() }
-
 ```

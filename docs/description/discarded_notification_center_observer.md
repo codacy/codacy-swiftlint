@@ -29,7 +29,6 @@ When registering for a notification using a block, the opaque observer that is r
 
 ```swift
 let foo = nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil) { }
-
 ```
 
 ```swift
@@ -38,15 +37,13 @@ let foo = nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue
 
 ```swift
 func foo() -> Any {
-   return nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { })
+    return nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { })
 }
-
 ```
 
 ```swift
 var obs: [Any?] = []
 obs.append(nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { }))
-
 ```
 
 ```swift
@@ -57,7 +54,6 @@ obs["foo"] = nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, qu
 ```swift
 var obs: [Any?] = []
 obs.append(nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { }))
-
 ```
 
 ```swift
@@ -65,7 +61,6 @@ func foo(_ notif: Any) {
    obs.append(notif)
 }
 foo(nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { }))
-
 ```
 
 ```swift
@@ -79,17 +74,14 @@ var obs: [NSObjectProtocol] = [
 
 ```swift
 ↓nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil) { }
-
 ```
 
 ```swift
 _ = ↓nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil) { }
-
 ```
 
 ```swift
 ↓nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { })
-
 ```
 
 ```swift

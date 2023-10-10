@@ -44,7 +44,6 @@ let foo = 2
 
 ```swift
 // ↓Copyright
-
 ```
 
 ```swift

@@ -1,6 +1,6 @@
 # Invalid SwiftLint Command
 
-swiftlint command does not have a valid action or modifier
+swiftlint command is invalid
 
 * **Identifier:** invalid_swiftlint_command
 * **Enabled by default:** Yes
@@ -47,60 +47,68 @@ swiftlint command does not have a valid action or modifier
 // swiftlint:disable:this unused_import
 ```
 
+```swift
+//swiftlint:disable:this unused_import
+```
+
 ## Triggering Examples
 
 ```swift
-// swiftlint:
+// ↓swiftlint:
 ```
 
 ```swift
-// swiftlint: 
+// ↓swiftlint: 
 ```
 
 ```swift
-// swiftlint::
+// ↓swiftlint::
 ```
 
 ```swift
-// swiftlint:: 
+// ↓swiftlint:: 
 ```
 
 ```swift
-// swiftlint:disable
+// ↓swiftlint:disable
 ```
 
 ```swift
-// swiftlint:dissable unused_import
+// ↓swiftlint:dissable unused_import
 ```
 
 ```swift
-// swiftlint:enaaaable unused_import
+// ↓swiftlint:enaaaable unused_import
 ```
 
 ```swift
-// swiftlint:disable:nxt unused_import
+// ↓swiftlint:disable:nxt unused_import
 ```
 
 ```swift
-// swiftlint:enable:prevus unused_import
+// ↓swiftlint:enable:prevus unused_import
 ```
 
 ```swift
-// swiftlint:enable:ths unused_import
+// ↓swiftlint:enable:ths unused_import
 ```
 
 ```swift
-// swiftlint:enable
+// ↓swiftlint:enable
 ```
 
 ```swift
-// swiftlint:enable:
+// ↓swiftlint:enable:
 ```
 
 ```swift
-// swiftlint:enable: 
+// ↓swiftlint:enable: 
 ```
 
 ```swift
-// swiftlint:disable: unused_import
+// ↓swiftlint:disable: unused_import
+```
+
+```swift
+// s↓swiftlint:disable unused_import
 ```

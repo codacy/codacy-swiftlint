@@ -30,19 +30,16 @@ Extensions shouldn't be used to group code within the same source file
 ```swift
 protocol Food {}
 extension Food {}
-
 ```
 
 ```swift
 class Apples {}
 extension Oranges {}
-
 ```
 
 ```swift
 class Box<T> {}
 extension Box where T: Vegetable {}
-
 ```
 
 ## Triggering Examples
@@ -50,23 +47,19 @@ extension Box where T: Vegetable {}
 ```swift
 enum Fruit {}
 ↓extension Fruit {}
-
 ```
 
 ```swift
 ↓extension Tea: Error {}
 struct Tea {}
-
 ```
 
 ```swift
 class Ham { class Spam {}}
 ↓extension Ham.Spam {}
-
 ```
 
 ```swift
 extension External { struct Gotcha {}}
 ↓extension External.Gotcha {}
-
 ```

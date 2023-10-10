@@ -28,84 +28,51 @@
 ## Non Triggering Examples
 
 ```swift
-if condition {
-
+if condition {}
 ```
 
 ```swift
-if (a, b) == (0, 1) {
-
+if (a, b) == (0, 1) {}
 ```
 
 ```swift
-if (a || b) && (c || d) {
-
+if (a || b) && (c || d) {}
 ```
 
 ```swift
-if (min...max).contains(value) {
-
+if (min...max).contains(value) {}
 ```
 
 ```swift
-if renderGif(data) {
-
+if renderGif(data) {}
 ```
 
 ```swift
 renderGif(data)
-
 ```
 
 ```swift
-for item in collection {
-
+guard condition else {}
 ```
 
 ```swift
-for (key, value) in dictionary {
-
+while condition {}
 ```
 
 ```swift
-for (index, value) in enumerate(array) {
-
+do {} while condition {}
 ```
 
 ```swift
-for var index = 0; index < 42; index++ {
-
+do { ; } while condition {}
 ```
 
 ```swift
-guard condition else {
-
+switch foo {}
 ```
 
 ```swift
-while condition {
-
-```
-
-```swift
-} while condition {
-
-```
-
-```swift
-do { ; } while condition {
-
-```
-
-```swift
-switch foo {
-
-```
-
-```swift
-do {
-} catch let error as NSError {
-}
+do {} catch let error as NSError {}
 ```
 
 ```swift
@@ -113,109 +80,71 @@ foo().catch(all: true) {}
 ```
 
 ```swift
-if max(a, b) < c {
-
+if max(a, b) < c {}
 ```
 
 ```swift
-switch (lhs, rhs) {
+switch (lhs, rhs) {}
+```
 
+```swift
+if (f() { g() {} }) {}
+```
+
+```swift
+if (a + f() {} == 1) {}
 ```
 
 ## Triggering Examples
 
 ```swift
-↓if (condition) {
-
+↓if (condition) {}
 ```
 
 ```swift
-↓if(condition) {
-
+↓if(condition) {}
 ```
 
 ```swift
-↓if (condition == endIndex) {
-
+↓if (condition == endIndex) {}
 ```
 
 ```swift
-↓if ((a || b) && (c || d)) {
-
+↓if ((a || b) && (c || d)) {}
 ```
 
 ```swift
-↓if ((min...max).contains(value)) {
-
+↓if ((min...max).contains(value)) {}
 ```
 
 ```swift
-↓for (item in collection) {
-
+↓guard (condition) else {}
 ```
 
 ```swift
-↓for (var index = 0; index < 42; index++) {
-
+↓while (condition) {}
 ```
 
 ```swift
-↓for(item in collection) {
-
+↓while(condition) {}
 ```
 
 ```swift
-↓for(var index = 0; index < 42; index++) {
-
+do { ; } ↓while(condition) {}
 ```
 
 ```swift
-↓guard (condition) else {
-
+do { ; } ↓while (condition) {}
 ```
 
 ```swift
-↓while (condition) {
-
+↓switch (foo) {}
 ```
 
 ```swift
-↓while(condition) {
-
+do {} ↓catch(let error as NSError) {}
 ```
 
 ```swift
-} ↓while (condition) {
-
-```
-
-```swift
-} ↓while(condition) {
-
-```
-
-```swift
-do { ; } ↓while(condition) {
-
-```
-
-```swift
-do { ; } ↓while (condition) {
-
-```
-
-```swift
-↓switch (foo) {
-
-```
-
-```swift
-do {
-} ↓catch(let error as NSError) {
-}
-```
-
-```swift
-↓if (max(a, b) < c) {
-
+↓if (max(a, b) < c) {}
 ```

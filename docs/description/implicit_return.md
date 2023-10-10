@@ -27,19 +27,13 @@ Prefer implicit returns in closures, functions and getters
   included
   </td>
   <td>
-  [closure, function, getter]
+  [closure, function, getter, initializer, subscript]
   </td>
   </tr>
   </tbody>
   </table>
 
 ## Non Triggering Examples
-
-```swift
-if foo {
-  return 0
-}
-```
 
 ```swift
 foo.map { $0 + 1 }
@@ -82,6 +76,27 @@ func fetch() -> Data? {
 ```
 
 ```swift
+func f() -> Int {
+    let i = 4
+    return i
+}
+```
+
+```swift
+func f() -> Int {
+    return 3
+    let i = 2
+}
+```
+
+```swift
+func f() -> Int {
+    return g()
+    func g() -> Int { 4 }
+}
+```
+
+```swift
 var foo: Bool { true }
 ```
 
@@ -103,51 +118,86 @@ class Foo {
 }
 ```
 
+```swift
+class C {
+    let i: Int
+    init(i: Int) {
+        if i < 3 {
+            self.i = 1
+            return
+        }
+        self.i = 2
+    }
+}
+```
+
+```swift
+class C {
+    init?() {
+        let i = 1
+        return nil
+    }
+}
+```
+
+```swift
+class C {
+    subscript(i: Int) -> Int {
+        let res = i
+        return res
+    }
+}
+```
+
 ## Triggering Examples
 
 ```swift
 foo.map { value in
-    return value + 1
+    ↓return value + 1
 }
 ```
 
 ```swift
 foo.map {
-    return $0 + 1
+    ↓return $0 + 1
 }
 ```
 
 ```swift
-foo.map({ return $0 + 1})
+foo.map({ ↓return $0 + 1})
 ```
 
 ```swift
 [1, 2].first(where: {
-    return true
+    ↓return true
 })
 ```
 
 ```swift
 func foo() -> Int {
-    return 0
+    ↓return 0
 }
 ```
 
 ```swift
 class Foo {
-    func foo() -> Int { return 0 }
+    func foo() -> Int { ↓return 0 }
 }
 ```
 
 ```swift
-var foo: Bool { return true }
+func f() { ↓return }
+```
+
+```swift
+var foo: Bool { ↓return true }
 ```
 
 ```swift
 class Foo {
     var bar: Int {
         get {
-            return 0
+            ↓return 0
         }
     }
 }
@@ -156,7 +206,31 @@ class Foo {
 ```swift
 class Foo {
     static var bar: Int {
-        return 0
+        ↓return 0
+    }
+}
+```
+
+```swift
+class C {
+    init() {
+        ↓return
+    }
+}
+```
+
+```swift
+class C {
+    init?() {
+        ↓return nil
+    }
+}
+```
+
+```swift
+class C {
+    subscript(i: Int) -> Int {
+        ↓return i
     }
 }
 ```

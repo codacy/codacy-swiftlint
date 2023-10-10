@@ -29,34 +29,28 @@ Return arrow and return type should be separated by a single space or on a separ
 
 ```swift
 func abc() -> Int {}
-
 ```
 
 ```swift
 func abc() -> [Int] {}
-
 ```
 
 ```swift
 func abc() -> (Int, Int) {}
-
 ```
 
 ```swift
 var abc = {(param: Int) -> Void in }
-
 ```
 
 ```swift
 func abc() ->
     Int {}
-
 ```
 
 ```swift
 func abc()
     -> Int {}
-
 ```
 
 ```swift
@@ -74,47 +68,38 @@ typealias SuccessBlock = ((Data) -> Void)
 
 ```swift
 func abc()↓->Int {}
-
 ```
 
 ```swift
 func abc()↓->[Int] {}
-
 ```
 
 ```swift
 func abc()↓->(Int, Int) {}
-
 ```
 
 ```swift
 func abc()↓-> Int {}
-
 ```
 
 ```swift
 func abc()↓->   Int {}
-
 ```
 
 ```swift
 func abc()↓ ->Int {}
-
 ```
 
 ```swift
 func abc()↓  ->  Int {}
-
 ```
 
 ```swift
 var abc = {(param: Int)↓ ->Bool in }
-
 ```
 
 ```swift
 var abc = {(param: Int)↓->Bool in }
-
 ```
 
 ```swift
@@ -124,23 +109,19 @@ typealias SuccessBlock = ((Data)↓->Void)
 ```swift
 func abc()
   ↓->  Int {}
-
 ```
 
 ```swift
 func abc()
  ↓->  Int {}
-
 ```
 
 ```swift
 func abc()↓  ->
   Int {}
-
 ```
 
 ```swift
 func abc()↓  ->
 Int {}
-
 ```

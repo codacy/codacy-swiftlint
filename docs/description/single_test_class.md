@@ -37,17 +37,14 @@ Test files should contain a single QuickSpec or XCTestCase class.
 
 ```swift
 class FooTests {  }
-
 ```
 
 ```swift
 class FooTests: QuickSpec {  }
-
 ```
 
 ```swift
 class FooTests: XCTestCase {  }
-
 ```
 
 ## Triggering Examples

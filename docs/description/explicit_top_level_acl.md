@@ -29,23 +29,18 @@ Top-level declarations should specify Access Control Level keywords explicitly
 
 ```swift
 internal enum A {}
-
 ```
 
 ```swift
 public final class B {}
-
 ```
 
 ```swift
 private struct C {}
-
 ```
 
 ```swift
-internal enum A {
- enum B {}
-}
+internal enum A { enum B {} }
 ```
 
 ```swift
@@ -59,7 +54,6 @@ class Foo {}
 
 ```swift
 internal func a() {}
-
 ```
 
 ```swift
@@ -74,26 +68,21 @@ extension A {}
 
 ```swift
 ↓enum A {}
-
 ```
 
 ```swift
 final ↓class B {}
-
 ```
 
 ```swift
 ↓struct C {}
-
 ```
 
 ```swift
 ↓func a() {}
-
 ```
 
 ```swift
 internal let a = 0
 ↓func b() {}
-
 ```

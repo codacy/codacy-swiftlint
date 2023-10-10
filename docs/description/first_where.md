@@ -29,22 +29,18 @@ Prefer using `.first(where:)` over `.filter { }.first` in collections
 
 ```swift
 kinds.filter(excludingKinds.contains).isEmpty && kinds.first == .identifier
-
 ```
 
 ```swift
 myList.first(where: { $0 % 2 == 0 })
-
 ```
 
 ```swift
 match(pattern: pattern).filter { $0.first == .identifier }
-
 ```
 
 ```swift
 (myList.filter { $0 == 1 }.suffix(2)).first
-
 ```
 
 ```swift
@@ -63,38 +59,31 @@ if let pause = timeTracker.pauses.filter("beginDate < %@", beginDate).first { pr
 
 ```swift
 ↓myList.filter { $0 % 2 == 0 }.first
-
 ```
 
 ```swift
 ↓myList.filter({ $0 % 2 == 0 }).first
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.filter({ $0 % 2 == 0 }).first
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.filter({ $0 % 2 == 0 }).first?.something()
-
 ```
 
 ```swift
 ↓myList.filter(someFunction).first
-
 ```
 
 ```swift
 ↓myList.filter({ $0 % 2 == 0 })
 .first
-
 ```
 
 ```swift
 (↓myList.filter { $0 == 1 }).first
-
 ```
 
 ```swift

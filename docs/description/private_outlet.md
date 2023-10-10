@@ -36,108 +36,63 @@ IBOutlets should be private to avoid leaking UIKit to higher layers
 ## Non Triggering Examples
 
 ```swift
-class Foo {
-  @IBOutlet private var label: UILabel?
-}
-
+class Foo { @IBOutlet private var label: UILabel? }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet private var label: UILabel!
-}
-
+class Foo { @IBOutlet private var label: UILabel! }
 ```
 
 ```swift
-class Foo {
-  var notAnOutlet: UILabel
-}
-
+class Foo { var notAnOutlet: UILabel }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet weak private var label: UILabel?
-}
-
+class Foo { @IBOutlet weak private var label: UILabel? }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet private weak var label: UILabel?
-}
-
+class Foo { @IBOutlet private weak var label: UILabel? }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet fileprivate weak var label: UILabel?
-}
-
+class Foo { @IBOutlet fileprivate weak var label: UILabel? }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet private(set) var label: UILabel?
-}
-
+class Foo { @IBOutlet private(set) var label: UILabel? }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet private(set) var label: UILabel!
-}
-
+class Foo { @IBOutlet private(set) var label: UILabel! }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet weak private(set) var label: UILabel?
-}
-
+class Foo { @IBOutlet weak private(set) var label: UILabel? }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet private(set) weak var label: UILabel?
-}
-
+class Foo { @IBOutlet private(set) weak var label: UILabel? }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet fileprivate(set) weak var label: UILabel?
-}
-
+class Foo { @IBOutlet fileprivate(set) weak var label: UILabel? }
 ```
 
 ## Triggering Examples
 
 ```swift
-class Foo {
-  @IBOutlet ↓var label: UILabel?
-}
-
+class Foo { @IBOutlet ↓var label: UILabel? }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet ↓var label: UILabel!
-}
-
+class Foo { @IBOutlet ↓var label: UILabel! }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet private(set) ↓var label: UILabel?
-}
-
+class Foo { @IBOutlet private(set) ↓var label: UILabel? }
 ```
 
 ```swift
-class Foo {
-  @IBOutlet fileprivate(set) ↓var label: UILabel?
-}
-
+class Foo { @IBOutlet fileprivate(set) ↓var label: UILabel? }
 ```

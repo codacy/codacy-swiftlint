@@ -29,7 +29,6 @@ Lines should not have trailing semicolons
 
 ```swift
 let a = 0
-
 ```
 
 ```swift
@@ -46,7 +45,6 @@ let a = 0↓;
 ```swift
 let a = 0↓;
 let b = 1
-
 ```
 
 ```swift

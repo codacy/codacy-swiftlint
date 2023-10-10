@@ -29,12 +29,10 @@ nil coalescing operator is only evaluated if the lhs is nil, coalescing operator
 
 ```swift
 var myVar: Int?; myVar ?? 0
-
 ```
 
 ## Triggering Examples
 
 ```swift
 var myVar: Int? = nil; myVar ↓?? nil
-
 ```

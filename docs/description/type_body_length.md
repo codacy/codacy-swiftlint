@@ -1058,8 +1058,7 @@ let abc = 0
 
 /* this is
 a multiline comment
-*/
-}
+*/}
 
 ```
 
@@ -2086,8 +2085,7 @@ let abc = 0
 
 /* this is
 a multiline comment
-*/
-}
+*/}
 
 ```
 
@@ -3114,8 +3112,7 @@ let abc = 0
 
 /* this is
 a multiline comment
-*/
-}
+*/}
 
 ```
 
@@ -4142,8 +4139,7 @@ let abc = 0
 
 /* this is
 a multiline comment
-*/
-}
+*/}
 
 ```
 

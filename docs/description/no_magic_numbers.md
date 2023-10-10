@@ -110,6 +110,40 @@ class FooTests: XCTestCase {
 }
 ```
 
+```swift
+class MyTest: XCTestCase {}
+extension MyTest {
+    let a = Int(3)
+}
+```
+
+```swift
+extension MyTest {
+    let a = Int(3)
+}
+class MyTest: XCTestCase {}
+```
+
+```swift
+let foo = 1 << 2
+```
+
+```swift
+let foo = 1 >> 2
+```
+
+```swift
+let foo = 2 >> 2
+```
+
+```swift
+let foo = 2 << 2
+```
+
+```swift
+let a = b / 100.0
+```
+
 ## Triggering Examples
 
 ```swift
@@ -134,4 +168,11 @@ let a = b + ↓2.0
 
 ```swift
 Color.primary.opacity(isAnimate ? ↓0.1 : ↓1.5)
+```
+
+```swift
+        class MyTest: XCTestCase {}
+        extension NSObject {
+            let a = Int(↓3)
+        }
 ```

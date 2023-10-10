@@ -1,6 +1,6 @@
 {
   "name" : "swiftlint",
-  "version" : "0.52.4",
+  "version" : "0.53.0",
   "patterns" : [ {
     "patternId" : "accessibility_label_for_image",
     "level" : "Info",
@@ -870,6 +870,13 @@
     "languages" : [ ],
     "enabled" : true
   }, {
+    "patternId" : "non_overridable_class_declaration",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "notification_center_detachment",
     "level" : "Info",
     "category" : "ErrorProne",
@@ -1039,6 +1046,13 @@
     "enabled" : true
   }, {
     "patternId" : "private_subject",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "private_swiftui_state",
     "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
@@ -1431,6 +1445,13 @@
     "enabled" : false
   }, {
     "patternId" : "unneeded_break_in_switch",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
+    "patternId" : "unneeded_override",
     "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],

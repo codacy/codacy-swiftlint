@@ -24,3 +24,27 @@ SwiftLint 'disable' commands are superfluous when the disabled rule would not ha
   </tr>
   </tbody>
   </table>
+
+## Non Triggering Examples
+
+```swift
+let abc:Void // swiftlint:disable:this colon
+```
+
+```swift
+// swiftlint:disable colon
+let abc:Void
+// swiftlint:enable colon
+```
+
+## Triggering Examples
+
+```swift
+let abc: Void // swiftlint:disable:this colon
+```
+
+```swift
+// swiftlint:disable colon
+let abc: Void
+// swiftlint:enable colon
+```

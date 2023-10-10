@@ -29,75 +29,65 @@ Unused parameter in a closure should be replaced with _
 
 ```swift
 [1, 2].map { $0 + 1 }
-
 ```
 
 ```swift
 [1, 2].map({ $0 + 1 })
-
 ```
 
 ```swift
 [1, 2].map { number in
  number + 1 
 }
-
 ```
 
 ```swift
 [1, 2].map { _ in
  3 
 }
-
 ```
 
 ```swift
 [1, 2].something { number, idx in
  return number * idx
 }
-
 ```
 
 ```swift
 let isEmpty = [1, 2].isEmpty()
-
 ```
 
 ```swift
 violations.sorted(by: { lhs, rhs in 
  return lhs.location > rhs.location
 })
-
 ```
 
 ```swift
 rlmConfiguration.migrationBlock.map { rlmMigration in
-return { migration, schemaVersion in
-rlmMigration(migration.rlmMigration, schemaVersion)
-}
+    return { migration, schemaVersion in
+        rlmMigration(migration.rlmMigration, schemaVersion)
+    }
 }
 ```
 
 ```swift
 genericsFunc { (a: Type, b) in
-a + b
+    a + b
 }
-
 ```
 
 ```swift
 var label: UILabel = { (lbl: UILabel) -> UILabel in
-   lbl.backgroundColor = .red
-   return lbl
+    lbl.backgroundColor = .red
+    return lbl
 }(UILabel())
-
 ```
 
 ```swift
 hoge(arg: num) { num in
-  return num
+    return num
 }
-
 ```
 
 ```swift
@@ -152,62 +142,49 @@ let closure: (Int) -> Void = { foo in _ = `foo` }
 
 ```swift
 [1, 2].map { ↓number in
- return 3
-}
-
+ return 3 }
 ```
 
 ```swift
 [1, 2].map { ↓number in
- return numberWithSuffix
-}
-
+ return numberWithSuffix }
 ```
 
 ```swift
 [1, 2].map { ↓number in
- return 3 // number
-}
-
+ return 3 // number }
 ```
 
 ```swift
 [1, 2].map { ↓number in
- return 3 "number"
-}
-
+ return 3 "number" }
 ```
 
 ```swift
 [1, 2].something { number, ↓idx in
- return number
-}
-
+ return number }
 ```
 
 ```swift
-genericsFunc { (↓number: TypeA, idx: TypeB) in return idx
-}
+genericsFunc { (↓number: TypeA, idx: TypeB) in return idx }
+```
 
+```swift
+let c: (Int) -> Void = { foo in _ = .foo }
 ```
 
 ```swift
 hoge(arg: num) { ↓num in
 }
-
 ```
 
 ```swift
-fooFunc { ↓아 in
- }
+fooFunc { ↓아 in }
 ```
 
 ```swift
 func foo () {
- bar { ↓number in
- return 3
-}
-
+ bar { ↓number in return 3 }
 ```
 
 ```swift

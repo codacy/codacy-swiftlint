@@ -31,49 +31,42 @@ Delegates should be weak to avoid reference cycles
 class Foo {
   weak var delegate: SomeProtocol?
 }
-
 ```
 
 ```swift
 class Foo {
   weak var someDelegate: SomeDelegateProtocol?
 }
-
 ```
 
 ```swift
 class Foo {
   weak var delegateScroll: ScrollDelegate?
 }
-
 ```
 
 ```swift
 class Foo {
   var scrollHandler: ScrollDelegate?
 }
-
 ```
 
 ```swift
 func foo() {
   var delegate: SomeDelegate
 }
-
 ```
 
 ```swift
 class Foo {
   var delegateNotified: Bool?
 }
-
 ```
 
 ```swift
 protocol P {
  var delegate: AnyObject? { get set }
 }
-
 ```
 
 ```swift
@@ -82,7 +75,6 @@ class Foo {
  var delegate: AnyObject? { get set }
 }
 }
-
 ```
 
 ```swift
@@ -135,14 +127,12 @@ class Foo {
 class Foo {
   ↓var delegate: SomeProtocol?
 }
-
 ```
 
 ```swift
 class Foo {
   ↓var scrollDelegate: ScrollDelegate?
 }
-
 ```
 
 ```swift

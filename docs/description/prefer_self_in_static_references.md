@@ -69,14 +69,11 @@ final class CheckCellView: NSTableCellView {
 
 ```swift
     class C {
-        struct S {
-            static let i = 2
-            let h = ↓S.i
-        }
         static let i = 1
-        let h = C.i
-        var j: Int { ↓C.i }
-        func f() -> Int { ↓C.i + h }
+        var j: Int {
+            let ii = ↓C.i
+            return ii
+        }
     }
 ```
 

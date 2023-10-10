@@ -29,57 +29,46 @@ Returning Void in a function declaration is redundant
 
 ```swift
 func foo() {}
-
 ```
 
 ```swift
 func foo() -> Int {}
-
 ```
 
 ```swift
 func foo() -> Int -> Void {}
-
 ```
 
 ```swift
 func foo() -> VoidResponse
-
 ```
 
 ```swift
 let foo: (Int) -> Void
-
 ```
 
 ```swift
 func foo() -> Int -> () {}
-
 ```
 
 ```swift
 let foo: (Int) -> ()
-
 ```
 
 ```swift
 func foo() -> ()?
-
 ```
 
 ```swift
 func foo() -> ()!
-
 ```
 
 ```swift
 func foo() -> Void?
-
 ```
 
 ```swift
 func foo() -> Void!
-
 ```
 
 ```swift
@@ -94,7 +83,6 @@ struct A {
 
 ```swift
 func foo()↓ -> Void {}
-
 ```
 
 ```swift
@@ -105,7 +93,6 @@ protocol Foo {
 
 ```swift
 func foo()↓ -> () {}
-
 ```
 
 ```swift

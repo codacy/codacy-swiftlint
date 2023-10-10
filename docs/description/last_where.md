@@ -29,22 +29,18 @@ Prefer using `.last(where:)` over `.filter { }.last` in collections
 
 ```swift
 kinds.filter(excludingKinds.contains).isEmpty && kinds.last == .identifier
-
 ```
 
 ```swift
 myList.last(where: { $0 % 2 == 0 })
-
 ```
 
 ```swift
 match(pattern: pattern).filter { $0.last == .identifier }
-
 ```
 
 ```swift
 (myList.filter { $0 == 1 }.suffix(2)).last
-
 ```
 
 ```swift
@@ -55,36 +51,29 @@ collection.filter("stringCol = '3'").last
 
 ```swift
 ↓myList.filter { $0 % 2 == 0 }.last
-
 ```
 
 ```swift
 ↓myList.filter({ $0 % 2 == 0 }).last
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.filter({ $0 % 2 == 0 }).last
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.filter({ $0 % 2 == 0 }).last?.something()
-
 ```
 
 ```swift
 ↓myList.filter(someFunction).last
-
 ```
 
 ```swift
 ↓myList.filter({ $0 % 2 == 0 })
 .last
-
 ```
 
 ```swift
 (↓myList.filter { $0 == 1 }).last
-
 ```

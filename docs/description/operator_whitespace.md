@@ -29,47 +29,38 @@ Operators should be surrounded by a single whitespace when defining them
 
 ```swift
 func <| (lhs: Int, rhs: Int) -> Int {}
-
 ```
 
 ```swift
 func <|< <A>(lhs: A, rhs: A) -> A {}
-
 ```
 
 ```swift
 func abc(lhs: Int, rhs: Int) -> Int {}
-
 ```
 
 ## Triggering Examples
 
 ```swift
 ↓func <|(lhs: Int, rhs: Int) -> Int {}
-
 ```
 
 ```swift
 ↓func <|<<A>(lhs: A, rhs: A) -> A {}
-
 ```
 
 ```swift
 ↓func <|  (lhs: Int, rhs: Int) -> Int {}
-
 ```
 
 ```swift
 ↓func <|<  <A>(lhs: A, rhs: A) -> A {}
-
 ```
 
 ```swift
 ↓func  <| (lhs: Int, rhs: Int) -> Int {}
-
 ```
 
 ```swift
 ↓func  <|< <A>(lhs: A, rhs: A) -> A {}
-
 ```

@@ -86,7 +86,6 @@ guard
 
 ```swift
 struct Rule {}
-
 ```
 
 ```swift
@@ -95,7 +94,6 @@ struct Parent {
 		let foo: Int
 	}
 }
-
 ```
 
 ```swift
@@ -183,14 +181,12 @@ guard
 
 ```swift
 struct Rule↓{}
-
 ```
 
 ```swift
 struct Rule
 ↓{
 }
-
 ```
 
 ```swift
@@ -198,7 +194,6 @@ struct Rule
 
 	↓{
 }
-
 ```
 
 ```swift
@@ -208,7 +203,6 @@ struct Parent {
 		let foo: Int
 	}
 }
-
 ```
 
 ```swift

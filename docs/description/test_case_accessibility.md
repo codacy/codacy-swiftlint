@@ -94,6 +94,16 @@ class FooTests: XCTestCase {
 
 ```swift
 class FooTests: XCTestCase {
+    override init() {
+        super.init()
+        let foo = 1
+        var bar = 2
+    }
+}
+```
+
+```swift
+class FooTests: XCTestCase {
     func allowedPrefixTestFoo() {}
 }
 ```

@@ -129,7 +129,6 @@ return false
 switch foo {
     case #selector(aFunction(_:)):
  return false
-
 }
 ```
 
@@ -181,7 +180,6 @@ switch foo {
 ```swift
 switch foo {
     ↓case #selector(aFunction(_:)): return false
-
 }
 ```
 

@@ -1,6 +1,6 @@
 # Switch and Case Statement Alignment
 
-Case statements should vertically align with their enclosing switch statement, or indented if configured otherwise.
+Case statements should vertically align with their closing brace, or indented if configured otherwise.
 
 * **Identifier:** switch_case_alignment
 * **Enabled by default:** Yes
@@ -77,9 +77,11 @@ default:
 ```
 
 ```swift
-let a = switch i {
+func f() -> Int {
+    return switch i {
     case 1: 1
     default: 2
+    }
 }
 ```
 
@@ -117,6 +119,13 @@ switch someInt {
 ```
 
 ```swift
+let a = switch i {
+    ↓case 1: 1
+    ↓default: 2
+}
+```
+
+```swift
 switch someBool {
 case true:
     print('red')
@@ -133,5 +142,12 @@ if aBool {
     case false:
     print('blue')
     }
+}
+```
+
+```swift
+let a = switch i {
+case 1: 1
+    ↓default: 2
 }
 ```

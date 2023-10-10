@@ -29,17 +29,14 @@ The constant literal should be placed on the right-hand side of the comparison o
 
 ```swift
 if foo == 42 {}
-
 ```
 
 ```swift
 if foo <= 42.42 {}
-
 ```
 
 ```swift
 guard foo >= 42 else { return }
-
 ```
 
 ```swift
@@ -48,12 +45,10 @@ guard foo != "str str" else { return }
 
 ```swift
 while foo < 10 { }
-
 ```
 
 ```swift
 while foo > 1 { }
-
 ```
 
 ```swift
@@ -76,17 +71,14 @@ if flags & 1 == 1 {}
 
 ```swift
 if ↓42 == foo {}
-
 ```
 
 ```swift
 if ↓42.42 >= foo {}
-
 ```
 
 ```swift
 guard ↓42 <= foo else { return }
-
 ```
 
 ```swift

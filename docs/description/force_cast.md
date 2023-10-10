@@ -29,12 +29,10 @@ Force casts should be avoided
 
 ```swift
 NSNumber() as? Int
-
 ```
 
 ## Triggering Examples
 
 ```swift
 NSNumber() ↓as! Int
-
 ```

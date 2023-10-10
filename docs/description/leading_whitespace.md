@@ -29,7 +29,6 @@ Files should not contain leading whitespace
 
 ```swift
 //
-
 ```
 
 ## Triggering Examples
@@ -37,10 +36,8 @@ Files should not contain leading whitespace
 ```swift
 
 //
-
 ```
 
 ```swift
  //
-
 ```

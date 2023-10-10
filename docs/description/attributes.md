@@ -178,14 +178,13 @@ class Foo: NSObject {
 ```swift
 @objc
 class ⽺ {}
-
 ```
 
 ```swift
 extension Property {
 
- @available(*, unavailable, renamed: "isOptional")
-public var optional: Bool { fatalError() }
+    @available(*, unavailable, renamed: "isOptional")
+    public var optional: Bool { fatalError() }
 }
 ```
 
