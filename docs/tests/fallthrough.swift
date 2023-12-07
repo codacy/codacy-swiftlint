@@ -4,9 +4,10 @@
 
 
 
-switch foo {
-case .bar:
+switch myvar {
+case 1:
+    var a = 1
     fallthrough
-case .bar2:
-    something()
+case 2:
+    var a = 2
 }

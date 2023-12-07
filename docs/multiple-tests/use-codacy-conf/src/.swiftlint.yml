@@ -1,2 +1,2 @@
-whitelist_rules:
+only_rules:
   - closing_brace
