@@ -87,7 +87,7 @@
     "enabled" : true
   }, {
     "patternId" : "closure_body_length",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
@@ -220,7 +220,7 @@
     "enabled" : false
   }, {
     "patternId" : "cyclomatic_complexity",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
@@ -374,7 +374,7 @@
     "enabled" : false
   }, {
     "patternId" : "enum_case_associated_values_count",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
@@ -458,7 +458,7 @@
     "enabled" : false
   }, {
     "patternId" : "file_length",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
@@ -528,7 +528,7 @@
     "enabled" : false
   }, {
     "patternId" : "function_body_length",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
@@ -542,7 +542,7 @@
     "enabled" : false
   }, {
     "patternId" : "function_parameter_count",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
@@ -640,7 +640,7 @@
     "enabled" : false
   }, {
     "patternId" : "large_tuple",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
@@ -724,7 +724,7 @@
     "enabled" : false
   }, {
     "patternId" : "line_length",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
@@ -759,7 +759,7 @@
     "enabled" : true
   }, {
     "patternId" : "missing_docs",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
@@ -1396,7 +1396,7 @@
     "enabled" : true
   }, {
     "patternId" : "type_body_length",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],

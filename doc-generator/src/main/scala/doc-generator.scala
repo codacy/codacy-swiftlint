@@ -53,11 +53,13 @@ object Main extends App {
       )
     }
 
-  def configurationToLevel(kind: String) = kind match {
-    case "warning" => Result.Level.Warn
-    case "error" => Result.Level.Err
-    case _ => Result.Level.Info
-  }
+  def configurationToLevel(kind: String) =
+    Option(kind)
+      .collectFirst {
+        case s if s.startsWith("warning") => Result.Level.Warn
+        case s if s.startsWith("error") => Result.Level.Err
+      }
+      .getOrElse(Result.Level.Info)
 
   def kindToCategory(kind: String) = kind match {
     case "style" => Pattern.Category.CodeStyle

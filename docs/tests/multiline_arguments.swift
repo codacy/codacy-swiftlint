@@ -10,14 +10,14 @@
 
 
 foo(0,
-    param1: 1, param2: true, ↓param3: [3])
+    param1: 1, param2: true, param3: [3])
 
 
 foo(0, param1: 1,
     param2: true, param3: [3])
 
 
-foo(0, param1: 1, ↓param2: true,
+foo(0, param1: 1, param2: true,
     param3: [3])
 
 
