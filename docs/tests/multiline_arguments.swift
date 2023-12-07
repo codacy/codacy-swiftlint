@@ -1,11 +1,11 @@
 //#Patterns: multiline_arguments
 
-//#Issue: {"severity": "Info", "line": 13, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 16, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 17, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 20, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 25, "patternId": "multiline_arguments"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Warning", "line": 13, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Warning", "line": 16, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Warning", "line": 17, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Warning", "line": 20, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Warning", "line": 25, "patternId": "multiline_arguments"}
+//#Issue: {"severity": "Warning", "line": 26, "patternId": "multiline_arguments"}
 
 
 

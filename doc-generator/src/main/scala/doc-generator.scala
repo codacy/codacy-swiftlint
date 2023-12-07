@@ -9,7 +9,8 @@ object Main extends App {
 
   println("Generated docs using swiftlint generate-docs")
 
-  val rulesOutput = os.proc("swiftlint", "rules").call().out.lines().map(_.split('|').map(_.trim).toList.tail).tail
+  val rulesOutput =
+    os.proc("swiftlint", "rules", "-v").call().out.lines().map(_.split('|').map(_.trim).toList.tail).tail
 
   val version = os.proc("swiftlint", "version").call().out.text().trim
 
@@ -41,7 +42,7 @@ object Main extends App {
   )
 
   val swiftLintRules = rulesOutput.tail
-    .filter(_.length == ids.size)
+    .filter(_.length > 0)
     .map { arr =>
       def toBoolean(s: String) = s == "yes"
       SwiftlintRule(
@@ -56,10 +57,10 @@ object Main extends App {
   def configurationToLevel(kind: String) =
     Option(kind)
       .collectFirst {
-        case s if s.startsWith("warning") => Result.Level.Warn
-        case s if s.startsWith("error") => Result.Level.Err
+        case s if s.startsWith("severity: error") => Result.Level.Err
+        case s if s.startsWith("severity: warning") => Result.Level.Warn
       }
-      .getOrElse(Result.Level.Info)
+      .getOrElse(Result.Level.Warn)
 
   def kindToCategory(kind: String) = kind match {
     case "style" => Pattern.Category.CodeStyle
@@ -71,6 +72,9 @@ object Main extends App {
 
   val patternSpecifications = swiftLintRules.map { swiftLintRule =>
     println(s"Generating patterns specification for ${swiftLintRule.identifier}")
+    println(
+      s"Converting severity ${swiftLintRule.configuration} => ${configurationToLevel(swiftLintRule.configuration)}"
+    )
     Pattern.Specification(
       Pattern.Id(swiftLintRule.identifier),
       configurationToLevel(swiftLintRule.configuration),

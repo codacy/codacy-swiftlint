@@ -1,11 +1,11 @@
 //#Patterns: nesting
 
-//#Issue: {"severity": "Info", "line": 10, "patternId": "nesting"}
-//#Issue: {"severity": "Info", "line": 13, "patternId": "nesting"}
-//#Issue: {"severity": "Info", "line": 16, "patternId": "nesting"}
-//#Issue: {"severity": "Info", "line": 22, "patternId": "nesting"}
-//#Issue: {"severity": "Info", "line": 23, "patternId": "nesting"}
-//#Issue: {"severity": "Info", "line": 24, "patternId": "nesting"}
+//#Issue: {"severity": "Warning", "line": 10, "patternId": "nesting"}
+//#Issue: {"severity": "Warning", "line": 13, "patternId": "nesting"}
+//#Issue: {"severity": "Warning", "line": 16, "patternId": "nesting"}
+//#Issue: {"severity": "Warning", "line": 22, "patternId": "nesting"}
+//#Issue: {"severity": "Warning", "line": 23, "patternId": "nesting"}
+//#Issue: {"severity": "Warning", "line": 24, "patternId": "nesting"}
 
     class A { class B { class C {} } }
 
