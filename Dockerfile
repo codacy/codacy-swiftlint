@@ -1,9 +1,6 @@
 FROM codacy-swiftlint-dev as builder
 
-FROM swift:5.9.0-jammy-slim
-
-COPY --from=builder /usr/bin/swiftlint /usr/bin/swiftlint
-COPY --from=builder /usr/lib/libsourcekitdInProc.so /usr/lib/libsourcekitdInProc.so
+FROM ghcr.io/realm/swiftlint:0.54.0
 
 COPY --from=builder /docs /docs
 COPY target/native-image/codacy-swiftlint /workdir/
