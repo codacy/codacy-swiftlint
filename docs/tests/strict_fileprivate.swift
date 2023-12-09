@@ -1,42 +1,33 @@
 //#Patterns: strict_fileprivate
 
-//#Issue: {"severity": "Warning", "line": 12, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Warning", "line": 15, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Warning", "line": 19, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Warning", "line": 24, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Warning", "line": 29, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Warning", "line": 34, "patternId": "strict_fileprivate"}
-//#Issue: {"severity": "Warning", "line": 40, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 13, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 14, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 17, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 18, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 21, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 22, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 25, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 26, "patternId": "strict_fileprivate"}
+//#Issue: {"severity": "Warning", "line": 31, "patternId": "strict_fileprivate"}
 
-
-fileprivate extension String {}
-
-
-fileprivate
-extension String {}
-
-
-fileprivate extension
-String {}
-
-
-extension String {
-    fileprivate func Something(){}
-}
-
-
-class MyClass {
-    fileprivate let myInt = 4
-}
-
-
-class MyClass {
-    fileprivate(set) var myInt = 4
-}
-
-
-struct Outter {
-    struct Inter {
-        fileprivate struct Inner {}
+    fileprivate class C {
+        fileprivate func f() {}
     }
-}
+
+    fileprivate extension String {
+        fileprivate var isSomething: Bool { self == "something" }
+    }
+
+    fileprivate actor A {
+        fileprivate let i = 1
+    }
+
+    fileprivate struct C {
+        fileprivate(set) var myInt = 4
+    }
+
+    struct Outter {
+        struct Inter {
+            fileprivate struct Inner {}
+        }
+    }

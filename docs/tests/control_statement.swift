@@ -1,18 +1,18 @@
 //#Patterns: control_statement
 
-//#Issue: {"severity": "Warning", "line": 20, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 22, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 24, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 26, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 28, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 30, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 32, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 34, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 36, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 38, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 40, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 42, "patternId": "control_statement"}
-//#Issue: {"severity": "Warning", "line": 44, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 17, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 21, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 23, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 25, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 27, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 29, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 31, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 33, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 35, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 37, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 39, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 41, "patternId": "control_statement"}
 
 if (condition) {}
 
