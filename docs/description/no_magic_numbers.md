@@ -1,6 +1,6 @@
 # No Magic Numbers
 
-Magic numbers should be replaced by named constants.
+Magic numbers should be replaced by named constants
 
 * **Identifier:** no_magic_numbers
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Magic numbers should be replaced by named constants.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  test_parent_classes
+  </td>
+  <td>
+  [&quot;QuickSpec&quot;, &quot;XCTestCase&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -64,6 +87,63 @@ func version() {
 }
 ```
 
+```swift
+enum Example: Int {
+    case positive = 2
+    case negative = -2
+}
+```
+
+```swift
+class FooTests: XCTestCase {
+    let array: [Int] = []
+    let bar = array[42]
+}
+```
+
+```swift
+class FooTests: XCTestCase {
+    class Bar {
+        let array: [Int] = []
+        let bar = array[42]
+    }
+}
+```
+
+```swift
+class MyTest: XCTestCase {}
+extension MyTest {
+    let a = Int(3)
+}
+```
+
+```swift
+extension MyTest {
+    let a = Int(3)
+}
+class MyTest: XCTestCase {}
+```
+
+```swift
+let foo = 1 << 2
+```
+
+```swift
+let foo = 1 >> 2
+```
+
+```swift
+let foo = 2 >> 2
+```
+
+```swift
+let foo = 2 << 2
+```
+
+```swift
+let a = b / 100.0
+```
+
 ## Triggering Examples
 
 ```swift
@@ -88,4 +168,11 @@ let a = b + ↓2.0
 
 ```swift
 Color.primary.opacity(isAnimate ? ↓0.1 : ↓1.5)
+```
+
+```swift
+        class MyTest: XCTestCase {}
+        extension NSObject {
+            let a = Int(↓3)
+        }
 ```

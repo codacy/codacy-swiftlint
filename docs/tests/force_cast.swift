@@ -2,4 +2,4 @@
 
 //#Issue: {"severity": "Error", "line": 5, "patternId": "force_cast"}
 
-    NSNumber() as! Int
+NSNumber() as! Int

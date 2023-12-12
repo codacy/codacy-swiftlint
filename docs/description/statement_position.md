@@ -1,6 +1,6 @@
 # Statement Position
 
-Else and catch should be on the same line, one space after the previous declaration.
+Else and catch should be on the same line, one space after the previous declaration
 
 * **Identifier:** statement_position
 * **Enabled by default:** Yes
@@ -8,7 +8,30 @@ Else and catch should be on the same line, one space after the previous declarat
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** (statement_mode) default, (severity) warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  statement_mode
+  </td>
+  <td>
+  default
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

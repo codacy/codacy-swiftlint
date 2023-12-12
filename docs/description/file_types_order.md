@@ -8,7 +8,30 @@ Specifies how the types within a file should be ordered.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, order: [[SwiftLintFramework.FileType.supportingType], [SwiftLintFramework.FileType.mainType], [SwiftLintFramework.FileType.extension], [SwiftLintFramework.FileType.previewProvider], [SwiftLintFramework.FileType.libraryContentProvider]]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  order
+  </td>
+  <td>
+  [[supporting_type], [main_type], [extension], [preview_provider], [library_content_provider]]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

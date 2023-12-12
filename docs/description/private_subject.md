@@ -1,6 +1,6 @@
 # Private Combine Subject
 
-Combine Subject should be private.
+Combine Subject should be private
 
 * **Identifier:** private_subject
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Combine Subject should be private.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -32,7 +47,7 @@ final class Foobar {
 
 ```swift
 final class Foobar {
-    private let goodSubject: PassthroughSubject<Bool, Never> = .ini()
+    private let goodSubject: PassthroughSubject<Bool, Never> = .init()
 }
 ```
 
@@ -56,7 +71,7 @@ final class Foobar {
 
 ```swift
 final class Foobar {
-    private let goodSubject: CurrentValueSubject<String, Never> = .ini("toto")
+    private let goodSubject: CurrentValueSubject<String, Never> = .init("toto")
 }
 ```
 
@@ -88,7 +103,7 @@ final class Foobar {
 ```swift
 final class Foobar {
     private let goodSubject:
-        PassthroughSubject<Bool, Never> = .ini()
+        PassthroughSubject<Bool, Never> = .init()
 }
 ```
 
@@ -96,6 +111,22 @@ final class Foobar {
 final class Foobar {
     private let goodSubject =
         CurrentValueSubject<Bool, Never>(true)
+}
+```
+
+```swift
+final class Foobar {
+    private let goodSubject: CurrentValueSubject<Bool, Never>
+    init() {
+        let goodSubject = CurrentValueSubject<Bool, Never>(true)
+        self.goosSubject = goodSubject
+    }
+}
+```
+
+```swift
+func foo() {
+    let goodSubject = PassthroughSubject<Bool, Never>(true)
 }
 ```
 
@@ -127,7 +158,7 @@ final class Foobar {
 
 ```swift
 final class Foobar {
-    let goodSubject: PassthroughSubject<Bool, Never> = .ini()
+    let goodSubject: PassthroughSubject<Bool, Never> = .init()
 }
 ```
 
@@ -221,7 +252,7 @@ final class Foobar {
 ```swift
 final class Foobar {
     let ↓badSubject:
-        PassthroughSubject<Bool, Never> = .ini()
+        PassthroughSubject<Bool, Never> = .init()
 }
 ```
 

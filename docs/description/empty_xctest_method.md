@@ -1,6 +1,6 @@
 # Empty XCTest Method
 
-Empty XCTest method should be avoided.
+Empty XCTest method should be avoided
 
 * **Identifier:** empty_xctest_method
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Empty XCTest method should be avoided.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, test_parent_classes: ["QuickSpec", "XCTestCase"]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  test_parent_classes
+  </td>
+  <td>
+  [&quot;QuickSpec&quot;, &quot;XCTestCase&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

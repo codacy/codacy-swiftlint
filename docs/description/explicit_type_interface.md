@@ -8,7 +8,38 @@ Properties should have a type interface
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, excluded: [], allow_redundancy: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  excluded
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
+  <tr>
+  <td>
+  allow_redundancy
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -20,7 +51,7 @@ class Foo {
 
 ```swift
 class Foo {
-  let myVar: Int? = 0
+  let myVar: Int? = 0, s: String = ""
 }
 ```
 
@@ -40,36 +71,36 @@ class Foo {
 
 ```swift
 class Foo {
-  ↓var myVar = 0
+  var ↓myVar = 0
 }
 ```
 
 ```swift
 class Foo {
-  ↓let mylet = 0
+  let ↓mylet = 0
 }
 ```
 
 ```swift
 class Foo {
-  ↓static var myStaticVar = 0
+  static var ↓myStaticVar = 0
 }
 ```
 
 ```swift
 class Foo {
-  ↓class var myClassVar = 0
+  class var ↓myClassVar = 0
 }
 ```
 
 ```swift
 class Foo {
-  ↓let myVar = Int(0)
+  let ↓myVar = Int(0), ↓s = ""
 }
 ```
 
 ```swift
 class Foo {
-  ↓let myVar = Set<Int>(0)
+  let ↓myVar = Set<Int>(0)
 }
 ```

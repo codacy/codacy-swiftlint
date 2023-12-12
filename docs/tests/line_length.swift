@@ -1,8 +1,8 @@
 //#Patterns: line_length
 
-//#Issue: {"severity": "Info", "line": 7, "patternId": "line_length"}
-//#Issue: {"severity": "Info", "line": 10, "patternId": "line_length"}
-//#Issue: {"severity": "Info", "line": 12, "patternId": "line_length"}
+//#Issue: {"severity": "Warning", "line": 7, "patternId": "line_length"}
+//#Issue: {"severity": "Warning", "line": 10, "patternId": "line_length"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "line_length"}
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -1,6 +1,6 @@
-# FlatMap over map and reduce
+# Flat Map over Map Reduce
 
-Prefer `flatMap` over `map` followed by `reduce([], +)`.
+Prefer `flatMap` over `map` followed by `reduce([], +)`
 
 * **Identifier:** flatmap_over_map_reduce
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Prefer `flatMap` over `map` followed by `reduce([], +)`.
 * **Kind:** performance
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

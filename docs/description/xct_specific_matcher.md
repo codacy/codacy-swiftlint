@@ -1,6 +1,6 @@
 # XCTest Specific Matcher
 
-Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`
+Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`.
 
 * **Identifier:** xct_specific_matcher
 * **Enabled by default:** No
@@ -8,9 +8,36 @@ Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  matchers
+  </td>
+  <td>
+  [one-argument-asserts, two-argument-asserts]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
+
+```swift
+XCTAssert(foo
+```
 
 ```swift
 XCTAssertFalse(foo)
@@ -85,6 +112,10 @@ XCTAssertEqual(true, foo?.bar)
 ```
 
 ```swift
+XCTAssert(    foo  )
+```
+
+```swift
 XCTAssertFalse(  foo  )
 ```
 
@@ -146,6 +177,18 @@ XCTAssertEqual(toto(), foo?.bar)
 
 ```swift
 XCTAssertEqual(.toto(.zoo), foo?.bar)
+```
+
+```swift
+XCTAssert(foo.self == bar)
+```
+
+```swift
+XCTAssertTrue(type(of: foo) != Int.self)
+```
+
+```swift
+XCTAssertTrue(a == (1, 3, 5)
 ```
 
 ## Triggering Examples
@@ -300,4 +343,56 @@ XCTAssertEqual(.toto(.zoo), foo?.bar)
 
 ```swift
 ↓XCTAssertEqual(false, false)
+```
+
+```swift
+↓XCTAssert(foo == bar)
+```
+
+```swift
+↓XCTAssertTrue(   foo  ==   bar  )
+```
+
+```swift
+↓XCTAssertFalse(1 == foo)
+```
+
+```swift
+↓XCTAssert(foo == bar, "toto")
+```
+
+```swift
+↓XCTAssert(foo != bar)
+```
+
+```swift
+↓XCTAssertTrue(   foo  !=   bar  )
+```
+
+```swift
+↓XCTAssertFalse(1 != foo)
+```
+
+```swift
+↓XCTAssert(foo != bar, "toto")
+```
+
+```swift
+↓XCTAssert(  foo   ==  nil)
+```
+
+```swift
+↓XCTAssert(nil == foo
+```
+
+```swift
+↓XCTAssertTrue(  foo   !=  nil)
+```
+
+```swift
+↓XCTAssertFalse(nil != foo
+```
+
+```swift
+↓XCTAssert(foo == nil, "toto")
 ```

@@ -1,6 +1,6 @@
 # Trailing Whitespace
 
-Lines should not have trailing whitespace.
+Lines should not have trailing whitespace
 
 * **Identifier:** trailing_whitespace
 * **Enabled by default:** Yes
@@ -8,7 +8,38 @@ Lines should not have trailing whitespace.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, ignores_empty_lines: false, ignores_comments: true
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  ignores_empty_lines
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
+  ignores_comments
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

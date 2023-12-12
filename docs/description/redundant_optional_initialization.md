@@ -1,6 +1,6 @@
 # Redundant Optional Initialization
 
-Initializing an optional variable with nil is redundant.
+Initializing an optional variable with nil is redundant
 
 * **Identifier:** redundant_optional_initialization
 * **Enabled by default:** Yes
@@ -8,43 +8,51 @@ Initializing an optional variable with nil is redundant.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
 ```swift
 var myVar: Int?
-
 ```
 
 ```swift
 let myVar: Int? = nil
-
 ```
 
 ```swift
 var myVar: Int? = 0
-
 ```
 
 ```swift
 func foo(bar: Int? = 0) { }
-
 ```
 
 ```swift
 var myVar: Optional<Int>
-
 ```
 
 ```swift
 let myVar: Optional<Int> = nil
-
 ```
 
 ```swift
 var myVar: Optional<Int> = 0
-
 ```
 
 ```swift
@@ -81,17 +89,14 @@ func funcName() {
 
 ```swift
 var myVar: Int?↓ = nil
-
 ```
 
 ```swift
 var myVar: Optional<Int>↓ = nil
-
 ```
 
 ```swift
 var myVar: Int?↓=nil
-
 ```
 
 ```swift

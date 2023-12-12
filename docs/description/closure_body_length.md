@@ -1,6 +1,6 @@
 # Closure Body Length
 
-Closure bodies should not span too many lines.
+Closure bodies should not span too many lines
 
 * **Identifier:** closure_body_length
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Closure bodies should not span too many lines.
 * **Kind:** metrics
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning: 30, error: 100
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  warning
+  </td>
+  <td>
+  30
+  </td>
+  </tr>
+  <tr>
+  <td>
+  error
+  </td>
+  <td>
+  100
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

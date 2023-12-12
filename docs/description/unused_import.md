@@ -1,6 +1,6 @@
 # Unused Import
 
-All imported modules should be required to make the file compile.
+All imported modules should be required to make the file compile
 
 * **Identifier:** unused_import
 * **Enabled by default:** No
@@ -8,7 +8,46 @@ All imported modules should be required to make the file compile.
 * **Kind:** lint
 * **Analyzer rule:** Yes
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** severity: warning, require_explicit_imports: false, allowed_transitive_imports: [], always_keep_imports: []
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  require_explicit_imports
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
+  allowed_transitive_imports
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
+  <tr>
+  <td>
+  always_keep_imports
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -35,7 +74,6 @@ func foo(error: Swift.Error) {}
 
 ```swift
 import Foundation
-import ObjectiveC
 let 👨‍👩‍👧‍👦 = #selector(NSArray.contains(_:))
 👨‍👩‍👧‍👦 == 👨‍👩‍👧‍👦
 ```

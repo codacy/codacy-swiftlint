@@ -1,6 +1,6 @@
 # Self in Property Initialization
 
-`self` refers to the unapplied `NSObject.self()` method, which is likely not expected. Make the variable `lazy` to be able to refer to the current instance or use `ClassName.self`.
+`self` refers to the unapplied `NSObject.self()` method, which is likely not expected; make the variable `lazy` to be able to refer to the current instance or use `ClassName.self`
 
 * **Identifier:** self_in_property_initialization
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

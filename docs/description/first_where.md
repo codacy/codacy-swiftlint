@@ -1,6 +1,6 @@
 # First Where
 
-Prefer using `.first(where:)` over `.filter { }.first` in collections.
+Prefer using `.first(where:)` over `.filter { }.first` in collections
 
 * **Identifier:** first_where
 * **Enabled by default:** No
@@ -8,28 +8,39 @@ Prefer using `.first(where:)` over `.filter { }.first` in collections.
 * **Kind:** performance
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
 ```swift
 kinds.filter(excludingKinds.contains).isEmpty && kinds.first == .identifier
-
 ```
 
 ```swift
 myList.first(where: { $0 % 2 == 0 })
-
 ```
 
 ```swift
 match(pattern: pattern).filter { $0.first == .identifier }
-
 ```
 
 ```swift
 (myList.filter { $0 == 1 }.suffix(2)).first
-
 ```
 
 ```swift
@@ -48,38 +59,31 @@ if let pause = timeTracker.pauses.filter("beginDate < %@", beginDate).first { pr
 
 ```swift
 ↓myList.filter { $0 % 2 == 0 }.first
-
 ```
 
 ```swift
 ↓myList.filter({ $0 % 2 == 0 }).first
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.filter({ $0 % 2 == 0 }).first
-
 ```
 
 ```swift
 ↓myList.map { $0 + 1 }.filter({ $0 % 2 == 0 }).first?.something()
-
 ```
 
 ```swift
 ↓myList.filter(someFunction).first
-
 ```
 
 ```swift
 ↓myList.filter({ $0 % 2 == 0 })
 .first
-
 ```
 
 ```swift
 (↓myList.filter { $0 == 1 }).first
-
 ```
 
 ```swift

@@ -8,13 +8,44 @@ Enums conforming to a specified protocol must implement a specific case(s).
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** No protocols configured.  In config add 'required_enum_case' to 'opt_in_rules' and config using :
-
-'required_enum_case:
-  {Protocol Name}:
-    {Case Name}:{warning|error}
-    {Case Name}:{warning|error}
-
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  {Protocol Name}
+  </td>
+  <td>
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  {Case Name 1}
+  </td>
+  <td>
+  {warning|error}
+  </td>
+  </tr>
+  <tr>
+  <td>
+  {Case Name 2}
+  </td>
+  <td>
+  {warning|error}
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

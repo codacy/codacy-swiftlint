@@ -1,6 +1,6 @@
 # Identical Operands
 
-Comparing two identical operands is likely a mistake.
+Comparing two identical operands is likely a mistake
 
 * **Identifier:** identical_operands
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Comparing two identical operands is likely a mistake.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -565,7 +580,7 @@ f(  i :   2) <=   f (i: 3 )
 ```
 
 ```swift
-func evaluate(_ mode: CommandMode) -> Result<AutoCorrectOptions, CommandantError<CommandantError<()>>>
+func evaluate(_ mode: CommandMode) -> Result<Options, CommandantError<CommandantError<()>>>
 ```
 
 ```swift

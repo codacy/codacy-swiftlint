@@ -1,6 +1,6 @@
 # Object Literal
 
-Prefer object literals over image and color inits.
+Prefer object literals over image and color inits
 
 * **Identifier:** object_literal
 * **Enabled by default:** No
@@ -8,7 +8,38 @@ Prefer object literals over image and color inits.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, image_literal: true, color_literal: true
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  image_literal
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  <tr>
+  <td>
+  color_literal
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

@@ -8,7 +8,30 @@ All elements in a collection literal should be vertically aligned
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, align_colons: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  align_colons
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -37,6 +60,11 @@ let meals = [
                 "lunch": "sandwich",
                 "dinner": "burger"
 ]
+```
+
+```swift
+NSAttributedString(string: "…", attributes: [.font: UIFont.systemFont(ofSize: 12, weight: .regular),
+                                             .foregroundColor: UIColor(white: 0, alpha: 0.2)])
 ```
 
 ```swift

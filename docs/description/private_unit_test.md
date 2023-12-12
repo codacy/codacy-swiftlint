@@ -1,6 +1,6 @@
 # Private Unit Test
 
-Unit tests marked private are silently skipped.
+Unit tests marked private are silently skipped
 
 * **Identifier:** private_unit_test
 * **Enabled by default:** Yes
@@ -8,7 +8,38 @@ Unit tests marked private are silently skipped.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning: XCTestCase
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  test_parent_classes
+  </td>
+  <td>
+  [&quot;QuickSpec&quot;, &quot;XCTestCase&quot;]
+  </td>
+  </tr>
+  <tr>
+  <td>
+  regex
+  </td>
+  <td>
+  &quot;XCTestCase&quot;
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

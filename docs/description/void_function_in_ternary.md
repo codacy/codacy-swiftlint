@@ -1,6 +1,6 @@
 # Void Function in Ternary
 
-Using ternary to call Void functions should be avoided.
+Using ternary to call Void functions should be avoided
 
 * **Identifier:** void_function_in_ternary
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Using ternary to call Void functions should be avoided.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.1.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

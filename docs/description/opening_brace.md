@@ -1,6 +1,6 @@
 # Opening Brace Spacing
 
-Opening braces should be preceded by a single space and on the same line as the declaration.
+Opening braces should be preceded by a single space and on the same line as the declaration
 
 * **Identifier:** opening_brace
 * **Enabled by default:** Yes
@@ -8,7 +8,30 @@ Opening braces should be preceded by a single space and on the same line as the 
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, allowMultilineFunc: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  allow_multiline_func
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -63,7 +86,6 @@ guard
 
 ```swift
 struct Rule {}
-
 ```
 
 ```swift
@@ -72,7 +94,6 @@ struct Parent {
 		let foo: Int
 	}
 }
-
 ```
 
 ```swift
@@ -160,14 +181,12 @@ guard
 
 ```swift
 struct Rule↓{}
-
 ```
 
 ```swift
 struct Rule
 ↓{
 }
-
 ```
 
 ```swift
@@ -175,7 +194,6 @@ struct Rule
 
 	↓{
 }
-
 ```
 
 ```swift
@@ -185,7 +203,6 @@ struct Parent {
 		let foo: Int
 	}
 }
-
 ```
 
 ```swift
@@ -214,4 +231,18 @@ func run_Array_method1x(_ N: Int) {
 func run_Array_method2x(_ N: Int) {
 
 }
+```
+
+```swift
+   class TestFile {
+       func problemFunction() {
+           #if DEBUG
+           #endif
+       }
+
+       func openingBraceViolation()
+      ↓{
+           print("Brackets")
+       }
+   }
 ```

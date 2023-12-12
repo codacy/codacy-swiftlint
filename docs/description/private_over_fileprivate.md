@@ -1,6 +1,6 @@
-# Private over fileprivate
+# Private over Fileprivate
 
-Prefer `private` over `fileprivate` declarations.
+Prefer `private` over `fileprivate` declarations
 
 * **Identifier:** private_over_fileprivate
 * **Enabled by default:** Yes
@@ -8,7 +8,30 @@ Prefer `private` over `fileprivate` declarations.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, validate_extensions: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  validate_extensions
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

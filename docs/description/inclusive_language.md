@@ -1,6 +1,6 @@
 # Inclusive Language
 
-Identifiers should use inclusive language that avoids discrimination against groups of people based on race, gender, or socioeconomic status
+Identifiers should use inclusive language that avoids discrimination against groups of people based on race, gender, or socioeconomic status.
 
 * **Identifier:** inclusive_language
 * **Enabled by default:** Yes
@@ -8,7 +8,22 @@ Identifiers should use inclusive language that avoids discrimination against gro
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, additional_terms: [], override_terms: [], override_allowed_terms: []
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

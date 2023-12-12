@@ -1,6 +1,6 @@
 # Force Cast
 
-Force casts should be avoided.
+Force casts should be avoided
 
 * **Identifier:** force_cast
 * **Enabled by default:** Yes
@@ -8,18 +8,31 @@ Force casts should be avoided.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** error
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  error
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
 ```swift
 NSNumber() as? Int
-
 ```
 
 ## Triggering Examples
 
 ```swift
 NSNumber() ↓as! Int
-
 ```

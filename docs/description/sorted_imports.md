@@ -1,6 +1,6 @@
 # Sorted Imports
 
-Imports should be sorted.
+Imports should be sorted
 
 * **Identifier:** sorted_imports
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Imports should be sorted.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  grouping
+  </td>
+  <td>
+  names
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

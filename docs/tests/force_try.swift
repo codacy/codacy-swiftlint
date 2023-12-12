@@ -2,4 +2,4 @@
 
 //#Issue: {"severity": "Error", "line": 5, "patternId": "force_try"}
 
-    func a() throws {}; try! a()
+func a() throws {}; try! a()

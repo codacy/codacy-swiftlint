@@ -1,6 +1,6 @@
 # Accessibility Label for Image
 
-All Images that provide context should have an accessibility label. Purely decorative images can be hidden from accessibility.
+Images that provide context should have an accessibility label or should be explicitly hidden from accessibility
 
 * **Identifier:** accessibility_label_for_image
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ All Images that provide context should have an accessibility label. Purely decor
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.1.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -16,14 +31,6 @@ All Images that provide context should have an accessibility label. Purely decor
 struct MyView: View {
     var body: some View {
         Image(decorative: "my-image")
-    }
-}
-```
-
-```swift
-struct MyView: View {
-    var body: some View {
-        Image(systemName: "circle.plus")
     }
 }
 ```
@@ -298,6 +305,14 @@ struct MyView: View {
                 .renderingMode(.template)
                 .foregroundColor(.blue)
         }
+    }
+}
+```
+
+```swift
+struct MyView: View {
+    var body: some View {
+        ↓Image(systemName: "circle.plus")
     }
 }
 ```

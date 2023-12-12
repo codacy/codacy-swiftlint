@@ -1,4 +1,4 @@
-FROM norionomura/swiftlint:0.50.3_swift-5.7.0
+FROM norionomura/swiftlint:0.54.0_swift-5.9
 
 RUN apt-get update && apt-get install -y openjdk-8-jre-headless
 

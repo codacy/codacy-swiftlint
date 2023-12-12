@@ -8,23 +8,35 @@ MARK comment should be in valid format. e.g. '// MARK: ...' or '// MARK: - ...'
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
 ```swift
 // MARK: good
-
 ```
 
 ```swift
 // MARK: - good
-
 ```
 
 ```swift
 // MARK: -
-
 ```
 
 ```swift

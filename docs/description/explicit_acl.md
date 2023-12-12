@@ -1,6 +1,6 @@
 # Explicit ACL
 
-All declarations should specify Access Control Level keywords explicitly.
+All declarations should specify Access Control Level keywords explicitly
 
 * **Identifier:** explicit_acl
 * **Enabled by default:** No
@@ -8,23 +8,35 @@ All declarations should specify Access Control Level keywords explicitly.
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
 ```swift
 internal enum A {}
-
 ```
 
 ```swift
 public final class B {}
-
 ```
 
 ```swift
 private struct C {}
-
 ```
 
 ```swift
@@ -46,7 +58,6 @@ class Foo {
 
 ```swift
 internal func a() { let a =  }
-
 ```
 
 ```swift
@@ -123,33 +134,27 @@ extension Foo {
 
 ```swift
 ↓enum A {}
-
 ```
 
 ```swift
 final ↓class B {}
-
 ```
 
 ```swift
 internal struct C { ↓let d = 5 }
-
 ```
 
 ```swift
 public struct C { ↓let d = 5 }
-
 ```
 
 ```swift
 func a() {}
-
 ```
 
 ```swift
 internal let a = 0
 ↓func b() {}
-
 ```
 
 ```swift

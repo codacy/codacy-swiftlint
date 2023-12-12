@@ -1,6 +1,6 @@
 # Attributes
 
-Attributes should be on their own lines in functions and types, but on the same line as variables and imports.
+Attributes should be on their own lines in functions and types, but on the same line as variables and imports
 
 * **Identifier:** attributes
 * **Enabled by default:** No
@@ -8,7 +8,46 @@ Attributes should be on their own lines in functions and types, but on the same 
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, always_on_same_line: ["@IBAction", "@NSManaged"], always_on_line_above: []
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  attributes_with_arguments_always_on_line_above
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
+  <tr>
+  <td>
+  always_on_same_line
+  </td>
+  <td>
+  [&quot;@IBAction&quot;, &quot;@NSManaged&quot;]
+  </td>
+  </tr>
+  <tr>
+  <td>
+  always_on_line_above
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -139,14 +178,13 @@ class Foo: NSObject {
 ```swift
 @objc
 class ⽺ {}
-
 ```
 
 ```swift
 extension Property {
 
- @available(*, unavailable, renamed: "isOptional")
-public var optional: Bool { fatalError() }
+    @available(*, unavailable, renamed: "isOptional")
+    public var optional: Bool { fatalError() }
 }
 ```
 
@@ -223,6 +261,14 @@ class MyClass: NSObject {
 func refreshable(action: @escaping @Sendable () async -> Void) -> some View {
     modifier(RefreshableModifier(action: action))
 }
+```
+
+```swift
+import AppKit
+
+@NSApplicationMain
+@MainActor
+final class AppDelegate: NSAppDelegate {}
 ```
 
 ## Triggering Examples

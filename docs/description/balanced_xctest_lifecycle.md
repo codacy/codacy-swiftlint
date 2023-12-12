@@ -1,6 +1,6 @@
-# Balanced XCTest life-cycle
+# Balanced XCTest Life Cycle
 
-Test classes must implement balanced setUp and tearDown methods.
+Test classes must implement balanced setUp and tearDown methods
 
 * **Identifier:** balanced_xctest_lifecycle
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Test classes must implement balanced setUp and tearDown methods.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, test_parent_classes: ["QuickSpec", "XCTestCase"]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  test_parent_classes
+  </td>
+  <td>
+  [&quot;QuickSpec&quot;, &quot;XCTestCase&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

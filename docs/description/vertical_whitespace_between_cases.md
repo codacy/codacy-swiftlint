@@ -1,6 +1,6 @@
-# Vertical Whitespace Between Cases
+# Vertical Whitespace between Cases
 
-Include a single empty line between switch cases.
+Include a single empty line between switch cases
 
 * **Identifier:** vertical_whitespace_between_cases
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Include a single empty line between switch cases.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

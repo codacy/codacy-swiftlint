@@ -1,6 +1,6 @@
 # Quick Discouraged Pending Test
 
-Discouraged pending test. This test won't run while it's marked as pending.
+This test won't run as long as it's marked pending
 
 * **Identifier:** quick_discouraged_pending_test
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Discouraged pending test. This test won't run while it's marked as pending.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 

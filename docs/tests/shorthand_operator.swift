@@ -23,66 +23,66 @@
 //#Issue: {"severity": "Error", "line": 86, "patternId": "shorthand_operator"}
 //#Issue: {"severity": "Error", "line": 88, "patternId": "shorthand_operator"}
 
-    foo = foo - 1
+foo = foo - 1
 
 
-    foo = foo - aVariable
+foo = foo - aVariable
 
 
-    foo = foo - bar.method()
+foo = foo - bar.method()
 
 
-    foo.aProperty = foo.aProperty - 1
+foo.aProperty = foo.aProperty - 1
 
 
-    self.aProperty = self.aProperty - 1
+self.aProperty = self.aProperty - 1
 
 
-    foo = foo / 1
+foo = foo / 1
 
 
-    foo = foo / aVariable
+foo = foo / aVariable
 
 
-    foo = foo / bar.method()
+foo = foo / bar.method()
 
 
-    foo.aProperty = foo.aProperty / 1
+foo.aProperty = foo.aProperty / 1
 
 
-    self.aProperty = self.aProperty / 1
+self.aProperty = self.aProperty / 1
 
 
-    foo = foo + 1
+foo = foo + 1
 
 
-    foo = foo + aVariable
+foo = foo + aVariable
 
 
-    foo = foo + bar.method()
+foo = foo + bar.method()
 
 
-    foo.aProperty = foo.aProperty + 1
+foo.aProperty = foo.aProperty + 1
 
 
-    self.aProperty = self.aProperty + 1
+self.aProperty = self.aProperty + 1
 
 
-    foo = foo * 1
+foo = foo * 1
 
 
-    foo = foo * aVariable
+foo = foo * aVariable
 
 
-    foo = foo * bar.method()
+foo = foo * bar.method()
 
 
-    foo.aProperty = foo.aProperty * 1
+foo.aProperty = foo.aProperty * 1
 
 
-    self.aProperty = self.aProperty * 1
+self.aProperty = self.aProperty * 1
 
 
-    n = n + i / outputLength
+n = n + i / outputLength
 
-    n = n - i / outputLength
+n = n - i / outputLength

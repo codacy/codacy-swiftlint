@@ -1,6 +1,6 @@
 # Vertical Whitespace before Closing Braces
 
-Don't include vertical whitespace (empty line) before closing braces.
+Don't include vertical whitespace (empty line) before closing braces
 
 * **Identifier:** vertical_whitespace_closing_braces
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Don't include vertical whitespace (empty line) before closing braces.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, only_enforce_before_trivial_lines: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  only_enforce_before_trivial_lines
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -21,22 +44,28 @@ Don't include vertical whitespace (empty line) before closing braces.
 ```
 
 ```swift
+do {
+  print("x is 5")
+}
+```
+
+```swift
+do {
+  print("x is 5")
+}
+```
+
+```swift
+do {
+  print("x is 5")
+}
+```
+
+```swift
 foo(
     x: 5,
     y:6
 )
-```
-
-```swift
-do {
-  print("x is 5")
-}
-```
-
-```swift
-do {
-  print("x is 5")
-}
 ```
 
 ```swift
@@ -51,12 +80,6 @@ func foo() {
 print([
   1
 ])
-```
-
-```swift
-do {
-  print("x is 5")
-}
 ```
 
 ```swift
@@ -90,22 +113,6 @@ print([foo {
 */
 ```
 
-```swift
-if bool1 {
-  // do something
-  // do something
-
-} else if bool2 {
-  // do something
-  // do something
-  // do something
-
-} else {
-  // do something
-  // do something
-}
-```
-
 ## Triggering Examples
 
 ```swift
@@ -115,14 +122,6 @@ if bool1 {
 3
 ↓
 ]
-```
-
-```swift
-foo(
-    x: 5,
-    y:6
-↓
-)
 ```
 
 ```swift
@@ -142,6 +141,21 @@ do {
 ```
 
 ```swift
+do {
+  print("x is 5")
+↓
+}
+```
+
+```swift
+foo(
+    x: 5,
+    y:6
+↓
+)
+```
+
+```swift
 func foo() {
   run(5) { x in
     print(x)
@@ -155,13 +169,6 @@ print([
   1
 ↓
 ])
-```
-
-```swift
-do {
-  print("x is 5")
-↓
-}
 ```
 
 ```swift

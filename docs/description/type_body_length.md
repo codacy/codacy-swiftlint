@@ -1,6 +1,6 @@
 # Type Body Length
 
-Type bodies should not span too many lines.
+Type bodies should not span too many lines
 
 * **Identifier:** type_body_length
 * **Enabled by default:** Yes
@@ -8,7 +8,30 @@ Type bodies should not span too many lines.
 * **Kind:** metrics
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning: 250, error: 350
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  warning
+  </td>
+  <td>
+  250
+  </td>
+  </tr>
+  <tr>
+  <td>
+  error
+  </td>
+  <td>
+  350
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -1035,8 +1058,7 @@ let abc = 0
 
 /* this is
 a multiline comment
-*/
-}
+*/}
 
 ```
 
@@ -2063,8 +2085,7 @@ let abc = 0
 
 /* this is
 a multiline comment
-*/
-}
+*/}
 
 ```
 
@@ -3091,8 +3112,7 @@ let abc = 0
 
 /* this is
 a multiline comment
-*/
-}
+*/}
 
 ```
 
@@ -4119,8 +4139,7 @@ let abc = 0
 
 /* this is
 a multiline comment
-*/
-}
+*/}
 
 ```
 

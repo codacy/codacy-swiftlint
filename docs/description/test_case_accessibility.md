@@ -1,6 +1,6 @@
-# Test case accessibility
+# Test Case Accessibility
 
-Test cases should only contain private non-test members.
+Test cases should only contain private non-test members
 
 * **Identifier:** test_case_accessibility
 * **Enabled by default:** No
@@ -8,7 +8,38 @@ Test cases should only contain private non-test members.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, allowed_prefixes: [], test_parent_classes: ["QuickSpec", "XCTestCase"]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  allowed_prefixes
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
+  <tr>
+  <td>
+  test_parent_classes
+  </td>
+  <td>
+  [&quot;QuickSpec&quot;, &quot;XCTestCase&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -27,29 +58,17 @@ class FooTests: XCTestCase {
         return nestedMember
     }
 
-    override static func setUp() {
-        super.setUp()
-    }
+    override static func setUp() {}
 
-    override func setUp() {
-        super.setUp()
-    }
+    override func setUp() {}
 
-    override func setUpWithError() throws {
-        try super.setUpWithError()
-    }
+    override func setUpWithError() throws {}
 
-    override static func tearDown() {
-        super.tearDown()
-    }
+    override static func tearDown() {}
 
-    override func tearDown() {
-        super.tearDown()
-    }
+    override func tearDown() {}
 
-    override func tearDownWithError() {
-        try super.tearDownWithError()
-    }
+    override func tearDownWithError() {}
 
     override func someFutureXCTestFunction() {
         super.someFutureXCTestFunction()
@@ -70,6 +89,16 @@ class FooTests: XCTestCase {
 ```swift
 class FooTests: XCTestCase {
     private struct MockSomething: Something {}
+}
+```
+
+```swift
+class FooTests: XCTestCase {
+    override init() {
+        super.init()
+        let foo = 1
+        var bar = 2
+    }
 }
 ```
 

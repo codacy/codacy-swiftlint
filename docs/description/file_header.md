@@ -8,7 +8,22 @@ Header comments should be consistent with project patterns. The SWIFTLINT_CURREN
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, required_string: None, required_pattern: None, forbidden_string: None, forbidden_pattern: None
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -29,7 +44,6 @@ let foo = 2
 
 ```swift
 // ↓Copyright
-
 ```
 
 ```swift

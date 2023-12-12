@@ -1,6 +1,6 @@
 # Prefer Self in Static References
 
-Use `Self` to refer to the surrounding type name.
+Use `Self` to refer to the surrounding type name
 
 * **Identifier:** prefer_self_in_static_references
 * **Enabled by default:** No
@@ -8,7 +8,22 @@ Use `Self` to refer to the surrounding type name.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -41,15 +56,33 @@ Use `Self` to refer to the surrounding type name.
 ## Triggering Examples
 
 ```swift
+final class CheckCellView: NSTableCellView {
+  @IBOutlet var checkButton: NSButton!
+
+  override func awakeFromNib() {
+    checkButton.action = #selector(↓CheckCellView.check(_:))
+  }
+
+  @objc func check(_ button: AnyObject?) {}
+}
+```
+
+```swift
     class C {
-        struct S {
-            static let i = 2
-            let h = ↓S.i
-        }
         static let i = 1
-        let h = C.i
-        var j: Int { ↓C.i }
-        func f() -> Int { ↓C.i + h }
+        var j: Int {
+            let ii = ↓C.i
+            return ii
+        }
+    }
+```
+
+```swift
+    class C {
+        func f() {
+            _ = [↓C]()
+            _ = [Int: ↓C]()
+        }
     }
 ```
 
@@ -59,8 +92,8 @@ Use `Self` to refer to the surrounding type name.
         static let i = 1
         static func f() -> Int { ↓S.i }
         func g() -> Any { ↓S.self }
-        func h() -> S { ↓S(j: 2) }
-        func i() -> KeyPath<S, Int> { \↓S.j }
+        func h() -> ↓S { ↓S(j: 2) }
+        func i() -> KeyPath<↓S, Int> { \↓S.j }
         func j(@Wrap(-↓S.i, ↓S.i) n: Int = ↓S.i) {}
     }
 ```
@@ -80,7 +113,7 @@ Use `Self` to refer to the surrounding type name.
 ```swift
     enum E {
         case A
-        static func f() -> E { ↓E.A }
-        static func g() -> E { ↓E.f() }
+        static func f() -> ↓E { ↓E.A }
+        static func g() -> ↓E { ↓E.f() }
     }
 ```

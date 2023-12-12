@@ -125,7 +125,7 @@ object SwiftLint extends Tool {
   private def writeConfigFile(patternsToLint: List[Pattern.Definition]): Path = {
     val rules = patternsToLint.map(_.patternId.toString)
     val content =
-      s"""whitelist_rules:
+      s"""only_rules:
          |  - ${rules.mkString("\n  - ")}\n
       """.stripMargin
 

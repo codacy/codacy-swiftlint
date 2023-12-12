@@ -1,12 +1,12 @@
 [ {
   "patternId" : "accessibility_label_for_image",
   "title" : "Accessibility Label for Image",
-  "description" : "All Images that provide context should have an accessibility label. Purely decorative images can be hidden from accessibility.",
+  "description" : "Images that provide context should have an accessibility label or should be explicitly hidden from accessibility",
   "parameters" : [ ]
 }, {
   "patternId" : "accessibility_trait_for_button",
   "title" : "Accessibility Trait for Button",
-  "description" : "All views with tap gestures added should include the .isButton accessibility trait. If a tap opens an external link the .isLink trait should be used instead.",
+  "description" : "All views with tap gestures added should include the .isButton or the .isLink accessibility traits",
   "parameters" : [ ]
 }, {
   "patternId" : "anonymous_argument_in_multiline_closure",
@@ -16,47 +16,52 @@
 }, {
   "patternId" : "anyobject_protocol",
   "title" : "AnyObject Protocol",
-  "description" : "Prefer using `AnyObject` over `class` for class-only protocols.",
+  "description" : "Prefer using `AnyObject` over `class` for class-only protocols",
   "parameters" : [ ]
 }, {
   "patternId" : "array_init",
   "title" : "Array Init",
-  "description" : "Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Array.",
+  "description" : "Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Array",
   "parameters" : [ ]
 }, {
   "patternId" : "attributes",
   "title" : "Attributes",
-  "description" : "Attributes should be on their own lines in functions and types, but on the same line as variables and imports.",
+  "description" : "Attributes should be on their own lines in functions and types, but on the same line as variables and imports",
   "parameters" : [ ]
 }, {
   "patternId" : "balanced_xctest_lifecycle",
-  "title" : "Balanced XCTest life-cycle",
-  "description" : "Test classes must implement balanced setUp and tearDown methods.",
+  "title" : "Balanced XCTest Life Cycle",
+  "description" : "Test classes must implement balanced setUp and tearDown methods",
+  "parameters" : [ ]
+}, {
+  "patternId" : "blanket_disable_command",
+  "title" : "Blanket Disable Command",
+  "description" : "swiftlint:disable commands should be re-enabled before the end of the file",
   "parameters" : [ ]
 }, {
   "patternId" : "block_based_kvo",
   "title" : "Block Based KVO",
-  "description" : "Prefer the new block based KVO API with keypaths when using Swift 3.2 or later.",
+  "description" : "Prefer the new block based KVO API with keypaths when using Swift 3.2 or later",
   "parameters" : [ ]
 }, {
   "patternId" : "capture_variable",
   "title" : "Capture Variable",
-  "description" : "Non-constant variables should not be listed in a closure's capture list to avoid confusion about closures capturing variables at creation time.",
+  "description" : "Non-constant variables should not be listed in a closure's capture list to avoid confusion about closures capturing variables at creation time",
   "parameters" : [ ]
 }, {
   "patternId" : "class_delegate_protocol",
   "title" : "Class Delegate Protocol",
-  "description" : "Delegate protocols should be class-only so they can be weakly referenced.",
+  "description" : "Delegate protocols should be class-only so they can be weakly referenced",
   "parameters" : [ ]
 }, {
   "patternId" : "closing_brace",
   "title" : "Closing Brace Spacing",
-  "description" : "Closing brace with closing parenthesis should not have any whitespaces in the middle.",
+  "description" : "Closing brace with closing parenthesis should not have any whitespaces in the middle",
   "parameters" : [ ]
 }, {
   "patternId" : "closure_body_length",
   "title" : "Closure Body Length",
-  "description" : "Closure bodies should not span too many lines.",
+  "description" : "Closure bodies should not span too many lines",
   "parameters" : [ ]
 }, {
   "patternId" : "closure_end_indentation",
@@ -66,12 +71,12 @@
 }, {
   "patternId" : "closure_parameter_position",
   "title" : "Closure Parameter Position",
-  "description" : "Closure parameters should be on the same line as opening brace.",
+  "description" : "Closure parameters should be on the same line as opening brace",
   "parameters" : [ ]
 }, {
   "patternId" : "closure_spacing",
   "title" : "Closure Spacing",
-  "description" : "Closure expressions should have a single space inside each brace.",
+  "description" : "Closure expressions should have a single space inside each brace",
   "parameters" : [ ]
 }, {
   "patternId" : "collection_alignment",
@@ -81,12 +86,12 @@
 }, {
   "patternId" : "colon",
   "title" : "Colon Spacing",
-  "description" : "Colons should be next to the identifier when specifying a type and next to the key in dictionary literals.",
+  "description" : "Colons should be next to the identifier when specifying a type and next to the key in dictionary literals",
   "parameters" : [ ]
 }, {
   "patternId" : "comma",
   "title" : "Comma Spacing",
-  "description" : "There should be no space before and one after any comma.",
+  "description" : "There should be no space before and one after any comma",
   "parameters" : [ ]
 }, {
   "patternId" : "comma_inheritance",
@@ -96,7 +101,7 @@
 }, {
   "patternId" : "comment_spacing",
   "title" : "Comment Spacing",
-  "description" : "Prefer at least one space after slashes for comments.",
+  "description" : "Prefer at least one space after slashes for comments",
   "parameters" : [ ]
 }, {
   "patternId" : "compiler_protocol_init",
@@ -115,33 +120,33 @@
   "parameters" : [ ]
 }, {
   "patternId" : "contains_over_filter_count",
-  "title" : "Contains Over Filter Count",
-  "description" : "Prefer `contains` over comparing `filter(where:).count` to 0.",
+  "title" : "Contains over Filter Count",
+  "description" : "Prefer `contains` over comparing `filter(where:).count` to 0",
   "parameters" : [ ]
 }, {
   "patternId" : "contains_over_filter_is_empty",
-  "title" : "Contains Over Filter Is Empty",
+  "title" : "Contains over Filter is Empty",
   "description" : "Prefer `contains` over using `filter(where:).isEmpty`",
   "parameters" : [ ]
 }, {
   "patternId" : "contains_over_first_not_nil",
-  "title" : "Contains over first not nil",
+  "title" : "Contains over First not Nil",
   "description" : "Prefer `contains` over `first(where:) != nil` and `firstIndex(where:) != nil`.",
   "parameters" : [ ]
 }, {
   "patternId" : "contains_over_range_nil_comparison",
-  "title" : "Contains over range(of:) comparison to nil",
-  "description" : "Prefer `contains` over `range(of:) != nil` and `range(of:) == nil`.",
+  "title" : "Contains over Range Comparision to Nil",
+  "description" : "Prefer `contains` over `range(of:) != nil` and `range(of:) == nil`",
   "parameters" : [ ]
 }, {
   "patternId" : "control_statement",
   "title" : "Control Statement",
-  "description" : "`if`, `for`, `guard`, `switch`, `while`, and `catch` statements shouldn't unnecessarily wrap their conditionals or arguments in parentheses.",
+  "description" : "`if`, `for`, `guard`, `switch`, `while`, and `catch` statements shouldn't unnecessarily wrap their conditionals or arguments in parentheses",
   "parameters" : [ ]
 }, {
   "patternId" : "convenience_type",
   "title" : "Convenience Type",
-  "description" : "Types used for hosting only static members should be implemented as a caseless enum to avoid instantiation.",
+  "description" : "Types used for hosting only static members should be implemented as a caseless enum to avoid instantiation",
   "parameters" : [ ]
 }, {
   "patternId" : "custom_rules",
@@ -159,9 +164,14 @@
   "description" : "Availability checks or attributes shouldn't be using older versions that are satisfied by the deployment target.",
   "parameters" : [ ]
 }, {
+  "patternId" : "direct_return",
+  "title" : "Direct Return",
+  "description" : "Directly return the expression instead of assigning it to a variable first",
+  "parameters" : [ ]
+}, {
   "patternId" : "discarded_notification_center_observer",
   "title" : "Discarded Notification Center Observer",
-  "description" : "When registering for a notification using a block, the opaque observer that is returned should be stored so it can be removed later.",
+  "description" : "When registering for a notification using a block, the opaque observer that is returned should be stored so it can be removed later",
   "parameters" : [ ]
 }, {
   "patternId" : "discouraged_assert",
@@ -171,87 +181,92 @@
 }, {
   "patternId" : "discouraged_direct_init",
   "title" : "Discouraged Direct Initialization",
-  "description" : "Discouraged direct initialization of types that can be harmful.",
+  "description" : "Discouraged direct initialization of types that can be harmful",
   "parameters" : [ ]
 }, {
   "patternId" : "discouraged_none_name",
   "title" : "Discouraged None Name",
-  "description" : "Discourages name cases/static members `none`, which can conflict with `Optional<T>.none`.",
+  "description" : "Enum cases and static members named `none` are discouraged as they can conflict with `Optional<T>.none`.",
   "parameters" : [ ]
 }, {
   "patternId" : "discouraged_object_literal",
   "title" : "Discouraged Object Literal",
-  "description" : "Prefer initializers over object literals.",
+  "description" : "Prefer initializers over object literals",
   "parameters" : [ ]
 }, {
   "patternId" : "discouraged_optional_boolean",
   "title" : "Discouraged Optional Boolean",
-  "description" : "Prefer non-optional booleans over optional booleans.",
+  "description" : "Prefer non-optional booleans over optional booleans",
   "parameters" : [ ]
 }, {
   "patternId" : "discouraged_optional_collection",
   "title" : "Discouraged Optional Collection",
-  "description" : "Prefer empty collection over optional collection.",
+  "description" : "Prefer empty collection over optional collection",
+  "parameters" : [ ]
+}, {
+  "patternId" : "duplicate_conditions",
+  "title" : "Duplicate Conditions",
+  "description" : "Duplicate sets of conditions in the same branch instruction should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "duplicate_enum_cases",
   "title" : "Duplicate Enum Cases",
-  "description" : "Enum can't contain multiple cases with the same name.",
+  "description" : "Enum shouldn't contain multiple cases with the same name",
   "parameters" : [ ]
 }, {
   "patternId" : "duplicate_imports",
   "title" : "Duplicate Imports",
-  "description" : "Imports should be unique.",
+  "description" : "Imports should be unique",
   "parameters" : [ ]
 }, {
   "patternId" : "duplicated_key_in_dictionary_literal",
   "title" : "Duplicated Key in Dictionary Literal",
-  "description" : "Dictionary literals with duplicated keys will crash in runtime.",
+  "description" : "Dictionary literals with duplicated keys will crash at runtime",
   "parameters" : [ ]
 }, {
   "patternId" : "dynamic_inline",
   "title" : "Dynamic Inline",
-  "description" : "Avoid using 'dynamic' and '@inline(__always)' together.",
+  "description" : "Avoid using 'dynamic' and '@inline(__always)' together",
   "parameters" : [ ]
 }, {
   "patternId" : "empty_collection_literal",
   "title" : "Empty Collection Literal",
-  "description" : "Prefer checking `isEmpty` over comparing collection to an empty array or dictionary literal.",
+  "description" : "Prefer checking `isEmpty` over comparing collection to an empty array or dictionary literal",
   "parameters" : [ ]
 }, {
   "patternId" : "empty_count",
   "title" : "Empty Count",
-  "description" : "Prefer checking `isEmpty` over comparing `count` to zero.",
+  "description" : "Prefer checking `isEmpty` over comparing `count` to zero",
   "parameters" : [ ]
 }, {
   "patternId" : "empty_enum_arguments",
   "title" : "Empty Enum Arguments",
-  "description" : "Arguments can be omitted when matching enums with associated values if they are not used.",
+  "description" : "Arguments can be omitted when matching enums with associated values if they are not used",
   "parameters" : [ ]
 }, {
   "patternId" : "empty_parameters",
   "title" : "Empty Parameters",
-  "description" : "Prefer `() -> ` over `Void -> `.",
+  "description" : "Prefer `() -> ` over `Void -> `",
   "parameters" : [ ]
 }, {
   "patternId" : "empty_parentheses_with_trailing_closure",
   "title" : "Empty Parentheses with Trailing Closure",
-  "description" : "When using trailing closures, empty parentheses should be avoided after the method call.",
+  "description" : "When using trailing closures, empty parentheses should be avoided after the method call",
   "parameters" : [ ]
 }, {
   "patternId" : "empty_string",
   "title" : "Empty String",
-  "description" : "Prefer checking `isEmpty` over comparing `string` to an empty string literal.",
+  "description" : "Prefer checking `isEmpty` over comparing `string` to an empty string literal",
   "parameters" : [ ]
 }, {
   "patternId" : "empty_xctest_method",
   "title" : "Empty XCTest Method",
-  "description" : "Empty XCTest method should be avoided.",
+  "description" : "Empty XCTest method should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "enum_case_associated_values_count",
   "title" : "Enum Case Associated Values Count",
-  "description" : "Number of associated values in an enum case should be low",
+  "description" : "The number of associated values in an enum case should be low.",
   "parameters" : [ ]
 }, {
   "patternId" : "expiring_todo",
@@ -261,27 +276,27 @@
 }, {
   "patternId" : "explicit_acl",
   "title" : "Explicit ACL",
-  "description" : "All declarations should specify Access Control Level keywords explicitly.",
+  "description" : "All declarations should specify Access Control Level keywords explicitly",
   "parameters" : [ ]
 }, {
   "patternId" : "explicit_enum_raw_value",
   "title" : "Explicit Enum Raw Value",
-  "description" : "Enums should be explicitly assigned their raw values.",
+  "description" : "Enums should be explicitly assigned their raw values",
   "parameters" : [ ]
 }, {
   "patternId" : "explicit_init",
   "title" : "Explicit Init",
-  "description" : "Explicitly calling .init() should be avoided.",
+  "description" : "Explicitly calling .init() should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "explicit_self",
   "title" : "Explicit Self",
-  "description" : "Instance variables and functions should be explicitly accessed with 'self.'.",
+  "description" : "Instance variables and functions should be explicitly accessed with 'self.'",
   "parameters" : [ ]
 }, {
   "patternId" : "explicit_top_level_acl",
   "title" : "Explicit Top Level ACL",
-  "description" : "Top-level declarations should specify Access Control Level keywords explicitly.",
+  "description" : "Top-level declarations should specify Access Control Level keywords explicitly",
   "parameters" : [ ]
 }, {
   "patternId" : "explicit_type_interface",
@@ -296,12 +311,12 @@
 }, {
   "patternId" : "fallthrough",
   "title" : "Fallthrough",
-  "description" : "Fallthrough should be avoided.",
+  "description" : "Fallthrough should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "fatal_error_message",
   "title" : "Fatal Error Message",
-  "description" : "A fatalError call should have a message.",
+  "description" : "A fatalError call should have a message",
   "parameters" : [ ]
 }, {
   "patternId" : "file_header",
@@ -316,12 +331,12 @@
 }, {
   "patternId" : "file_name",
   "title" : "File Name",
-  "description" : "File name should match a type or extension declared in the file (if any).",
+  "description" : "File name should match a type or extension declared in the file (if any)",
   "parameters" : [ ]
 }, {
   "patternId" : "file_name_no_space",
-  "title" : "File Name No Space",
-  "description" : "File name should not contain any whitespace.",
+  "title" : "File Name no Space",
+  "description" : "File name should not contain any whitespace",
   "parameters" : [ ]
 }, {
   "patternId" : "file_types_order",
@@ -331,42 +346,42 @@
 }, {
   "patternId" : "first_where",
   "title" : "First Where",
-  "description" : "Prefer using `.first(where:)` over `.filter { }.first` in collections.",
+  "description" : "Prefer using `.first(where:)` over `.filter { }.first` in collections",
   "parameters" : [ ]
 }, {
   "patternId" : "flatmap_over_map_reduce",
-  "title" : "FlatMap over map and reduce",
-  "description" : "Prefer `flatMap` over `map` followed by `reduce([], +)`.",
+  "title" : "Flat Map over Map Reduce",
+  "description" : "Prefer `flatMap` over `map` followed by `reduce([], +)`",
   "parameters" : [ ]
 }, {
   "patternId" : "for_where",
-  "title" : "For Where",
-  "description" : "`where` clauses are preferred over a single `if` inside a `for`.",
+  "title" : "Prefer For-Where",
+  "description" : "`where` clauses are preferred over a single `if` inside a `for`",
   "parameters" : [ ]
 }, {
   "patternId" : "force_cast",
   "title" : "Force Cast",
-  "description" : "Force casts should be avoided.",
+  "description" : "Force casts should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "force_try",
   "title" : "Force Try",
-  "description" : "Force tries should be avoided.",
+  "description" : "Force tries should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "force_unwrapping",
   "title" : "Force Unwrapping",
-  "description" : "Force unwrapping should be avoided.",
+  "description" : "Force unwrapping should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "function_body_length",
   "title" : "Function Body Length",
-  "description" : "Functions bodies should not span too many lines.",
+  "description" : "Function bodies should not span too many lines",
   "parameters" : [ ]
 }, {
   "patternId" : "function_default_parameter_at_end",
   "title" : "Function Default Parameter at End",
-  "description" : "Prefer to locate parameters with defaults toward the end of the parameter list.",
+  "description" : "Prefer to locate parameters with defaults toward the end of the parameter list",
   "parameters" : [ ]
 }, {
   "patternId" : "function_parameter_count",
@@ -381,17 +396,17 @@
 }, {
   "patternId" : "ibinspectable_in_extension",
   "title" : "IBInspectable in Extension",
-  "description" : "Extensions shouldn't add @IBInspectable properties.",
+  "description" : "Extensions shouldn't add @IBInspectable properties",
   "parameters" : [ ]
 }, {
   "patternId" : "identical_operands",
   "title" : "Identical Operands",
-  "description" : "Comparing two identical operands is likely a mistake.",
+  "description" : "Comparing two identical operands is likely a mistake",
   "parameters" : [ ]
 }, {
   "patternId" : "identifier_name",
   "title" : "Identifier Name",
-  "description" : "Identifier names should only contain alphanumeric characters and start with a lowercase character or should only contain capital letters. In an exception to the above, variable names may start with a capital letter when they are declared static and immutable. Variable names should not be too long or too short.",
+  "description" : "Identifier names should only contain alphanumeric characters and start with a lowercase character or should only contain capital letters. In an exception to the above, variable names may start with a capital letter when they are declared as static. Variable names should not be too long or too short.",
   "parameters" : [ ]
 }, {
   "patternId" : "implicit_getter",
@@ -401,17 +416,17 @@
 }, {
   "patternId" : "implicit_return",
   "title" : "Implicit Return",
-  "description" : "Prefer implicit returns in closures, functions and getters.",
+  "description" : "Prefer implicit returns in closures, functions and getters",
   "parameters" : [ ]
 }, {
   "patternId" : "implicitly_unwrapped_optional",
   "title" : "Implicitly Unwrapped Optional",
-  "description" : "Implicitly unwrapped optionals should be avoided when possible.",
+  "description" : "Implicitly unwrapped optionals should be avoided when possible",
   "parameters" : [ ]
 }, {
   "patternId" : "inclusive_language",
   "title" : "Inclusive Language",
-  "description" : "Identifiers should use inclusive language that avoids discrimination against groups of people based on race, gender, or socioeconomic status",
+  "description" : "Identifiers should use inclusive language that avoids discrimination against groups of people based on race, gender, or socioeconomic status.",
   "parameters" : [ ]
 }, {
   "patternId" : "indentation_width",
@@ -421,17 +436,22 @@
 }, {
   "patternId" : "inert_defer",
   "title" : "Inert Defer",
-  "description" : "If defer is at the end of its parent scope, it will be executed right where it is anyway.",
+  "description" : "If defer is at the end of its parent scope, it will be executed right where it is anyway",
+  "parameters" : [ ]
+}, {
+  "patternId" : "invalid_swiftlint_command",
+  "title" : "Invalid SwiftLint Command",
+  "description" : "swiftlint command is invalid",
   "parameters" : [ ]
 }, {
   "patternId" : "is_disjoint",
   "title" : "Is Disjoint",
-  "description" : "Prefer using `Set.isDisjoint(with:)` over `Set.intersection(_:).isEmpty`.",
+  "description" : "Prefer using `Set.isDisjoint(with:)` over `Set.intersection(_:).isEmpty`",
   "parameters" : [ ]
 }, {
   "patternId" : "joined_default_parameter",
   "title" : "Joined Default Parameter",
-  "description" : "Discouraged explicit usage of the default separator.",
+  "description" : "Discouraged explicit usage of the default separator",
   "parameters" : [ ]
 }, {
   "patternId" : "large_tuple",
@@ -441,12 +461,12 @@
 }, {
   "patternId" : "last_where",
   "title" : "Last Where",
-  "description" : "Prefer using `.last(where:)` over `.filter { }.last` in collections.",
+  "description" : "Prefer using `.last(where:)` over `.filter { }.last` in collections",
   "parameters" : [ ]
 }, {
   "patternId" : "leading_whitespace",
   "title" : "Leading Whitespace",
-  "description" : "Files should not contain leading whitespace.",
+  "description" : "Files should not contain leading whitespace",
   "parameters" : [ ]
 }, {
   "patternId" : "legacy_cggeometry_functions",
@@ -456,12 +476,12 @@
 }, {
   "patternId" : "legacy_constant",
   "title" : "Legacy Constant",
-  "description" : "Struct-scoped constants are preferred over legacy global constants.",
+  "description" : "Struct-scoped constants are preferred over legacy global constants",
   "parameters" : [ ]
 }, {
   "patternId" : "legacy_constructor",
   "title" : "Legacy Constructor",
-  "description" : "Swift constructors are preferred over legacy convenience functions.",
+  "description" : "Swift constructors are preferred over legacy convenience functions",
   "parameters" : [ ]
 }, {
   "patternId" : "legacy_hashing",
@@ -471,7 +491,7 @@
 }, {
   "patternId" : "legacy_multiple",
   "title" : "Legacy Multiple",
-  "description" : "Prefer using the `isMultiple(of:)` function instead of using the remainder operator (`%`).",
+  "description" : "Prefer using the `isMultiple(of:)` function instead of using the remainder operator (`%`)",
   "parameters" : [ ]
 }, {
   "patternId" : "legacy_nsgeometry_functions",
@@ -486,12 +506,12 @@
 }, {
   "patternId" : "legacy_random",
   "title" : "Legacy Random",
-  "description" : "Prefer using `type.random(in:)` over legacy functions.",
+  "description" : "Prefer using `type.random(in:)` over legacy functions",
   "parameters" : [ ]
 }, {
   "patternId" : "let_var_whitespace",
   "title" : "Variable Declaration Whitespace",
-  "description" : "Let and var should be separated from other statements by a blank line.",
+  "description" : "Variable declarations should be separated from other statements by a blank line",
   "parameters" : [ ]
 }, {
   "patternId" : "line_length",
@@ -501,16 +521,16 @@
 }, {
   "patternId" : "literal_expression_end_indentation",
   "title" : "Literal Expression End Indentation",
-  "description" : "Array and dictionary literal end should have the same indentation as the line that started it.",
+  "description" : "Array and dictionary literal end should have the same indentation as the line that started it",
   "parameters" : [ ]
 }, {
   "patternId" : "local_doc_comment",
   "title" : "Local Doc Comment",
-  "description" : "Doc comments shouldn't be used in local scopes. Use regular comments.",
+  "description" : "Prefer regular comments over doc comments in local scopes",
   "parameters" : [ ]
 }, {
   "patternId" : "lower_acl_than_parent",
-  "title" : "Lower ACL than parent",
+  "title" : "Lower ACL than Parent",
   "description" : "Ensure declarations have a lower access control level than their enclosing parent",
   "parameters" : [ ]
 }, {
@@ -531,37 +551,37 @@
 }, {
   "patternId" : "multiline_arguments",
   "title" : "Multiline Arguments",
-  "description" : "Arguments should be either on the same line, or one per line.",
+  "description" : "Arguments should be either on the same line, or one per line",
   "parameters" : [ ]
 }, {
   "patternId" : "multiline_arguments_brackets",
   "title" : "Multiline Arguments Brackets",
-  "description" : "Multiline arguments should have their surrounding brackets in a new line.",
+  "description" : "Multiline arguments should have their surrounding brackets in a new line",
   "parameters" : [ ]
 }, {
   "patternId" : "multiline_function_chains",
   "title" : "Multiline Function Chains",
-  "description" : "Chained function calls should be either on the same line, or one per line.",
+  "description" : "Chained function calls should be either on the same line, or one per line",
   "parameters" : [ ]
 }, {
   "patternId" : "multiline_literal_brackets",
   "title" : "Multiline Literal Brackets",
-  "description" : "Multiline literals should have their surrounding brackets in a new line.",
+  "description" : "Multiline literals should have their surrounding brackets in a new line",
   "parameters" : [ ]
 }, {
   "patternId" : "multiline_parameters",
   "title" : "Multiline Parameters",
-  "description" : "Functions and methods parameters should be either on the same line, or one per line.",
+  "description" : "Functions and methods parameters should be either on the same line, or one per line",
   "parameters" : [ ]
 }, {
   "patternId" : "multiline_parameters_brackets",
   "title" : "Multiline Parameters Brackets",
-  "description" : "Multiline parameters should have their surrounding brackets in a new line.",
+  "description" : "Multiline parameters should have their surrounding brackets in a new line",
   "parameters" : [ ]
 }, {
   "patternId" : "multiple_closures_with_trailing_closure",
   "title" : "Multiple Closures with Trailing Closure",
-  "description" : "Trailing closure syntax should not be used when passing more than one closure argument.",
+  "description" : "Trailing closure syntax should not be used when passing more than one closure argument",
   "parameters" : [ ]
 }, {
   "patternId" : "nesting",
@@ -571,7 +591,7 @@
 }, {
   "patternId" : "nimble_operator",
   "title" : "Nimble Operator",
-  "description" : "Prefer Nimble operator overloads over free matcher functions.",
+  "description" : "Prefer Nimble operator overloads over free matcher functions",
   "parameters" : [ ]
 }, {
   "patternId" : "no_extension_access_modifier",
@@ -580,113 +600,123 @@
   "parameters" : [ ]
 }, {
   "patternId" : "no_fallthrough_only",
-  "title" : "No Fallthrough Only",
-  "description" : "Fallthroughs can only be used if the `case` contains at least one other statement.",
+  "title" : "No Fallthrough only",
+  "description" : "Fallthroughs can only be used if the `case` contains at least one other statement",
   "parameters" : [ ]
 }, {
   "patternId" : "no_grouping_extension",
   "title" : "No Grouping Extension",
-  "description" : "Extensions shouldn't be used to group code within the same source file.",
+  "description" : "Extensions shouldn't be used to group code within the same source file",
   "parameters" : [ ]
 }, {
   "patternId" : "no_magic_numbers",
   "title" : "No Magic Numbers",
-  "description" : "Magic numbers should be replaced by named constants.",
+  "description" : "Magic numbers should be replaced by named constants",
   "parameters" : [ ]
 }, {
   "patternId" : "no_space_in_method_call",
   "title" : "No Space in Method Call",
-  "description" : "Don't add a space between the method name and the parentheses.",
+  "description" : "Don't add a space between the method name and the parentheses",
+  "parameters" : [ ]
+}, {
+  "patternId" : "non_overridable_class_declaration",
+  "title" : "Class Declaration in Final Class",
+  "description" : "Class methods and properties in final classes should themselves be final, just as if the declarations",
   "parameters" : [ ]
 }, {
   "patternId" : "notification_center_detachment",
   "title" : "Notification Center Detachment",
-  "description" : "An object should only remove itself as an observer in `deinit`.",
+  "description" : "An object should only remove itself as an observer in `deinit`",
   "parameters" : [ ]
 }, {
   "patternId" : "ns_number_init_as_function_reference",
   "title" : "NSNumber Init as Function Reference",
-  "description" : "Passing `NSNumber.init` or `NSDecimalNumber.init` as a function reference is dangerous as it can cause the wrong initializer to be used, causing crashes. Use `.init(value:)` instead.",
+  "description" : "Passing `NSNumber.init` or `NSDecimalNumber.init` as a function reference is dangerous as it can cause the wrong initializer to be used, causing crashes; use `.init(value:)` instead",
   "parameters" : [ ]
 }, {
   "patternId" : "nslocalizedstring_key",
   "title" : "NSLocalizedString Key",
-  "description" : "Static strings should be used as key/comment in NSLocalizedString in order for genstrings to work.",
+  "description" : "Static strings should be used as key/comment in NSLocalizedString in order for genstrings to work",
   "parameters" : [ ]
 }, {
   "patternId" : "nslocalizedstring_require_bundle",
   "title" : "NSLocalizedString Require Bundle",
-  "description" : "Calls to NSLocalizedString should specify the bundle which contains the strings file.",
+  "description" : "Calls to NSLocalizedString should specify the bundle which contains the strings file",
   "parameters" : [ ]
 }, {
   "patternId" : "nsobject_prefer_isequal",
   "title" : "NSObject Prefer isEqual",
-  "description" : "NSObject subclasses should implement isEqual instead of ==.",
+  "description" : "NSObject subclasses should implement isEqual instead of ==",
   "parameters" : [ ]
 }, {
   "patternId" : "number_separator",
   "title" : "Number Separator",
-  "description" : "Underscores should be used as thousand separator in large decimal numbers.",
+  "description" : "Underscores should be used as thousand separator in large numbers with a configurable number of digits. In other words, there should be an underscore after every 3 digits in the integral as well as the fractional part of a number.",
   "parameters" : [ ]
 }, {
   "patternId" : "object_literal",
   "title" : "Object Literal",
-  "description" : "Prefer object literals over image and color inits.",
+  "description" : "Prefer object literals over image and color inits",
   "parameters" : [ ]
 }, {
   "patternId" : "opening_brace",
   "title" : "Opening Brace Spacing",
-  "description" : "Opening braces should be preceded by a single space and on the same line as the declaration.",
+  "description" : "Opening braces should be preceded by a single space and on the same line as the declaration",
   "parameters" : [ ]
 }, {
   "patternId" : "operator_usage_whitespace",
   "title" : "Operator Usage Whitespace",
-  "description" : "Operators should be surrounded by a single whitespace when they are being used.",
+  "description" : "Operators should be surrounded by a single whitespace when they are being used",
   "parameters" : [ ]
 }, {
   "patternId" : "operator_whitespace",
   "title" : "Operator Function Whitespace",
-  "description" : "Operators should be surrounded by a single whitespace when defining them.",
+  "description" : "Operators should be surrounded by a single whitespace when defining them",
   "parameters" : [ ]
 }, {
   "patternId" : "optional_enum_case_matching",
   "title" : "Optional Enum Case Match",
-  "description" : "Matching an enum case against an optional enum without '?' is supported on Swift 5.1 and above.",
+  "description" : "Matching an enum case against an optional enum without '?' is supported on Swift 5.1 and above",
   "parameters" : [ ]
 }, {
   "patternId" : "orphaned_doc_comment",
   "title" : "Orphaned Doc Comment",
-  "description" : "A doc comment should be attached to a declaration.",
+  "description" : "A doc comment should be attached to a declaration",
   "parameters" : [ ]
 }, {
   "patternId" : "overridden_super_call",
-  "title" : "Overridden methods call super",
-  "description" : "Some overridden methods should always call super",
+  "title" : "Overridden Method Calls Super",
+  "description" : "Some overridden methods should always call super.",
   "parameters" : [ ]
 }, {
   "patternId" : "override_in_extension",
   "title" : "Override in Extension",
-  "description" : "Extensions shouldn't override declarations.",
+  "description" : "Extensions shouldn't override declarations",
   "parameters" : [ ]
 }, {
   "patternId" : "pattern_matching_keywords",
   "title" : "Pattern Matching Keywords",
-  "description" : "Combine multiple pattern matching bindings by moving keywords out of tuples.",
+  "description" : "Combine multiple pattern matching bindings by moving keywords out of tuples",
+  "parameters" : [ ]
+}, {
+  "patternId" : "period_spacing",
+  "title" : "Period Spacing",
+  "description" : "Periods should not be followed by more than one space",
   "parameters" : [ ]
 }, {
   "patternId" : "prefer_nimble",
   "title" : "Prefer Nimble",
-  "description" : "Prefer Nimble matchers over XCTAssert functions.",
+  "description" : "Prefer Nimble matchers over XCTAssert functions",
   "parameters" : [ ]
 }, {
   "patternId" : "prefer_self_in_static_references",
   "title" : "Prefer Self in Static References",
-  "description" : "Use `Self` to refer to the surrounding type name.",
+  "description" : "Use `Self` to refer to the surrounding type name",
   "parameters" : [ ]
 }, {
   "patternId" : "prefer_self_type_over_type_of_self",
   "title" : "Prefer Self Type Over Type of Self",
-  "description" : "Prefer `Self` over `type(of: self)` when accessing properties or calling methods.",
+  "description" : "Prefer `Self` over `type(of: self)` when accessing properties or calling methods",
   "parameters" : [ ]
 }, {
   "patternId" : "prefer_zero_over_explicit_init",
@@ -696,47 +726,52 @@
 }, {
   "patternId" : "prefixed_toplevel_constant",
   "title" : "Prefixed Top-Level Constant",
-  "description" : "Top-level constants should be prefixed by `k`.",
+  "description" : "Top-level constants should be prefixed by `k`",
   "parameters" : [ ]
 }, {
   "patternId" : "private_action",
   "title" : "Private Actions",
-  "description" : "IBActions should be private.",
+  "description" : "IBActions should be private",
   "parameters" : [ ]
 }, {
   "patternId" : "private_outlet",
   "title" : "Private Outlets",
-  "description" : "IBOutlets should be private to avoid leaking UIKit to higher layers.",
+  "description" : "IBOutlets should be private to avoid leaking UIKit to higher layers",
   "parameters" : [ ]
 }, {
   "patternId" : "private_over_fileprivate",
-  "title" : "Private over fileprivate",
-  "description" : "Prefer `private` over `fileprivate` declarations.",
+  "title" : "Private over Fileprivate",
+  "description" : "Prefer `private` over `fileprivate` declarations",
   "parameters" : [ ]
 }, {
   "patternId" : "private_subject",
   "title" : "Private Combine Subject",
-  "description" : "Combine Subject should be private.",
+  "description" : "Combine Subject should be private",
+  "parameters" : [ ]
+}, {
+  "patternId" : "private_swiftui_state",
+  "title" : "Private SwiftUI State Properties",
+  "description" : "SwiftUI state properties should be private",
   "parameters" : [ ]
 }, {
   "patternId" : "private_unit_test",
   "title" : "Private Unit Test",
-  "description" : "Unit tests marked private are silently skipped.",
+  "description" : "Unit tests marked private are silently skipped",
   "parameters" : [ ]
 }, {
   "patternId" : "prohibited_interface_builder",
   "title" : "Prohibited Interface Builder",
-  "description" : "Creating views using Interface Builder should be avoided.",
+  "description" : "Creating views using Interface Builder should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "prohibited_super_call",
-  "title" : "Prohibited calls to super",
-  "description" : "Some methods should not call super",
+  "title" : "Prohibited Calls to Super",
+  "description" : "Some methods should not call super.",
   "parameters" : [ ]
 }, {
   "patternId" : "protocol_property_accessors_order",
   "title" : "Protocol Property Accessors Order",
-  "description" : "When declaring properties in protocols, the order of accessors should be `get set`.",
+  "description" : "When declaring properties in protocols, the order of accessors should be `get set`",
   "parameters" : [ ]
 }, {
   "patternId" : "quick_discouraged_call",
@@ -746,32 +781,32 @@
 }, {
   "patternId" : "quick_discouraged_focused_test",
   "title" : "Quick Discouraged Focused Test",
-  "description" : "Discouraged focused test. Other tests won't run while this one is focused.",
+  "description" : "Non-focused tests won't run as long as this test is focused",
   "parameters" : [ ]
 }, {
   "patternId" : "quick_discouraged_pending_test",
   "title" : "Quick Discouraged Pending Test",
-  "description" : "Discouraged pending test. This test won't run while it's marked as pending.",
+  "description" : "This test won't run as long as it's marked pending",
   "parameters" : [ ]
 }, {
   "patternId" : "raw_value_for_camel_cased_codable_enum",
-  "title" : "Raw Value For Camel Cased Codable Enum",
-  "description" : "Camel cased cases of Codable String enums should have raw value.",
+  "title" : "Raw Value for Camel Cased Codable Enum",
+  "description" : "Camel cased cases of Codable String enums should have raw values",
   "parameters" : [ ]
 }, {
   "patternId" : "reduce_boolean",
   "title" : "Reduce Boolean",
-  "description" : "Prefer using `.allSatisfy()` or `.contains()` over `reduce(true)` or `reduce(false)`",
+  "description" : "Prefer using `.allSatisfy()` or `.contains()` over `reduce(true)` or `reduce(false)`.",
   "parameters" : [ ]
 }, {
   "patternId" : "reduce_into",
-  "title" : "Reduce Into",
+  "title" : "Reduce into",
   "description" : "Prefer `reduce(into:_:)` over `reduce(_:_:)` for copy-on-write types",
   "parameters" : [ ]
 }, {
   "patternId" : "redundant_discardable_let",
   "title" : "Redundant Discardable Let",
-  "description" : "Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function.",
+  "description" : "Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function",
   "parameters" : [ ]
 }, {
   "patternId" : "redundant_nil_coalescing",
@@ -781,22 +816,27 @@
 }, {
   "patternId" : "redundant_objc_attribute",
   "title" : "Redundant @objc Attribute",
-  "description" : "Objective-C attribute (@objc) is redundant in declaration.",
+  "description" : "Objective-C attribute (@objc) is redundant in declaration",
   "parameters" : [ ]
 }, {
   "patternId" : "redundant_optional_initialization",
   "title" : "Redundant Optional Initialization",
-  "description" : "Initializing an optional variable with nil is redundant.",
+  "description" : "Initializing an optional variable with nil is redundant",
+  "parameters" : [ ]
+}, {
+  "patternId" : "redundant_self_in_closure",
+  "title" : "Redundant Self in Closure",
+  "description" : "Explicit use of 'self' is not required",
   "parameters" : [ ]
 }, {
   "patternId" : "redundant_set_access_control",
-  "title" : "Redundant Set Access Control Rule",
-  "description" : "Property setter access level shouldn't be explicit if it's the same as the variable access level.",
+  "title" : "Redundant Access Control for Setter",
+  "description" : "Property setter access level shouldn't be explicit if it's the same as the variable access level",
   "parameters" : [ ]
 }, {
   "patternId" : "redundant_string_enum_value",
   "title" : "Redundant String Enum Value",
-  "description" : "String enum values can be omitted when they are equal to the enumcase name.",
+  "description" : "String enum values can be omitted when they are equal to the enumcase name",
   "parameters" : [ ]
 }, {
   "patternId" : "redundant_type_annotation",
@@ -806,12 +846,12 @@
 }, {
   "patternId" : "redundant_void_return",
   "title" : "Redundant Void Return",
-  "description" : "Returning Void in a function declaration is redundant.",
+  "description" : "Returning Void in a function declaration is redundant",
   "parameters" : [ ]
 }, {
   "patternId" : "required_deinit",
   "title" : "Required Deinit",
-  "description" : "Classes should have an explicit deinit method.",
+  "description" : "Classes should have an explicit deinit method",
   "parameters" : [ ]
 }, {
   "patternId" : "required_enum_case",
@@ -821,12 +861,12 @@
 }, {
   "patternId" : "return_arrow_whitespace",
   "title" : "Returning Whitespace",
-  "description" : "Return arrow and return type should be separated by a single space or on a separate line.",
+  "description" : "Return arrow and return type should be separated by a single space or on a separate line",
   "parameters" : [ ]
 }, {
   "patternId" : "return_value_from_void_function",
   "title" : "Return Value from Void Function",
-  "description" : "Returning values from Void functions should be avoided.",
+  "description" : "Returning values from Void functions should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "self_binding",
@@ -836,12 +876,12 @@
 }, {
   "patternId" : "self_in_property_initialization",
   "title" : "Self in Property Initialization",
-  "description" : "`self` refers to the unapplied `NSObject.self()` method, which is likely not expected. Make the variable `lazy` to be able to refer to the current instance or use `ClassName.self`.",
+  "description" : "`self` refers to the unapplied `NSObject.self()` method, which is likely not expected; make the variable `lazy` to be able to refer to the current instance or use `ClassName.self`",
   "parameters" : [ ]
 }, {
   "patternId" : "shorthand_operator",
   "title" : "Shorthand Operator",
-  "description" : "Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning.",
+  "description" : "Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning",
   "parameters" : [ ]
 }, {
   "patternId" : "shorthand_optional_binding",
@@ -854,6 +894,11 @@
   "description" : "Test files should contain a single QuickSpec or XCTestCase class.",
   "parameters" : [ ]
 }, {
+  "patternId" : "sorted_enum_cases",
+  "title" : "Sorted Enum Cases",
+  "description" : "Enum cases should be sorted",
+  "parameters" : [ ]
+}, {
   "patternId" : "sorted_first_last",
   "title" : "Min or Max over Sorted First or Last",
   "description" : "Prefer using `min()` or `max()` over `sorted().first` or `sorted().last`",
@@ -861,27 +906,27 @@
 }, {
   "patternId" : "sorted_imports",
   "title" : "Sorted Imports",
-  "description" : "Imports should be sorted.",
+  "description" : "Imports should be sorted",
   "parameters" : [ ]
 }, {
   "patternId" : "statement_position",
   "title" : "Statement Position",
-  "description" : "Else and catch should be on the same line, one space after the previous declaration.",
+  "description" : "Else and catch should be on the same line, one space after the previous declaration",
   "parameters" : [ ]
 }, {
   "patternId" : "static_operator",
   "title" : "Static Operator",
-  "description" : "Operators should be declared as static functions, not free functions.",
+  "description" : "Operators should be declared as static functions, not free functions",
   "parameters" : [ ]
 }, {
   "patternId" : "strict_fileprivate",
-  "title" : "Strict fileprivate",
-  "description" : "`fileprivate` should be avoided.",
+  "title" : "Strict Fileprivate",
+  "description" : "`fileprivate` should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "strong_iboutlet",
   "title" : "Strong IBOutlet",
-  "description" : "@IBOutlets shouldn't be declared as weak.",
+  "description" : "@IBOutlets shouldn't be declared as weak",
   "parameters" : [ ]
 }, {
   "patternId" : "superfluous_disable_command",
@@ -889,13 +934,18 @@
   "description" : "SwiftLint 'disable' commands are superfluous when the disabled rule would not have triggered a violation in the disabled region. Use \" - \" if you wish to document a command.",
   "parameters" : [ ]
 }, {
+  "patternId" : "superfluous_else",
+  "title" : "Superfluous Else",
+  "description" : "Else branches should be avoided when the previous if-block exits the current scope",
+  "parameters" : [ ]
+}, {
   "patternId" : "switch_case_alignment",
   "title" : "Switch and Case Statement Alignment",
-  "description" : "Case statements should vertically align with their enclosing switch statement, or indented if configured otherwise.",
+  "description" : "Case statements should vertically align with their closing brace, or indented if configured otherwise.",
   "parameters" : [ ]
 }, {
   "patternId" : "switch_case_on_newline",
-  "title" : "Switch Case on Newline",
+  "title" : "Cases on Newline",
   "description" : "Cases inside a switch should always be on a newline",
   "parameters" : [ ]
 }, {
@@ -905,8 +955,8 @@
   "parameters" : [ ]
 }, {
   "patternId" : "test_case_accessibility",
-  "title" : "Test case accessibility",
-  "description" : "Test cases should only contain private non-test members.",
+  "title" : "Test Case Accessibility",
+  "description" : "Test cases should only contain private non-test members",
   "parameters" : [ ]
 }, {
   "patternId" : "todo",
@@ -916,12 +966,12 @@
 }, {
   "patternId" : "toggle_bool",
   "title" : "Toggle Bool",
-  "description" : "Prefer `someBool.toggle()` over `someBool = !someBool`.",
+  "description" : "Prefer `someBool.toggle()` over `someBool = !someBool`",
   "parameters" : [ ]
 }, {
   "patternId" : "trailing_closure",
   "title" : "Trailing Closure",
-  "description" : "Trailing closure syntax should be used whenever possible.",
+  "description" : "Trailing closure syntax should be used whenever possible",
   "parameters" : [ ]
 }, {
   "patternId" : "trailing_comma",
@@ -931,22 +981,22 @@
 }, {
   "patternId" : "trailing_newline",
   "title" : "Trailing Newline",
-  "description" : "Files should have a single trailing newline.",
+  "description" : "Files should have a single trailing newline",
   "parameters" : [ ]
 }, {
   "patternId" : "trailing_semicolon",
   "title" : "Trailing Semicolon",
-  "description" : "Lines should not have trailing semicolons.",
+  "description" : "Lines should not have trailing semicolons",
   "parameters" : [ ]
 }, {
   "patternId" : "trailing_whitespace",
   "title" : "Trailing Whitespace",
-  "description" : "Lines should not have trailing whitespace.",
+  "description" : "Lines should not have trailing whitespace",
   "parameters" : [ ]
 }, {
   "patternId" : "type_body_length",
   "title" : "Type Body Length",
-  "description" : "Type bodies should not span too many lines.",
+  "description" : "Type bodies should not span too many lines",
   "parameters" : [ ]
 }, {
   "patternId" : "type_contents_order",
@@ -961,7 +1011,7 @@
 }, {
   "patternId" : "typesafe_array_init",
   "title" : "Type-safe Array Init",
-  "description" : "Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Array.",
+  "description" : "Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Array",
   "parameters" : [ ]
 }, {
   "patternId" : "unavailable_condition",
@@ -971,47 +1021,62 @@
 }, {
   "patternId" : "unavailable_function",
   "title" : "Unavailable Function",
-  "description" : "Unimplemented functions should be marked as unavailable.",
+  "description" : "Unimplemented functions should be marked as unavailable",
+  "parameters" : [ ]
+}, {
+  "patternId" : "unhandled_throwing_task",
+  "title" : "Unhandled Throwing Task",
+  "description" : "Errors thrown inside this task are not handled, which may be unexpected. Handle errors inside the task, or use `try await` to access the Tasks value and handle errors. See this forum thread for more details: https://forums.swift.org/t/task-initializer-with-throwing-closure-swallows-error/56066",
   "parameters" : [ ]
 }, {
   "patternId" : "unneeded_break_in_switch",
   "title" : "Unneeded Break in Switch",
-  "description" : "Avoid using unneeded break statements.",
+  "description" : "Avoid using unneeded break statements",
+  "parameters" : [ ]
+}, {
+  "patternId" : "unneeded_override",
+  "title" : "Unneeded Overridden Functions",
+  "description" : "Remove overridden functions that don't do anything except call their super",
   "parameters" : [ ]
 }, {
   "patternId" : "unneeded_parentheses_in_closure_argument",
   "title" : "Unneeded Parentheses in Closure Argument",
-  "description" : "Parentheses are not needed when declaring closure arguments.",
+  "description" : "Parentheses are not needed when declaring closure arguments",
+  "parameters" : [ ]
+}, {
+  "patternId" : "unneeded_synthesized_initializer",
+  "title" : "Unneeded Synthesized Initializer",
+  "description" : "Default or memberwise initializers that will be automatically synthesized do not need to be manually defined.",
   "parameters" : [ ]
 }, {
   "patternId" : "unowned_variable_capture",
   "title" : "Unowned Variable Capture",
-  "description" : "Prefer capturing references as weak to avoid potential crashes.",
+  "description" : "Prefer capturing references as weak to avoid potential crashes",
   "parameters" : [ ]
 }, {
   "patternId" : "untyped_error_in_catch",
   "title" : "Untyped Error in Catch",
-  "description" : "Catch statements should not declare error variables without type casting.",
+  "description" : "Catch statements should not declare error variables without type casting",
   "parameters" : [ ]
 }, {
   "patternId" : "unused_capture_list",
   "title" : "Unused Capture List",
-  "description" : "Unused reference in a capture list should be removed.",
+  "description" : "Unused reference in a capture list should be removed",
   "parameters" : [ ]
 }, {
   "patternId" : "unused_closure_parameter",
   "title" : "Unused Closure Parameter",
-  "description" : "Unused parameter in a closure should be replaced with _.",
+  "description" : "Unused parameter in a closure should be replaced with _",
   "parameters" : [ ]
 }, {
   "patternId" : "unused_control_flow_label",
   "title" : "Unused Control Flow Label",
-  "description" : "Unused control flow label should be removed.",
+  "description" : "Unused control flow label should be removed",
   "parameters" : [ ]
 }, {
   "patternId" : "unused_declaration",
   "title" : "Unused Declaration",
-  "description" : "Declarations should be referenced at least once within all files linted.",
+  "description" : "Declarations should be referenced at least once within all files linted",
   "parameters" : [ ]
 }, {
   "patternId" : "unused_enumerated",
@@ -1021,7 +1086,7 @@
 }, {
   "patternId" : "unused_import",
   "title" : "Unused Import",
-  "description" : "All imported modules should be required to make the file compile.",
+  "description" : "All imported modules should be required to make the file compile",
   "parameters" : [ ]
 }, {
   "patternId" : "unused_optional_binding",
@@ -1031,7 +1096,7 @@
 }, {
   "patternId" : "unused_setter_value",
   "title" : "Unused Setter Value",
-  "description" : "Setter value is not used.",
+  "description" : "Setter value is not used",
   "parameters" : [ ]
 }, {
   "patternId" : "valid_ibinspectable",
@@ -1041,12 +1106,12 @@
 }, {
   "patternId" : "vertical_parameter_alignment",
   "title" : "Vertical Parameter Alignment",
-  "description" : "Function parameters should be aligned vertically if they're in multiple lines in a declaration.",
+  "description" : "Function parameters should be aligned vertically if they're in multiple lines in a declaration",
   "parameters" : [ ]
 }, {
   "patternId" : "vertical_parameter_alignment_on_call",
-  "title" : "Vertical Parameter Alignment On Call",
-  "description" : "Function parameters should be aligned vertically if they're in multiple lines in a method call.",
+  "title" : "Vertical Parameter Alignment on Call",
+  "description" : "Function parameters should be aligned vertically if they're in multiple lines in a method call",
   "parameters" : [ ]
 }, {
   "patternId" : "vertical_whitespace",
@@ -1055,47 +1120,47 @@
   "parameters" : [ ]
 }, {
   "patternId" : "vertical_whitespace_between_cases",
-  "title" : "Vertical Whitespace Between Cases",
-  "description" : "Include a single empty line between switch cases.",
+  "title" : "Vertical Whitespace between Cases",
+  "description" : "Include a single empty line between switch cases",
   "parameters" : [ ]
 }, {
   "patternId" : "vertical_whitespace_closing_braces",
   "title" : "Vertical Whitespace before Closing Braces",
-  "description" : "Don't include vertical whitespace (empty line) before closing braces.",
+  "description" : "Don't include vertical whitespace (empty line) before closing braces",
   "parameters" : [ ]
 }, {
   "patternId" : "vertical_whitespace_opening_braces",
   "title" : "Vertical Whitespace after Opening Braces",
-  "description" : "Don't include vertical whitespace (empty line) after opening braces.",
+  "description" : "Don't include vertical whitespace (empty line) after opening braces",
   "parameters" : [ ]
 }, {
   "patternId" : "void_function_in_ternary",
   "title" : "Void Function in Ternary",
-  "description" : "Using ternary to call Void functions should be avoided.",
+  "description" : "Using ternary to call Void functions should be avoided",
   "parameters" : [ ]
 }, {
   "patternId" : "void_return",
   "title" : "Void Return",
-  "description" : "Prefer `-> Void` over `-> ()`.",
+  "description" : "Prefer `-> Void` over `-> ()`",
   "parameters" : [ ]
 }, {
   "patternId" : "weak_delegate",
   "title" : "Weak Delegate",
-  "description" : "Delegates should be weak to avoid reference cycles.",
+  "description" : "Delegates should be weak to avoid reference cycles",
   "parameters" : [ ]
 }, {
   "patternId" : "xct_specific_matcher",
   "title" : "XCTest Specific Matcher",
-  "description" : "Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`",
+  "description" : "Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`.",
   "parameters" : [ ]
 }, {
   "patternId" : "xctfail_message",
   "title" : "XCTFail Message",
-  "description" : "An XCTFail call should include a description of the assertion.",
+  "description" : "An XCTFail call should include a description of the assertion",
   "parameters" : [ ]
 }, {
   "patternId" : "yoda_condition",
-  "title" : "Yoda condition rule",
-  "description" : "The constant literal should be placed on the right-hand side of the comparison operator.",
+  "title" : "Yoda Condition",
+  "description" : "The constant literal should be placed on the right-hand side of the comparison operator",
   "parameters" : [ ]
 } ]

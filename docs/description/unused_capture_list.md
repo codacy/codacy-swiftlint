@@ -1,14 +1,29 @@
 # Unused Capture List
 
-Unused reference in a capture list should be removed.
+Unused reference in a capture list should be removed
 
 * **Identifier:** unused_capture_list
-* **Enabled by default:** Yes
+* **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -98,6 +113,15 @@ rx.onViewDidAppear.subscribe(onNext: { [unowned self] in
 }).disposed(by: disposeBag)
 ```
 
+```swift
+let closure = { [weak self] in
+    guard let self else {
+        return
+    }
+    someInstanceFunction()
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -142,4 +166,14 @@ withEnvironment(apiService: MockService(fetchProjectResponse: project)) { [↓fo
 
 ```swift
 { [↓foo] in _ }()
+```
+
+```swift
+let closure = { [↓weak a] in
+    // The new `a` immediatly shadows the captured `a` which thus isn't needed.
+    guard let a = getOptionalValue() else {
+        return
+    }
+    someInstanceFunction()
+}
 ```

@@ -1,6 +1,6 @@
 # Unused Declaration
 
-Declarations should be referenced at least once within all files linted.
+Declarations should be referenced at least once within all files linted
 
 * **Identifier:** unused_declaration
 * **Enabled by default:** No
@@ -8,7 +8,38 @@ Declarations should be referenced at least once within all files linted.
 * **Kind:** lint
 * **Analyzer rule:** Yes
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** severity: error, include_public_and_open: false, related_usrs_to_skip: ["s:7SwiftUI15PreviewProviderP"]
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  error
+  </td>
+  </tr>
+  <tr>
+  <td>
+  include_public_and_open
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
+  related_usrs_to_skip
+  </td>
+  <td>
+  [&quot;s:7SwiftUI15PreviewProviderP&quot;]
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -149,6 +180,72 @@ acceptComponentBuilder {
 }
 ```
 
+```swift
+import Cocoa
+
+@NSApplicationMain
+final class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationWillFinishLaunching(_ notification: Notification) {}
+    func applicationWillBecomeActive(_ notification: Notification) {}
+}
+```
+
+```swift
+import Foundation
+
+public final class Foo: NSObject {
+    @IBAction private func foo() {}
+}
+```
+
+```swift
+import Foundation
+
+public final class Foo: NSObject {
+    @objc func foo() {}
+}
+```
+
+```swift
+import Foundation
+
+public final class Foo: NSObject {
+    @IBInspectable private var innerPaddingWidth: Int {
+        set { self.backgroundView.innerPaddingWidth = newValue }
+        get { return self.backgroundView.innerPaddingWidth }
+    }
+}
+```
+
+```swift
+import Foundation
+
+public final class Foo: NSObject {
+    @IBOutlet private var bar: NSObject! {
+        set { fatalError() }
+        get { fatalError() }
+    }
+
+    @IBOutlet private var baz: NSObject! {
+        willSet { print("willSet") }
+    }
+
+    @IBOutlet private var buzz: NSObject! {
+        didSet { print("didSet") }
+    }
+}
+```
+
+```swift
+    struct S {
+        var i: Int? = nil
+        func f() {
+            if let i { print(i) }
+        }
+    }
+    S().f()
+```
+
 ## Triggering Examples
 
 ```swift
@@ -224,4 +321,48 @@ struct ComponentBuilder {
 }
 
 _ = ComponentBuilder()
+```
+
+```swift
+import Cocoa
+
+@NSApplicationMain
+final class AppDelegate: NSObject, NSApplicationDelegate {
+    func ↓appWillFinishLaunching(_ notification: Notification) {}
+    func applicationWillBecomeActive(_ notification: Notification) {}
+}
+```
+
+```swift
+import Cocoa
+
+final class ↓AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationWillFinishLaunching(_ notification: Notification) {}
+    func applicationWillBecomeActive(_ notification: Notification) {}
+}
+```
+
+```swift
+import Foundation
+
+public final class Foo: NSObject {
+    @IBOutlet var ↓bar: NSObject!
+}
+```
+
+```swift
+import Foundation
+
+public final class Foo: NSObject {
+    @IBInspectable var ↓bar: String!
+}
+```
+
+```swift
+import Foundation
+
+final class Foo: NSObject {}
+final class ↓Bar {
+    var ↓foo = Foo()
+}
 ```

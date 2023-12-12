@@ -1,6 +1,6 @@
 # Prefixed Top-Level Constant
 
-Top-level constants should be prefixed by `k`.
+Top-level constants should be prefixed by `k`
 
 * **Identifier:** prefixed_toplevel_constant
 * **Enabled by default:** No
@@ -8,7 +8,30 @@ Top-level constants should be prefixed by `k`.
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning, only_private: false
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  <tr>
+  <td>
+  only_private
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
 
@@ -34,7 +57,7 @@ let Foo = true
 
 ```swift
 struct Foo {
-   let bar = 20.0
+    let bar = 20.0
 }
 ```
 
@@ -64,18 +87,18 @@ var foo = true, let kFoo = true
 
 ```swift
 let
-   kFoo = true
+    kFoo = true
 ```
 
 ```swift
 var foo: Int {
-   return a + b
+    return a + b
 }
 ```
 
 ```swift
 let kFoo = {
-   return a + b
+    return a + b
 }()
 ```
 
@@ -132,6 +155,6 @@ let
 
 ```swift
 let ↓foo = {
-   return a + b
+    return a + b
 }()
 ```

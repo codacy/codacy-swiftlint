@@ -8,9 +8,34 @@ Discouraged call inside 'describe' and/or 'context' block.
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
-* **Default configuration:** warning
+* **Default configuration:**
+  <table>
+  <thead>
+  <tr><th>Key</th><th>Value</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>
+  severity
+  </td>
+  <td>
+  warning
+  </td>
+  </tr>
+  </tbody>
+  </table>
 
 ## Non Triggering Examples
+
+```swift
+class TotoTests {
+   override func spec() {
+       describe("foo") {
+           let foo = Foo()
+       }
+   }
+}
+```
 
 ```swift
 class TotoTests: QuickSpec {
@@ -42,6 +67,32 @@ class TotoTests: QuickSpec {
            context("bar") {
            }
            it("bar") {
+               let foo = Foo()
+               foo.toto()
+           }
+       }
+   }
+}
+```
+
+```swift
+class TotoTests: QuickSpec {
+   override func spec() {
+       describe("foo") {
+           justBeforeEach {
+               let foo = Foo()
+               foo.toto()
+           }
+       }
+   }
+}
+```
+
+```swift
+class TotoTests: QuickSpec {
+   override func spec() {
+       describe("foo") {
+           aroundEach {
                let foo = Foo()
                foo.toto()
            }
@@ -168,15 +219,18 @@ class TotoTests: QuickSpec {
 ## Triggering Examples
 
 ```swift
-class TotoTests {
+class TotoTests: QuickSpec {
    override func spec() {
        describe("foo") {
-           let foo = Foo()
+           let foo = ↓Foo()
        }
    }
 }
+```
+
+```swift
 class TotoTests: QuickSpec {
-   override func spec() {
+   override static func spec() {
        describe("foo") {
            let foo = ↓Foo()
        }
