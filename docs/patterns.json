@@ -3,1631 +3,1631 @@
   "version" : "0.53.0",
   "patterns" : [ {
     "patternId" : "accessibility_label_for_image",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "accessibility_trait_for_button",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "anonymous_argument_in_multiline_closure",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "anyobject_protocol",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "array_init",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "attributes",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "balanced_xctest_lifecycle",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "blanket_disable_command",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "block_based_kvo",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "capture_variable",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "class_delegate_protocol",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "closing_brace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "closure_body_length",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "closure_end_indentation",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "closure_parameter_position",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "closure_spacing",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "collection_alignment",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "colon",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "comma",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "comma_inheritance",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "comment_spacing",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "compiler_protocol_init",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "computed_accessors_order",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "conditional_returns_on_newline",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "contains_over_filter_count",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "contains_over_filter_is_empty",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "contains_over_first_not_nil",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "contains_over_range_nil_comparison",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "control_statement",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "convenience_type",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "custom_rules",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "cyclomatic_complexity",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "deployment_target",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "direct_return",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "discarded_notification_center_observer",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "discouraged_assert",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "discouraged_direct_init",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "discouraged_none_name",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "discouraged_object_literal",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "discouraged_optional_boolean",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "discouraged_optional_collection",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "duplicate_conditions",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "duplicate_enum_cases",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "duplicate_imports",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "duplicated_key_in_dictionary_literal",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "dynamic_inline",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "empty_collection_literal",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "empty_count",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "empty_enum_arguments",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "empty_parameters",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "empty_parentheses_with_trailing_closure",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "empty_string",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "empty_xctest_method",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "enum_case_associated_values_count",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "expiring_todo",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "explicit_acl",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "explicit_enum_raw_value",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "explicit_init",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "explicit_self",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "explicit_top_level_acl",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "explicit_type_interface",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "extension_access_modifier",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "fallthrough",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "fatal_error_message",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "file_header",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "file_length",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "file_name",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "file_name_no_space",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "file_types_order",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "first_where",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "flatmap_over_map_reduce",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "for_where",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "force_cast",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "force_try",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "force_unwrapping",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "function_body_length",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "function_default_parameter_at_end",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "function_parameter_count",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "generic_type_name",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "ibinspectable_in_extension",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "identical_operands",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "identifier_name",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "implicit_getter",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "implicit_return",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "implicitly_unwrapped_optional",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "inclusive_language",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "indentation_width",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "inert_defer",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "invalid_swiftlint_command",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "is_disjoint",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "joined_default_parameter",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "large_tuple",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "last_where",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "leading_whitespace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "legacy_cggeometry_functions",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "legacy_constant",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "legacy_constructor",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "legacy_hashing",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "legacy_multiple",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "legacy_nsgeometry_functions",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "legacy_objc_type",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "legacy_random",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "let_var_whitespace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "line_length",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "literal_expression_end_indentation",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "local_doc_comment",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "lower_acl_than_parent",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "mark",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "missing_docs",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "modifier_order",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "multiline_arguments",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "multiline_arguments_brackets",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "multiline_function_chains",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "multiline_literal_brackets",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "multiline_parameters",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "multiline_parameters_brackets",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "multiple_closures_with_trailing_closure",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "nesting",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "nimble_operator",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "no_extension_access_modifier",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "no_fallthrough_only",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "no_grouping_extension",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "no_magic_numbers",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "no_space_in_method_call",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "non_overridable_class_declaration",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "notification_center_detachment",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "ns_number_init_as_function_reference",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "nslocalizedstring_key",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "nslocalizedstring_require_bundle",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "nsobject_prefer_isequal",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "number_separator",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "object_literal",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "opening_brace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "operator_usage_whitespace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "operator_whitespace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "optional_enum_case_matching",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "orphaned_doc_comment",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "overridden_super_call",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "override_in_extension",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "pattern_matching_keywords",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "period_spacing",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "prefer_nimble",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "prefer_self_in_static_references",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "prefer_self_type_over_type_of_self",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "prefer_zero_over_explicit_init",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "prefixed_toplevel_constant",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "private_action",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "private_outlet",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "private_over_fileprivate",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "private_subject",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "private_swiftui_state",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "private_unit_test",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "prohibited_interface_builder",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "prohibited_super_call",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "protocol_property_accessors_order",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "quick_discouraged_call",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "quick_discouraged_focused_test",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "quick_discouraged_pending_test",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "raw_value_for_camel_cased_codable_enum",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "reduce_boolean",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "reduce_into",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "redundant_discardable_let",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "redundant_nil_coalescing",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "redundant_objc_attribute",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "redundant_optional_initialization",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "redundant_self_in_closure",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "redundant_set_access_control",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "redundant_string_enum_value",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "redundant_type_annotation",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "redundant_void_return",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "required_deinit",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "required_enum_case",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "return_arrow_whitespace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "return_value_from_void_function",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "self_binding",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "self_in_property_initialization",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "shorthand_operator",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "shorthand_optional_binding",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "single_test_class",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "sorted_enum_cases",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "sorted_first_last",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Performance",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "sorted_imports",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "statement_position",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "static_operator",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "strict_fileprivate",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "strong_iboutlet",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "superfluous_disable_command",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "superfluous_else",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "switch_case_alignment",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "switch_case_on_newline",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "syntactic_sugar",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "test_case_accessibility",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "todo",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "toggle_bool",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "trailing_closure",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "trailing_comma",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "trailing_newline",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "trailing_semicolon",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "trailing_whitespace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "type_body_length",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "Complexity",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "type_contents_order",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "type_name",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "typesafe_array_init",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "unavailable_condition",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "unavailable_function",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "unhandled_throwing_task",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "unneeded_break_in_switch",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "unneeded_override",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "unneeded_parentheses_in_closure_argument",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "unneeded_synthesized_initializer",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "unowned_variable_capture",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "untyped_error_in_catch",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "unused_capture_list",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "unused_closure_parameter",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "unused_control_flow_label",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "unused_declaration",
-    "level" : "Error",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "unused_enumerated",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "unused_import",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "unused_optional_binding",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "unused_setter_value",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "valid_ibinspectable",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "vertical_parameter_alignment",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "vertical_parameter_alignment_on_call",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "vertical_whitespace",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "vertical_whitespace_between_cases",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "vertical_whitespace_closing_braces",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "vertical_whitespace_opening_braces",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "void_function_in_ternary",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "void_return",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "weak_delegate",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "xct_specific_matcher",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "xctfail_message",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
   }, {
     "patternId" : "yoda_condition",
-    "level" : "Warning",
+    "level" : "Info",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
