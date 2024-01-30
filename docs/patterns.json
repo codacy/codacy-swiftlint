@@ -1,6 +1,6 @@
 {
   "name" : "swiftlint",
-  "version" : "0.53.0",
+  "version" : "0.54.0",
   "patterns" : [ {
     "patternId" : "accessibility_label_for_image",
     "level" : "Warning",
