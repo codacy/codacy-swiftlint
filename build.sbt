@@ -2,7 +2,7 @@ organization := "com.codacy"
 
 name := "codacy-swiftlint"
 
-ThisBuild / scalaVersion := "3.4.1"
+ThisBuild / scalaVersion := "2.13.14"
 
 enablePlugins(NativeImagePlugin)
 
