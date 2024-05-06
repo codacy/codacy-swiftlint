@@ -9,9 +9,9 @@ enablePlugins(NativeImagePlugin)
 enablePlugins(JavaAppPackaging)
 
 libraryDependencies ++= Seq(
-      "com.codacy" %% "codacy-engine-scala-seed" % "6.1.2",
-      "com.github.pathikrit" %% "better-files" % "3.9.2"
-    )
+  "com.codacy" %% "codacy-engine-scala-seed" % "6.1.2",
+  "com.github.pathikrit" %% "better-files" % "3.9.2"
+)
 
 Compile / mainClass := Some("codacy.Engine")
 
