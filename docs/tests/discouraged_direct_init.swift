@@ -1,15 +1,15 @@
 //#Patterns: discouraged_direct_init
 
-//#Issue: {"severity": "Warning", "line": 15, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Warning", "line": 18, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Warning", "line": 21, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Warning", "line": 24, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Warning", "line": 27, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Warning", "line": 30, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Warning", "line": 33, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Warning", "line": 36, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Warning", "line": 39, "patternId": "discouraged_direct_init"}
-//#Issue: {"severity": "Warning", "line": 42, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 15, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 18, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 21, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 24, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 27, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 30, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 33, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 36, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 39, "patternId": "discouraged_direct_init"}
+//#Issue: {"severity": "Info", "line": 42, "patternId": "discouraged_direct_init"}
 
 
 UIDevice()

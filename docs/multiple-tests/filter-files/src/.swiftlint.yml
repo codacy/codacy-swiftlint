@@ -1,5 +1,3 @@
-only_rules:
+whitelist_rules:
   - closing_brace
   - dynamic_inline
-  - first_where
-  - unused_enumerated

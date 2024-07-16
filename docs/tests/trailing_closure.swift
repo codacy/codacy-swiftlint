@@ -1,9 +1,9 @@
 //#Patterns: trailing_closure
 
-//#Issue: {"severity": "Warning", "line": 10, "patternId": "trailing_closure"}
-//#Issue: {"severity": "Warning", "line": 14, "patternId": "trailing_closure"}
-//#Issue: {"severity": "Warning", "line": 18, "patternId": "trailing_closure"}
-//#Issue: {"severity": "Warning", "line": 22, "patternId": "trailing_closure"}
+//#Issue: {"severity": "Info", "line": 10, "patternId": "trailing_closure"}
+//#Issue: {"severity": "Info", "line": 14, "patternId": "trailing_closure"}
+//#Issue: {"severity": "Info", "line": 18, "patternId": "trailing_closure"}
+//#Issue: {"severity": "Info", "line": 22, "patternId": "trailing_closure"}
 
 
 

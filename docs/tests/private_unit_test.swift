@@ -1,9 +1,9 @@
 //#Patterns: private_unit_test
 
-//#Issue: {"severity": "Warning", "line": 8, "patternId": "private_unit_test"}
-//#Issue: {"severity": "Warning", "line": 17, "patternId": "private_unit_test"}
-//#Issue: {"severity": "Warning", "line": 23, "patternId": "private_unit_test"}
-//#Issue: {"severity": "Warning", "line": 29, "patternId": "private_unit_test"}
+//#Issue: {"severity": "Info", "line": 8, "patternId": "private_unit_test"}
+//#Issue: {"severity": "Info", "line": 17, "patternId": "private_unit_test"}
+//#Issue: {"severity": "Info", "line": 23, "patternId": "private_unit_test"}
+//#Issue: {"severity": "Info", "line": 29, "patternId": "private_unit_test"}
 
     private class FooTest: XCTestCase { func test1() {}
      internal func test2() {}

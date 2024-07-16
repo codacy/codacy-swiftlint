@@ -1,10 +1,10 @@
 //#Patterns: switch_case_alignment
 
-//#Issue: {"severity": "Warning", "line": 12, "patternId": "switch_case_alignment"}
-//#Issue: {"severity": "Warning", "line": 14, "patternId": "switch_case_alignment"}
-//#Issue: {"severity": "Warning", "line": 20, "patternId": "switch_case_alignment"}
-//#Issue: {"severity": "Warning", "line": 28, "patternId": "switch_case_alignment"}
-//#Issue: {"severity": "Warning", "line": 32, "patternId": "switch_case_alignment"}
+//#Issue: {"severity": "Info", "line": 12, "patternId": "switch_case_alignment"}
+//#Issue: {"severity": "Info", "line": 14, "patternId": "switch_case_alignment"}
+//#Issue: {"severity": "Info", "line": 20, "patternId": "switch_case_alignment"}
+//#Issue: {"severity": "Info", "line": 28, "patternId": "switch_case_alignment"}
+//#Issue: {"severity": "Info", "line": 32, "patternId": "switch_case_alignment"}
 
 
 

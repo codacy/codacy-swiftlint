@@ -1,13 +1,12 @@
 //#Patterns: fallthrough
 
-//#Issue: {"severity": "Warning", "line": 10, "patternId": "fallthrough"}
+//#Issue: {"severity": "Info", "line": 9, "patternId": "fallthrough"}
 
 
 
-switch myvar {
-case 1:
-    var a = 1
+switch foo {
+case .bar:
     fallthrough
-case 2:
-    var a = 2
+case .bar2:
+    something()
 }
