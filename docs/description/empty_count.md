@@ -4,7 +4,7 @@ Prefer checking `isEmpty` over comparing `count` to zero
 
 * **Identifier:** empty_count
 * **Enabled by default:** No
-* **Supports autocorrection:** No
+* **Supports autocorrection:** Yes
 * **Kind:** performance
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0

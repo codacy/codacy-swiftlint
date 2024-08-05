@@ -61,30 +61,6 @@ guard let a = b else { }
 ```
 
 ```swift
-if
-	let a = b,
-	let c = d
-	where a == c
-{ }
-```
-
-```swift
-while
-	let a = b,
-	let c = d
-	where a == c
-{ }
-```
-
-```swift
-guard
-	let a = b,
-	let c = d
-	where a == c else
-{ }
-```
-
-```swift
 struct Rule {}
 ```
 
@@ -120,6 +96,39 @@ func f() -> () -> Void {
 }
 ```
 
+```swift
+class Rule:
+  NSObject {
+  var a: String {
+    return ""
+  }
+}
+```
+
+```swift
+self.foo(
+    (
+        "String parameter",
+        { "Do something here" }
+    )
+)
+```
+
+```swift
+let pattern = #/(\{(?<key>\w+)\})/#
+```
+
+```swift
+if c {}
+else {}
+```
+
+```swift
+    if c /* comment */ {
+        return
+    }
+```
+
 ## Triggering Examples
 
 ```swift
@@ -133,7 +142,7 @@ func abc()
 ```
 
 ```swift
-func abc(a: A
+func abc(a: A,
 	b: B)
 ↓{
 ```
@@ -143,7 +152,46 @@ func abc(a: A
 ```
 
 ```swift
-[].map( ↓{ } )
+struct OldContentView: View {
+  @State private var showOptions = false
+
+  var body: some View {
+    Button(action: {
+      self.showOptions.toggle()
+    })↓{
+      Image(systemName: "gear")
+    }
+  }
+}
+```
+
+```swift
+struct OldContentView: View {
+  @State private var showOptions = false
+
+  var body: some View {
+    Button(action: {
+      self.showOptions.toggle()
+    })
+   ↓{
+      Image(systemName: "gear")
+    }
+  }
+}
+```
+
+```swift
+struct OldContentView: View {
+  @State private var showOptions = false
+
+  var body: some View {
+    Button {
+      self.showOptions.toggle()
+    } label:↓{
+      Image(systemName: "gear")
+    }
+  }
+}
 ```
 
 ```swift
@@ -206,43 +254,117 @@ struct Parent {
 ```
 
 ```swift
-// Get the current thread's TLS pointer. On first call for a given thread,
-// creates and initializes a new one.
-internal static func getPointer()
-  -> UnsafeMutablePointer<_ThreadLocalStorage>
-{ // <- here
-  return _swift_stdlib_threadLocalStorageGet().assumingMemoryBound(
-    to: _ThreadLocalStorage.self)
+switch a↓{}
+```
+
+```swift
+if
+	let a = b,
+	let c = d,
+	a == c
+↓{ }
+```
+
+```swift
+while
+	let a = b,
+	let c = d,
+	a == c
+↓{ }
+```
+
+```swift
+guard
+	let a = b,
+	let c = d,
+	a == c else
+↓{ }
+```
+
+```swift
+class Rule↓{}
+
+```
+
+```swift
+actor Rule↓{}
+
+```
+
+```swift
+enum Rule↓{}
+
+```
+
+```swift
+protocol Rule↓{}
+
+```
+
+```swift
+extension Rule↓{}
+
+```
+
+```swift
+class Rule {
+  var a: String↓{
+    return ""
+  }
 }
 ```
 
 ```swift
-func run_Array_method1x(_ N: Int) {
-  let existentialArray = array!
-  for _ in 0 ..< N * 100 {
-    for elt in existentialArray {
-      if !elt.doIt()  {
-        fatalError("expected true")
-      }
+class Rule {
+  var a: String {
+    willSet↓{
+
+    }
+    didSet  ↓{
+
     }
   }
 }
+```
 
-func run_Array_method2x(_ N: Int) {
-
+```swift
+precedencegroup Group↓{
+  assignment: true
 }
 ```
 
 ```swift
-   class TestFile {
-       func problemFunction() {
-           #if DEBUG
-           #endif
-       }
+if
+    "test".isEmpty
+↓{
+    // code here
+}
+```
 
-       func openingBraceViolation()
-      ↓{
-           print("Brackets")
-       }
-   }
+```swift
+func fooFun() {
+    let foo: String? = "foo"
+    let bar: String? = "bar"
+
+    if
+        let foooo = foo,
+        let barrr = bar
+    ↓{
+        print(foooo + barrr)
+    }
+}
+```
+
+```swift
+if
+    let a = ["A", "B"].first,
+    let b = ["B"].first
+↓{
+    print(a)
+}
+```
+
+```swift
+if c  ↓{}
+else /* comment */  ↓{}
 ```

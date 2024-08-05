@@ -241,6 +241,19 @@ struct Foo {
 }
 ```
 
+```swift
+struct Foo {
+    let bar: Int
+
+    init(bar: Int) {
+        self.bar = bar
+    }
+    init?() {
+        return nil
+    }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -380,6 +393,21 @@ class Foo {
        ↓init(baz: Int) {
             self.baz = baz
         }
+    }
+}
+```
+
+```swift
+struct Foo {
+    let i: Int
+    struct Bar {
+        let j: Int
+        ↓init(j: Int) {
+            self.j = j
+        }
+    }
+    ↓init(i: Int) {
+        self.i = i
     }
 }
 ```

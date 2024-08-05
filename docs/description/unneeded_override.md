@@ -22,6 +22,14 @@ Remove overridden functions that don't do anything except call their super
   warning
   </td>
   </tr>
+  <tr>
+  <td>
+  affect_initializers
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -142,6 +150,15 @@ class Foo {
         super.bar(animated: animated, completion: {
             // This likely changes behavior
         })
+    }
+}
+```
+
+```swift
+class Baz: Foo {
+    // A default argument might be a change
+    override func bar(value: String = "Hello") {
+        super.bar(value: value)
     }
 }
 ```

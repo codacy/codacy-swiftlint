@@ -75,6 +75,10 @@ func foo() -> () async throws -> Void {}
 func foo() async throws -> () async -> Void { return {} }
 ```
 
+```swift
+func foo() -> () async -> Int { 1 }
+```
+
 ## Triggering Examples
 
 ```swift

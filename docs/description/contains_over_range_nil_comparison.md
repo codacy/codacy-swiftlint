@@ -1,4 +1,4 @@
-# Contains over Range Comparision to Nil
+# Contains over Range Comparison to Nil
 
 Prefer `contains` over `range(of:) != nil` and `range(of:) == nil`
 

@@ -1,11 +1,11 @@
-# Todo
+# One Declaration per File
 
-TODOs and FIXMEs should be resolved.
+Only a single declaration is allowed in a file
 
-* **Identifier:** todo
-* **Enabled by default:** Yes
+* **Identifier:** one_declaration_per_file
+* **Enabled by default:** No
 * **Supports autocorrection:** No
-* **Kind:** lint
+* **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
 * **Default configuration:**
@@ -22,57 +22,39 @@ TODOs and FIXMEs should be resolved.
   warning
   </td>
   </tr>
-  <tr>
-  <td>
-  only
-  </td>
-  <td>
-  [TODO, FIXME]
-  </td>
-  </tr>
   </tbody>
   </table>
 
 ## Non Triggering Examples
 
 ```swift
-// notaTODO:
+class Foo {}
 ```
 
 ```swift
-// notaFIXME:
+class Foo {}
+extension Foo {}
+```
+
+```swift
+struct S {
+    struct N {}
+}
 ```
 
 ## Triggering Examples
 
 ```swift
-// ↓TODO:
+class Foo {}
+↓class Bar {}
 ```
 
 ```swift
-// ↓FIXME:
+protocol Foo {}
+↓enum Bar {}
 ```
 
 ```swift
-// ↓TODO(note)
-```
-
-```swift
-// ↓FIXME(note)
-```
-
-```swift
-/* ↓FIXME: */
-```
-
-```swift
-/* ↓TODO: */
-```
-
-```swift
-/** ↓FIXME: */
-```
-
-```swift
-/** ↓TODO: */
+struct Foo {}
+↓struct Bar {}
 ```

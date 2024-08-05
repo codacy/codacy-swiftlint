@@ -126,3 +126,13 @@ class Hogwarts {
          7, 8, 9
     ]
 ```
+
+```swift
+class Hogwarts {
+    let houseCup = [
+        "gryffindor": 460, "hufflepuff": 370,
+        "ravenclaw": 410, "slytherin": slytherinPoints.filter {
+            $0.isValid
+        }.sum()↓]
+}
+```

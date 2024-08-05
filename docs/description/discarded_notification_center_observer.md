@@ -42,6 +42,12 @@ func foo() -> Any {
 ```
 
 ```swift
+func foo() -> Any {
+    nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { })
+}
+```
+
+```swift
 var obs: [Any?] = []
 obs.append(nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { }))
 ```
@@ -70,6 +76,14 @@ var obs: [NSObjectProtocol] = [
 ]
 ```
 
+```swift
+names.map { self.notificationCenter.addObserver(forName: $0, object: object, queue: queue, using: block) }
+```
+
+```swift
+f { return nc.addObserver(forName: $0, object: object, queue: queue, using: block) }
+```
+
 ## Triggering Examples
 
 ```swift
@@ -87,5 +101,32 @@ _ = ↓nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: n
 ```swift
 @discardableResult func foo() -> Any {
    return ↓nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { })
+}
+```
+
+```swift
+class C {
+    var i: Int {
+        set { ↓notificationCenter.addObserver(forName: $0, object: object, queue: queue, using: block) }
+        get {
+            ↓notificationCenter.addObserver(forName: $0, object: object, queue: queue, using: block)
+            return 2
+        }
+    }
+}
+```
+
+```swift
+f {
+    ↓nc.addObserver(forName: $0, object: object, queue: queue) {}
+    return 2
+}
+```
+
+```swift
+func foo() -> Any {
+    if cond {
+        ↓nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { })
+    }
 }
 ```

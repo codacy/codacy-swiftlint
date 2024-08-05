@@ -122,6 +122,16 @@ class MyTests: BestTestCase {
 ```
 
 ```swift
+    struct S {
+        var i: Int? = nil
+        func f() {
+            if let i { print(i) }
+        }
+    }
+    S().f()
+```
+
+```swift
 enum Component {
   case string(StaticString)
   indirect case array([Component])
@@ -178,72 +188,6 @@ func acceptComponentBuilder(@ComponentBuilder _ body: () -> Component) {
 acceptComponentBuilder {
   "hello"
 }
-```
-
-```swift
-import Cocoa
-
-@NSApplicationMain
-final class AppDelegate: NSObject, NSApplicationDelegate {
-    func applicationWillFinishLaunching(_ notification: Notification) {}
-    func applicationWillBecomeActive(_ notification: Notification) {}
-}
-```
-
-```swift
-import Foundation
-
-public final class Foo: NSObject {
-    @IBAction private func foo() {}
-}
-```
-
-```swift
-import Foundation
-
-public final class Foo: NSObject {
-    @objc func foo() {}
-}
-```
-
-```swift
-import Foundation
-
-public final class Foo: NSObject {
-    @IBInspectable private var innerPaddingWidth: Int {
-        set { self.backgroundView.innerPaddingWidth = newValue }
-        get { return self.backgroundView.innerPaddingWidth }
-    }
-}
-```
-
-```swift
-import Foundation
-
-public final class Foo: NSObject {
-    @IBOutlet private var bar: NSObject! {
-        set { fatalError() }
-        get { fatalError() }
-    }
-
-    @IBOutlet private var baz: NSObject! {
-        willSet { print("willSet") }
-    }
-
-    @IBOutlet private var buzz: NSObject! {
-        didSet { print("didSet") }
-    }
-}
-```
-
-```swift
-    struct S {
-        var i: Int? = nil
-        func f() {
-            if let i { print(i) }
-        }
-    }
-    S().f()
 ```
 
 ## Triggering Examples
@@ -324,45 +268,11 @@ _ = ComponentBuilder()
 ```
 
 ```swift
-import Cocoa
-
-@NSApplicationMain
-final class AppDelegate: NSObject, NSApplicationDelegate {
-    func ↓appWillFinishLaunching(_ notification: Notification) {}
-    func applicationWillBecomeActive(_ notification: Notification) {}
-}
+protocol ↓Foo {}
+extension Foo {}
 ```
 
 ```swift
-import Cocoa
-
-final class ↓AppDelegate: NSObject, NSApplicationDelegate {
-    func applicationWillFinishLaunching(_ notification: Notification) {}
-    func applicationWillBecomeActive(_ notification: Notification) {}
-}
-```
-
-```swift
-import Foundation
-
-public final class Foo: NSObject {
-    @IBOutlet var ↓bar: NSObject!
-}
-```
-
-```swift
-import Foundation
-
-public final class Foo: NSObject {
-    @IBInspectable var ↓bar: String!
-}
-```
-
-```swift
-import Foundation
-
-final class Foo: NSObject {}
-final class ↓Bar {
-    var ↓foo = Foo()
-}
+class ↓C<T> {}
+extension C<Int> {}
 ```

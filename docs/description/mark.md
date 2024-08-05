@@ -40,6 +40,10 @@ MARK comment should be in valid format. e.g. '// MARK: ...' or '// MARK: - ...'
 ```
 
 ```swift
+// MARK: - 
+```
+
+```swift
 // BOOKMARK
 ```
 
@@ -49,6 +53,38 @@ MARK comment should be in valid format. e.g. '// MARK: ...' or '// MARK: - ...'
 
 ```swift
 // BOOKMARKS
+```
+
+```swift
+// MARK: This is good.
+```
+
+```swift
+// MARK: - This is good.
+```
+
+```swift
+// MARK: --- This is good. ---
+```
+
+```swift
+// MARK: – This is dash separator
+```
+
+```swift
+// Mark text
+```
+
+```swift
+//  MarkdownText.swift
+```
+
+```swift
+// MARK: good
+func foo() {
+    let bar = 0
+      // MARK: good
+}
 ```
 
 ```swift
@@ -153,6 +189,14 @@ func test2() {
 
 ```swift
 ↓/// MARK bad
+```
+
+```swift
+// MARK: good
+func foo() {
+    let bar = 0
+      ↓//MARK: bad
+}
 ```
 
 ```swift

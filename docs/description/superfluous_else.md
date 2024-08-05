@@ -4,7 +4,7 @@ Else branches should be avoided when the previous if-block exits the current sco
 
 * **Identifier:** superfluous_else
 * **Enabled by default:** No
-* **Supports autocorrection:** No
+* **Supports autocorrection:** Yes
 * **Kind:** style
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
@@ -61,43 +61,72 @@ Else branches should be avoided when the previous if-block exits the current sco
     }
 ```
 
+```swift
+    for i in list {
+        if i > 12 {
+            // Do nothing
+        } else {
+            continue
+        }
+        if i > 14 {
+            // Do nothing
+        } else if i > 13 {
+            break
+        }
+    }
+```
+
 ## Triggering Examples
 
 ```swift
-    ↓if i > 0 {
+    if i > 0 {
         return 1
         // comment
-    } else {
+    } ↓else {
         return 2
     }
 ```
 
 ```swift
-    ↓if i > 0 {
+    if i > 0 {
         return 1
-    } else ↓if i < 12 {
+    } ↓else if i < 12 {
         return 2
-    } else if i > 18 {
+    } ↓else if i > 18 {
         return 3
     }
 ```
 
 ```swift
-    ↓if i > 0 {
-        ↓if i < 12 {
+    if i > 0 {
+        if i < 12 {
             return 5
-        } else {
-            ↓if i > 11 {
+        } ↓else {
+            if i > 11 {
                 return 6
-            } else {
+            } ↓else {
                 return 7
             }
         }
-    } else ↓if i < 12 {
+    } ↓else if i < 12 {
         return 2
-    } else ↓if i < 24 {
+    } ↓else if i < 24 {
         return 8
-    } else {
+    } ↓else {
         return 3
+    }
+```
+
+```swift
+    for i in list {
+        if i > 13 {
+            return
+        } ↓else if i > 12 {
+            continue
+        } ↓else if i > 11 {
+            break
+        } ↓else {
+            throw error
+        }
     }
 ```

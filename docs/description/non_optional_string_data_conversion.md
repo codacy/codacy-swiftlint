@@ -1,8 +1,8 @@
-# Todo
+# Non-Optional String <-> Data Conversion
 
-TODOs and FIXMEs should be resolved.
+Prefer using UTF-8 encoded strings when converting between `String` and `Data`
 
-* **Identifier:** todo
+* **Identifier:** non_optional_string_data_conversion
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
@@ -22,57 +22,25 @@ TODOs and FIXMEs should be resolved.
   warning
   </td>
   </tr>
-  <tr>
-  <td>
-  only
-  </td>
-  <td>
-  [TODO, FIXME]
-  </td>
-  </tr>
   </tbody>
   </table>
 
 ## Non Triggering Examples
 
 ```swift
-// notaTODO:
+Data("foo".utf8)
 ```
 
 ```swift
-// notaFIXME:
+String(decoding: data, as: UTF8.self)
 ```
 
 ## Triggering Examples
 
 ```swift
-// ↓TODO:
+"foo".data(using: .utf8)
 ```
 
 ```swift
-// ↓FIXME:
-```
-
-```swift
-// ↓TODO(note)
-```
-
-```swift
-// ↓FIXME(note)
-```
-
-```swift
-/* ↓FIXME: */
-```
-
-```swift
-/* ↓TODO: */
-```
-
-```swift
-/** ↓FIXME: */
-```
-
-```swift
-/** ↓TODO: */
+String(data: data, encoding: .utf8)
 ```

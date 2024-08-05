@@ -170,7 +170,7 @@ withEnvironment(apiService: MockService(fetchProjectResponse: project)) { [↓fo
 
 ```swift
 let closure = { [↓weak a] in
-    // The new `a` immediatly shadows the captured `a` which thus isn't needed.
+    // The new `a` immediately shadows the captured `a` which thus isn't needed.
     guard let a = getOptionalValue() else {
         return
     }

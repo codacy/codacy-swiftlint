@@ -63,6 +63,33 @@ for idx in bar.indices { }
 for (section, (event, _)) in data.enumerated() {}
 ```
 
+```swift
+list.enumerated().map { idx, elem in "\(idx): \(elem)" }
+```
+
+```swift
+list.enumerated().map { $0 + $1 }
+```
+
+```swift
+list.enumerated().something().map { _, elem in elem }
+```
+
+```swift
+list.enumerated().map { ($0.offset, $0.element) }
+```
+
+```swift
+list.enumerated().map { ($0.0, $0.1) }
+```
+
+```swift
+list.enumerated().map {
+    $1.enumerated().forEach { print($0, $1) }
+    return $0
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -79,4 +106,40 @@ for (↓_, foo) in abc.something().enumerated() { }
 
 ```swift
 for (idx, ↓_) in bar.enumerated() { }
+```
+
+```swift
+list.enumerated().map { idx, ↓_ in idx }
+```
+
+```swift
+list.enumerated().map { ↓_, elem in elem }
+```
+
+```swift
+list.↓enumerated().forEach { print($0) }
+```
+
+```swift
+list.↓enumerated().map { $1 }
+```
+
+```swift
+list.enumerated().map {
+    $1.↓enumerated().forEach { print($1) }
+    return $0
+}
+```
+
+```swift
+list.↓enumerated().map {
+    $1.enumerated().forEach { print($0, $1) }
+    return 1
+}
+```
+
+```swift
+list.↓enumerated().forEach {
+    let (i, _) = $0
+}
 ```

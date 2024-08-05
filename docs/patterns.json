@@ -1,6 +1,6 @@
 {
   "name" : "swiftlint",
-  "version" : "0.54.0",
+  "version" : "0.55.1",
   "patterns" : [ {
     "patternId" : "accessibility_label_for_image",
     "level" : "Warning",
@@ -485,6 +485,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "final_test_case",
+    "level" : "Warning",
+    "category" : "Performance",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "first_where",
     "level" : "Warning",
     "category" : "Performance",
@@ -870,6 +877,13 @@
     "languages" : [ ],
     "enabled" : true
   }, {
+    "patternId" : "non_optional_string_data_conversion",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
     "patternId" : "non_overridable_class_declaration",
     "level" : "Warning",
     "category" : "CodeStyle",
@@ -920,6 +934,13 @@
     "enabled" : false
   }, {
     "patternId" : "object_literal",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "one_declaration_per_file",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],
@@ -1234,6 +1255,13 @@
     "languages" : [ ],
     "enabled" : true
   }, {
+    "patternId" : "shorthand_argument",
+    "level" : "Warning",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "shorthand_operator",
     "level" : "Error",
     "category" : "CodeStyle",
@@ -1289,6 +1317,13 @@
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
+  }, {
+    "patternId" : "static_over_final_class",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
   }, {
     "patternId" : "strict_fileprivate",
     "level" : "Warning",

@@ -40,9 +40,7 @@ private struct C {}
 ```
 
 ```swift
-internal enum A {
- internal enum B {}
-}
+internal enum A { internal enum B {} }
 ```
 
 ```swift
@@ -130,6 +128,15 @@ extension Foo {
 }
 ```
 
+```swift
+private extension Foo {
+    var isValid: Bool { true }
+    struct S {
+        let b = 2
+    }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -145,11 +152,23 @@ internal struct C { ↓let d = 5 }
 ```
 
 ```swift
+public struct C { private(set) ↓var d = 5 }
+```
+
+```swift
+internal struct C { static ↓let d = 5 }
+```
+
+```swift
 public struct C { ↓let d = 5 }
 ```
 
 ```swift
-func a() {}
+public struct C { ↓init() }
+```
+
+```swift
+static ↓func a() {}
 ```
 
 ```swift
@@ -160,5 +179,15 @@ internal let a = 0
 ```swift
 extension Foo {
     ↓func bar() {}
+    static ↓func baz() {}
+}
+```
+
+```swift
+public extension E {
+    let a = 1
+    struct S {
+        ↓let b = 2
+    }
 }
 ```
