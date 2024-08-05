@@ -1,7 +1,7 @@
 //#Patterns: discouraged_object_literal
 
-//#Issue: {"severity": "Info", "line": 8, "patternId": "discouraged_object_literal"}
-//#Issue: {"severity": "Info", "line": 11, "patternId": "discouraged_object_literal"}
+//#Issue: {"severity": "Warning", "line": 8, "patternId": "discouraged_object_literal"}
+//#Issue: {"severity": "Warning", "line": 11, "patternId": "discouraged_object_literal"}
 
 
 

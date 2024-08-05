@@ -1,13 +1,13 @@
 //#Patterns: trailing_comma
 
-//#Issue: {"severity": "Info", "line": 12, "patternId": "trailing_comma"}
-//#Issue: {"severity": "Info", "line": 15, "patternId": "trailing_comma"}
-//#Issue: {"severity": "Info", "line": 18, "patternId": "trailing_comma"}
-//#Issue: {"severity": "Info", "line": 21, "patternId": "trailing_comma"}
-//#Issue: {"severity": "Info", "line": 25, "patternId": "trailing_comma"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "trailing_comma"}
-//#Issue: {"severity": "Info", "line": 33, "patternId": "trailing_comma"}
-//#Issue: {"severity": "Info", "line": 37, "patternId": "trailing_comma"}
+//#Issue: {"severity": "Warning", "line": 12, "patternId": "trailing_comma"}
+//#Issue: {"severity": "Warning", "line": 15, "patternId": "trailing_comma"}
+//#Issue: {"severity": "Warning", "line": 18, "patternId": "trailing_comma"}
+//#Issue: {"severity": "Warning", "line": 21, "patternId": "trailing_comma"}
+//#Issue: {"severity": "Warning", "line": 25, "patternId": "trailing_comma"}
+//#Issue: {"severity": "Warning", "line": 29, "patternId": "trailing_comma"}
+//#Issue: {"severity": "Warning", "line": 33, "patternId": "trailing_comma"}
+//#Issue: {"severity": "Warning", "line": 37, "patternId": "trailing_comma"}
 
     let foo = [1, 2, 3,]
 

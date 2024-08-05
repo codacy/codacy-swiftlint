@@ -1,65 +1,41 @@
 //#Patterns: control_statement
 
-//#Issue: {"severity": "Info", "line": 20, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 23, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 26, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 29, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 32, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 35, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 38, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 41, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 44, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 47, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 50, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 53, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 56, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 59, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 62, "patternId": "control_statement"}
-//#Issue: {"severity": "Info", "line": 65, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 17, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 19, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 21, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 23, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 25, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 27, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 29, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 31, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 33, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 35, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 37, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 39, "patternId": "control_statement"}
+//#Issue: {"severity": "Warning", "line": 41, "patternId": "control_statement"}
 
-    if (condition) {
+if (condition) {}
 
+if(condition) {}
 
-    if(condition) {
+if (condition == endIndex) {}
 
+if ((a || b) && (c || d)) {}
 
-    if ((a || b) && (c || d)) {
+if ((min...max).contains(value)) {}
 
+guard (condition) else {}
 
-    if ((min...max).contains(value)) {
+while (condition) {}
 
+while(condition) {}
 
-    for (item in collection) {
+do { ; } while(condition) {}
 
+do { ; } while (condition) {}
 
-    for (var index = 0; index < 42; index++) {
+switch (foo) {}
 
+do {} catch(let error as NSError) {}
 
-    for(item in collection) {
-
-
-    for(var index = 0; index < 42; index++) {
-
-
-    guard (condition) else {
-
-
-    while (condition) {
-
-
-    while(condition) {
-
-
-    } while (condition) {
-
-
-    } while(condition) {
-
-
-    do { ; } while(condition) {
-
-
-    do { ; } while (condition) {
-
-
-    switch (foo) {
+if (max(a, b) < c) {}

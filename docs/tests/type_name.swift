@@ -1,27 +1,27 @@
 //#Patterns: type_name
 
-//#Issue: {"severity": "Info", "line": 26, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 28, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 30, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 32, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 34, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 36, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 38, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 40, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 42, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 44, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 46, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 48, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 50, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 52, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 54, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 56, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 58, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 60, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 62, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 65, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 69, "patternId": "type_name"}
-//#Issue: {"severity": "Info", "line": 73, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 26, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 28, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 30, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 32, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 34, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 36, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 38, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 40, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 42, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 44, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 46, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 48, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 50, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 52, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 54, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 56, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 58, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 60, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 62, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 65, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 69, "patternId": "type_name"}
+//#Issue: {"severity": "Warning", "line": 73, "patternId": "type_name"}
 
     class myType {}
 
