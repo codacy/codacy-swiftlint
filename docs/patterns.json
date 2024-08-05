@@ -164,7 +164,7 @@
     "enabled" : true
   }, {
     "patternId" : "conditional_returns_on_newline",
-    "level" : "Info",
+    "level" : "Warning",
     "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
