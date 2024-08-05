@@ -28,160 +28,238 @@ Variable declarations should be separated from other statements by a blank line
 ## Non Triggering Examples
 
 ```swift
-let a = 0
-var x = 1
-
-x = 2
-```
-
-```swift
-a = 5
-
-var x = 1
-```
-
-```swift
-struct X {
-	var a = 0
-}
-```
-
-```swift
-let a = 1 +
-	2
-let b = 5
-```
-
-```swift
-var x: Int {
-	return 0
-}
-```
-
-```swift
-var x: Int {
-	let a = 0
-
-	return a
-}
-```
-
-```swift
-#if os(macOS)
-let a = 0
-#endif
-```
-
-```swift
-#warning("TODO: remove it")
-let a = 0
-```
-
-```swift
-#error("TODO: remove it")
-let a = 0
-```
-
-```swift
-@available(swift 4)
-let a = 0
-```
-
-```swift
 class C {
-	@objc
-	var s: String = ""
+    let a = 0
+    var x = 1
+
+    var y = 2
 }
 ```
 
 ```swift
 class C {
-	@objc
-	func a() {}
+    let a = 5
+
+    var x = 1
 }
 ```
 
 ```swift
 class C {
-	var x = 0
-	lazy
-	var y = 0
+    var a = 0
 }
 ```
 
 ```swift
-@available(OSX, introduced: 10.6)
-@available(*, deprecated)
-var x = 0
+class C {
+    let a = 1 +
+        2
+    let b = 5
+}
 ```
 
 ```swift
-// swiftlint:disable superfluous_disable_command
-// swiftlint:disable force_cast
-
-let x = bar as! Bar
+class C {
+    var x: Int {
+        return 0
+    }
+}
 ```
 
 ```swift
+class C {
+    var x: Int {
+        let a = 0
+
+        return a
+    }
+}
+```
+
+```swift
+class C {
+    #if os(macOS)
+    let a = 0
+
+    func f() {}
+    #endif
+}
+```
+
+```swift
+class C {
+    #warning("TODO: remove it")
+    let a = 0
+    #warning("TODO: remove it")
+    let b = 0
+}
+```
+
+```swift
+class C {
+    #error("TODO: remove it")
+    let a = 0
+}
+```
+
+```swift
+class C {
+    @available(swift 4)
+    let a = 0
+}
+```
+
+```swift
+class C {
+    @objc
+    var s: String = ""
+}
+```
+
+```swift
+class C {
+    @objc
+    func a() {}
+}
+```
+
+```swift
+class C {
+    var x = 0
+    lazy
+    var y = 0
+}
+```
+
+```swift
+class C {
+    @available(OSX, introduced: 10.6)
+    @available(*, deprecated)
+    var x = 0
+}
+```
+
+```swift
+class C {
+    // swiftlint:disable superfluous_disable_command
+    // swiftlint:disable force_cast
+
+    let x = bar as! Bar
+}
+```
+
+```swift
+class C {
     @available(swift 4)
     @UserDefault("param", defaultValue: true)
     var isEnabled = true
 
     @Attribute
     func f() {}
+}
 ```
 
 ```swift
-var x: Int {
-	let a = 0
-	return a
+class C {
+    var x: Int {
+        let a = 0
+        return a
+    }
 }
+```
+
+```swift
+    a = 2
+```
+
+```swift
+    a = 2
+
+    var b = 3
+```
+
+```swift
+    #warning("message")
+    let a = 2
+```
+
+```swift
+    #if os(macOS)
+    let a = 2
+    #endif
+```
+
+```swift
+    f {
+        let a = 1
+        return a
+    }
+```
+
+```swift
+    func f() {
+        #if os(macOS)
+        let a = 2
+        return a
+        #else
+        return 1
+        #endif
+    }
 ```
 
 ## Triggering Examples
 
 ```swift
-var x = 1
-↓x = 2
-```
-
-```swift
-
-a = 5
-↓var x = 1
-```
-
-```swift
-struct X {
-	let a
-	↓func x() {}
+class C {
+    let a
+    ↓func x() {}
 }
 ```
 
 ```swift
-var x = 0
-↓@objc func f() {}
-```
-
-```swift
-var x = 0
-↓@objc
-	func f() {}
-```
-
-```swift
-@objc func f() {
+class C {
+    var x = 0
+    ↓@objc func f() {}
 }
-↓var x = 0
 ```
 
 ```swift
-    struct S {
-        func f() {}
-        ↓@Wapper
-        let isNumber = false
-        @Wapper
-        var isEnabled = true
-        ↓func g() {}
+class C {
+    var x = 0
+    ↓@objc
+    func f() {}
+}
+```
+
+```swift
+class C {
+    @objc func f() {
     }
+    ↓var x = 0
+}
+```
+
+```swift
+class C {
+    func f() {}
+    ↓@Wapper
+    let isNumber = false
+    @Wapper
+    var isEnabled = true
+    ↓func g() {}
+}
+```
+
+```swift
+class C {
+    #if os(macOS)
+    let a = 0
+    ↓func f() {}
+    #endif
+}
+```
+
+```swift
+    let a = 2
+    ↓b = 1
 ```

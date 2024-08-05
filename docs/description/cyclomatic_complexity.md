@@ -56,14 +56,14 @@ func f1() {
 func f(code: Int) -> Int {
     switch code {
     case 0: fallthrough
-    case 0: return 1
-    case 0: return 1
-    case 0: return 1
-    case 0: return 1
-    case 0: return 1
-    case 0: return 1
-    case 0: return 1
-    case 0: return 1
+    case 1: return 1
+    case 2: return 1
+    case 3: return 1
+    case 4: return 1
+    case 5: return 1
+    case 6: return 1
+    case 7: return 1
+    case 8: return 1
     default: return 1
     }
 }

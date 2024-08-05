@@ -63,6 +63,26 @@ class Foo {
 
 ```swift
 class Foo {
+    var foo: Int {
+        get { _foo }
+        _modify { yield &_foo }
+    }
+}
+```
+
+```swift
+class Foo {
+    var _foo: Int
+    var foo: Int {
+        @storageRestrictions(initializes: _foo)
+        init { _foo = newValue }
+        get { _foo }
+    }
+}
+```
+
+```swift
+class Foo {
     var foo: Int
 }
 ```

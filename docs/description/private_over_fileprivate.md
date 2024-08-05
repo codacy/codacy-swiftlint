@@ -70,6 +70,12 @@ class MyClass {
 ```
 
 ```swift
+actor MyActor {
+  fileprivate let myInt = 4
+}
+```
+
+```swift
 class MyClass {
   fileprivate(set) var myInt = 4
 }
@@ -92,5 +98,11 @@ struct Outter {
 ```swift
 ↓fileprivate class MyClass {
   fileprivate(set) var myInt = 4
+}
+```
+
+```swift
+↓fileprivate actor MyActor {
+  fileprivate let myInt = 4
 }
 ```

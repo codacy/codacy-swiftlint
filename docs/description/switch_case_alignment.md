@@ -30,6 +30,14 @@ Case statements should vertically align with their closing brace, or indented if
   false
   </td>
   </tr>
+  <tr>
+  <td>
+  ignore_one_liners
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -83,6 +91,14 @@ func f() -> Int {
     default: 2
     }
 }
+```
+
+```swift
+switch i { case .x: 1 default: 0 }
+```
+
+```swift
+let a = switch i { case .x: 1 default: 0 }
 ```
 
 ## Triggering Examples
@@ -150,4 +166,34 @@ let a = switch i {
 case 1: 1
     ↓default: 2
 }
+```
+
+```swift
+switch i { ↓case .x: 1 ↓default: 0 }
+```
+
+```swift
+switch i {
+↓case .x: 1 ↓default: 0 }
+```
+
+```swift
+switch i { ↓case .x: 1 ↓default: 0
+}
+```
+
+```swift
+switch i
+{ ↓case .x: 1 ↓default: 0 }
+```
+
+```swift
+let a = switch i {
+case .x: 1 ↓default: 0
+}
+```
+
+```swift
+let a = switch i {
+↓case .x: 1 ↓default: 0 }
 ```

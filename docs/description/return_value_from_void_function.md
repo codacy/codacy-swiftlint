@@ -4,7 +4,7 @@ Returning values from Void functions should be avoided
 
 * **Identifier:** return_value_from_void_function
 * **Enabled by default:** No
-* **Supports autocorrection:** No
+* **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.1.0
@@ -129,6 +129,36 @@ func spec() {
     }
 ```
 
+```swift
+func f() -> () { g() }
+```
+
+```swift
+func f() { g() }
+```
+
+```swift
+func f() { { return g() }() }
+```
+
+```swift
+func f() {
+    func g() -> Int {
+        return 1
+    }
+}
+```
+
+```swift
+init?() { return nil }
+```
+
+```swift
+func f() {
+    var i: Int { return 1 }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -138,7 +168,7 @@ func foo() {
 ```
 
 ```swift
-func foo() {
+func foo() -> () {
     ↓return self.bar()
 }
 ```

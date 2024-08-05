@@ -64,3 +64,29 @@ var myGreatProperty: String!
 // Not a doc string
 var myGreatProperty: String!
 ```
+
+```swift
+↓/// Look here for more info: https://github.com.
+
+
+// Not a doc string
+var myGreatProperty: String!
+```
+
+```swift
+↓/// Look here for more info: https://github.com.
+// Not a doc string
+↓/// My great property
+// Not a doc string
+var myGreatProperty: String!
+```
+
+```swift
+extension Nested {
+    ↓///
+    /// Look here for more info: https://github.com.
+
+    // Not a doc string
+    var myGreatProperty: String!
+}
+```

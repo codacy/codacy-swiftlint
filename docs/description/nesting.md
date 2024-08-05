@@ -74,10 +74,49 @@ Types should be nested at most 1 level deep, and functions should be nested at m
   false
   </td>
   </tr>
+  <tr>
+  <td>
+  ignore_typealiases_and_associatedtypes
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
   </tbody>
   </table>
 
 ## Non Triggering Examples
+
+```swift
+    actor Example_0 {
+        actor Example_1 {}
+    }
+```
+
+```swift
+    var example: Int {
+        actor Example_0 {
+            actor Example_1 {}
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            actor Example_0 {
+                actor Example_1 {}
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        actor Example_1 {}
+    }
+```
 
 ```swift
     class Example_0 {
@@ -216,6 +255,47 @@ Types should be nested at most 1 level deep, and functions should be nested at m
 ```swift
     switch example {
     case .exampleCase:
+        actor Example_0 {
+            actor Example_1 {}
+        }
+    default:
+        func f_0() {
+            func f_1() {
+                func f_2() {}
+            }
+        }
+    }
+```
+
+```swift
+    var exampleClosure: () -> Void = {
+        actor Example_0 {
+            actor Example_1 {}
+        }
+        func f_0() {
+            func f_1() {
+                func f_2() {}
+            }
+        }
+    }
+```
+
+```swift
+    exampleFunc(closure: {
+        actor Example_0 {
+            actor Example_1 {}
+        }
+        func f_0() {
+            func f_1() {
+                func f_2() {}
+            }
+        }
+    })
+```
+
+```swift
+    switch example {
+    case .exampleCase:
         class Example_0 {
             class Example_1 {}
         }
@@ -334,6 +414,168 @@ Types should be nested at most 1 level deep, and functions should be nested at m
             }
         }
     })
+```
+
+```swift
+actor Example_0 {
+    protocol Example_1 {}
+}
+```
+
+```swift
+    var example: Int {
+        actor Example_0 {
+            protocol Example_1 {}
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            actor Example_0 {
+                protocol Example_1 {}
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        protocol Example_1 {}
+    }
+```
+
+```swift
+class Example_0 {
+    protocol Example_1 {}
+}
+```
+
+```swift
+    var example: Int {
+        class Example_0 {
+            protocol Example_1 {}
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            class Example_0 {
+                protocol Example_1 {}
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        protocol Example_1 {}
+    }
+```
+
+```swift
+struct Example_0 {
+    protocol Example_1 {}
+}
+```
+
+```swift
+    var example: Int {
+        struct Example_0 {
+            protocol Example_1 {}
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            struct Example_0 {
+                protocol Example_1 {}
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        protocol Example_1 {}
+    }
+```
+
+```swift
+enum Example_0 {
+    protocol Example_1 {}
+}
+```
+
+```swift
+    var example: Int {
+        enum Example_0 {
+            protocol Example_1 {}
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            enum Example_0 {
+                protocol Example_1 {}
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        protocol Example_1 {}
+    }
+```
+
+```swift
+    actor Example_0 {
+        func f_0() {
+            actor Example_1 {
+                func f_1() {
+                    func f_2() {}
+                }
+            }
+            protocol P {}
+        }
+    }
+```
+
+```swift
+    actor Example_0 {
+        func f_0() {
+            switch example {
+            case .exampleCase:
+                actor Example_1 {
+                    func f_1() {
+                        func f_2() {}
+                    }
+                }
+                protocol P {}
+            default:
+                exampleFunc(closure: {
+                    actor Example_1 {
+                        func f_1() {
+                            func f_2() {}
+                        }
+                    }
+                    protocol P {}
+                })
+            }
+        }
+    }
 ```
 
 ```swift
@@ -344,6 +586,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                     func f_2() {}
                 }
             }
+            protocol P {}
         }
     }
 ```
@@ -358,6 +601,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                         func f_2() {}
                     }
                 }
+                protocol P {}
             default:
                 exampleFunc(closure: {
                     class Example_1 {
@@ -365,6 +609,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                             func f_2() {}
                         }
                     }
+                    protocol P {}
                 })
             }
         }
@@ -379,6 +624,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                     func f_2() {}
                 }
             }
+            protocol P {}
         }
     }
 ```
@@ -393,6 +639,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                         func f_2() {}
                     }
                 }
+                protocol P {}
             default:
                 exampleFunc(closure: {
                     struct Example_1 {
@@ -400,6 +647,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                             func f_2() {}
                         }
                     }
+                    protocol P {}
                 })
             }
         }
@@ -414,6 +662,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                     func f_2() {}
                 }
             }
+            protocol P {}
         }
     }
 ```
@@ -428,6 +677,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                         func f_2() {}
                     }
                 }
+                protocol P {}
             default:
                 exampleFunc(closure: {
                     enum Example_1 {
@@ -435,6 +685,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                             func f_2() {}
                         }
                     }
+                    protocol P {}
                 })
             }
         }
@@ -442,6 +693,45 @@ Types should be nested at most 1 level deep, and functions should be nested at m
 ```
 
 ## Triggering Examples
+
+```swift
+    actor Example_0 {
+        actor Example_1 {
+            ↓actor Example_2 {}
+        }
+    }
+```
+
+```swift
+    var example: Int {
+        actor Example_0 {
+            actor Example_1 {
+                ↓actor Example_2 {}
+            }
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            actor Example_0 {
+                actor Example_1 {
+                    ↓actor Example_2 {}
+                }
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        actor Example_1 {
+            ↓actor Example_2 {}
+        }
+    }
+```
 
 ```swift
     class Example_0 {
@@ -612,6 +902,57 @@ Types should be nested at most 1 level deep, and functions should be nested at m
 ```swift
     switch example {
     case .exampleCase:
+        actor Example_0 {
+            actor Example_1 {
+                ↓actor Example_2 {}
+            }
+        }
+    default:
+        func f_0() {
+            func f_1() {
+                func f_2() {
+                    ↓func f_3() {}
+                }
+            }
+        }
+    }
+```
+
+```swift
+    var exampleClosure: () -> Void = {
+        actor Example_0 {
+            actor Example_1 {
+                ↓actor Example_2 {}
+            }
+            }
+        func f_0() {
+            func f_1() {
+                func f_2() {
+                    ↓func f_3() {}
+                }
+            }
+        }
+    }
+```
+
+```swift
+    exampleFunc(closure: {
+        actor Example_0 {
+            actor Example_1 {}
+        }
+        func f_0() {
+            func f_1() {
+                func f_2() {
+                    ↓func f_3() {}
+                }
+            }
+        }
+    })
+```
+
+```swift
+    switch example {
+    case .exampleCase:
         class Example_0 {
             class Example_1 {
                 ↓class Example_2 {}
@@ -763,6 +1104,209 @@ Types should be nested at most 1 level deep, and functions should be nested at m
 ```
 
 ```swift
+actor Example_0 {
+    actor Example_1 {
+        ↓protocol Example_2 {}
+    }
+}
+```
+
+```swift
+    var example: Int {
+        actor Example_0 {
+            actor Example_1 {
+                ↓protocol Example_2 {}
+            }
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            actor Example_0 {
+                actor Example_1 {
+                    ↓protocol Example_2 {}
+                }
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        actor Example_1 {
+            ↓protocol Example_2 {}
+        }
+    }
+```
+
+```swift
+class Example_0 {
+    class Example_1 {
+        ↓protocol Example_2 {}
+    }
+}
+```
+
+```swift
+    var example: Int {
+        class Example_0 {
+            class Example_1 {
+                ↓protocol Example_2 {}
+            }
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            class Example_0 {
+                class Example_1 {
+                    ↓protocol Example_2 {}
+                }
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        class Example_1 {
+            ↓protocol Example_2 {}
+        }
+    }
+```
+
+```swift
+struct Example_0 {
+    struct Example_1 {
+        ↓protocol Example_2 {}
+    }
+}
+```
+
+```swift
+    var example: Int {
+        struct Example_0 {
+            struct Example_1 {
+                ↓protocol Example_2 {}
+            }
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            struct Example_0 {
+                struct Example_1 {
+                    ↓protocol Example_2 {}
+                }
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        struct Example_1 {
+            ↓protocol Example_2 {}
+        }
+    }
+```
+
+```swift
+enum Example_0 {
+    enum Example_1 {
+        ↓protocol Example_2 {}
+    }
+}
+```
+
+```swift
+    var example: Int {
+        enum Example_0 {
+            enum Example_1 {
+                ↓protocol Example_2 {}
+            }
+        }
+        return 5
+    }
+```
+
+```swift
+    var example: Int = 5 {
+        didSet {
+            enum Example_0 {
+                enum Example_1 {
+                    ↓protocol Example_2 {}
+                }
+            }
+        }
+    }
+```
+
+```swift
+    extension Example_0 {
+        enum Example_1 {
+            ↓protocol Example_2 {}
+        }
+    }
+```
+
+```swift
+    actor Example_0 {
+        func f_0() {
+            actor Example_1 {
+                func f_1() {
+                    func f_2() {
+                        ↓actor Example_2 {}
+                        ↓func f_3() {}
+                        ↓protocol P {}
+                    }
+                }
+            }
+        }
+    }
+```
+
+```swift
+    actor Example_0 {
+        func f_0() {
+            switch example {
+            case .exampleCase:
+                actor Example_1 {
+                    func f_1() {
+                        func f_2() {
+                            ↓actor Example_2 {}
+                            ↓func f_3() {}
+                            ↓protocol P {}
+                        }
+                    }
+                }
+            default:
+                exampleFunc(closure: {
+                    actor Example_1 {
+                        func f_1() {
+                            func f_2() {
+                                ↓actor Example_2 {}
+                                ↓func f_3() {}
+                                ↓protocol P {}
+                            }
+                        }
+                    }
+                })
+            }
+        }
+    }
+```
+
+```swift
     class Example_0 {
         func f_0() {
             class Example_1 {
@@ -770,6 +1314,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                     func f_2() {
                         ↓class Example_2 {}
                         ↓func f_3() {}
+                        ↓protocol P {}
                     }
                 }
             }
@@ -787,6 +1332,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                         func f_2() {
                             ↓class Example_2 {}
                             ↓func f_3() {}
+                            ↓protocol P {}
                         }
                     }
                 }
@@ -797,6 +1343,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                             func f_2() {
                                 ↓class Example_2 {}
                                 ↓func f_3() {}
+                                ↓protocol P {}
                             }
                         }
                     }
@@ -814,6 +1361,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                     func f_2() {
                         ↓struct Example_2 {}
                         ↓func f_3() {}
+                        ↓protocol P {}
                     }
                 }
             }
@@ -831,6 +1379,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                         func f_2() {
                             ↓struct Example_2 {}
                             ↓func f_3() {}
+                            ↓protocol P {}
                         }
                     }
                 }
@@ -841,6 +1390,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                             func f_2() {
                                 ↓struct Example_2 {}
                                 ↓func f_3() {}
+                                ↓protocol P {}
                             }
                         }
                     }
@@ -858,6 +1408,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                     func f_2() {
                         ↓enum Example_2 {}
                         ↓func f_3() {}
+                        ↓protocol P {}
                     }
                 }
             }
@@ -875,6 +1426,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                         func f_2() {
                             ↓enum Example_2 {}
                             ↓func f_3() {}
+                            ↓protocol P {}
                         }
                     }
                 }
@@ -885,6 +1437,7 @@ Types should be nested at most 1 level deep, and functions should be nested at m
                             func f_2() {
                                 ↓enum Example_2 {}
                                 ↓func f_3() {}
+                                ↓protocol P {}
                             }
                         }
                     }

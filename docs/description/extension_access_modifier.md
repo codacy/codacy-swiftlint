@@ -55,6 +55,20 @@ extension Foo {
 ```
 
 ```swift
+extension Foo {
+  var bar: Int { return 1 }
+  internal var baz: Int { return 1 }
+}
+```
+
+```swift
+internal extension Foo {
+  var bar: Int { return 1 }
+  var baz: Int { return 1 }
+}
+```
+
+```swift
 public extension Foo {
   var bar: Int { return 1 }
   var baz: Int { return 1 }
@@ -62,16 +76,23 @@ public extension Foo {
 ```
 
 ```swift
-extension Foo {
-  private bar: Int { return 1 }
-  private baz: Int { return 1 }
+public extension Foo {
+  var bar: Int { return 1 }
+  internal var baz: Int { return 1 }
 }
 ```
 
 ```swift
 extension Foo {
-  open bar: Int { return 1 }
-  open baz: Int { return 1 }
+  private var bar: Int { return 1 }
+  private var baz: Int { return 1 }
+}
+```
+
+```swift
+extension Foo {
+  open var bar: Int { return 1 }
+  open var baz: Int { return 1 }
 }
 ```
 
@@ -79,6 +100,31 @@ extension Foo {
 extension Foo {
     func setup() {}
     public func update() {}
+}
+```
+
+```swift
+private extension Foo {
+  private var bar: Int { return 1 }
+  var baz: Int { return 1 }
+}
+```
+
+```swift
+extension Foo {
+  internal private(set) var bar: Int {
+    get { Foo.shared.bar }
+    set { Foo.shared.bar = newValue }
+  }
+}
+```
+
+```swift
+extension Foo {
+  private(set) internal var bar: Int {
+    get { Foo.shared.bar }
+    set { Foo.shared.bar = newValue }
+  }
 }
 ```
 
@@ -100,8 +146,8 @@ extension Foo {
 
 ```swift
 public extension Foo {
-   public ↓func bar() {}
-   public ↓func baz() {}
+  ↓public func bar() {}
+  ↓public func baz() {}
 }
 ```
 
@@ -113,5 +159,37 @@ public extension Foo {
    }
 
    public var baz: Int { return 1 }
+}
+```
+
+```swift
+↓extension Array where Element: Equatable {
+    public var unique: [Element] {
+        var uniqueValues = [Element]()
+        for item in self where !uniqueValues.contains(item) {
+            uniqueValues.append(item)
+        }
+        return uniqueValues
+    }
+}
+```
+
+```swift
+↓extension Foo {
+   #if DEBUG
+   public var bar: Int {
+      let value = 1
+      return value
+   }
+   #endif
+
+   public var baz: Int { return 1 }
+}
+```
+
+```swift
+public extension Foo {
+  ↓private func bar() {}
+  ↓private func baz() {}
 }
 ```

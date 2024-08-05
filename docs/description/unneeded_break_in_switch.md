@@ -4,7 +4,7 @@ Avoid using unneeded break statements
 
 * **Identifier:** unneeded_break_in_switch
 * **Enabled by default:** Yes
-* **Supports autocorrection:** No
+* **Supports autocorrection:** Yes
 * **Kind:** idiomatic
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0

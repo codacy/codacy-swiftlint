@@ -22,6 +22,14 @@ Returning Void in a function declaration is redundant
   warning
   </td>
   </tr>
+  <tr>
+  <td>
+  include_closures
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -79,6 +87,12 @@ struct A {
 }
 ```
 
+```swift
+doSomething { arg -> Void in
+    print(arg)
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -102,5 +116,17 @@ func foo()↓ -> ( ) {}
 ```swift
 protocol Foo {
   func foo()↓ -> ()
+}
+```
+
+```swift
+doSomething { arg↓ -> () in
+    print(arg)
+}
+```
+
+```swift
+doSomething { arg↓ -> Void in
+    print(arg)
 }
 ```

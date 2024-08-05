@@ -93,6 +93,12 @@ switch foo {
 }
 ```
 
+```swift
+switch foo {
+    case (y, let x, z): break
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -110,6 +116,24 @@ switch foo {
 ```swift
 switch foo {
     case (↓let x,  ↓let y, _): break
+}
+```
+
+```swift
+switch foo {
+    case (↓let x,  ↓let y, f()): break
+}
+```
+
+```swift
+switch foo {
+    case (↓let x,  ↓let y, s.f()): break
+}
+```
+
+```swift
+switch foo {
+    case (↓let x,  ↓let y, s.t): break
 }
 ```
 

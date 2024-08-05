@@ -62,6 +62,14 @@ Lines should not span too many characters.
   false
   </td>
   </tr>
+  <tr>
+  <td>
+  excluded_lines_patterns
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
   </tbody>
   </table>
 

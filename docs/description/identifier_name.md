@@ -106,6 +106,14 @@ Identifier names should only contain alphanumeric characters and start with a lo
   error
   </td>
   </tr>
+  <tr>
+  <td>
+  additional_operators
+  </td>
+  <td>
+  [&quot;!&quot;, &quot;%&quot;, &quot;&&quot;, &quot;*&quot;, &quot;+&quot;, &quot;-&quot;, &quot;.&quot;, &quot;/&quot;, &quot;<&quot;, &quot;=&quot;, &quot;>&quot;, &quot;?&quot;, &quot;^&quot;, &quot;|&quot;, &quot;~&quot;]
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -121,6 +129,22 @@ var myVar = 0
 
 ```swift
 private let _myLet = 0
+```
+
+```swift
+private func _myFunc() {}
+```
+
+```swift
+fileprivate let _myLet = 0
+```
+
+```swift
+fileprivate func _myFunc() {}
+```
+
+```swift
+fileprivate func _myFunc() {}
 ```
 
 ```swift
@@ -168,6 +192,10 @@ enum Foo { case value(String) }
 ```
 
 ```swift
+f { $abc in }
+```
+
+```swift
 class Foo {
    static let Bar = 0
 }
@@ -179,36 +207,119 @@ class Foo {
 }
 ```
 
+```swift
+func √ (arg: Double) -> Double { arg }
+```
+
 ## Triggering Examples
 
 ```swift
-↓let _myLet = 0
+class C { static let ↓_myLet = 0 }
 ```
 
 ```swift
-private ↓let myLet_ = 0
+class C { class let ↓MyLet = 0 }
 ```
 
 ```swift
-↓let myExtremelyVeryVeryVeryVeryVeryVeryLongLet = 0
+class C { static func ↓MyFunc() {} }
 ```
 
 ```swift
-↓var myExtremelyVeryVeryVeryVeryVeryVeryLongVar = 0
+class C { class func ↓MyFunc() {} }
 ```
 
 ```swift
-private ↓let _myExtremelyVeryVeryVeryVeryVeryVeryLongLet = 0
+private let ↓myLet_ = 0
 ```
 
 ```swift
-↓let i = 0
+let ↓myExtremelyVeryVeryVeryVeryVeryVeryLongLet = 0
 ```
 
 ```swift
-↓var aa = 0
+var ↓myExtremelyVeryVeryVeryVeryVeryVeryLongVar = 0
 ```
 
 ```swift
-private ↓let _i = 0
+private let ↓_myExtremelyVeryVeryVeryVeryVeryVeryLongLet = 0
+```
+
+```swift
+let ↓i = 0
+```
+
+```swift
+var ↓aa = 0
+```
+
+```swift
+private let ↓_i = 0
+```
+
+```swift
+if let ↓_x {}
+```
+
+```swift
+guard var ↓x = x else {}
+```
+
+```swift
+func myFunc(
+    _ ↓s: String,
+    i ↓j: Int,
+    _ goodName: Double,
+    name ↓n: String,
+    ↓x: Int,
+    abc: Double,
+    _: Double,
+    last _: Double
+) {}
+```
+
+```swift
+let (↓a, abc) = (1, 1)
+```
+
+```swift
+if let ↓i {}
+```
+
+```swift
+for ↓i in [] {}
+```
+
+```swift
+f { ↓x in }
+```
+
+```swift
+f { ↓$x in }
+```
+
+```swift
+f { (x abc: Int, _ ↓x: Int) in }
+```
+
+```swift
+enum E {
+    case ↓c
+    case case1(Int)
+    case case2(↓a: Int)
+    case case3(_ ↓a: Int)
+}
+```
+
+```swift
+class C {
+    var ↓x: Int {
+        get { 1 }
+        set(↓y) { x = y }
+    }
+}
+```
+
+```swift
+func ↓√ (arg: Double) -> Double { arg }
 ```

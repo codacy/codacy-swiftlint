@@ -4,7 +4,7 @@ SwiftUI state properties should be private
 
 * **Identifier:** private_swiftui_state
 * **Enabled by default:** No
-* **Supports autocorrection:** No
+* **Supports autocorrection:** Yes
 * **Kind:** lint
 * **Analyzer rule:** No
 * **Minimum Swift compiler version:** 5.0.0
@@ -40,14 +40,8 @@ struct MyScene: Scene {
 ```
 
 ```swift
-struct ContentView: View {
+struct CofntentView: View {
     @State private var isPlaying: Bool = false
-}
-```
-
-```swift
-struct ContentView: View {
-    @State fileprivate var isPlaying: Bool = false
 }
 ```
 
@@ -76,6 +70,18 @@ struct MyStruct {
     }
 
     @State var nonTriggeringState: Bool = false
+}
+```
+
+```swift
+struct ContentView: View {
+    var s: Int {
+        @State
+        var s: Int = 3
+        return s
+    }
+
+    var body: some View { Text("") }
 }
 ```
 
@@ -149,7 +155,7 @@ struct MyApp: App {
 
 ```swift
 struct MyScene: Scene {
-    @State ↓var isPlaying: Bool = false
+    @State ↓public var isPlaying: Bool = false
 }
 ```
 
@@ -223,4 +229,14 @@ struct MyScene: Scene {
 struct ContentView: View {
     @StateObject ↓var model = DataModel()
 }
+```
+
+```swift
+struct ContentView: View {
+    @State ↓private(set) var isPlaying = false
+```
+
+```swift
+struct ContentView: View {
+    @State ↓fileprivate(set) public var isPlaying = false
 ```

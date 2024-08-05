@@ -108,6 +108,10 @@ class TestViewController: UIViewController {
         hasLayoutedView2 = true
     }
 
+    override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+    }
+
     // IBActions
     @IBAction func goNextButtonPressed() {
         goToNextVc()

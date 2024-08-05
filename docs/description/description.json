@@ -36,7 +36,7 @@
 }, {
   "patternId" : "blanket_disable_command",
   "title" : "Blanket Disable Command",
-  "description" : "swiftlint:disable commands should be re-enabled before the end of the file",
+  "description" : "`swiftlint:disable` commands should use `next`, `this` or `previous` to disable rules for a single line, or `swiftlint:enable` to re-enable the rules immediately after the violations to be ignored, instead of disabling the rule for the rest of the file.",
   "parameters" : [ ]
 }, {
   "patternId" : "block_based_kvo",
@@ -135,7 +135,7 @@
   "parameters" : [ ]
 }, {
   "patternId" : "contains_over_range_nil_comparison",
-  "title" : "Contains over Range Comparision to Nil",
+  "title" : "Contains over Range Comparison to Nil",
   "description" : "Prefer `contains` over `range(of:) != nil` and `range(of:) == nil`",
   "parameters" : [ ]
 }, {
@@ -342,6 +342,11 @@
   "patternId" : "file_types_order",
   "title" : "File Types Order",
   "description" : "Specifies how the types within a file should be ordered.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "final_test_case",
+  "title" : "Final Test Case",
+  "description" : "Test cases should be final",
   "parameters" : [ ]
 }, {
   "patternId" : "first_where",
@@ -619,6 +624,11 @@
   "description" : "Don't add a space between the method name and the parentheses",
   "parameters" : [ ]
 }, {
+  "patternId" : "non_optional_string_data_conversion",
+  "title" : "Non-Optional String <-> Data Conversion",
+  "description" : "Prefer using UTF-8 encoded strings when converting between `String` and `Data`",
+  "parameters" : [ ]
+}, {
   "patternId" : "non_overridable_class_declaration",
   "title" : "Class Declaration in Final Class",
   "description" : "Class methods and properties in final classes should themselves be final, just as if the declarations",
@@ -657,6 +667,11 @@
   "patternId" : "object_literal",
   "title" : "Object Literal",
   "description" : "Prefer object literals over image and color inits",
+  "parameters" : [ ]
+}, {
+  "patternId" : "one_declaration_per_file",
+  "title" : "One Declaration per File",
+  "description" : "Only a single declaration is allowed in a file",
   "parameters" : [ ]
 }, {
   "patternId" : "opening_brace",
@@ -879,6 +894,11 @@
   "description" : "`self` refers to the unapplied `NSObject.self()` method, which is likely not expected; make the variable `lazy` to be able to refer to the current instance or use `ClassName.self`",
   "parameters" : [ ]
 }, {
+  "patternId" : "shorthand_argument",
+  "title" : "Shorthand Argument",
+  "description" : "Shorthand arguments like `$0`, `$1`, etc. in closures can be confusing. Avoid using them too far away from the beginning of the closure. Optionally, while usage of a single shorthand argument is okay, more than one or complex ones with field accesses might increase the risk of obfuscation.",
+  "parameters" : [ ]
+}, {
   "patternId" : "shorthand_operator",
   "title" : "Shorthand Operator",
   "description" : "Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning",
@@ -917,6 +937,11 @@
   "patternId" : "static_operator",
   "title" : "Static Operator",
   "description" : "Operators should be declared as static functions, not free functions",
+  "parameters" : [ ]
+}, {
+  "patternId" : "static_over_final_class",
+  "title" : "Static Over Final Class",
+  "description" : "Prefer `static` over `final class`",
   "parameters" : [ ]
 }, {
   "patternId" : "strict_fileprivate",

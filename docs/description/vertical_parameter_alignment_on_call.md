@@ -66,6 +66,14 @@ completion: { _ in
 ```
 
 ```swift
+UIView.animate(withDuration: 0.4, animations: {
+    blurredImageView.alpha = 1
+} { _ in
+    self.hideLoading()
+}
+```
+
+```swift
 foo(param1: 1, param2: { _ in },
     param3: false, param4: true)
 ```
@@ -92,20 +100,32 @@ myFunc(foo: 0,
        bar: baz == 0)
 ```
 
+```swift
+UIViewPropertyAnimator.runningPropertyAnimator(
+    withDuration: 2.0,
+    delay: 0.0,
+    options: [.curveEaseIn]
+) {
+    // animations
+} completion: { _ in
+    // completion
+}
+```
+
 ## Triggering Examples
 
 ```swift
-foo(param1: 1, param2: bar
+foo(param1: 1, param2: bar,
                 ↓param3: false, param4: true)
 ```
 
 ```swift
-foo(param1: 1, param2: bar
+foo(param1: 1, param2: bar,
  ↓param3: false, param4: true)
 ```
 
 ```swift
-foo(param1: 1, param2: bar
+foo(param1: 1, param2: bar,
        ↓param3: false,
        ↓param4: true)
 ```
@@ -130,4 +150,9 @@ foo(param1: 1, param2: { _ in },
 ```swift
 myFunc(foo: 0,
         ↓bar: baz == 0)
+```
+
+```swift
+myFunc(foo: 0, bar:
+        baz == 0, ↓baz: true)
 ```

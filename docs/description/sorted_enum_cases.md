@@ -37,6 +37,21 @@ enum foo {
 
 ```swift
 enum foo {
+    case example
+    case exBoyfriend
+}
+```
+
+```swift
+enum foo {
+    case a
+    case B
+    case c
+}
+```
+
+```swift
+enum foo {
     case a, b, c
 }
 ```
@@ -52,6 +67,13 @@ enum foo {
 enum foo {
     case a(foo: Foo)
     case b(String), c
+}
+```
+
+```swift
+enum foo {
+    case a
+    case b, C, d
 }
 ```
 
@@ -76,7 +98,21 @@ enum foo {
 
 ```swift
 enum foo {
+    ↓case B
+    ↓case a
+    case c
+}
+```
+
+```swift
+enum foo {
     case ↓b, ↓a, c
+}
+```
+
+```swift
+enum foo {
+    case ↓B, ↓a, c
 }
 ```
 

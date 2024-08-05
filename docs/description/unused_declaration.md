@@ -122,6 +122,16 @@ class MyTests: BestTestCase {
 ```
 
 ```swift
+    struct S {
+        var i: Int? = nil
+        func f() {
+            if let i { print(i) }
+        }
+    }
+    S().f()
+```
+
+```swift
 enum Component {
   case string(StaticString)
   indirect case array([Component])
@@ -255,4 +265,14 @@ struct ComponentBuilder {
 }
 
 _ = ComponentBuilder()
+```
+
+```swift
+protocol ↓Foo {}
+extension Foo {}
+```
+
+```swift
+class ↓C<T> {}
+extension C<Int> {}
 ```

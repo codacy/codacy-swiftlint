@@ -73,6 +73,10 @@ func foo(error: Swift.Error) {}
 ```
 
 ```swift
+@_exported import UnknownModule
+```
+
+```swift
 import Foundation
 let 👨‍👩‍👧‍👦 = #selector(NSArray.contains(_:))
 👨‍👩‍👧‍👦 == 👨‍👩‍👧‍👦

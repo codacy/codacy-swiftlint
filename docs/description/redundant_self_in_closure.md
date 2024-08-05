@@ -193,3 +193,27 @@ Explicit use of 'self' is not required
         }
     }
 ```
+
+```swift
+    class C {
+        var x = 0
+        func f(_ work: @escaping () -> Void) { work() }
+        func g() {
+            f { [weak self] in
+                self?.x = 1
+                guard let self else { return }
+                ↓self.x = 1
+            }
+            f { [weak self] in
+                self?.x = 1
+                if let self = self else { ↓self.x = 1 }
+                self?.x = 1
+            }
+            f { [weak self] in
+                self?.x = 1
+                while let self else { ↓self.x = 1 }
+                self?.x = 1
+            }
+        }
+    }
+```

@@ -144,6 +144,30 @@ let foo = 2 << 2
 let a = b / 100.0
 ```
 
+```swift
+let range = 2 ..< 12
+```
+
+```swift
+let range = ...12
+```
+
+```swift
+let range = 12...
+```
+
+```swift
+let (lowerBound, upperBound) = (400, 599)
+```
+
+```swift
+let a = (5, 10)
+```
+
+```swift
+let notFound = (statusCode: 404, description: "Not Found", isError: true)
+```
+
 ## Triggering Examples
 
 ```swift
@@ -167,6 +191,26 @@ let a = b + ↓2.0
 ```
 
 ```swift
+let range = 2 ... ↓12 + 1
+```
+
+```swift
+let range = ↓2*↓6...
+```
+
+```swift
+let slice = array[↓2...↓4]
+```
+
+```swift
+for i in ↓3 ..< ↓8 {}
+```
+
+```swift
+let n: Int = Int(r * ↓255) << ↓16 | Int(g * ↓255) << ↓8
+```
+
+```swift
 Color.primary.opacity(isAnimate ? ↓0.1 : ↓1.5)
 ```
 
@@ -175,4 +219,18 @@ Color.primary.opacity(isAnimate ? ↓0.1 : ↓1.5)
         extension NSObject {
             let a = Int(↓3)
         }
+```
+
+```swift
+if (fileSize > ↓1000000) {
+    return
+}
+```
+
+```swift
+let imageHeight = (width - ↓24)
+```
+
+```swift
+return (↓5, ↓10, ↓15)
 ```
