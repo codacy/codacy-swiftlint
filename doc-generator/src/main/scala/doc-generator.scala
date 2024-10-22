@@ -2,6 +2,8 @@ import com.codacy.plugins.api._
 import com.codacy.plugins.api.results._
 import play.api.libs.json.Json
 
+import scala.util.control.Breaks.break
+
 object Main extends App {
   val tempDir = os.temp.dir()
 
@@ -27,7 +29,22 @@ object Main extends App {
     val lines = os.read(file).linesIterator
     val title = lines.next().stripPrefix("# ")
     lines.next()
-    val description = lines.next()
+    var description = lines.next()
+
+    val maxLength = 500
+    // Keep truncating the description while it's longer than maxLength
+    while (description.length > maxLength) {
+
+      val cutoffPoint = description.substring(0, maxLength).lastIndexOf(".")
+
+      if (cutoffPoint == -1) {
+        description = description.substring(0, maxLength)
+        println("No period found within the limit. Truncating to maxLength.")
+        break
+      } else {
+        description = description.substring(0, cutoffPoint + 1)
+      }
+    }
     Pattern.Description(Pattern.Id(patternId), Pattern.Title(title), Some(Pattern.DescriptionText(description)), None)
   }
 
