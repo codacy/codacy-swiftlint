@@ -2,7 +2,7 @@
 
 Function parameters should be aligned vertically if they're in multiple lines in a declaration
 
-* **Identifier:** vertical_parameter_alignment
+* **Identifier:** `vertical_parameter_alignment`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style

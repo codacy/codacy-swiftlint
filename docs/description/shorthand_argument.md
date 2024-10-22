@@ -2,7 +2,7 @@
 
 Shorthand arguments like `$0`, `$1`, etc. in closures can be confusing. Avoid using them too far away from the beginning of the closure. Optionally, while usage of a single shorthand argument is okay, more than one or complex ones with field accesses might increase the risk of obfuscation.
 
-* **Identifier:** shorthand_argument
+* **Identifier:** `shorthand_argument`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
@@ -52,59 +52,80 @@ Shorthand arguments like `$0`, `$1`, etc. in closures can be confusing. Avoid us
 ## Non Triggering Examples
 
 ```swift
-    f { $0 }
+f { $0 }
 ```
 
 ```swift
-    f {
-        $0
-      + $1
-      + $2
-    }
+f {
+    $0
+  + $1
+  + $2
+}
 ```
 
 ```swift
-    f { $0.a + $0.b }
+f { $0.a + $0.b }
 ```
 
 ```swift
-    f {
-        $0
-      +  g { $0 }
+//
+// allow_until_line_after_opening_brace: 1
+//
+
+f {
+    $0
+  +  g { $0 }
+
 ```
 
 ## Triggering Examples
 
 ```swift
-    f {
-        $0
-      + $1
-      + $2
+f {
+    $0
+  + $1
+  + $2
 
-      + ↓$0
-    }
-```
-
-```swift
-    f {
-        $0
-      + $1
-      + $2
-      +  5
-      + $0
-      + ↓$1
-    }
-```
-
-```swift
-    f { ↓$0 + ↓$1 }
-```
-
-```swift
-    f {
-        ↓$0.a
-      + ↓$0.b
-      + $1
-      + ↓$2.c
+  + ↓$0
 }
+```
+
+```swift
+//
+// allow_until_line_after_opening_brace: 5
+//
+
+f {
+    $0
+  + $1
+  + $2
+  +  5
+  + $0
+  + ↓$1
+}
+
+```
+
+```swift
+//
+// always_disallow_more_than_one: true
+//
+
+f { ↓$0 + ↓$1 }
+
+```
+
+```swift
+//
+// allow_until_line_after_opening_brace: 3
+// always_disallow_member_access: true
+//
+
+f {
+    ↓$0.a
+  + ↓$0.b
+  + $1
+  + ↓$2.c
+}
+
 ```

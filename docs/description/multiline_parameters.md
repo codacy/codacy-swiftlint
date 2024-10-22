@@ -2,7 +2,7 @@
 
 Functions and methods parameters should be either on the same line, or one per line
 
-* **Identifier:** multiline_parameters
+* **Identifier:** `multiline_parameters`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
@@ -356,30 +356,54 @@ class Foo {
 ```
 
 ```swift
+//
+// allows_single_line: false
+//
+
 func foo() { }
+
 ```
 
 ```swift
+//
+// allows_single_line: false
+//
+
 func foo(param1: Int) { }
+
 ```
 
 ```swift
+//
+// allows_single_line: false
+//
+
 protocol Foo {
     func foo(param1: Int,
              param2: Bool,
              param3: [String]) { }
 }
+
 ```
 
 ```swift
+//
+// allows_single_line: false
+//
+
 protocol Foo {
     func foo(
         param1: Int
     ) { }
 }
+
 ```
 
 ```swift
+//
+// allows_single_line: false
+//
+
 protocol Foo {
     func foo(
         param1: Int,
@@ -387,6 +411,7 @@ protocol Foo {
         param3: [String]
     ) { }
 }
+
 ```
 
 ## Triggering Examples
@@ -546,9 +571,19 @@ class Foo {
 ```
 
 ```swift
+//
+// allows_single_line: false
+//
+
 func ↓foo(param1: Int, param2: Bool) { }
+
 ```
 
 ```swift
+//
+// allows_single_line: false
+//
+
 func ↓foo(param1: Int, param2: Bool, param3: [String]) { }
+
 ```

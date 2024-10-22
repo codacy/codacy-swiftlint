@@ -2,7 +2,7 @@
 
 Array and dictionary literal end should have the same indentation as the line that started it
 
-* **Identifier:** literal_expression_end_indentation
+* **Identifier:** `literal_expression_end_indentation`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

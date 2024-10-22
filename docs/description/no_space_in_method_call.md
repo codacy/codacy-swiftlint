@@ -2,7 +2,7 @@
 
 Don't add a space between the method name and the parentheses
 
-* **Identifier:** no_space_in_method_call
+* **Identifier:** `no_space_in_method_call`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

@@ -2,7 +2,7 @@
 
 Prefer regular comments over doc comments in local scopes
 
-* **Identifier:** local_doc_comment
+* **Identifier:** `local_doc_comment`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

@@ -2,7 +2,7 @@
 
 Closure expressions should have a single space inside each brace
 
-* **Identifier:** closure_spacing
+* **Identifier:** `closure_spacing`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

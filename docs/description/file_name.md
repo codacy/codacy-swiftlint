@@ -2,7 +2,7 @@
 
 File name should match a type or extension declared in the file (if any)
 
-* **Identifier:** file_name
+* **Identifier:** `file_name`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

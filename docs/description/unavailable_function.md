@@ -2,7 +2,7 @@
 
 Unimplemented functions should be marked as unavailable
 
-* **Identifier:** unavailable_function
+* **Identifier:** `unavailable_function`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

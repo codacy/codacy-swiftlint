@@ -2,7 +2,7 @@
 
 Prefer capturing references as weak to avoid potential crashes
 
-* **Identifier:** unowned_variable_capture
+* **Identifier:** `unowned_variable_capture`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
@@ -54,10 +54,10 @@ foo { $0 }
 ```swift
 final class First {}
 final class Second {
-  unowned var value: First
-  init(value: First) {
-    self.value = value
-  }
+    unowned var value: First
+    init(value: First) {
+        self.value = value
+    }
 }
 ```
 

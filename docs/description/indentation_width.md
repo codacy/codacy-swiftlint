@@ -2,7 +2,7 @@
 
 Indent code using either one tab or the configured amount of spaces, unindent to match previous indentations. Don't indent the first line.
 
-* **Identifier:** indentation_width
+* **Identifier:** `indentation_width`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

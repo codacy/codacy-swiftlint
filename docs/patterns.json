@@ -1,6 +1,6 @@
 {
   "name" : "swiftlint",
-  "version" : "0.55.1",
+  "version" : "0.57.0",
   "patterns" : [ {
     "patternId" : "accessibility_label_for_image",
     "level" : "Warning",
@@ -23,19 +23,19 @@
     "languages" : [ ],
     "enabled" : false
   }, {
-    "patternId" : "anyobject_protocol",
-    "level" : "Warning",
-    "category" : "ErrorProne",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : false
-  }, {
     "patternId" : "array_init",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
+  }, {
+    "patternId" : "attribute_name_spacing",
+    "level" : "Error",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
   }, {
     "patternId" : "attributes",
     "level" : "Warning",
@@ -194,6 +194,13 @@
     "patternId" : "contains_over_range_nil_comparison",
     "level" : "Warning",
     "category" : "Performance",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "contrasted_opening_brace",
+    "level" : "Warning",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -842,6 +849,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "no_empty_block",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "no_extension_access_modifier",
     "level" : "Error",
     "category" : "ErrorProne",
@@ -968,6 +982,13 @@
     "languages" : [ ],
     "enabled" : true
   }, {
+    "patternId" : "optional_data_string_conversion",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
     "patternId" : "optional_enum_case_matching",
     "level" : "Warning",
     "category" : "CodeStyle",
@@ -1010,6 +1031,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "prefer_key_path",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "prefer_nimble",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -1030,6 +1058,13 @@
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
+  }, {
+    "patternId" : "prefer_type_checking",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
   }, {
     "patternId" : "prefer_zero_over_explicit_init",
     "level" : "Warning",
@@ -1569,6 +1604,13 @@
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : true
+  }, {
+    "patternId" : "unused_parameter",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
   }, {
     "patternId" : "unused_setter_value",
     "level" : "Warning",

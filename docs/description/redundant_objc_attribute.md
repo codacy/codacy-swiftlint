@@ -2,7 +2,7 @@
 
 Objective-C attribute (@objc) is redundant in declaration
 
-* **Identifier:** redundant_objc_attribute
+* **Identifier:** `redundant_objc_attribute`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

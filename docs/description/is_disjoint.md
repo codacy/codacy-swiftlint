@@ -2,7 +2,7 @@
 
 Prefer using `Set.isDisjoint(with:)` over `Set.intersection(_:).isEmpty`
 
-* **Identifier:** is_disjoint
+* **Identifier:** `is_disjoint`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

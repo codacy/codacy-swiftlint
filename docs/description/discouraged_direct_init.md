@@ -2,7 +2,7 @@
 
 Discouraged direct initialization of types that can be harmful
 
-* **Identifier:** discouraged_direct_init
+* **Identifier:** `discouraged_direct_init`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

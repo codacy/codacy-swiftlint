@@ -2,7 +2,7 @@
 
 Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning
 
-* **Identifier:** shorthand_operator
+* **Identifier:** `shorthand_operator`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style

@@ -2,7 +2,7 @@
 
 Prefer `contains` over `first(where:) != nil` and `firstIndex(where:) != nil`.
 
-* **Identifier:** contains_over_first_not_nil
+* **Identifier:** `contains_over_first_not_nil`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

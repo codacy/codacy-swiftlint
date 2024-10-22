@@ -2,7 +2,7 @@
 
 Some overridden methods should always call super.
 
-* **Identifier:** overridden_super_call
+* **Identifier:** `overridden_super_call`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

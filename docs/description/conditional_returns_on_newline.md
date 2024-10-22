@@ -2,7 +2,7 @@
 
 Conditional statements should always return on the next line
 
-* **Identifier:** conditional_returns_on_newline
+* **Identifier:** `conditional_returns_on_newline`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

@@ -2,7 +2,7 @@
 
 Combine multiple pattern matching bindings by moving keywords out of tuples
 
-* **Identifier:** pattern_matching_keywords
+* **Identifier:** `pattern_matching_keywords`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

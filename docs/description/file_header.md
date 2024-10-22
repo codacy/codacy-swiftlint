@@ -2,7 +2,7 @@
 
 Header comments should be consistent with project patterns. The SWIFTLINT_CURRENT_FILENAME placeholder can optionally be used in the required and forbidden patterns. It will be replaced by the real file name.
 
-* **Identifier:** file_header
+* **Identifier:** `file_header`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

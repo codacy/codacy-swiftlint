@@ -2,7 +2,7 @@
 
 Use #unavailable/#available instead of #available/#unavailable with an empty body.
 
-* **Identifier:** unavailable_condition
+* **Identifier:** `unavailable_condition`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

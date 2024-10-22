@@ -2,7 +2,7 @@
 
 Default or memberwise initializers that will be automatically synthesized do not need to be manually defined.
 
-* **Identifier:** unneeded_synthesized_initializer
+* **Identifier:** `unneeded_synthesized_initializer`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
@@ -243,6 +243,16 @@ struct Foo {
 
 ```swift
 struct Foo {
+    var bar: Int
+
+    init(@Clamped bar: Int) {
+        self.bar = bar
+    }
+}
+```
+
+```swift
+struct Foo {
     let bar: Int
 
     init(bar: Int) {
@@ -251,6 +261,13 @@ struct Foo {
     init?() {
         return nil
     }
+}
+```
+
+```swift
+struct Foo {
+    @available(*, unavailable)
+    init() {}
 }
 ```
 

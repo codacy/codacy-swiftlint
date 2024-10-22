@@ -2,7 +2,7 @@
 
 Prefer using `.last(where:)` over `.filter { }.last` in collections
 
-* **Identifier:** last_where
+* **Identifier:** `last_where`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

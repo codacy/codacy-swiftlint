@@ -2,7 +2,7 @@
 
 Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`.
 
-* **Identifier:** xct_specific_matcher
+* **Identifier:** `xct_specific_matcher`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

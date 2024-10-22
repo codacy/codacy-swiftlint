@@ -3,7 +3,7 @@
 Class methods and properties in final classes should themselves be final, just as if the declarations
 are private. In both cases, they cannot be overridden. Using `final class` or `static` makes this explicit.
 
-* **Identifier:** non_overridable_class_declaration
+* **Identifier:** `non_overridable_class_declaration`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

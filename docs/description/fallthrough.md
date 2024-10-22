@@ -2,7 +2,7 @@
 
 Fallthrough should be avoided
 
-* **Identifier:** fallthrough
+* **Identifier:** `fallthrough`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

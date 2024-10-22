@@ -2,7 +2,7 @@
 
 Using ternary to call Void functions should be avoided
 
-* **Identifier:** void_function_in_ternary
+* **Identifier:** `void_function_in_ternary`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

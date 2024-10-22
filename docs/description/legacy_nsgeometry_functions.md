@@ -2,7 +2,7 @@
 
 Struct extension properties and methods are preferred over legacy functions
 
-* **Identifier:** legacy_nsgeometry_functions
+* **Identifier:** `legacy_nsgeometry_functions`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

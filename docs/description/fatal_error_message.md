@@ -2,7 +2,7 @@
 
 A fatalError call should have a message
 
-* **Identifier:** fatal_error_message
+* **Identifier:** `fatal_error_message`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

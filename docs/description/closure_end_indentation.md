@@ -2,7 +2,7 @@
 
 Closure end should have the same indentation as the line that started it.
 
-* **Identifier:** closure_end_indentation
+* **Identifier:** `closure_end_indentation`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

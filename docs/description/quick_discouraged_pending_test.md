@@ -2,7 +2,7 @@
 
 This test won't run as long as it's marked pending
 
-* **Identifier:** quick_discouraged_pending_test
+* **Identifier:** `quick_discouraged_pending_test`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

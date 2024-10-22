@@ -2,7 +2,7 @@
 
 Calls to NSLocalizedString should specify the bundle which contains the strings file
 
-* **Identifier:** nslocalizedstring_require_bundle
+* **Identifier:** `nslocalizedstring_require_bundle`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

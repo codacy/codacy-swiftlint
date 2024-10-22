@@ -2,7 +2,7 @@
 
 Enums conforming to a specified protocol must implement a specific case(s).
 
-* **Identifier:** required_enum_case
+* **Identifier:** `required_enum_case`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
@@ -50,57 +50,121 @@ Enums conforming to a specified protocol must implement a specific case(s).
 ## Non Triggering Examples
 
 ```swift
+//
+// NetworkResponsable:
+//   error: warning
+//   notConnected: warning
+//   success: warning
+//
+
 enum MyNetworkResponse: String, NetworkResponsable {
     case success, error, notConnected
 }
+
 ```
 
 ```swift
+//
+// NetworkResponsable:
+//   error: warning
+//   notConnected: warning
+//   success: warning
+//
+
 enum MyNetworkResponse: String, NetworkResponsable {
     case success, error, notConnected(error: Error)
 }
+
 ```
 
 ```swift
+//
+// NetworkResponsable:
+//   error: warning
+//   notConnected: warning
+//   success: warning
+//
+
 enum MyNetworkResponse: String, NetworkResponsable {
     case success
     case error
     case notConnected
 }
+
 ```
 
 ```swift
+//
+// NetworkResponsable:
+//   error: warning
+//   notConnected: warning
+//   success: warning
+//
+
 enum MyNetworkResponse: String, NetworkResponsable {
     case success
     case error
     case notConnected(error: Error)
 }
+
 ```
 
 ## Triggering Examples
 
 ```swift
+//
+// NetworkResponsable:
+//   error: warning
+//   notConnected: warning
+//   success: warning
+//
+
 ↓enum MyNetworkResponse: String, NetworkResponsable {
     case success, error
 }
+
 ```
 
 ```swift
+//
+// NetworkResponsable:
+//   error: warning
+//   notConnected: warning
+//   success: warning
+//
+
 ↓enum MyNetworkResponse: String, NetworkResponsable {
     case success, error
 }
+
 ```
 
 ```swift
+//
+// NetworkResponsable:
+//   error: warning
+//   notConnected: warning
+//   success: warning
+//
+
 ↓enum MyNetworkResponse: String, NetworkResponsable {
     case success
     case error
 }
+
 ```
 
 ```swift
+//
+// NetworkResponsable:
+//   error: warning
+//   notConnected: warning
+//   success: warning
+//
+
 ↓enum MyNetworkResponse: String, NetworkResponsable {
     case success
     case error
 }
+
 ```

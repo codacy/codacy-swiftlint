@@ -2,7 +2,7 @@
 
 The number of associated values in an enum case should be low.
 
-* **Identifier:** enum_case_associated_values_count
+* **Identifier:** `enum_case_associated_values_count`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** metrics

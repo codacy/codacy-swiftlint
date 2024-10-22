@@ -2,7 +2,7 @@
 
 Types used for hosting only static members should be implemented as a caseless enum to avoid instantiation
 
-* **Identifier:** convenience_type
+* **Identifier:** `convenience_type`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

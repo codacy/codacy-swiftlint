@@ -2,7 +2,7 @@
 
 Generic type name should only contain alphanumeric characters, start with an uppercase character and span between 1 and 20 characters in length.
 
-* **Identifier:** generic_type_name
+* **Identifier:** `generic_type_name`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

@@ -2,7 +2,7 @@
 
 Prefer using `min()` or `max()` over `sorted().first` or `sorted().last`
 
-* **Identifier:** sorted_first_last
+* **Identifier:** `sorted_first_last`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

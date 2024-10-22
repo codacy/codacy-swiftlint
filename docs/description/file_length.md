@@ -2,7 +2,7 @@
 
 Files should not span too many lines.
 
-* **Identifier:** file_length
+* **Identifier:** `file_length`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics

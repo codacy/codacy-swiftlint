@@ -2,7 +2,7 @@
 
 Availability checks or attributes shouldn't be using older versions that are satisfied by the deployment target.
 
-* **Identifier:** deployment_target
+* **Identifier:** `deployment_target`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

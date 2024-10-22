@@ -2,7 +2,7 @@
 
 Comparing two identical operands is likely a mistake
 
-* **Identifier:** identical_operands
+* **Identifier:** `identical_operands`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

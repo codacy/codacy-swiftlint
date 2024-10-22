@@ -2,7 +2,7 @@
 
 Closure bodies should not span too many lines
 
-* **Identifier:** closure_body_length
+* **Identifier:** `closure_body_length`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** metrics

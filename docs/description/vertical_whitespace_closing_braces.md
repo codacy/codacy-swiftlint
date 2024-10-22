@@ -2,7 +2,7 @@
 
 Don't include vertical whitespace (empty line) before closing braces
 
-* **Identifier:** vertical_whitespace_closing_braces
+* **Identifier:** `vertical_whitespace_closing_braces`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
@@ -77,12 +77,21 @@ func foo() {
 ```
 
 ```swift
+//
+// only_enforce_before_trivial_lines: true
+//
+
 print([
   1
 ])
+
 ```
 
 ```swift
+//
+// only_enforce_before_trivial_lines: true
+//
+
 print([foo {
   var sum = 0
   for i in 1...5 { sum += i }
@@ -93,6 +102,7 @@ print([foo {
   for i in 1...5 { mul *= i }
   return mul
 }])
+
 ```
 
 ```swift
@@ -165,13 +175,22 @@ func foo() {
 ```
 
 ```swift
+//
+// only_enforce_before_trivial_lines: true
+//
+
 print([
   1
 ↓
 ])
+
 ```
 
 ```swift
+//
+// only_enforce_before_trivial_lines: true
+//
+
 print([foo {
   var sum = 0
   for i in 1...5 { sum += i }
@@ -183,4 +202,5 @@ print([foo {
   return mul
 ↓
 }])
+
 ```

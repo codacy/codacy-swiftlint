@@ -2,7 +2,7 @@
 
 Operators should be surrounded by a single whitespace when they are being used
 
-* **Identifier:** operator_usage_whitespace
+* **Identifier:** `operator_usage_whitespace`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
@@ -135,10 +135,10 @@ let foo = SignalProducer<Signal<Value, Error>, Error>([ self.signal, next ]).fla
 ```
 
 ```swift
-  enum Enum {
-  case hello   = 1
-  case hello2  = 1
-  }
+enum Enum {
+case hello   = 1
+case hello2  = 1
+}
 ```
 
 ```swift
@@ -269,24 +269,24 @@ let foo↓ =  "1"
 ```
 
 ```swift
-  enum Enum {
-  case one↓  =  1
-  case two  = 1
-  }
+enum Enum {
+case one↓  =  1
+case two  = 1
+}
 ```
 
 ```swift
-  enum Enum {
-  case one  = 1
-  case two↓  =  1
-  }
+enum Enum {
+case one  = 1
+case two↓  =  1
+}
 ```
 
 ```swift
-  enum Enum {
-  case one↓   = 1
-  case two↓  = 1
-  }
+enum Enum {
+case one↓   = 1
+case two↓  = 1
+}
 ```
 
 ```swift

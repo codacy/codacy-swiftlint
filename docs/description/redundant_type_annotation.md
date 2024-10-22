@@ -2,7 +2,7 @@
 
 Variables should not have redundant type annotation
 
-* **Identifier:** redundant_type_annotation
+* **Identifier:** `redundant_type_annotation`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
@@ -138,14 +138,24 @@ var direction = Direction.up
 ```
 
 ```swift
+//
+// ignore_attributes: ["IgnoreMe"]
+//
+
 @IgnoreMe var a: Int = Int(5)
+
 ```
 
 ```swift
+//
+// ignore_attributes: ["IgnoreMe"]
+//
+
 var a: Int {
     @IgnoreMe let i: Int = Int(1)
     return i
 }
+
 ```
 
 ```swift
@@ -280,29 +290,59 @@ var direction↓: Direction = Direction.up
 ```
 
 ```swift
+//
+// ignore_attributes: ["IgnoreMe"]
+//
+
 @DontIgnoreMe var a↓: Int = Int(5)
+
 ```
 
 ```swift
+//
+// ignore_attributes: ["IgnoreMe"]
+//
+
 @IgnoreMe
 var a: Int {
     let i↓: Int = Int(1)
     return i
 }
+
 ```
 
 ```swift
+//
+// consider_default_literal_types_redundant: true
+//
+
 var bol↓: Bool = true
+
 ```
 
 ```swift
+//
+// consider_default_literal_types_redundant: true
+//
+
 var dbl↓: Double = 0.0
+
 ```
 
 ```swift
+//
+// consider_default_literal_types_redundant: true
+//
+
 var int↓: Int = 0
+
 ```
 
 ```swift
+//
+// consider_default_literal_types_redundant: true
+//
+
 var str↓: String = "str"
+
 ```

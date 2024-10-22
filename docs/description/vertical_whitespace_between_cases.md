@@ -1,8 +1,8 @@
-# Vertical Whitespace between Cases
+# Vertical Whitespace Between Cases
 
 Include a single empty line between switch cases
 
-* **Identifier:** vertical_whitespace_between_cases
+* **Identifier:** `vertical_whitespace_between_cases`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
@@ -28,38 +28,6 @@ Include a single empty line between switch cases
 ## Non Triggering Examples
 
 ```swift
-    switch x {
-    case .valid:
-        print("multiple ...")
-        print("... lines")
-
-    case .invalid:
-        print("multiple ...")
-        print("... lines")
-    }
-```
-
-```swift
-    switch x {
-    case .valid:
-        print("x is valid")
-
-    case .invalid:
-        print("x is invalid")
-    }
-```
-
-```swift
-    switch x {
-    case 0..<5:
-        print("x is valid")
-
-    default:
-        print("x is invalid")
-    }
-```
-
-```swift
 switch x {
 
 case 0..<5:
@@ -76,6 +44,28 @@ default:
 
 ```swift
 switch x {
+case .valid:
+    print("multiple ...")
+    print("... lines")
+
+case .invalid:
+    print("multiple ...")
+    print("... lines")
+}
+```
+
+```swift
+switch x {
+case .valid:
+    print("x is valid")
+
+case .invalid:
+    print("x is invalid")
+}
+```
+
+```swift
+switch x {
 case 0..<5:
     print("x is low")
 
@@ -84,6 +74,26 @@ case 5..<10:
 
 default:
     print("x is invalid")
+}
+```
+
+```swift
+switch x {
+case 0..<5:
+    print("x is valid")
+
+default:
+    print("x is invalid")
+}
+```
+
+```swift
+switch x {
+case 0..<5:
+    return "x is valid"
+
+default:
+    return "x is invalid"
 }
 ```
 
@@ -108,30 +118,39 @@ default:
 ## Triggering Examples
 
 ```swift
-    switch x {
-    case .valid:
-        print("multiple ...")
-        print("... lines")
-↓    case .invalid:
-        print("multiple ...")
-        print("... lines")
-    }
+switch x {
+case .valid:
+    print("multiple ...")
+    print("... lines")
+↓case .invalid:
+    print("multiple ...")
+    print("... lines")
+}
 ```
 
 ```swift
-    switch x {
-    case .valid:
-        print("x is valid")
-↓    case .invalid:
-        print("x is invalid")
-    }
+switch x {
+case .valid:
+    print("x is valid")
+↓case .invalid:
+    print("x is invalid")
+}
 ```
 
 ```swift
-    switch x {
-    case 0..<5:
-        print("x is valid")
-↓    default:
-        print("x is invalid")
-    }
+switch x {
+case 0..<5:
+    print("x is valid")
+↓default:
+    print("x is invalid")
+}
+```
+
+```swift
+switch x {
+case 0..<5:
+    return "x is valid"
+↓default:
+    return "x is invalid"
+}
 ```

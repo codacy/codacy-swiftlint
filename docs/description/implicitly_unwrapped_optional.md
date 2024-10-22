@@ -2,7 +2,7 @@
 
 Implicitly unwrapped optionals should be avoided when possible
 
-* **Identifier:** implicitly_unwrapped_optional
+* **Identifier:** `implicitly_unwrapped_optional`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

@@ -2,7 +2,7 @@
 
 Force casts should be avoided
 
-* **Identifier:** force_cast
+* **Identifier:** `force_cast`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

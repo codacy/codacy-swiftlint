@@ -2,7 +2,7 @@
 
 Prefer at least one space after slashes for comments
 
-* **Identifier:** comment_spacing
+* **Identifier:** `comment_spacing`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** lint
@@ -85,7 +85,7 @@ Prefer at least one space after slashes for comments
 ```
 
 ```swift
-/*#-editable-code Swift Platground editable area*/default/*#-end-editable-code*/
+/*#-editable-code Swift Playground editable area*/default/*#-end-editable-code*/
 ```
 
 ## Triggering Examples

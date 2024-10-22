@@ -2,7 +2,7 @@
 
 Discouraged call inside 'describe' and/or 'context' block.
 
-* **Identifier:** quick_discouraged_call
+* **Identifier:** `quick_discouraged_call`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

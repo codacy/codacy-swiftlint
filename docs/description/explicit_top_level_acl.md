@@ -2,7 +2,7 @@
 
 Top-level declarations should specify Access Control Level keywords explicitly
 
-* **Identifier:** explicit_top_level_acl
+* **Identifier:** `explicit_top_level_acl`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
@@ -36,7 +36,9 @@ public final class B {}
 ```
 
 ```swift
-private struct C {}
+private struct S1 {
+    struct S2 {}
+}
 ```
 
 ```swift
@@ -44,12 +46,11 @@ internal enum A { enum B {} }
 ```
 
 ```swift
-internal final class Foo {}
+internal final actor Foo {}
 ```
 
 ```swift
-internal
-class Foo {}
+internal typealias Foo = Bar
 ```
 
 ```swift
@@ -75,7 +76,7 @@ final ↓class B {}
 ```
 
 ```swift
-↓struct C {}
+↓protocol P {}
 ```
 
 ```swift

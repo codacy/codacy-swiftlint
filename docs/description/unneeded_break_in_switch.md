@@ -2,7 +2,7 @@
 
 Avoid using unneeded break statements
 
-* **Identifier:** unneeded_break_in_switch
+* **Identifier:** `unneeded_break_in_switch`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

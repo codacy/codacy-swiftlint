@@ -2,7 +2,7 @@
 
 Non-constant variables should not be listed in a closure's capture list to avoid confusion about closures capturing variables at creation time
 
-* **Identifier:** capture_variable
+* **Identifier:** `capture_variable`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

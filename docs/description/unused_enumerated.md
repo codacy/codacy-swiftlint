@@ -2,7 +2,7 @@
 
 When the index or the item is not used, `.enumerated()` can be removed.
 
-* **Identifier:** unused_enumerated
+* **Identifier:** `unused_enumerated`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

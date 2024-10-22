@@ -2,7 +2,7 @@
 
 Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function
 
-* **Identifier:** redundant_discardable_let
+* **Identifier:** `redundant_discardable_let`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

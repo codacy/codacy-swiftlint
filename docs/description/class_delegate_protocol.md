@@ -2,7 +2,7 @@
 
 Delegate protocols should be class-only so they can be weakly referenced
 
-* **Identifier:** class_delegate_protocol
+* **Identifier:** `class_delegate_protocol`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

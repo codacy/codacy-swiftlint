@@ -1,8 +1,8 @@
-# Non-Optional String <-> Data Conversion
+# Non-optional String -> Data Conversion
 
-Prefer using UTF-8 encoded strings when converting between `String` and `Data`
+Prefer non-optional `Data(_:)` initializer when converting `String` to `Data`
 
-* **Identifier:** non_optional_string_data_conversion
+* **Identifier:** `non_optional_string_data_conversion`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
@@ -31,16 +31,8 @@ Prefer using UTF-8 encoded strings when converting between `String` and `Data`
 Data("foo".utf8)
 ```
 
-```swift
-String(decoding: data, as: UTF8.self)
-```
-
 ## Triggering Examples
 
 ```swift
 "foo".data(using: .utf8)
-```
-
-```swift
-String(data: data, encoding: .utf8)
 ```

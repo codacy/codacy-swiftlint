@@ -2,7 +2,7 @@
 
 Images that provide context should have an accessibility label or should be explicitly hidden from accessibility
 
-* **Identifier:** accessibility_label_for_image
+* **Identifier:** `accessibility_label_for_image`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

@@ -2,7 +2,7 @@
 
 Discouraged explicit usage of the default separator
 
-* **Identifier:** joined_default_parameter
+* **Identifier:** `joined_default_parameter`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

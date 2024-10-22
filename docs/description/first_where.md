@@ -2,7 +2,7 @@
 
 Prefer using `.first(where:)` over `.filter { }.first` in collections
 
-* **Identifier:** first_where
+* **Identifier:** `first_where`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

@@ -2,7 +2,7 @@
 
 Extensions shouldn't add @IBInspectable properties
 
-* **Identifier:** ibinspectable_in_extension
+* **Identifier:** `ibinspectable_in_extension`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

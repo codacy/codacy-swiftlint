@@ -2,7 +2,7 @@
 
 Explicitly calling .init() should be avoided
 
-* **Identifier:** explicit_init
+* **Identifier:** `explicit_init`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

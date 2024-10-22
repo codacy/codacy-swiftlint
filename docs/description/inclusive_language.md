@@ -2,7 +2,7 @@
 
 Identifiers should use inclusive language that avoids discrimination against groups of people based on race, gender, or socioeconomic status.
 
-* **Identifier:** inclusive_language
+* **Identifier:** `inclusive_language`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style

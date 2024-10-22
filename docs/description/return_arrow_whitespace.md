@@ -2,7 +2,7 @@
 
 Return arrow and return type should be separated by a single space or on a separate line
 
-* **Identifier:** return_arrow_whitespace
+* **Identifier:** `return_arrow_whitespace`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

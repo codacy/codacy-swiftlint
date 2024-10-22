@@ -2,7 +2,7 @@
 
 Arguments should be either on the same line, or one per line
 
-* **Identifier:** multiline_arguments
+* **Identifier:** `multiline_arguments`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

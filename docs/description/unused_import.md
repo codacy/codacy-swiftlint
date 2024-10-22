@@ -2,7 +2,7 @@
 
 All imported modules should be required to make the file compile
 
-* **Identifier:** unused_import
+* **Identifier:** `unused_import`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** lint

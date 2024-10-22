@@ -2,7 +2,7 @@
 
 Enum shouldn't contain multiple cases with the same name
 
-* **Identifier:** duplicate_enum_cases
+* **Identifier:** `duplicate_enum_cases`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

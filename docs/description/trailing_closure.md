@@ -2,7 +2,7 @@
 
 Trailing closure syntax should be used whenever possible
 
-* **Identifier:** trailing_closure
+* **Identifier:** `trailing_closure`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

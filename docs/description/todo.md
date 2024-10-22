@@ -2,7 +2,7 @@
 
 TODOs and FIXMEs should be resolved.
 
-* **Identifier:** todo
+* **Identifier:** `todo`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

@@ -2,7 +2,7 @@
 
 MARK comment should be in valid format. e.g. '// MARK: ...' or '// MARK: - ...'
 
-* **Identifier:** mark
+* **Identifier:** `mark`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** lint

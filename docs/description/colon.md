@@ -2,7 +2,7 @@
 
 Colons should be next to the identifier when specifying a type and next to the key in dictionary literals
 
-* **Identifier:** colon
+* **Identifier:** `colon`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

@@ -2,7 +2,7 @@
 
 Prefer `!= nil` over `let _ =`
 
-* **Identifier:** unused_optional_binding
+* **Identifier:** `unused_optional_binding`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style

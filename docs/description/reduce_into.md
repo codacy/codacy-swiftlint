@@ -2,7 +2,7 @@
 
 Prefer `reduce(into:_:)` over `reduce(_:_:)` for copy-on-write types
 
-* **Identifier:** reduce_into
+* **Identifier:** `reduce_into`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

@@ -2,7 +2,7 @@
 
 Tuples shouldn't have too many members. Create a custom type instead.
 
-* **Identifier:** large_tuple
+* **Identifier:** `large_tuple`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics

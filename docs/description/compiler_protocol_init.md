@@ -2,7 +2,7 @@
 
 The initializers declared in compiler protocols such as `ExpressibleByArrayLiteral` shouldn't be called directly.
 
-* **Identifier:** compiler_protocol_init
+* **Identifier:** `compiler_protocol_init`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

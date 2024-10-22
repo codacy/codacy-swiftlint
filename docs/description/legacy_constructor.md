@@ -2,7 +2,7 @@
 
 Swift constructors are preferred over legacy convenience functions
 
-* **Identifier:** legacy_constructor
+* **Identifier:** `legacy_constructor`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

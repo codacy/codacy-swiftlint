@@ -2,7 +2,7 @@
 
 Limit vertical whitespace to a single empty line.
 
-* **Identifier:** vertical_whitespace
+* **Identifier:** `vertical_whitespace`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

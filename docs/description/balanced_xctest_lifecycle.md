@@ -2,7 +2,7 @@
 
 Test classes must implement balanced setUp and tearDown methods
 
-* **Identifier:** balanced_xctest_lifecycle
+* **Identifier:** `balanced_xctest_lifecycle`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

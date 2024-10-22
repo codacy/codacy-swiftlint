@@ -2,7 +2,7 @@
 
 Test cases should only contain private non-test members
 
-* **Identifier:** test_case_accessibility
+* **Identifier:** `test_case_accessibility`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** lint
@@ -103,9 +103,14 @@ class FooTests: XCTestCase {
 ```
 
 ```swift
+//
+// allowed_prefixes: ["allowedPrefix"]
+//
+
 class FooTests: XCTestCase {
     func allowedPrefixTestFoo() {}
 }
+
 ```
 
 ```swift

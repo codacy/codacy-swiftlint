@@ -2,7 +2,7 @@
 
 IBActions should be private
 
-* **Identifier:** private_action
+* **Identifier:** `private_action`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

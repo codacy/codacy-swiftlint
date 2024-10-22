@@ -2,7 +2,7 @@
 
 @IBInspectable should be applied to variables only, have its type explicit and be of a supported type
 
-* **Identifier:** valid_ibinspectable
+* **Identifier:** `valid_ibinspectable`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

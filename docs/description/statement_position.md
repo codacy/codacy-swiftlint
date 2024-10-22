@@ -2,7 +2,7 @@
 
 Else and catch should be on the same line, one space after the previous declaration
 
-* **Identifier:** statement_position
+* **Identifier:** `statement_position`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

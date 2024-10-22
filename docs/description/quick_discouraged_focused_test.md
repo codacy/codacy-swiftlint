@@ -2,7 +2,7 @@
 
 Non-focused tests won't run as long as this test is focused
 
-* **Identifier:** quick_discouraged_focused_test
+* **Identifier:** `quick_discouraged_focused_test`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

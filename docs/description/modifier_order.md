@@ -2,7 +2,7 @@
 
 Modifier order should be consistent.
 
-* **Identifier:** modifier_order
+* **Identifier:** `modifier_order`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

@@ -2,7 +2,7 @@
 
 Prefer using `.allSatisfy()` or `.contains()` over `reduce(true)` or `reduce(false)`.
 
-* **Identifier:** reduce_boolean
+* **Identifier:** `reduce_boolean`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** performance

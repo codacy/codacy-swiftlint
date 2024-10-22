@@ -2,7 +2,7 @@
 
 Unused control flow label should be removed
 
-* **Identifier:** unused_control_flow_label
+* **Identifier:** `unused_control_flow_label`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** lint

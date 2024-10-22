@@ -2,7 +2,7 @@
 
 Prefer Swift value types to bridged Objective-C reference types
 
-* **Identifier:** legacy_objc_type
+* **Identifier:** `legacy_objc_type`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

@@ -2,7 +2,7 @@
 
 Periods should not be followed by more than one space
 
-* **Identifier:** period_spacing
+* **Identifier:** `period_spacing`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

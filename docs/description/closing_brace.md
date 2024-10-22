@@ -2,7 +2,7 @@
 
 Closing brace with closing parenthesis should not have any whitespaces in the middle
 
-* **Identifier:** closing_brace
+* **Identifier:** `closing_brace`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

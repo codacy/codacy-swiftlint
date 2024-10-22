@@ -2,7 +2,7 @@
 
 Extensions shouldn't override declarations
 
-* **Identifier:** override_in_extension
+* **Identifier:** `override_in_extension`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

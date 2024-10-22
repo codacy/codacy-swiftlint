@@ -2,7 +2,7 @@
 
 Trailing commas in arrays and dictionaries should be avoided/enforced.
 
-* **Identifier:** trailing_comma
+* **Identifier:** `trailing_comma`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

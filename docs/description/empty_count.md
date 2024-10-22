@@ -2,7 +2,7 @@
 
 Prefer checking `isEmpty` over comparing `count` to zero
 
-* **Identifier:** empty_count
+* **Identifier:** `empty_count`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** performance

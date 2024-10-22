@@ -2,7 +2,7 @@
 
 Declarations should be referenced at least once within all files linted
 
-* **Identifier:** unused_declaration
+* **Identifier:** `unused_declaration`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
@@ -215,7 +215,12 @@ class ↓ResponseModel {
 ```
 
 ```swift
+//
+// include_public_and_open: true
+//
+
 public func ↓foo() {}
+
 ```
 
 ```swift

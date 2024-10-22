@@ -2,7 +2,7 @@
 
 Prefer `-> Void` over `-> ()`
 
-* **Identifier:** void_return
+* **Identifier:** `void_return`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

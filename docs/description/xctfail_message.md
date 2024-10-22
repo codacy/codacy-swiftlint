@@ -2,7 +2,7 @@
 
 An XCTFail call should include a description of the assertion
 
-* **Identifier:** xctfail_message
+* **Identifier:** `xctfail_message`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

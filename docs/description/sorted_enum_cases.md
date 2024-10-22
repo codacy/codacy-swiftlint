@@ -2,7 +2,7 @@
 
 Enum cases should be sorted
 
-* **Identifier:** sorted_enum_cases
+* **Identifier:** `sorted_enum_cases`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

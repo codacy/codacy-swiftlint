@@ -2,7 +2,7 @@
 
 All views with tap gestures added should include the .isButton or the .isLink accessibility traits
 
-* **Identifier:** accessibility_trait_for_button
+* **Identifier:** `accessibility_trait_for_button`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

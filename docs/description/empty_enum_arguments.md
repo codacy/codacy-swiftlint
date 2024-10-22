@@ -2,7 +2,7 @@
 
 Arguments can be omitted when matching enums with associated values if they are not used
 
-* **Identifier:** empty_enum_arguments
+* **Identifier:** `empty_enum_arguments`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style
@@ -107,16 +107,16 @@ guard foo == .bar() else { return }
 
 ```swift
 if case .appStore = self.appInstaller, !UIDevice.isSimulator() {
-  viewController.present(self, animated: false)
+    viewController.present(self, animated: false)
 } else {
-  UIApplication.shared.open(self.appInstaller.url)
+    UIApplication.shared.open(self.appInstaller.url)
 }
 ```
 
 ```swift
 let updatedUserNotificationSettings = deepLink.filter { nav in
-  guard case .settings(.notifications(_, nil)) = nav else { return false }
-  return true
+    guard case .settings(.notifications(_, nil)) = nav else { return false }
+    return true
 }
 ```
 
@@ -161,7 +161,7 @@ case .bar(.baz↓(_)): break
 ```swift
 func example(foo: Foo) {
     switch foo {
-    case case .bar↓(_):
+    case .bar↓(_):
         break
     }
 }
@@ -189,15 +189,15 @@ guard case .bar↓() = foo else {
 
 ```swift
 if case .appStore↓(_) = self.appInstaller, !UIDevice.isSimulator() {
-  viewController.present(self, animated: false)
+    viewController.present(self, animated: false)
 } else {
-  UIApplication.shared.open(self.appInstaller.url)
+    UIApplication.shared.open(self.appInstaller.url)
 }
 ```
 
 ```swift
 let updatedUserNotificationSettings = deepLink.filter { nav in
-  guard case .settings(.notifications↓(_, _)) = nav else { return false }
-  return true
+    guard case .settings(.notifications↓(_, _)) = nav else { return false }
+    return true
 }
 ```

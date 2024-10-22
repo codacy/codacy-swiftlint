@@ -2,7 +2,7 @@
 
 Prefer `someBool.toggle()` over `someBool = !someBool`
 
-* **Identifier:** toggle_bool
+* **Identifier:** `toggle_bool`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

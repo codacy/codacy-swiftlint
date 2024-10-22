@@ -2,7 +2,7 @@
 
 Unused reference in a capture list should be removed
 
-* **Identifier:** unused_capture_list
+* **Identifier:** `unused_capture_list`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

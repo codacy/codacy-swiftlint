@@ -2,7 +2,7 @@
 
 `swiftlint:disable` commands should use `next`, `this` or `previous` to disable rules for a single line, or `swiftlint:enable` to re-enable the rules immediately after the violations to be ignored, instead of disabling the rule for the rest of the file.
 
-* **Identifier:** blanket_disable_command
+* **Identifier:** `blanket_disable_command`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

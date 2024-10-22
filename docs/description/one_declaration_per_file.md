@@ -2,7 +2,7 @@
 
 Only a single declaration is allowed in a file
 
-* **Identifier:** one_declaration_per_file
+* **Identifier:** `one_declaration_per_file`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
@@ -28,7 +28,7 @@ Only a single declaration is allowed in a file
 ## Non Triggering Examples
 
 ```swift
-class Foo {}
+actor Foo {}
 ```
 
 ```swift

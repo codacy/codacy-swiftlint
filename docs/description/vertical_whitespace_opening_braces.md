@@ -2,7 +2,7 @@
 
 Don't include vertical whitespace (empty line) after opening braces
 
-* **Identifier:** vertical_whitespace_opening_braces
+* **Identifier:** `vertical_whitespace_opening_braces`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

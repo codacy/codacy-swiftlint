@@ -2,7 +2,7 @@
 
 Prefer implicit returns in closures, functions and getters
 
-* **Identifier:** implicit_return
+* **Identifier:** `implicit_return`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

@@ -2,7 +2,7 @@
 
 Force unwrapping should be avoided
 
-* **Identifier:** force_unwrapping
+* **Identifier:** `force_unwrapping`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

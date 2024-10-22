@@ -2,7 +2,7 @@
 
 Fallthroughs can only be used if the `case` contains at least one other statement
 
-* **Identifier:** no_fallthrough_only
+* **Identifier:** `no_fallthrough_only`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
