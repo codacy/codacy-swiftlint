@@ -1,6 +1,6 @@
 FROM codacy-swiftlint-dev as builder
 
-FROM ghcr.io/realm/swiftlint:0.55.1
+FROM ghcr.io/realm/swiftlint:0.57.0
 
 COPY --from=builder /docs /docs
 COPY target/native-image/codacy-swiftlint /workdir/

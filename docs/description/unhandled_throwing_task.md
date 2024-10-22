@@ -2,7 +2,7 @@
 
 Errors thrown inside this task are not handled, which may be unexpected. Handle errors inside the task, or use `try await` to access the Tasks value and handle errors. See this forum thread for more details: https://forums.swift.org/t/task-initializer-with-throwing-closure-swallows-error/56066
 
-* **Identifier:** unhandled_throwing_task
+* **Identifier:** `unhandled_throwing_task`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

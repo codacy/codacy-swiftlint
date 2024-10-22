@@ -2,7 +2,7 @@
 
 Re-bind `self` to a consistent identifier name.
 
-* **Identifier:** self_binding
+* **Identifier:** `self_binding`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
@@ -52,11 +52,21 @@ guard let this = this else { return }
 ```
 
 ```swift
+//
+// bind_identifier: "this"
+//
+
 if let this = self { return }
+
 ```
 
 ```swift
+//
+// bind_identifier: "this"
+//
+
 guard let this = self else { return }
+
 ```
 
 ## Triggering Examples
@@ -78,17 +88,37 @@ guard let ↓this = self else { return }
 ```
 
 ```swift
+//
+// bind_identifier: "this"
+//
+
 if let ↓self = self { return }
+
 ```
 
 ```swift
+//
+// bind_identifier: "this"
+//
+
 guard let ↓self = self else { return }
+
 ```
 
 ```swift
+//
+// bind_identifier: "this"
+//
+
 if let ↓self { return }
+
 ```
 
 ```swift
+//
+// bind_identifier: "this"
+//
+
 guard let ↓self else { return }
+
 ```

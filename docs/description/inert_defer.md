@@ -2,7 +2,7 @@
 
 If defer is at the end of its parent scope, it will be executed right where it is anyway
 
-* **Identifier:** inert_defer
+* **Identifier:** `inert_defer`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

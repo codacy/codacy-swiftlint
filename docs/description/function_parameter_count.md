@@ -2,7 +2,7 @@
 
 Number of function parameters should be low.
 
-* **Identifier:** function_parameter_count
+* **Identifier:** `function_parameter_count`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics

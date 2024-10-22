@@ -2,7 +2,7 @@
 
 Prefer `contains` over `range(of:) != nil` and `range(of:) == nil`
 
-* **Identifier:** contains_over_range_nil_comparison
+* **Identifier:** `contains_over_range_nil_comparison`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

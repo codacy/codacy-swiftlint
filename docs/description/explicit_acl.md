@@ -2,7 +2,7 @@
 
 All declarations should specify Access Control Level keywords explicitly
 
-* **Identifier:** explicit_acl
+* **Identifier:** `explicit_acl`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

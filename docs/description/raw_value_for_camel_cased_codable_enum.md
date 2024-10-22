@@ -2,7 +2,7 @@
 
 Camel cased cases of Codable String enums should have raw values
 
-* **Identifier:** raw_value_for_camel_cased_codable_enum
+* **Identifier:** `raw_value_for_camel_cased_codable_enum`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

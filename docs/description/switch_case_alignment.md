@@ -2,7 +2,7 @@
 
 Case statements should vertically align with their closing brace, or indented if configured otherwise.
 
-* **Identifier:** switch_case_alignment
+* **Identifier:** `switch_case_alignment`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style
@@ -94,11 +94,21 @@ func f() -> Int {
 ```
 
 ```swift
+//
+// ignore_one_liners: true
+//
+
 switch i { case .x: 1 default: 0 }
+
 ```
 
 ```swift
+//
+// ignore_one_liners: true
+//
+
 let a = switch i { case .x: 1 default: 0 }
+
 ```
 
 ## Triggering Examples
@@ -173,27 +183,52 @@ switch i { ↓case .x: 1 ↓default: 0 }
 ```
 
 ```swift
+//
+// ignore_one_liners: true
+//
+
 switch i {
 ↓case .x: 1 ↓default: 0 }
+
 ```
 
 ```swift
+//
+// ignore_one_liners: true
+//
+
 switch i { ↓case .x: 1 ↓default: 0
 }
+
 ```
 
 ```swift
+//
+// ignore_one_liners: true
+//
+
 switch i
 { ↓case .x: 1 ↓default: 0 }
+
 ```
 
 ```swift
+//
+// ignore_one_liners: true
+//
+
 let a = switch i {
 case .x: 1 ↓default: 0
 }
+
 ```
 
 ```swift
+//
+// ignore_one_liners: true
+//
+
 let a = switch i {
 ↓case .x: 1 ↓default: 0 }
+
 ```

@@ -2,7 +2,7 @@
 
 IBOutlets should be private to avoid leaking UIKit to higher layers
 
-* **Identifier:** private_outlet
+* **Identifier:** `private_outlet`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
@@ -60,23 +60,48 @@ class Foo { @IBOutlet fileprivate weak var label: UILabel? }
 ```
 
 ```swift
+//
+// allow_private_set: true
+//
+
 class Foo { @IBOutlet private(set) var label: UILabel? }
+
 ```
 
 ```swift
+//
+// allow_private_set: true
+//
+
 class Foo { @IBOutlet private(set) var label: UILabel! }
+
 ```
 
 ```swift
+//
+// allow_private_set: true
+//
+
 class Foo { @IBOutlet weak private(set) var label: UILabel? }
+
 ```
 
 ```swift
+//
+// allow_private_set: true
+//
+
 class Foo { @IBOutlet private(set) weak var label: UILabel? }
+
 ```
 
 ```swift
+//
+// allow_private_set: true
+//
+
 class Foo { @IBOutlet fileprivate(set) weak var label: UILabel? }
+
 ```
 
 ## Triggering Examples

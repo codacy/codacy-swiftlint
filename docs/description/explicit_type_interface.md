@@ -2,7 +2,7 @@
 
 Properties should have a type interface
 
-* **Identifier:** explicit_type_interface
+* **Identifier:** `explicit_type_interface`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

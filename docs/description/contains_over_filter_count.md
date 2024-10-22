@@ -2,7 +2,7 @@
 
 Prefer `contains` over comparing `filter(where:).count` to 0
 
-* **Identifier:** contains_over_filter_count
+* **Identifier:** `contains_over_filter_count`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

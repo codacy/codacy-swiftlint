@@ -2,7 +2,7 @@
 
 NSObject subclasses should implement isEqual instead of ==
 
-* **Identifier:** nsobject_prefer_isequal
+* **Identifier:** `nsobject_prefer_isequal`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

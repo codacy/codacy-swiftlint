@@ -2,7 +2,7 @@
 
 Setter value is not used
 
-* **Identifier:** unused_setter_value
+* **Identifier:** `unused_setter_value`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

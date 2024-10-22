@@ -2,7 +2,7 @@
 
 Some methods should not call super.
 
-* **Identifier:** prohibited_super_call
+* **Identifier:** `prohibited_super_call`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

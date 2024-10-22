@@ -2,7 +2,7 @@
 
 Prefer `() -> ` over `Void -> `
 
-* **Identifier:** empty_parameters
+* **Identifier:** `empty_parameters`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

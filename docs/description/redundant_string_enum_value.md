@@ -2,7 +2,7 @@
 
 String enum values can be omitted when they are equal to the enumcase name
 
-* **Identifier:** redundant_string_enum_value
+* **Identifier:** `redundant_string_enum_value`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

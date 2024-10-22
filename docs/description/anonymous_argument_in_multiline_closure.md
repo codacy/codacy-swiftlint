@@ -2,7 +2,7 @@
 
 Use named arguments in multiline closures
 
-* **Identifier:** anonymous_argument_in_multiline_closure
+* **Identifier:** `anonymous_argument_in_multiline_closure`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

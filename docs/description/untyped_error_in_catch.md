@@ -2,7 +2,7 @@
 
 Catch statements should not declare error variables without type casting
 
-* **Identifier:** untyped_error_in_catch
+* **Identifier:** `untyped_error_in_catch`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

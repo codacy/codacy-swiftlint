@@ -1,8 +1,8 @@
 # Static Over Final Class
 
-Prefer `static` over `final class`
+Prefer `static` over `class` when the declaration is not allowed to be overridden in child classes due to its context being final. Likewise, the compiler complains about `open` being used in `final` classes.
 
-* **Identifier:** static_over_final_class
+* **Identifier:** `static_over_final_class`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

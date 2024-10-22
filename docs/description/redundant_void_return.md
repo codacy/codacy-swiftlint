@@ -2,7 +2,7 @@
 
 Returning Void in a function declaration is redundant
 
-* **Identifier:** redundant_void_return
+* **Identifier:** `redundant_void_return`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
@@ -88,9 +88,14 @@ struct A {
 ```
 
 ```swift
+//
+// include_closures: false
+//
+
 doSomething { arg -> Void in
     print(arg)
 }
+
 ```
 
 ## Triggering Examples

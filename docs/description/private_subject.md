@@ -2,7 +2,7 @@
 
 Combine Subject should be private
 
-* **Identifier:** private_subject
+* **Identifier:** `private_subject`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

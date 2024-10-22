@@ -2,7 +2,7 @@
 
 Prefer non-optional booleans over optional booleans
 
-* **Identifier:** discouraged_optional_boolean
+* **Identifier:** `discouraged_optional_boolean`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

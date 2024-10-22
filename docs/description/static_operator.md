@@ -2,7 +2,7 @@
 
 Operators should be declared as static functions, not free functions
 
-* **Identifier:** static_operator
+* **Identifier:** `static_operator`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

@@ -2,7 +2,7 @@
 
 Ensure declarations have a lower access control level than their enclosing parent
 
-* **Identifier:** lower_acl_than_parent
+* **Identifier:** `lower_acl_than_parent`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** lint

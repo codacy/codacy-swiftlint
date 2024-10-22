@@ -2,7 +2,7 @@
 
 Files should not contain leading whitespace
 
-* **Identifier:** leading_whitespace
+* **Identifier:** `leading_whitespace`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

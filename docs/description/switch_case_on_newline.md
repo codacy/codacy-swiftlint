@@ -2,7 +2,7 @@
 
 Cases inside a switch should always be on a newline
 
-* **Identifier:** switch_case_on_newline
+* **Identifier:** `switch_case_on_newline`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

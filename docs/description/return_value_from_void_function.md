@@ -2,7 +2,7 @@
 
 Returning values from Void functions should be avoided
 
-* **Identifier:** return_value_from_void_function
+* **Identifier:** `return_value_from_void_function`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

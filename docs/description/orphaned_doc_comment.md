@@ -2,7 +2,7 @@
 
 A doc comment should be attached to a declaration
 
-* **Identifier:** orphaned_doc_comment
+* **Identifier:** `orphaned_doc_comment`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

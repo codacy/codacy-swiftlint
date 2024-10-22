@@ -2,7 +2,7 @@
 
 Empty XCTest method should be avoided
 
-* **Identifier:** empty_xctest_method
+* **Identifier:** `empty_xctest_method`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

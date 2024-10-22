@@ -2,7 +2,7 @@
 
 Prefer using the `hash(into:)` function instead of overriding `hashValue`
 
-* **Identifier:** legacy_hashing
+* **Identifier:** `legacy_hashing`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

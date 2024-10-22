@@ -2,7 +2,7 @@
 
 When using trailing closures, empty parentheses should be avoided after the method call
 
-* **Identifier:** empty_parentheses_with_trailing_closure
+* **Identifier:** `empty_parentheses_with_trailing_closure`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

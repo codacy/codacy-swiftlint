@@ -2,7 +2,7 @@
 
 TODOs and FIXMEs should be resolved prior to their expiry date.
 
-* **Identifier:** expiring_todo
+* **Identifier:** `expiring_todo`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

@@ -2,7 +2,7 @@
 
 `self` refers to the unapplied `NSObject.self()` method, which is likely not expected; make the variable `lazy` to be able to refer to the current instance or use `ClassName.self`
 
-* **Identifier:** self_in_property_initialization
+* **Identifier:** `self_in_property_initialization`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

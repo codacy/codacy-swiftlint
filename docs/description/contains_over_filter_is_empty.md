@@ -2,7 +2,7 @@
 
 Prefer `contains` over using `filter(where:).isEmpty`
 
-* **Identifier:** contains_over_filter_is_empty
+* **Identifier:** `contains_over_filter_is_empty`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

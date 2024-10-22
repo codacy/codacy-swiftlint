@@ -2,7 +2,7 @@
 
 When registering for a notification using a block, the opaque observer that is returned should be stored so it can be removed later
 
-* **Identifier:** discarded_notification_center_observer
+* **Identifier:** `discarded_notification_center_observer`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
@@ -63,8 +63,8 @@ obs.append(nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queu
 ```
 
 ```swift
-func foo(_ notif: Any) {
-   obs.append(notif)
+func foo(_ notify: Any) {
+   obs.append(notify)
 }
 foo(nc.addObserver(forName: .NSSystemTimeZoneDidChange, object: nil, queue: nil, using: { }))
 ```

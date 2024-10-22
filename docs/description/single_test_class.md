@@ -2,7 +2,7 @@
 
 Test files should contain a single QuickSpec or XCTestCase class.
 
-* **Identifier:** single_test_class
+* **Identifier:** `single_test_class`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

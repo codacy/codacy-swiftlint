@@ -2,7 +2,7 @@
 
 File name should not contain any whitespace
 
-* **Identifier:** file_name_no_space
+* **Identifier:** `file_name_no_space`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

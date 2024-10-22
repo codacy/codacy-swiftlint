@@ -2,7 +2,7 @@
 
 Prefer Nimble operator overloads over free matcher functions
 
-* **Identifier:** nimble_operator
+* **Identifier:** `nimble_operator`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

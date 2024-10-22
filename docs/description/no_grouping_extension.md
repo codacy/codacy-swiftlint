@@ -2,7 +2,7 @@
 
 Extensions shouldn't be used to group code within the same source file
 
-* **Identifier:** no_grouping_extension
+* **Identifier:** `no_grouping_extension`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

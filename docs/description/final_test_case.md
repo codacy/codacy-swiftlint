@@ -2,7 +2,7 @@
 
 Test cases should be final
 
-* **Identifier:** final_test_case
+* **Identifier:** `final_test_case`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** performance
@@ -52,7 +52,12 @@ class Test: MyTestCase {}
 ```
 
 ```swift
+//
+// test_parent_classes: ["MyTestCase", "QuickSpec", "XCTestCase"]
+//
+
 struct Test: MyTestCase {}
+
 ```
 
 ## Triggering Examples
@@ -66,5 +71,10 @@ public class ↓Test: QuickSpec {}
 ```
 
 ```swift
+//
+// test_parent_classes: ["MyTestCase", "QuickSpec", "XCTestCase"]
+//
+
 class ↓Test: MyTestCase {}
+
 ```

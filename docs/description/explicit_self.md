@@ -2,7 +2,7 @@
 
 Instance variables and functions should be explicitly accessed with 'self.'
 
-* **Identifier:** explicit_self
+* **Identifier:** `explicit_self`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

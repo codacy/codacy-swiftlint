@@ -2,7 +2,7 @@
 
 Prefer checking `isEmpty` over comparing collection to an empty array or dictionary literal
 
-* **Identifier:** empty_collection_literal
+* **Identifier:** `empty_collection_literal`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

@@ -2,7 +2,7 @@
 
 Imports should be unique
 
-* **Identifier:** duplicate_imports
+* **Identifier:** `duplicate_imports`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
@@ -67,6 +67,11 @@ func test() {
 }
 ```
 
+```swift
+import Foo
+@testable import struct Foo.Bar
+```
+
 ## Triggering Examples
 
 ```swift
@@ -79,6 +84,11 @@ func test() {
 @testable import A
 ↓@testable import A
 
+```
+
+```swift
+@testable import Foo
+import struct Foo.Bar
 ```
 
 ```swift

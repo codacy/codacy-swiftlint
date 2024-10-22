@@ -2,7 +2,7 @@
 
 Prefer to use extension access modifiers
 
-* **Identifier:** extension_access_modifier
+* **Identifier:** `extension_access_modifier`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
@@ -128,6 +128,12 @@ extension Foo {
 }
 ```
 
+```swift
+public extension Foo {
+  private(set) var value: Int { 1 }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -191,5 +197,11 @@ public extension Foo {
 public extension Foo {
   ↓private func bar() {}
   ↓private func baz() {}
+}
+```
+
+```swift
+↓extension Foo {
+  private(set) public var value: Int { 1 }
 }
 ```

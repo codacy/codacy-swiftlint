@@ -2,7 +2,7 @@
 
 Force tries should be avoided
 
-* **Identifier:** force_try
+* **Identifier:** `force_try`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

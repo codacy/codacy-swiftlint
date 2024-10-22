@@ -2,7 +2,7 @@
 
 nil coalescing operator is only evaluated if the lhs is nil, coalescing operator with nil as rhs is redundant
 
-* **Identifier:** redundant_nil_coalescing
+* **Identifier:** `redundant_nil_coalescing`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

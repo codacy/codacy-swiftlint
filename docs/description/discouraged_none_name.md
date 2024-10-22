@@ -2,7 +2,7 @@
 
 Enum cases and static members named `none` are discouraged as they can conflict with `Optional<T>.none`.
 
-* **Identifier:** discouraged_none_name
+* **Identifier:** `discouraged_none_name`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

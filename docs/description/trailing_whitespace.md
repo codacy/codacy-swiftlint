@@ -2,7 +2,7 @@
 
 Lines should not have trailing whitespace
 
-* **Identifier:** trailing_whitespace
+* **Identifier:** `trailing_whitespace`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

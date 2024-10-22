@@ -2,7 +2,7 @@
 
 Function parameters should be aligned vertically if they're in multiple lines in a method call
 
-* **Identifier:** vertical_parameter_alignment_on_call
+* **Identifier:** `vertical_parameter_alignment_on_call`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

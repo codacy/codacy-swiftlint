@@ -2,7 +2,7 @@
 
 Avoid using 'dynamic' and '@inline(__always)' together
 
-* **Identifier:** dynamic_inline
+* **Identifier:** `dynamic_inline`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

@@ -2,7 +2,7 @@
 
 Unused parameter in a closure should be replaced with _
 
-* **Identifier:** unused_closure_parameter
+* **Identifier:** `unused_closure_parameter`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** lint

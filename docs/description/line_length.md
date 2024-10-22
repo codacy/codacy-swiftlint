@@ -2,7 +2,7 @@
 
 Lines should not span too many characters.
 
-* **Identifier:** line_length
+* **Identifier:** `line_length`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics

@@ -2,7 +2,7 @@
 
 Files should have a single trailing newline
 
-* **Identifier:** trailing_newline
+* **Identifier:** `trailing_newline`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

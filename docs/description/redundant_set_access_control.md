@@ -2,7 +2,7 @@
 
 Property setter access level shouldn't be explicit if it's the same as the variable access level
 
-* **Identifier:** redundant_set_access_control
+* **Identifier:** `redundant_set_access_control`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

@@ -2,7 +2,7 @@
 
 Use commas to separate types in inheritance lists
 
-* **Identifier:** comma_inheritance
+* **Identifier:** `comma_inheritance`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

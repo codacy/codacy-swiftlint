@@ -2,7 +2,7 @@
 
 Creating views using Interface Builder should be avoided
 
-* **Identifier:** prohibited_interface_builder
+* **Identifier:** `prohibited_interface_builder`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

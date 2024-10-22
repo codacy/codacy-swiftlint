@@ -2,7 +2,7 @@
 
 Shorthand syntactic sugar should be used, i.e. [Int] instead of Array<Int>.
 
-* **Identifier:** syntactic_sugar
+* **Identifier:** `syntactic_sugar`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

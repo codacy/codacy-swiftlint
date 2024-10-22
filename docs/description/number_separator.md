@@ -2,7 +2,7 @@
 
 Underscores should be used as thousand separator in large numbers with a configurable number of digits. In other words, there should be an underscore after every 3 digits in the integral as well as the fractional part of a number.
 
-* **Identifier:** number_separator
+* **Identifier:** `number_separator`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style
@@ -246,11 +246,21 @@ let foo = -↓1__000
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo = -↓1.0001
+
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo = -↓1_000_000.000000_1
+
 ```
 
 ```swift
@@ -258,7 +268,12 @@ let foo = -↓1000000.000000_1
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo = -↓6.2832e-6
+
 ```
 
 ```swift
@@ -282,11 +297,21 @@ let foo = +↓1__000
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo = +↓1.0001
+
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo = +↓1_000_000.000000_1
+
 ```
 
 ```swift
@@ -294,7 +319,12 @@ let foo = +↓1000000.000000_1
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo = +↓6.2832e-6
+
 ```
 
 ```swift
@@ -318,11 +348,21 @@ let foo = ↓1__000
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo = ↓1.0001
+
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo = ↓1_000_000.000000_1
+
 ```
 
 ```swift
@@ -330,7 +370,12 @@ let foo = ↓1000000.000000_1
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo = ↓6.2832e-6
+
 ```
 
 ```swift
@@ -338,11 +383,21 @@ let foo: Double = -(↓100000)
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo: Double = -(↓10.000000_1)
+
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo: Double = -(↓123456 / ↓447.214214)
+
 ```
 
 ```swift
@@ -350,11 +405,21 @@ let foo: Double = +(↓100000)
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo: Double = +(↓10.000000_1)
+
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo: Double = +(↓123456 / ↓447.214214)
+
 ```
 
 ```swift
@@ -362,9 +427,19 @@ let foo: Double = (↓100000)
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo: Double = (↓10.000000_1)
+
 ```
 
 ```swift
+//
+// minimum_fraction_length: 3
+//
+
 let foo: Double = (↓123456 / ↓447.214214)
+
 ```

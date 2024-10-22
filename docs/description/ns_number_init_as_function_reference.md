@@ -2,7 +2,7 @@
 
 Passing `NSNumber.init` or `NSDecimalNumber.init` as a function reference is dangerous as it can cause the wrong initializer to be used, causing crashes; use `.init(value:)` instead
 
-* **Identifier:** ns_number_init_as_function_reference
+* **Identifier:** `ns_number_init_as_function_reference`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

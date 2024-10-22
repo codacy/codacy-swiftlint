@@ -2,7 +2,7 @@
 
 SwiftUI state properties should be private
 
-* **Identifier:** private_swiftui_state
+* **Identifier:** `private_swiftui_state`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** lint

@@ -2,7 +2,7 @@
 
 Prefer `private` over `fileprivate` declarations
 
-* **Identifier:** private_over_fileprivate
+* **Identifier:** `private_over_fileprivate`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic
@@ -44,8 +44,7 @@ private extension String {}
 ```
 
 ```swift
-public 
- enum MyEnum {}
+public protocol P {}
 ```
 
 ```swift
@@ -55,6 +54,10 @@ open extension
 
 ```swift
 internal extension String {}
+```
+
+```swift
+package typealias P = Int
 ```
 
 ```swift
@@ -82,7 +85,7 @@ class MyClass {
 ```
 
 ```swift
-struct Outter {
+struct Outer {
   struct Inter {
     fileprivate struct Inner {}
   }
@@ -105,4 +108,9 @@ struct Outter {
 ↓fileprivate actor MyActor {
   fileprivate let myInt = 4
 }
+```
+
+```swift
+    ↓fileprivate func f() {}
+    ↓fileprivate var x = 0
 ```

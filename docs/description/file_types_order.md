@@ -2,7 +2,7 @@
 
 Specifies how the types within a file should be ordered.
 
-* **Identifier:** file_types_order
+* **Identifier:** `file_types_order`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

@@ -2,7 +2,7 @@
 
 Dictionary literals with duplicated keys will crash at runtime
 
-* **Identifier:** duplicated_key_in_dictionary_literal
+* **Identifier:** `duplicated_key_in_dictionary_literal`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint
@@ -28,75 +28,75 @@ Dictionary literals with duplicated keys will crash at runtime
 ## Non Triggering Examples
 
 ```swift
-    [
-        1: "1",
-        2: "2"
-    ]
+[
+    1: "1",
+    2: "2"
+]
 ```
 
 ```swift
-    [
-        "1": 1,
-        "2": 2
-    ]
+[
+    "1": 1,
+    "2": 2
+]
 ```
 
 ```swift
-    [
-        foo: "1",
-        bar: "2"
-    ]
+[
+    foo: "1",
+    bar: "2"
+]
 ```
 
 ```swift
-    [
-        UUID(): "1",
-        UUID(): "2"
-    ]
+[
+    UUID(): "1",
+    UUID(): "2"
+]
 ```
 
 ```swift
-    [
-        #line: "1",
-        #line: "2"
-    ]
+[
+    #line: "1",
+    #line: "2"
+]
 ```
 
 ## Triggering Examples
 
 ```swift
-    [
-        1: "1",
-        2: "2",
-        ↓1: "one"
-    ]
+[
+    1: "1",
+    2: "2",
+    ↓1: "one"
+]
 ```
 
 ```swift
-    [
-        "1": 1,
-        "2": 2,
-        ↓"2": 2
-    ]
+[
+    "1": 1,
+    "2": 2,
+    ↓"2": 2
+]
 ```
 
 ```swift
-    [
-        foo: "1",
-        bar: "2",
-        baz: "3",
-        ↓foo: "4",
-        zaz: "5"
-    ]
+[
+    foo: "1",
+    bar: "2",
+    baz: "3",
+    ↓foo: "4",
+    zaz: "5"
+]
 ```
 
 ```swift
-    [
-        .one: "1",
-        .two: "2",
-        .three: "3",
-        ↓.one: "1",
-        .four: "4",
-        .five: "5"
-    ]
+[
+    .one: "1",
+    .two: "2",
+    .three: "3",
+    ↓.one: "1",
+    .four: "4",
+    .five: "5"
+]
 ```

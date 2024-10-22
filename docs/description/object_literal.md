@@ -2,7 +2,7 @@
 
 Prefer object literals over image and color inits
 
-* **Identifier:** object_literal
+* **Identifier:** `object_literal`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

@@ -2,7 +2,7 @@
 
 Multiline literals should have their surrounding brackets in a new line
 
-* **Identifier:** multiline_literal_brackets
+* **Identifier:** `multiline_literal_brackets`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
@@ -57,14 +57,14 @@ let houseCup = [
 ```
 
 ```swift
-    _ = [
-        1,
-        2,
-        3,
-        4,
-        5, 6,
-        7, 8, 9
-    ]
+_ = [
+    1,
+    2,
+    3,
+    4,
+    5, 6,
+    7, 8, 9
+]
 ```
 
 ## Triggering Examples
@@ -111,20 +111,20 @@ class Hogwarts {
 ```
 
 ```swift
-    _ = [
-        1,
-        2,
-        3,
-        4,
-        5, 6,
-        7, 8, 9↓]
+_ = [
+    1,
+    2,
+    3,
+    4,
+    5, 6,
+    7, 8, 9↓]
 ```
 
 ```swift
-    _ = [↓1, 2, 3,
-         4, 5, 6,
-         7, 8, 9
-    ]
+_ = [↓1, 2, 3,
+     4, 5, 6,
+     7, 8, 9
+]
 ```
 
 ```swift

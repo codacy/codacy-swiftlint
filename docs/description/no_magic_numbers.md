@@ -2,7 +2,7 @@
 
 Magic numbers should be replaced by named constants
 
-* **Identifier:** no_magic_numbers
+* **Identifier:** `no_magic_numbers`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
@@ -168,6 +168,12 @@ let a = (5, 10)
 let notFound = (statusCode: 404, description: "Not Found", isError: true)
 ```
 
+```swift
+#Preview {
+    ContentView(value: 5)
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -233,4 +239,10 @@ let imageHeight = (width - ↓24)
 
 ```swift
 return (↓5, ↓10, ↓15)
+```
+
+```swift
+#ExampleMacro {
+    ContentView(value: ↓5)
+}
 ```

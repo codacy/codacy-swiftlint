@@ -2,7 +2,7 @@
 
 The constant literal should be placed on the right-hand side of the comparison operator
 
-* **Identifier:** yoda_condition
+* **Identifier:** `yoda_condition`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

@@ -2,7 +2,7 @@
 
 Parentheses are not needed when declaring closure arguments
 
-* **Identifier:** unneeded_parentheses_in_closure_argument
+* **Identifier:** `unneeded_parentheses_in_closure_argument`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

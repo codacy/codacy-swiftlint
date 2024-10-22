@@ -2,7 +2,7 @@
 
 Initializing an optional variable with nil is redundant
 
-* **Identifier:** redundant_optional_initialization
+* **Identifier:** `redundant_optional_initialization`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

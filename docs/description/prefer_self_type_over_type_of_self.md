@@ -2,7 +2,7 @@
 
 Prefer `Self` over `type(of: self)` when accessing properties or calling methods
 
-* **Identifier:** prefer_self_type_over_type_of_self
+* **Identifier:** `prefer_self_type_over_type_of_self`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

@@ -14,14 +14,14 @@
   "description" : "Use named arguments in multiline closures",
   "parameters" : [ ]
 }, {
-  "patternId" : "anyobject_protocol",
-  "title" : "AnyObject Protocol",
-  "description" : "Prefer using `AnyObject` over `class` for class-only protocols",
-  "parameters" : [ ]
-}, {
   "patternId" : "array_init",
   "title" : "Array Init",
   "description" : "Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Array",
+  "parameters" : [ ]
+}, {
+  "patternId" : "attribute_name_spacing",
+  "title" : "Attribute Name Spacing",
+  "description" : "This rule prevents trailing spaces after attribute names, ensuring compatibility with Swift 6 where a space between an attribute name and the opening parenthesis results in a compilation error (e.g. `@MyPropertyWrapper ()`, `private (set)`).",
   "parameters" : [ ]
 }, {
   "patternId" : "attributes",
@@ -137,6 +137,11 @@
   "patternId" : "contains_over_range_nil_comparison",
   "title" : "Contains over Range Comparison to Nil",
   "description" : "Prefer `contains` over `range(of:) != nil` and `range(of:) == nil`",
+  "parameters" : [ ]
+}, {
+  "patternId" : "contrasted_opening_brace",
+  "title" : "Contrasted Opening Brace",
+  "description" : "The correct positioning of braces that introduce a block of code or member list is highly controversial. No matter which style is preferred, consistency is key. Apart from different tastes, the positioning of braces can also have a significant impact on the readability of the code, especially for visually impaired developers. This rule ensures that braces are on a separate line after the declaration to contrast the code block from the rest of the declaration. Comments between the declaration and the opening brace are respected. Check out the `opening_brace` rule for a different style.",
   "parameters" : [ ]
 }, {
   "patternId" : "control_statement",
@@ -599,6 +604,11 @@
   "description" : "Prefer Nimble operator overloads over free matcher functions",
   "parameters" : [ ]
 }, {
+  "patternId" : "no_empty_block",
+  "title" : "No Empty Block",
+  "description" : "Code blocks should contain at least one statement or comment",
+  "parameters" : [ ]
+}, {
   "patternId" : "no_extension_access_modifier",
   "title" : "No Extension Access Modifier",
   "description" : "Prefer not to use extension access modifiers",
@@ -625,8 +635,8 @@
   "parameters" : [ ]
 }, {
   "patternId" : "non_optional_string_data_conversion",
-  "title" : "Non-Optional String <-> Data Conversion",
-  "description" : "Prefer using UTF-8 encoded strings when converting between `String` and `Data`",
+  "title" : "Non-optional String -> Data Conversion",
+  "description" : "Prefer non-optional `Data(_:)` initializer when converting `String` to `Data`",
   "parameters" : [ ]
 }, {
   "patternId" : "non_overridable_class_declaration",
@@ -676,7 +686,7 @@
 }, {
   "patternId" : "opening_brace",
   "title" : "Opening Brace Spacing",
-  "description" : "Opening braces should be preceded by a single space and on the same line as the declaration",
+  "description" : "The correct positioning of braces that introduce a block of code or member list is highly controversial. No matter which style is preferred, consistency is key. Apart from different tastes, the positioning of braces can also have a significant impact on the readability of the code, especially for visually impaired developers. This rule ensures that braces are preceded by a single space and on the same line as the declaration. Comments between the declaration and the opening brace are respected. Check out the `contrasted_opening_brace` rule for a different style.",
   "parameters" : [ ]
 }, {
   "patternId" : "operator_usage_whitespace",
@@ -687,6 +697,11 @@
   "patternId" : "operator_whitespace",
   "title" : "Operator Function Whitespace",
   "description" : "Operators should be surrounded by a single whitespace when defining them",
+  "parameters" : [ ]
+}, {
+  "patternId" : "optional_data_string_conversion",
+  "title" : "Optional Data -> String Conversion",
+  "description" : "Prefer failable `String(data:encoding:)` initializer when converting `Data` to `String`",
   "parameters" : [ ]
 }, {
   "patternId" : "optional_enum_case_matching",
@@ -719,6 +734,11 @@
   "description" : "Periods should not be followed by more than one space",
   "parameters" : [ ]
 }, {
+  "patternId" : "prefer_key_path",
+  "title" : "Prefer Key Path",
+  "description" : "Use a key path argument instead of a closure with property access",
+  "parameters" : [ ]
+}, {
   "patternId" : "prefer_nimble",
   "title" : "Prefer Nimble",
   "description" : "Prefer Nimble matchers over XCTAssert functions",
@@ -732,6 +752,11 @@
   "patternId" : "prefer_self_type_over_type_of_self",
   "title" : "Prefer Self Type Over Type of Self",
   "description" : "Prefer `Self` over `type(of: self)` when accessing properties or calling methods",
+  "parameters" : [ ]
+}, {
+  "patternId" : "prefer_type_checking",
+  "title" : "Prefer Type Checking",
+  "description" : "Prefer `a is X` to `a as? X != nil`",
   "parameters" : [ ]
 }, {
   "patternId" : "prefer_zero_over_explicit_init",
@@ -941,7 +966,7 @@
 }, {
   "patternId" : "static_over_final_class",
   "title" : "Static Over Final Class",
-  "description" : "Prefer `static` over `final class`",
+  "description" : "Prefer `static` over `class` when the declaration is not allowed to be overridden in child classes due to its context being final. Likewise, the compiler complains about `open` being used in `final` classes.",
   "parameters" : [ ]
 }, {
   "patternId" : "strict_fileprivate",
@@ -1119,6 +1144,11 @@
   "description" : "Prefer `!= nil` over `let _ =`",
   "parameters" : [ ]
 }, {
+  "patternId" : "unused_parameter",
+  "title" : "Unused Parameter",
+  "description" : "Other than unused local variable declarations, unused function/initializer/subscript parameters are not marked by the Swift compiler. Since unused parameters are code smells, they should either be removed or replaced/shadowed by a wildcard '_' to indicate that they are being deliberately disregarded.",
+  "parameters" : [ ]
+}, {
   "patternId" : "unused_setter_value",
   "title" : "Unused Setter Value",
   "description" : "Setter value is not used",
@@ -1145,7 +1175,7 @@
   "parameters" : [ ]
 }, {
   "patternId" : "vertical_whitespace_between_cases",
-  "title" : "Vertical Whitespace between Cases",
+  "title" : "Vertical Whitespace Between Cases",
   "description" : "Include a single empty line between switch cases",
   "parameters" : [ ]
 }, {

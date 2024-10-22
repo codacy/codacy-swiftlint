@@ -2,7 +2,7 @@
 
 Type bodies should not span too many lines
 
-* **Identifier:** type_body_length
+* **Identifier:** `type_body_length`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics

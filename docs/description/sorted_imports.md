@@ -2,7 +2,7 @@
 
 Imports should be sorted
 
-* **Identifier:** sorted_imports
+* **Identifier:** `sorted_imports`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

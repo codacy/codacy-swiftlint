@@ -2,7 +2,7 @@
 
 Prefer the new block based KVO API with keypaths when using Swift 3.2 or later
 
-* **Identifier:** block_based_kvo
+* **Identifier:** `block_based_kvo`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

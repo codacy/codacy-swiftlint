@@ -3,7 +3,7 @@
 Type name should only contain alphanumeric characters, start with an uppercase character and span between 3 and 40 characters in length.
 Private types may start with an underscore.
 
-* **Identifier:** type_name
+* **Identifier:** `type_name`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
@@ -159,7 +159,12 @@ case value
 ```
 
 ```swift
+//
+// validate_protocols: false
+//
+
 protocol P {}
+
 ```
 
 ```swift

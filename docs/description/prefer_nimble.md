@@ -2,7 +2,7 @@
 
 Prefer Nimble matchers over XCTAssert functions
 
-* **Identifier:** prefer_nimble
+* **Identifier:** `prefer_nimble`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

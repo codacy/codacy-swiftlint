@@ -2,7 +2,7 @@
 
 Computed read-only properties and subscripts should avoid using the get keyword.
 
-* **Identifier:** implicit_getter
+* **Identifier:** `implicit_getter`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style

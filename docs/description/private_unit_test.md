@@ -2,7 +2,7 @@
 
 Unit tests marked private are silently skipped
 
-* **Identifier:** private_unit_test
+* **Identifier:** `private_unit_test`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** lint

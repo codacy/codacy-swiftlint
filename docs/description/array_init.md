@@ -2,7 +2,7 @@
 
 Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Array
 
-* **Identifier:** array_init
+* **Identifier:** `array_init`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint
@@ -82,27 +82,27 @@ foo.↓map { return $0 }
 ```
 
 ```swift
-    foo.↓map { elem in
-        elem
-    }
+foo.↓map { elem in
+    elem
+}
 ```
 
 ```swift
-    foo.↓map { elem in
-        return elem
-    }
+foo.↓map { elem in
+    return elem
+}
 ```
 
 ```swift
-    foo.↓map { (elem: String) in
-        elem
-    }
+foo.↓map { (elem: String) in
+    elem
+}
 ```
 
 ```swift
-    foo.↓map { elem -> String in
-        elem
-    }
+foo.↓map { elem -> String in
+    elem
+}
 ```
 
 ```swift

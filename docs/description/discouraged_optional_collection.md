@@ -2,7 +2,7 @@
 
 Prefer empty collection over optional collection
 
-* **Identifier:** discouraged_optional_collection
+* **Identifier:** `discouraged_optional_collection`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

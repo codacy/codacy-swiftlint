@@ -2,7 +2,7 @@
 
 Prefer using the `isMultiple(of:)` function instead of using the remainder operator (`%`)
 
-* **Identifier:** legacy_multiple
+* **Identifier:** `legacy_multiple`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

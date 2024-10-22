@@ -2,7 +2,7 @@
 
 Matching an enum case against an optional enum without '?' is supported on Swift 5.1 and above
 
-* **Identifier:** optional_enum_case_matching
+* **Identifier:** `optional_enum_case_matching`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** style

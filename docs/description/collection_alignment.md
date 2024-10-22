@@ -2,7 +2,7 @@
 
 All elements in a collection literal should be vertically aligned
 
-* **Identifier:** collection_alignment
+* **Identifier:** `collection_alignment`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

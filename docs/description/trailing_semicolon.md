@@ -2,7 +2,7 @@
 
 Lines should not have trailing semicolons
 
-* **Identifier:** trailing_semicolon
+* **Identifier:** `trailing_semicolon`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

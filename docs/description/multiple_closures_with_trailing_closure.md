@@ -2,7 +2,7 @@
 
 Trailing closure syntax should not be used when passing more than one closure argument
 
-* **Identifier:** multiple_closures_with_trailing_closure
+* **Identifier:** `multiple_closures_with_trailing_closure`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style

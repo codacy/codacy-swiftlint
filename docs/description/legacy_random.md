@@ -2,7 +2,7 @@
 
 Prefer using `type.random(in:)` over legacy functions
 
-* **Identifier:** legacy_random
+* **Identifier:** `legacy_random`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

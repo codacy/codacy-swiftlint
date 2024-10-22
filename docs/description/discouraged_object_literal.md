@@ -2,7 +2,7 @@
 
 Prefer initializers over object literals
 
-* **Identifier:** discouraged_object_literal
+* **Identifier:** `discouraged_object_literal`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

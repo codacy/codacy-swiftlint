@@ -2,7 +2,7 @@
 
 Prefer checking `isEmpty` over comparing `string` to an empty string literal
 
-* **Identifier:** empty_string
+* **Identifier:** `empty_string`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** performance

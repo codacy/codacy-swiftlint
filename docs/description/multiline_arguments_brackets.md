@@ -2,7 +2,7 @@
 
 Multiline arguments should have their surrounding brackets in a new line
 
-* **Identifier:** multiline_arguments_brackets
+* **Identifier:** `multiline_arguments_brackets`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

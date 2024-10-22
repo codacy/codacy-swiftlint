@@ -2,7 +2,7 @@
 
 swiftlint command is invalid
 
-* **Identifier:** invalid_swiftlint_command
+* **Identifier:** `invalid_swiftlint_command`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

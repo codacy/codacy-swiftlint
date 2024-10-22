@@ -2,7 +2,7 @@
 
 Remove overridden functions that don't do anything except call their super
 
-* **Identifier:** unneeded_override
+* **Identifier:** `unneeded_override`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** lint
@@ -48,6 +48,14 @@ class Foo {
 class Foo {
     @available(*, unavailable)
     override func bar() {
+        super.bar()
+    }
+}
+```
+
+```swift
+class Foo {
+    @objc override func bar() {
         super.bar()
     }
 }

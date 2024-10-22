@@ -2,7 +2,7 @@
 
 Classes should have an explicit deinit method
 
-* **Identifier:** required_deinit
+* **Identifier:** `required_deinit`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

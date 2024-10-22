@@ -2,7 +2,7 @@
 
 Closure parameters should be on the same line as opening brace
 
-* **Identifier:** closure_parameter_position
+* **Identifier:** `closure_parameter_position`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style

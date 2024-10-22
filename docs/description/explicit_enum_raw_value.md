@@ -2,7 +2,7 @@
 
 Enums should be explicitly assigned their raw values
 
-* **Identifier:** explicit_enum_raw_value
+* **Identifier:** `explicit_enum_raw_value`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

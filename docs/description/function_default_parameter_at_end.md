@@ -2,7 +2,7 @@
 
 Prefer to locate parameters with defaults toward the end of the parameter list
 
-* **Identifier:** function_default_parameter_at_end
+* **Identifier:** `function_default_parameter_at_end`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

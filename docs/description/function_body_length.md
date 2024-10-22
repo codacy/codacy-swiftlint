@@ -2,7 +2,7 @@
 
 Function bodies should not span too many lines
 
-* **Identifier:** function_body_length
+* **Identifier:** `function_body_length`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics

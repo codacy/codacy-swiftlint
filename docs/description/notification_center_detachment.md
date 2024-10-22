@@ -2,7 +2,7 @@
 
 An object should only remove itself as an observer in `deinit`
 
-* **Identifier:** notification_center_detachment
+* **Identifier:** `notification_center_detachment`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** lint

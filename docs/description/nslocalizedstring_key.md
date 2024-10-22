@@ -2,7 +2,7 @@
 
 Static strings should be used as key/comment in NSLocalizedString in order for genstrings to work
 
-* **Identifier:** nslocalizedstring_key
+* **Identifier:** `nslocalizedstring_key`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

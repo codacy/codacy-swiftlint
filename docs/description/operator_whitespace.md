@@ -2,7 +2,7 @@
 
 Operators should be surrounded by a single whitespace when defining them
 
-* **Identifier:** operator_whitespace
+* **Identifier:** `operator_whitespace`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** style

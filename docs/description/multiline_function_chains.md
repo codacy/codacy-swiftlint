@@ -2,7 +2,7 @@
 
 Chained function calls should be either on the same line, or one per line
 
-* **Identifier:** multiline_function_chains
+* **Identifier:** `multiline_function_chains`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

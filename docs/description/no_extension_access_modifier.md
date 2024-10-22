@@ -2,7 +2,7 @@
 
 Prefer not to use extension access modifiers
 
-* **Identifier:** no_extension_access_modifier
+* **Identifier:** `no_extension_access_modifier`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

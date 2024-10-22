@@ -2,7 +2,7 @@
 
 When declaring properties in protocols, the order of accessors should be `get set`
 
-* **Identifier:** protocol_property_accessors_order
+* **Identifier:** `protocol_property_accessors_order`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

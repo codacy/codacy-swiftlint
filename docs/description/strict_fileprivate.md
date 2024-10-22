@@ -2,7 +2,7 @@
 
 `fileprivate` should be avoided
 
-* **Identifier:** strict_fileprivate
+* **Identifier:** `strict_fileprivate`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

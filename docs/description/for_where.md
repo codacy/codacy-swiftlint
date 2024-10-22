@@ -2,7 +2,7 @@
 
 `where` clauses are preferred over a single `if` inside a `for`
 
-* **Identifier:** for_where
+* **Identifier:** `for_where`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** idiomatic
@@ -106,18 +106,28 @@ for (index, value) in array.enumerated() {
 ```
 
 ```swift
+//
+// allow_for_as_filter: true
+//
+
 for user in users {
   if user.id == 1 { return true }
 }
+
 ```
 
 ```swift
+//
+// allow_for_as_filter: true
+//
+
 for user in users {
   if user.id == 1 {
     let derivedValue = calculateValue(from: user)
     return derivedValue != 0
   }
 }
+
 ```
 
 ## Triggering Examples
@@ -138,10 +148,15 @@ for subview in subviews {
 ```
 
 ```swift
+//
+// allow_for_as_filter: true
+//
+
 for subview in subviews {
     ↓if !(subview is UIStackView) {
         subview.removeConstraints(subview.constraints)
         subview.removeFromSuperview()
     }
 }
+
 ```

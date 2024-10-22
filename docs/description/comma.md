@@ -2,7 +2,7 @@
 
 There should be no space before and one after any comma
 
-* **Identifier:** comma
+* **Identifier:** `comma`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** style

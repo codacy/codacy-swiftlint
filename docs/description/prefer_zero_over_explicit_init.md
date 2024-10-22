@@ -2,7 +2,7 @@
 
 Prefer `.zero` over explicit init with zero parameters (e.g. `CGPoint(x: 0, y: 0)`)
 
-* **Identifier:** prefer_zero_over_explicit_init
+* **Identifier:** `prefer_zero_over_explicit_init`
 * **Enabled by default:** No
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

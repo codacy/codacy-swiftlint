@@ -2,7 +2,7 @@
 
 Struct-scoped constants are preferred over legacy global constants
 
-* **Identifier:** legacy_constant
+* **Identifier:** `legacy_constant`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** Yes
 * **Kind:** idiomatic

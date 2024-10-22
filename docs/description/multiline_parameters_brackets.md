@@ -2,7 +2,7 @@
 
 Multiline parameters should have their surrounding brackets in a new line
 
-* **Identifier:** multiline_parameters_brackets
+* **Identifier:** `multiline_parameters_brackets`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style

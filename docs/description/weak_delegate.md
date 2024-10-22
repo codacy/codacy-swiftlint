@@ -2,7 +2,7 @@
 
 Delegates should be weak to avoid reference cycles
 
-* **Identifier:** weak_delegate
+* **Identifier:** `weak_delegate`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** lint

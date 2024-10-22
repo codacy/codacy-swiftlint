@@ -2,7 +2,7 @@
 
 Complexity of function bodies should be limited.
 
-* **Identifier:** cyclomatic_complexity
+* **Identifier:** `cyclomatic_complexity`
 * **Enabled by default:** Yes
 * **Supports autocorrection:** No
 * **Kind:** metrics

@@ -2,7 +2,7 @@
 
 Top-level constants should be prefixed by `k`
 
-* **Identifier:** prefixed_toplevel_constant
+* **Identifier:** `prefixed_toplevel_constant`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
@@ -52,7 +52,12 @@ let kFoo = true
 ```
 
 ```swift
+//
+// only_private: true
+//
+
 let Foo = true
+
 ```
 
 ```swift

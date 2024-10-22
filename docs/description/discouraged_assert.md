@@ -2,7 +2,7 @@
 
 Prefer `assertionFailure()` and/or `preconditionFailure()` over `assert(false)`
 
-* **Identifier:** discouraged_assert
+* **Identifier:** `discouraged_assert`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** idiomatic

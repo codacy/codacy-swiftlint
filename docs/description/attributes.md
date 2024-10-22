@@ -2,7 +2,7 @@
 
 Attributes should be on their own lines in functions and types, but on the same line as variables and imports
 
-* **Identifier:** attributes
+* **Identifier:** `attributes`
 * **Enabled by default:** No
 * **Supports autocorrection:** No
 * **Kind:** style
