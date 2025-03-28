@@ -76,6 +76,14 @@ for i in list {
 }
 ```
 
+```swift
+if #available(iOS 13, *) {
+    return
+} else {
+    deprecatedFunction()
+}
+```
+
 ## Triggering Examples
 
 ```swift

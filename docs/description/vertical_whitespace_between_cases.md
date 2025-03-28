@@ -39,6 +39,8 @@ case 5..<10:
 default:
     print("x is invalid")
 
+@unknown default:
+    print("x is out of this world")
 }
 ```
 
@@ -94,6 +96,9 @@ case 0..<5:
 
 default:
     return "x is invalid"
+
+@unknown default:
+    print("x is out of this world")
 }
 ```
 
@@ -102,6 +107,7 @@ switch x {
 case 0..<5: print("x is low")
 case 5..<10: print("x is high")
 default: print("x is invalid")
+@unknown default: print("x is out of this world")
 }
 ```
 
@@ -152,5 +158,7 @@ case 0..<5:
     return "x is valid"
 ↓default:
     return "x is invalid"
+↓@unknown default:
+    print("x is out of this world")
 }
 ```

@@ -22,6 +22,14 @@ Prefer to locate parameters with defaults toward the end of the parameter list
   warning
   </td>
   </tr>
+  <tr>
+  <td>
+  ignore_first_isolation_inheritance_parameter
+  </td>
+  <td>
+  true
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -85,16 +93,41 @@ func handleNotification(_ userInfo: NSDictionary,
 func write(withoutNotifying tokens: [NotificationToken] =  {}, _ block: (() throws -> Int)) {}
 ```
 
+```swift
+func foo(bar: Int, baz: Int = 0, z: () -> Void) {}
+```
+
+```swift
+func foo(bar: Int, baz: Int = 0, z: () -> Void, x: Int = 0) {}
+```
+
+```swift
+func foo(isolation: isolated (any Actor)? = #isolation, bar: String) {}
+```
+
 ## Triggering Examples
 
 ```swift
-↓func foo(bar: Int = 0, baz: String) {}
+func foo(↓bar: Int = 0, baz: String) {}
 ```
 
 ```swift
-private ↓func foo(bar: Int = 0, baz: String) {}
+private func foo(↓bar: Int = 0, baz: String) {}
 ```
 
 ```swift
-public ↓init?(for date: Date = Date(), coordinate: CLLocationCoordinate2D) {}
+public init?(↓for date: Date = Date(), coordinate: CLLocationCoordinate2D) {}
+```
+
+```swift
+func foo(bar: Int, ↓baz: Int = 0, z: () -> Void, x: Int) {}
+```
+
+```swift
+//
+// ignore_first_isolation_inheritance_parameter: false
+//
+
+func foo(isolation: isolated (any Actor)? = #isolation, bar: String) {}
+
 ```

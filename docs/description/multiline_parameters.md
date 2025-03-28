@@ -414,6 +414,26 @@ protocol Foo {
 
 ```
 
+```swift
+//
+// max_number_of_single_line_parameters: 3
+//
+
+func foo(param1: Int, param2: Bool, param3: [String]) { }
+
+```
+
+```swift
+//
+// max_number_of_single_line_parameters: 3
+//
+
+func foo(param1: Int,
+         param2: Bool,
+         param3: [String]) { }
+
+```
+
 ## Triggering Examples
 
 ```swift
@@ -585,5 +605,24 @@ func ↓foo(param1: Int, param2: Bool) { }
 //
 
 func ↓foo(param1: Int, param2: Bool, param3: [String]) { }
+
+```
+
+```swift
+//
+// max_number_of_single_line_parameters: 2
+//
+
+func ↓foo(param1: Int, param2: Bool, param3: [String]) { }
+
+```
+
+```swift
+//
+// max_number_of_single_line_parameters: 3
+//
+
+func ↓foo(param1: Int,
+          param2: Bool, param3: [String]) { }
 
 ```

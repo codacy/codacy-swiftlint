@@ -95,6 +95,10 @@ if (f() { g() {} }) {}
 if (a + f() {} == 1) {}
 ```
 
+```swift
+if ({ true }()) {}
+```
+
 ## Triggering Examples
 
 ```swift
