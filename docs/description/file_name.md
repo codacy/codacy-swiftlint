@@ -54,5 +54,13 @@ File name should match a type or extension declared in the file (if any)
   &quot;.&quot;
   </td>
   </tr>
+  <tr>
+  <td>
+  require_fully_qualified_names
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
   </tbody>
   </table>

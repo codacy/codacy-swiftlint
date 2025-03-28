@@ -30,14 +30,6 @@ Unit tests marked private are silently skipped
   [&quot;QuickSpec&quot;, &quot;XCTestCase&quot;]
   </td>
   </tr>
-  <tr>
-  <td>
-  regex
-  </td>
-  <td>
-  &quot;XCTestCase&quot;
-  </td>
-  </tr>
   </tbody>
   </table>
 

@@ -51,6 +51,22 @@ if let bar = foo as? Bar {
 }
 ```
 
+```swift
+bar as Foo != nil
+```
+
+```swift
+nil != bar as Foo
+```
+
+```swift
+bar as Foo? != nil
+```
+
+```swift
+bar as? Foo? != nil
+```
+
 ## Triggering Examples
 
 ```swift
@@ -65,4 +81,12 @@ bar ↓as? Foo != nil
 if foo ↓as? Bar != nil {
     doSomeThing()
 }
+```
+
+```swift
+nil != bar ↓as? Foo
+```
+
+```swift
+nil != 2*x ↓as? X
 ```

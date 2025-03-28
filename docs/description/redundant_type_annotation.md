@@ -32,6 +32,14 @@ Variables should not have redundant type annotation
   </tr>
   <tr>
   <td>
+  ignore_properties
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
   consider_default_literal_types_redundant
   </td>
   <td>
@@ -174,6 +182,18 @@ var int: Int = 0
 var str: String = "str"
 ```
 
+```swift
+//
+// ignore_properties: true
+//
+
+struct Foo {
+    var url: URL = URL()
+    let myVar: Int? = 0, s: String = ""
+}
+
+```
+
 ## Triggering Examples
 
 ```swift
@@ -270,6 +290,19 @@ class ViewController: UIViewController {
     let myVar↓: Int = Int(5)
   }
 }
+```
+
+```swift
+//
+// ignore_properties: true
+//
+
+class ViewController: UIViewController {
+  func someMethod() {
+    let myVar↓: Int = Int(5)
+  }
+}
+
 ```
 
 ```swift

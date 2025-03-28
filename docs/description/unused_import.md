@@ -82,6 +82,18 @@ let 👨‍👩‍👧‍👦 = #selector(NSArray.contains(_:))
 👨‍👩‍👧‍👦 == 👨‍👩‍👧‍👦
 ```
 
+```swift
+//
+// allowed_transitive_imports: [Foundation: ["CoreFoundation"]]
+//
+
+import Foundation
+enum E {
+    static let min: CGFloat = 44
+}
+
+```
+
 ## Triggering Examples
 
 ```swift

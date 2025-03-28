@@ -1,6 +1,6 @@
 {
   "name" : "swiftlint",
-  "version" : "0.57.0",
+  "version" : "0.58.2",
   "patterns" : [ {
     "patternId" : "accessibility_label_for_image",
     "level" : "Warning",
@@ -24,6 +24,13 @@
     "enabled" : false
   }, {
     "patternId" : "array_init",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "async_without_await",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],
@@ -625,13 +632,6 @@
     "languages" : [ ],
     "enabled" : false
   }, {
-    "patternId" : "inert_defer",
-    "level" : "Warning",
-    "category" : "ErrorProne",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : false
-  }, {
     "patternId" : "invalid_swiftlint_command",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -1220,6 +1220,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "redundant_sendable",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
     "patternId" : "redundant_set_access_control",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -1550,13 +1557,6 @@
     "enabled" : false
   }, {
     "patternId" : "untyped_error_in_catch",
-    "level" : "Warning",
-    "category" : "ErrorProne",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : false
-  }, {
-    "patternId" : "unused_capture_list",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],

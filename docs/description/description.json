@@ -19,6 +19,11 @@
   "description" : "Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Array",
   "parameters" : [ ]
 }, {
+  "patternId" : "async_without_await",
+  "title" : "Async Without Await",
+  "description" : "Declaration should not be async if it doesn't use await",
+  "parameters" : [ ]
+}, {
   "patternId" : "attribute_name_spacing",
   "title" : "Attribute Name Spacing",
   "description" : "This rule prevents trailing spaces after attribute names, ensuring compatibility with Swift 6 where a space between an attribute name and the opening parenthesis results in a compilation error (e.g. `@MyPropertyWrapper ()`, `private (set)`).",
@@ -444,11 +449,6 @@
   "description" : "Indent code using either one tab or the configured amount of spaces, unindent to match previous indentations. Don't indent the first line.",
   "parameters" : [ ]
 }, {
-  "patternId" : "inert_defer",
-  "title" : "Inert Defer",
-  "description" : "If defer is at the end of its parent scope, it will be executed right where it is anyway",
-  "parameters" : [ ]
-}, {
   "patternId" : "invalid_swiftlint_command",
   "title" : "Invalid SwiftLint Command",
   "description" : "swiftlint command is invalid",
@@ -701,7 +701,7 @@
 }, {
   "patternId" : "optional_data_string_conversion",
   "title" : "Optional Data -> String Conversion",
-  "description" : "Prefer failable `String(data:encoding:)` initializer when converting `Data` to `String`",
+  "description" : "Prefer failable `String(bytes:encoding:)` initializer when converting `Data` to `String`",
   "parameters" : [ ]
 }, {
   "patternId" : "optional_enum_case_matching",
@@ -867,6 +867,11 @@
   "patternId" : "redundant_self_in_closure",
   "title" : "Redundant Self in Closure",
   "description" : "Explicit use of 'self' is not required",
+  "parameters" : [ ]
+}, {
+  "patternId" : "redundant_sendable",
+  "title" : "Redundant Sendable",
+  "description" : "Sendable conformance is redundant on an actor-isolated type",
   "parameters" : [ ]
 }, {
   "patternId" : "redundant_set_access_control",
@@ -1107,11 +1112,6 @@
   "patternId" : "untyped_error_in_catch",
   "title" : "Untyped Error in Catch",
   "description" : "Catch statements should not declare error variables without type casting",
-  "parameters" : [ ]
-}, {
-  "patternId" : "unused_capture_list",
-  "title" : "Unused Capture List",
-  "description" : "Unused reference in a capture list should be removed",
   "parameters" : [ ]
 }, {
   "patternId" : "unused_closure_parameter",

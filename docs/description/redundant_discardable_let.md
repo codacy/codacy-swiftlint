@@ -22,6 +22,14 @@ Prefer `_ = foo()` over `let _ = foo()` when discarding a result from a function
   warning
   </td>
   </tr>
+  <tr>
+  <td>
+  ignore_swiftui_view_bodies
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -51,6 +59,18 @@ while let _ = SplashStyle(rawValue: maxValue) { maxValue += 1 }
 async let _ = await foo()
 ```
 
+```swift
+//
+// ignore_swiftui_view_bodies: true
+//
+
+var body: some View {
+    let _ = foo()
+    return Text("Hello, World!")
+}
+
+```
+
 ## Triggering Examples
 
 ```swift
@@ -59,4 +79,11 @@ async let _ = await foo()
 
 ```swift
 if _ = foo() { ↓let _ = bar() }
+```
+
+```swift
+var body: some View {
+    ↓let _ = foo()
+    Text("Hello, World!")
+}
 ```

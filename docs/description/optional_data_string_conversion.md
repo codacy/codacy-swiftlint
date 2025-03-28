@@ -1,6 +1,6 @@
 # Optional Data -> String Conversion
 
-Prefer failable `String(data:encoding:)` initializer when converting `Data` to `String`
+Prefer failable `String(bytes:encoding:)` initializer when converting `Data` to `String`
 
 * **Identifier:** `optional_data_string_conversion`
 * **Enabled by default:** Yes
@@ -29,6 +29,22 @@ Prefer failable `String(data:encoding:)` initializer when converting `Data` to `
 
 ```swift
 String(data: data, encoding: .utf8)
+```
+
+```swift
+String(bytes: data, encoding: .utf8)
+```
+
+```swift
+String(UTF8.self)
+```
+
+```swift
+String(a, b, c, UTF8.self)
+```
+
+```swift
+String(decoding: data, encoding: UTF8.self)
 ```
 
 ## Triggering Examples

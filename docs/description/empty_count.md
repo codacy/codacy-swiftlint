@@ -71,6 +71,10 @@ discount == 0
 order.discount == 0
 ```
 
+```swift
+let rule = #Rule(Tips.Event(id: "someTips")) { $0.donations.count == 0 }
+```
+
 ## Triggering Examples
 
 ```swift
@@ -111,4 +115,8 @@ order.discount == 0
 
 ```swift
 ↓count == 0
+```
+
+```swift
+#ExampleMacro { $0.list.↓count == 0 }
 ```

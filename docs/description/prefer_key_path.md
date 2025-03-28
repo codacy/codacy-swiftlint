@@ -65,15 +65,6 @@ f {}
 // restrict_to_standard_functions: false
 //
 
-f { $0 }
-
-```
-
-```swift
-//
-// restrict_to_standard_functions: false
-//
-
 f() { g() }
 
 ```
@@ -84,15 +75,6 @@ f() { g() }
 //
 
 f { a.b.c }
-
-```
-
-```swift
-//
-// restrict_to_standard_functions: false
-//
-
-f { a in a }
 
 ```
 
@@ -142,6 +124,10 @@ f.filter({ $0.a }, x)
 
 ```swift
 #Predicate { $0.a }
+```
+
+```swift
+let transform: (Int) -> Int = nil ?? { $0.a }
 ```
 
 ## Triggering Examples
@@ -210,6 +196,10 @@ f.contains ↓{ $0.0.a }
 ```
 
 ```swift
+f.compactMap ↓{ $0.a.b.c.d }
+```
+
+```swift
 f.flatMap ↓{ $0.a.b }
 ```
 
@@ -220,4 +210,8 @@ f.flatMap ↓{ $0.a.b }
 
 let f: (Int) -> Int = ↓{ $0.bigEndian }
 
+```
+
+```swift
+transform = ↓{ $0.a }
 ```
