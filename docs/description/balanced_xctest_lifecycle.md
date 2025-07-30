@@ -33,6 +33,14 @@ Test classes must implement balanced setUp and tearDown methods
   </tbody>
   </table>
 
+## Rationale
+
+The `setUp` method of `XCTestCase` can be used to set up variables and resources before each test is run (or with the `class` variant, before all tests are run).
+
+This rule verifies that every class with an implementation of a `setUp` method also has a `tearDown` method (and vice versa).
+
+The `tearDown` method should be used to cleanup or reset any resources that could otherwise have any effects on subsequent tests, and to free up any instance variables.
+
 ## Non Triggering Examples
 
 ```swift

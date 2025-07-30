@@ -2,14 +2,14 @@ organization := "com.codacy"
 
 name := "codacy-swiftlint"
 
-ThisBuild / scalaVersion := "2.13.14"
+ThisBuild / scalaVersion := "2.13.16"
 
 enablePlugins(NativeImagePlugin)
 
 enablePlugins(JavaAppPackaging)
 
 libraryDependencies ++= Seq(
-  "com.codacy" %% "codacy-engine-scala-seed" % "6.1.2",
+  "com.codacy" %% "codacy-engine-scala-seed" % "6.1.5",
   "com.github.pathikrit" %% "better-files" % "3.9.2"
 )
 
@@ -20,7 +20,7 @@ nativeImageOptions ++= Seq("-O1", "-H:+ReportExceptionStackTraces", "--no-fallba
 lazy val `doc-generator` = project
   .settings(
     libraryDependencies ++= Seq(
-      "com.codacy" %% "codacy-engine-scala-seed" % "6.1.2",
+      "com.codacy" %% "codacy-engine-scala-seed" % "6.1.5",
       "com.lihaoyi" %% "os-lib" % "0.10.0"
     )
   )

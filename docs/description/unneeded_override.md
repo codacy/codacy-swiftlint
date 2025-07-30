@@ -30,6 +30,14 @@ Remove overridden functions that don't do anything except call their super
   false
   </td>
   </tr>
+  <tr>
+  <td>
+  excluded_methods
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -186,6 +194,19 @@ class C {
         super.qux(c: {})
     }
 }
+```
+
+```swift
+//
+// excluded_methods: ["setUp"]
+//
+
+class FooTestCase: XCTestCase {
+    override func setUp() {
+        super.setUp()
+    }
+}
+
 ```
 
 ## Triggering Examples

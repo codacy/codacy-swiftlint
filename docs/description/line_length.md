@@ -64,6 +64,14 @@ Lines should not span too many characters.
   </tr>
   <tr>
   <td>
+  ignores_multiline_strings
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
+  <tr>
+  <td>
   excluded_lines_patterns
   </td>
   <td>

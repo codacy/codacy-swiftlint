@@ -41,6 +41,26 @@
   </tbody>
   </table>
 
+## Rationale
+
+The intent of this rule is to prevent code like
+
+```swift
+// swiftlint:disable force_unwrapping
+let foo = bar!
+```
+
+which disables the `force_unwrapping` rule for the remainder of the file, instead of just for the specific violation.
+
+`next`, `this`, or `previous` can be used to restrict the disable command's scope to a single line, or it can be re-enabled after the violations.
+
+To disable this rule in code you will need to do something like
+
+```swift
+// swiftlint:disable:next blanket_disable_command
+// swiftlint:disable force_unwrapping
+```
+
 ## Non Triggering Examples
 
 ```swift
@@ -85,4 +105,8 @@
 
 ```swift
 // swiftlint:enable ↓unused_import
+```
+
+```swift
+// swiftlint:disable all
 ```

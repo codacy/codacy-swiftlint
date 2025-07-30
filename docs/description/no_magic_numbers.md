@@ -30,6 +30,14 @@ Magic numbers should be replaced by named constants
   [&quot;QuickSpec&quot;, &quot;XCTestCase&quot;]
   </td>
   </tr>
+  <tr>
+  <td>
+  allowed_numbers
+  </td>
+  <td>
+  [0.0, 1.0, 100.0]
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -169,9 +177,50 @@ let notFound = (statusCode: 404, description: "Not Found", isError: true)
 ```
 
 ```swift
-#Preview {
-    ContentView(value: 5)
+#Preview { ContentView(value: 5) }
+```
+
+```swift
+@Test func f() { let _ = 2 + 2 }
+```
+
+```swift
+@Suite struct Test {
+    @Test func f() {
+        func g() { let _ = 2 + 2 }
+        let _ = 2 + 2
+    }
 }
+```
+
+```swift
+@Suite actor Test {
+    private var a: Int { 2 }
+    @Test func f() { let _ = 2 + a }
+}
+```
+
+```swift
+class Test { // @Suite implicitly
+    private var a: Int { 2 }
+    @Test func f() { let _ = 2 + a }
+}
+```
+
+```swift
+#if compiler(<6.0) && compiler(>4.0)
+let a = 1
+#elseif compiler(<3.0)
+let a = 2
+#endif
+```
+
+```swift
+let myColor: UIColor = UIColor(red: 0.6, green: 1.0, blue: 0.2, alpha: 0.52)
+```
+
+```swift
+let colorLiteral = #colorLiteral(red: 0.7019607843, green: 0.7019607843, blue: 0.7019607843, alpha: 1)
 ```
 
 ## Triggering Examples
@@ -245,4 +294,14 @@ return (↓5, ↓10, ↓15)
 #ExampleMacro {
     ContentView(value: ↓5)
 }
+```
+
+```swift
+#if compiler(<6.0) && compiler(>4.0)
+f(↓6.0)
+#elseif compiler(<3.0)
+f(↓3.0)
+#else
+f(↓4.0)
+#endif
 ```

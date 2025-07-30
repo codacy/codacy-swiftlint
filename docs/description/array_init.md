@@ -25,6 +25,36 @@ Prefer using `Array(seq)` over `seq.map { $0 }` to convert a sequence into an Ar
   </tbody>
   </table>
 
+## Rationale
+
+When converting the elements of a sequence directly into an `Array`, for clarity, prefer using the `Array` constructor over calling `map`. For example
+
+```swift
+Array(foo)
+```
+
+rather than
+
+```swift
+foo.↓map({ $0 })
+```
+
+If some processing of the elements is required, then using `map` is fine. For example
+
+```swift
+foo.map { !$0 }
+```
+
+Constructs like
+
+```swift
+enum MyError: Error {}
+let myResult: Result<String, MyError> = .success("")
+let result: Result<Any, MyError> = myResult.map { $0 }
+```
+
+may be picked up as false positives by the `array_init` rule. If your codebase contains constructs like this, consider using the `typesafe_array_init` analyzer rule instead.
+
 ## Non Triggering Examples
 
 ```swift

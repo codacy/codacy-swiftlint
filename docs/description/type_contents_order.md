@@ -147,6 +147,14 @@ deinit {
 }
 ```
 
+```swift
+struct ContentView: View {
+    @available(SwiftUI_v5, *) // Availability macro syntax: https://github.com/swiftlang/swift/pull/65218
+    var v5Body: some View { EmptyView() }
+    var body: some View { EmptyView() }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -279,5 +287,38 @@ class TestViewController: UIViewController {
 
     // MARK: Other Methods
     func goToNextVc() { /* TODO */ }
+}
+```
+
+```swift
+final class C {
+    ↓var i = 1
+    static var I = 2
+    class var s: Int {
+        struct S {}
+        return 3
+    }
+}
+```
+
+```swift
+final class C {
+    ↓var i = 1
+    #if os(macOS)
+    static var I = 2
+    #endif
+}
+```
+
+```swift
+struct S {
+    ↓var i = 1
+    #if os(macOS)
+        #if swift(>=5.3)
+        ↓func f() {}
+        #endif
+    #else
+        static var i = 3
+    #endif
 }
 ```
