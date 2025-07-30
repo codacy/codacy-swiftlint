@@ -22,6 +22,14 @@ Prefer Swift value types to bridged Objective-C reference types
   warning
   </td>
   </tr>
+  <tr>
+  <td>
+  allowed_types
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -49,6 +57,18 @@ _ = URLRequest.CachePolicy.reloadIgnoringLocalCacheData
 
 ```swift
 _ = Notification.Name("com.apple.Music.playerInfo")
+```
+
+```swift
+//
+// allowed_types: ["NSData", "NSNumber", "NSURLRequest"]
+//
+
+class SLURLRequest: NSURLRequest {
+    let data = NSData()
+    let number: NSNumber
+}
+
 ```
 
 ## Triggering Examples

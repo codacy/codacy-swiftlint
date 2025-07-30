@@ -25,6 +25,24 @@ Use named arguments in multiline closures
   </tbody>
   </table>
 
+## Rationale
+
+In multiline closures, for clarity, prefer using named arguments
+
+```swift
+closure { arg in
+    print(arg)
+}
+```
+
+to anonymous arguments
+
+```swift
+closure {
+    print(↓$0)
+}
+```
+
 ## Non Triggering Examples
 
 ```swift

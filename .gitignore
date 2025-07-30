@@ -6,3 +6,6 @@ target
 .vscode
 .bsp
 metals.sbt
+
+#Ignore vscode AI rules
+.github/copilot-instructions.md

@@ -33,6 +33,12 @@ Closure bodies should not span too many lines
   </tbody>
   </table>
 
+## Rationale
+
+"Closure bodies should not span too many lines" says it all.
+
+Possibly you could refactor your closure code and extract some of it into a function.
+
 ## Non Triggering Examples
 
 ```swift
