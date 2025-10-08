@@ -82,6 +82,14 @@ Types should be nested at most 1 level deep, and functions should be nested at m
   false
   </td>
   </tr>
+  <tr>
+  <td>
+  ignore_coding_keys
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -690,6 +698,21 @@ enum Example_0 {
         }
     }
 }
+```
+
+```swift
+//
+// ignore_coding_keys: true
+//
+
+struct Outer {
+    struct Inner {
+        enum CodingKeys: String, CodingKey {
+            case id
+        }
+    }
+}
+
 ```
 
 ## Triggering Examples
@@ -1445,4 +1468,43 @@ enum Example_0 {
         }
     }
 }
+```
+
+```swift
+        struct Outer {
+            struct Inner {
+                ↓enum CodingKeys: String, CodingKey {
+                    case id
+                }
+            }
+        }
+```
+
+```swift
+//
+// ignore_coding_keys: true
+//
+
+struct Outer {
+    struct Inner {
+        ↓enum Example: String, CodingKey {
+            case id
+        }
+    }
+}
+
+```
+
+```swift
+//
+// ignore_coding_keys: true
+//
+
+struct Outer {
+  enum CodingKeys: String, CodingKey {
+    case id
+    ↓struct S {}
+  }
+}
+
 ```

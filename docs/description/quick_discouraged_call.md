@@ -191,10 +191,9 @@ class TotoTests: QuickSpec {
 class TotoTests: QuickSpec {
    override func spec() {
        describe("foo") {
-           fit("does something") {
-               let foo = Foo()
-               foo.toto()
-           }
+           #if os(iOS)
+           let foo = 1
+           #endif
        }
    }
 }
@@ -314,7 +313,9 @@ class TotoTests: QuickSpec {
 class TotoTests: QuickSpec {
    override func spec() {
        describe("foo") {
+           #if os(iOS)
            ↓foo()
+           #endif
        }
    }
 }
@@ -341,6 +342,28 @@ class TotoTests: QuickSpec {
 ```
 
 ```swift
+#if os(macOS)
+class TotoTests: QuickSpec {
+   override func spec() {
+       sharedExamples("foo") {
+           ↓foo()
+       }
+   }
+}
+#endif
+```
+
+```swift
+class TotoTests: QuickSpec {
+   override func spec() {
+       sharedExamples("foo") {
+           bar = ↓foo()
+       }
+   }
+}
+```
+
+```swift
 class TotoTests: QuickSpec {
    override func spec() {
        xdescribe("foo") {
@@ -360,7 +383,7 @@ class TotoTests: QuickSpec {
            let foo = ↓Foo()
        }
        fcontext("foo") {
-           let foo = ↓Foo()
+           let foo = ↓f() + g()
        }
    }
 }
@@ -373,7 +396,7 @@ class TotoTests: QuickSpecSubclass {
            let foo = ↓Foo()
        }
        fcontext("foo") {
-           let foo = ↓Foo()
+           let foo = ↓{}()
        }
    }
 }

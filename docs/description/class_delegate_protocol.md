@@ -114,6 +114,10 @@ protocol FooDelegate where Self: AnyObject {}
 protocol FooDelegate where Self: NSObjectProtocol {}
 ```
 
+```swift
+protocol FooDelegate: Actor {}
+```
+
 ## Triggering Examples
 
 ```swift

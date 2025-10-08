@@ -145,6 +145,12 @@ actor ContentView: View {
 }
 ```
 
+```swift
+struct ContentViewModifier: ViewModifier {
+    @State private var isPlaying = false
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -239,4 +245,10 @@ struct ContentView: View {
 ```swift
 struct ContentView: View {
     @State ↓fileprivate(set) public var isPlaying = false
+```
+
+```swift
+struct ContentViewModifier: ViewModifier {
+    @State ↓var isPlaying = false
+}
 ```

@@ -1,6 +1,6 @@
 # Vertical Whitespace
 
-Limit vertical whitespace to a single empty line.
+Limit vertical whitespace to a single empty line
 
 * **Identifier:** `vertical_whitespace`
 * **Enabled by default:** Yes
@@ -60,6 +60,25 @@ let abc = 0
 
 ```
 
+```swift
+class CCCC {
+  
+}
+```
+
+```swift
+// comment
+
+import Foundation
+```
+
+```swift
+
+// comment
+
+import Foundation
+```
+
 ## Triggering Examples
 
 ```swift
@@ -82,4 +101,17 @@ class BBBB {}
 
 
 
+```
+
+```swift
+class CCCC {
+  
+  
+}
+```
+
+```swift
+
+
+import Foundation
 ```

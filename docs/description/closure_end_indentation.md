@@ -32,7 +32,6 @@ SignalProducer(values: [1, 2, 3])
    .startWithNext { number in
        print(number)
    }
-
 ```
 
 ```swift
@@ -46,13 +45,11 @@ return match(pattern: pattern, with: [.comment]).flatMap { range in
 }.flatMap { command in
    return command.expand()
 }
-
 ```
 
 ```swift
 foo(foo: bar,
     options: baz) { _ in }
-
 ```
 
 ```swift
@@ -63,7 +60,6 @@ someReallyLongProperty.chainingWithAnotherProperty
 ```swift
 foo(abc, 123)
 { _ in }
-
 ```
 
 ```swift
@@ -103,7 +99,6 @@ SignalProducer(values: [1, 2, 3])
    .startWithNext { number in
        print(number)
 ↓}
-
 ```
 
 ```swift
@@ -111,8 +106,7 @@ return match(pattern: pattern, with: [.comment]).flatMap { range in
    return Command(string: contents, range: range)
    ↓}.flatMap { command in
    return command.expand()
-↓}
-
+}
 ```
 
 ```swift

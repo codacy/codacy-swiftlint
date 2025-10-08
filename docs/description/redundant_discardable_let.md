@@ -71,6 +71,43 @@ var body: some View {
 
 ```
 
+```swift
+//
+// ignore_swiftui_view_bodies: true
+//
+
+@ViewBuilder
+func bar() -> some View {
+    let _ = foo()
+    Text("Hello, World!")
+}
+
+```
+
+```swift
+//
+// ignore_swiftui_view_bodies: true
+//
+
+#Preview {
+    let _ = foo()
+    Text("Hello, World!")
+}
+
+```
+
+```swift
+//
+// ignore_swiftui_view_bodies: true
+//
+
+static var previews: some View {
+    let _ = foo()
+    Text("Hello, World!")
+}
+
+```
+
 ## Triggering Examples
 
 ```swift
@@ -83,6 +120,28 @@ if _ = foo() { ↓let _ = bar() }
 
 ```swift
 var body: some View {
+    ↓let _ = foo()
+    Text("Hello, World!")
+}
+```
+
+```swift
+@ViewBuilder
+func bar() -> some View {
+    ↓let _ = foo()
+    return Text("Hello, World!")
+}
+```
+
+```swift
+#Preview {
+    ↓let _ = foo()
+    return Text("Hello, World!")
+}
+```
+
+```swift
+static var previews: some View {
     ↓let _ = foo()
     Text("Hello, World!")
 }

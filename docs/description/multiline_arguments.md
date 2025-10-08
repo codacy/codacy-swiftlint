@@ -154,6 +154,13 @@ UIView.animate(withDuration: 1, delay: 0) {
 }
 ```
 
+```swift
+f(
+    foo: 1,
+    bar: false,
+)
+```
+
 ## Triggering Examples
 
 ```swift

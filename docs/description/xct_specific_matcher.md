@@ -1,6 +1,6 @@
 # XCTest Specific Matcher
 
-Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`.
+Prefer specific XCTest matchers.
 
 * **Identifier:** `xct_specific_matcher`
 * **Enabled by default:** No
@@ -32,6 +32,17 @@ Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`.
   </tr>
   </tbody>
   </table>
+
+## Rationale
+
+Using specific matchers like `XCTAssertEqual`, `XCTAssertNotEqual`, `XCTAssertTrue`, `XCTAssertFalse`,
+`XCTAssertIdentical` and `XCTAssertNotIdentical` improves code readability and clarity. They more clearly
+state the intention of the assertion.
+
+Consider for example `XCTAssertTrue(foo == bar)`, which requires two details to grasp: that `foo` and `bar`
+are equal, and that the result of the comparison shall be true. Using `XCTAssertEqual(foo, bar)` makes it
+clear that the intention is to check equality, without needing to understand the underlying logic of the
+comparison.
 
 ## Non Triggering Examples
 
@@ -189,6 +200,18 @@ XCTAssertTrue(type(of: foo) != Int.self)
 
 ```swift
 XCTAssertTrue(a == (1, 3, 5)
+```
+
+```swift
+XCTAssertIdentical(foo, bar)
+```
+
+```swift
+XCTAssertNotIdentical(foo, bar)
+```
+
+```swift
+XCTAssert(foo.self === bar.self)
 ```
 
 ## Triggering Examples
@@ -375,6 +398,38 @@ XCTAssertTrue(a == (1, 3, 5)
 
 ```swift
 ↓XCTAssert(foo != bar, "toto")
+```
+
+```swift
+↓XCTAssert(foo === bar)
+```
+
+```swift
+↓XCTAssertTrue(   foo  ===   bar  )
+```
+
+```swift
+↓XCTAssertFalse(bar === foo)
+```
+
+```swift
+↓XCTAssert(foo === bar, "toto")
+```
+
+```swift
+↓XCTAssert(foo !== bar)
+```
+
+```swift
+↓XCTAssertTrue(   foo  !==   bar  )
+```
+
+```swift
+↓XCTAssertFalse(bar !== foo)
+```
+
+```swift
+↓XCTAssert(foo !== bar, "toto")
 ```
 
 ```swift

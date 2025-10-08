@@ -37,6 +37,10 @@ extension String {}
  extension String {}
 ```
 
+```swift
+nonisolated extension String {}
+```
+
 ## Triggering Examples
 
 ```swift

@@ -28,10 +28,6 @@ Using ternary to call Void functions should be avoided
 ## Non Triggering Examples
 
 ```swift
-let result = success ? foo() : bar()
-```
-
-```swift
 if success {
     askQuestion()
 } else {
@@ -89,6 +85,15 @@ subscript(index: Int) -> Int {
 ```swift
 subscript(index: Int) -> Int {
     index == 0 ? defaultValue() : compute(index)
+```
+
+```swift
+var a = b ? c() : d()
+a += b ? c() : d()
+a -= b ? c() : d()
+a *= b ? c() : d()
+a &<<= b ? c() : d()
+a &-= b ? c() : d()
 ```
 
 ## Triggering Examples

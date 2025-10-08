@@ -32,3 +32,153 @@ Function bodies should not span too many lines
   </tr>
   </tbody>
   </table>
+
+## Non Triggering Examples
+
+```swift
+//
+// warning: 2
+//
+
+func f() {}
+
+```
+
+```swift
+//
+// warning: 2
+//
+
+func f() {
+    let x = 0
+}
+
+```
+
+```swift
+//
+// warning: 2
+//
+
+func f() {
+    let x = 0
+    let y = 1
+}
+
+```
+
+```swift
+//
+// warning: 2
+//
+
+func f() {
+    let x = 0
+    // comments
+    // will
+    // be
+    // ignored
+}
+
+```
+
+```swift
+//
+// warning: 2
+//
+
+    func f() {
+        let x = 0
+        // empty lines will be ignored
+
+
+    }
+
+```
+
+## Triggering Examples
+
+```swift
+//
+// warning: 2
+//
+
+↓func f() {
+    let x = 0
+    let y = 1
+    let z = 2
+}
+
+```
+
+```swift
+//
+// warning: 2
+//
+
+class C {
+    ↓deinit {
+        let x = 0
+        let y = 1
+        let z = 2
+    }
+}
+
+```
+
+```swift
+//
+// warning: 2
+//
+
+class C {
+    ↓init() {
+        let x = 0
+        let y = 1
+        let z = 2
+    }
+}
+
+```
+
+```swift
+//
+// warning: 2
+//
+
+class C {
+    ↓subscript() -> Int {
+        let x = 0
+        let y = 1
+        return x + y
+    }
+}
+
+```
+
+```swift
+//
+// warning: 2
+//
+
+struct S {
+    subscript() -> Int {
+        ↓get {
+            let x = 0
+            let y = 1
+            return x + y
+        }
+        ↓set {
+            let x = 0
+            let y = 1
+            let z = 2
+        }
+        ↓willSet {
+            let x = 0
+            let y = 1
+            let z = 2
+        }
+    }
+}
+
+```

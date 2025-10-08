@@ -75,6 +75,21 @@ order.discount == 0
 let rule = #Rule(Tips.Event(id: "someTips")) { $0.donations.count == 0 }
 ```
 
+```swift
+func isEmpty(count: Int) -> Bool { count == 0 }
+```
+
+```swift
+var isEmpty: Bool {
+    let count = 0
+    return count == 0
+}
+```
+
+```swift
+{ count in count == 0 }()
+```
+
 ## Triggering Examples
 
 ```swift
