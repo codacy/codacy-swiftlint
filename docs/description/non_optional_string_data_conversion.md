@@ -22,6 +22,14 @@ Prefer non-optional `Data(_:)` initializer when converting `String` to `Data`
   warning
   </td>
   </tr>
+  <tr>
+  <td>
+  include_variables
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
   </tbody>
   </table>
 
@@ -31,8 +39,110 @@ Prefer non-optional `Data(_:)` initializer when converting `String` to `Data`
 Data("foo".utf8)
 ```
 
+```swift
+Data(string.utf8)
+```
+
+```swift
+"foo".data(using: .ascii)
+```
+
+```swift
+string.data(using: .unicode)
+```
+
+```swift
+//
+// include_variables: true
+//
+
+Data("foo".utf8)
+
+```
+
+```swift
+//
+// include_variables: true
+//
+
+Data(string.utf8)
+
+```
+
+```swift
+//
+// include_variables: true
+//
+
+"foo".data(using: .ascii)
+
+```
+
+```swift
+//
+// include_variables: true
+//
+
+string.data(using: .unicode)
+
+```
+
 ## Triggering Examples
 
 ```swift
-"foo".data(using: .utf8)
+↓"foo".data(using: .utf8)
+```
+
+```swift
+//
+// include_variables: true
+//
+
+↓"foo".data(using: .utf8)
+
+```
+
+```swift
+//
+// include_variables: true
+//
+
+↓string.data(using: .utf8)
+
+```
+
+```swift
+//
+// include_variables: true
+//
+
+↓property.data(using: .utf8)
+
+```
+
+```swift
+//
+// include_variables: true
+//
+
+↓obj.property.data(using: .utf8)
+
+```
+
+```swift
+//
+// include_variables: true
+//
+
+↓getString().data(using: .utf8)
+
+```
+
+```swift
+//
+// include_variables: true
+//
+
+↓getValue()?.data(using: .utf8)
+
 ```

@@ -1,8 +1,7 @@
 //#Patterns: closure_end_indentation
 
-//#Issue: {"severity": "Warning", "line": 10, "patternId": "closure_end_indentation"}
-//#Issue: {"severity": "Warning", "line": 15, "patternId": "closure_end_indentation"}
-//#Issue: {"severity": "Warning", "line": 17, "patternId": "closure_end_indentation"}
+//#Issue: {"severity": "Warning", "line": 9, "patternId": "closure_end_indentation"}
+//#Issue: {"severity": "Warning", "line": 14, "patternId": "closure_end_indentation"}
 
     SignalProducer(values: [1, 2, 3])
        .startWithNext { number in

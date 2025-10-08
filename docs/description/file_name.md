@@ -32,6 +32,14 @@ File name should match a type or extension declared in the file (if any)
   </tr>
   <tr>
   <td>
+  excluded_paths
+  </td>
+  <td>
+  []
+  </td>
+  </tr>
+  <tr>
+  <td>
   prefix_pattern
   </td>
   <td>

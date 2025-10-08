@@ -161,7 +161,7 @@
 }, {
   "patternId" : "custom_rules",
   "title" : "Custom Rules",
-  "description" : "Create custom rules by providing a regex string. Optionally specify what syntax kinds to match against, the severity level, and what message to display.",
+  "description" : "Create custom rules by providing a regex string. Optionally specify what syntax kinds to match against, the severity level, and what message to display. Rules default to SwiftSyntax mode for improved performance. Use `execution_mode: sourcekit` or `default_execution_mode: sourcekit` for SourceKit mode.",
   "parameters" : [ ]
 }, {
   "patternId" : "cyclomatic_complexity",
@@ -399,6 +399,11 @@
   "description" : "Prefer to locate parameters with defaults toward the end of the parameter list",
   "parameters" : [ ]
 }, {
+  "patternId" : "function_name_whitespace",
+  "title" : "Function Name Whitespace",
+  "description" : "There should be consistent whitespace before and after function names and generic parameters.",
+  "parameters" : [ ]
+}, {
   "patternId" : "function_parameter_count",
   "title" : "Function Parameter Count",
   "description" : "Number of function parameters should be low.",
@@ -427,6 +432,11 @@
   "patternId" : "implicit_getter",
   "title" : "Implicit Getter",
   "description" : "Computed read-only properties and subscripts should avoid using the get keyword.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "implicit_optional_initialization",
+  "title" : "Implicit Optional Initialization",
+  "description" : "Optionals should be consistently initialized, either with `= nil` or without.",
   "parameters" : [ ]
 }, {
   "patternId" : "implicit_return",
@@ -694,11 +704,6 @@
   "description" : "Operators should be surrounded by a single whitespace when they are being used",
   "parameters" : [ ]
 }, {
-  "patternId" : "operator_whitespace",
-  "title" : "Operator Function Whitespace",
-  "description" : "Operators should be surrounded by a single whitespace when defining them",
-  "parameters" : [ ]
-}, {
   "patternId" : "optional_data_string_conversion",
   "title" : "Optional Data -> String Conversion",
   "description" : "Prefer failable `String(bytes:encoding:)` initializer when converting `Data` to `String`",
@@ -732,6 +737,11 @@
   "patternId" : "period_spacing",
   "title" : "Period Spacing",
   "description" : "Periods should not be followed by more than one space",
+  "parameters" : [ ]
+}, {
+  "patternId" : "prefer_condition_list",
+  "title" : "Prefer Condition List",
+  "description" : "Prefer a condition list over chaining conditions with '&&'",
   "parameters" : [ ]
 }, {
   "patternId" : "prefer_key_path",
@@ -857,11 +867,6 @@
   "patternId" : "redundant_objc_attribute",
   "title" : "Redundant @objc Attribute",
   "description" : "Objective-C attribute (@objc) is redundant in declaration",
-  "parameters" : [ ]
-}, {
-  "patternId" : "redundant_optional_initialization",
-  "title" : "Redundant Optional Initialization",
-  "description" : "Initializing an optional variable with nil is redundant",
   "parameters" : [ ]
 }, {
   "patternId" : "redundant_self_in_closure",
@@ -1171,7 +1176,7 @@
 }, {
   "patternId" : "vertical_whitespace",
   "title" : "Vertical Whitespace",
-  "description" : "Limit vertical whitespace to a single empty line.",
+  "description" : "Limit vertical whitespace to a single empty line",
   "parameters" : [ ]
 }, {
   "patternId" : "vertical_whitespace_between_cases",
@@ -1206,7 +1211,7 @@
 }, {
   "patternId" : "xct_specific_matcher",
   "title" : "XCTest Specific Matcher",
-  "description" : "Prefer specific XCTest matchers over `XCTAssertEqual` and `XCTAssertNotEqual`.",
+  "description" : "Prefer specific XCTest matchers.",
   "parameters" : [ ]
 }, {
   "patternId" : "xctfail_message",

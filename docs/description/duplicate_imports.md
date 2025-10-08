@@ -72,6 +72,11 @@ import Foo
 @testable import struct Foo.Bar
 ```
 
+```swift
+import CoreImage
+import CoreImage.CIFilterBuiltins
+```
+
 ## Triggering Examples
 
 ```swift

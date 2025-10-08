@@ -30,8 +30,21 @@ Use a key path argument instead of a closure with property access
   true
   </td>
   </tr>
+  <tr>
+  <td>
+  ignore_identity_closures
+  </td>
+  <td>
+  false
+  </td>
+  </tr>
   </tbody>
   </table>
+
+## Rationale
+
+Note: Swift 5 doesn't support identity key path conversions (`{ $0 }` -> `(\.self)`) and so
+SwiftLint disregards `ignore_identity_closures: false` if it runs on a Swift <6 project.
 
 ## Non Triggering Examples
 
@@ -111,6 +124,25 @@ f { $0.a } g: { $0.b }
 //
 
 [1, 2, 3].reduce(1) { $0 + $1 }
+
+```
+
+```swift
+//
+// restrict_to_standard_functions: false
+// ignore_identity_closures: true
+//
+
+f { $0 }
+
+```
+
+```swift
+//
+// ignore_identity_closures: true
+//
+
+f.map { $0 }
 
 ```
 

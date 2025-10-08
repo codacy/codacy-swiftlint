@@ -39,7 +39,7 @@ class AClass: NSObject {
 
 ```swift
 class AClass: Equatable {
-    static func ==(lhs: AClass, rhs: AClass) -> Bool {
+    static func == (lhs: AClass, rhs: AClass) -> Bool {
         return true
     }
 ```
@@ -62,7 +62,7 @@ class AClass: NSObject {
 
 ```swift
 class AClass: NSObject {
-    static func ==(lhs: AClass, rhs: BClass) -> Bool {
+    static func == (lhs: AClass, rhs: BClass) -> Bool {
         return true
     }
 }
@@ -70,7 +70,7 @@ class AClass: NSObject {
 
 ```swift
 struct AStruct: Equatable {
-    static func ==(lhs: AStruct, rhs: AStruct) -> Bool {
+    static func == (lhs: AStruct, rhs: AStruct) -> Bool {
         return false
     }
 }
@@ -78,7 +78,7 @@ struct AStruct: Equatable {
 
 ```swift
 enum AnEnum: Equatable {
-    static func ==(lhs: AnEnum, rhs: AnEnum) -> Bool {
+    static func == (lhs: AnEnum, rhs: AnEnum) -> Bool {
         return true
     }
 }
@@ -88,7 +88,7 @@ enum AnEnum: Equatable {
 
 ```swift
 class AClass: NSObject {
-    ↓static func ==(lhs: AClass, rhs: AClass) -> Bool {
+    ↓static func == (lhs: AClass, rhs: AClass) -> Bool {
         return false
     }
 }
@@ -96,7 +96,7 @@ class AClass: NSObject {
 
 ```swift
 @objc class AClass: SomeOtherNSObjectSubclass {
-    ↓static func ==(lhs: AClass, rhs: AClass) -> Bool {
+    ↓static func == (lhs: AClass, rhs: AClass) -> Bool {
         return true
     }
 }
@@ -104,7 +104,7 @@ class AClass: NSObject {
 
 ```swift
 class AClass: NSObject, Equatable {
-    ↓static func ==(lhs: AClass, rhs: AClass) -> Bool {
+    ↓static func == (lhs: AClass, rhs: AClass) -> Bool {
         return false
     }
 }
@@ -119,7 +119,7 @@ class AClass: NSObject {
         return true
     }
 
-    ↓static func ==(lhs: AClass, rhs: AClass) -> Bool {
+    ↓static func == (lhs: AClass, rhs: AClass) -> Bool {
         return false
     }
 }

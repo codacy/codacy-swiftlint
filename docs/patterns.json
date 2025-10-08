@@ -1,6 +1,6 @@
 {
   "name" : "swiftlint",
-  "version" : "0.59.1",
+  "version" : "0.61.0",
   "patterns" : [ {
     "patternId" : "accessibility_label_for_image",
     "level" : "Warning",
@@ -562,6 +562,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "function_name_whitespace",
+    "level" : "Warning",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
     "patternId" : "function_parameter_count",
     "level" : "Warning",
     "category" : "Complexity",
@@ -598,6 +605,13 @@
     "enabled" : true
   }, {
     "patternId" : "implicit_getter",
+    "level" : "Warning",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : true
+  }, {
+    "patternId" : "implicit_optional_initialization",
     "level" : "Warning",
     "category" : "CodeStyle",
     "parameters" : [ ],
@@ -975,13 +989,6 @@
     "languages" : [ ],
     "enabled" : false
   }, {
-    "patternId" : "operator_whitespace",
-    "level" : "Warning",
-    "category" : "CodeStyle",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : true
-  }, {
     "patternId" : "optional_data_string_conversion",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -1027,6 +1034,13 @@
     "patternId" : "period_spacing",
     "level" : "Warning",
     "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "prefer_condition_list",
+    "level" : "Warning",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -1200,13 +1214,6 @@
     "enabled" : false
   }, {
     "patternId" : "redundant_objc_attribute",
-    "level" : "Warning",
-    "category" : "ErrorProne",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : true
-  }, {
-    "patternId" : "redundant_optional_initialization",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],

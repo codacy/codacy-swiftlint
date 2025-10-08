@@ -197,6 +197,117 @@ struct MyView: View {
 }
 ```
 
+```swift
+struct MyView: View {
+    var body: some View {
+        NavigationLink("Go to Details") {
+            DetailView()
+        } label: {
+            HStack {
+                Image(systemName: "arrow.right")
+                Text("Navigate Here")
+            }
+        }
+    }
+}
+```
+
+```swift
+struct MyView: View {
+    var body: some View {
+        Button("Save Changes") {
+            saveAction()
+        } label: {
+            Label("Save", systemImage: "square.and.arrow.down")
+        }
+    }
+}
+```
+
+```swift
+struct MyView: View {
+    var body: some View {
+        Button(action: performAction) {
+            HStack {
+                Image(uiImage: UIImage(systemName: "star") ?? UIImage())
+                Text("Favorite")
+            }
+        }
+        .accessibilityLabel("Add to Favorites")
+    }
+}
+```
+
+```swift
+struct MyView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "wifi")
+            Image("network-icon")
+            Text("Network Status")
+        }.accessibilityElement(children: .ignore)
+        .accessibilityLabel("Connected to WiFi")
+    }
+}
+```
+
+```swift
+struct MyView: View {
+    let statusImage: UIImage
+    var body: some View {
+        HStack {
+            Image(uiImage: statusImage)
+                .foregroundColor(.green)
+            Text("System Status")
+        }.accessibilityElement(children: .ignore)
+        .accessibilityLabel("System is operational")
+    }
+}
+```
+
+```swift
+struct MyView: View {
+    var body: some View {
+        NavigationLink(destination: SettingsView()) {
+            HStack {
+                Image(nsImage: NSImage(named: "gear") ?? NSImage())
+                Text("Preferences")
+                Spacer()
+                Image(systemName: "chevron.right")
+            }
+        }
+    }
+}
+```
+
+```swift
+struct MyView: View {
+    var body: some View {
+        Button {
+            toggleState()
+        } label: {
+            Image(systemName: isEnabled ? "eye" : "eye.slash")
+                .foregroundColor(isEnabled ? .blue : .gray)
+        }
+        .accessibilityLabel(isEnabled ? "Hide content" : "Show content")
+    }
+}
+```
+
+```swift
+struct CustomCard: View {
+    var body: some View {
+        VStack {
+            Image("card-background")
+            Image(systemName: "checkmark.circle")
+            Text("Task Complete")
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Task completed successfully")
+    }
+}
+```
+
 ## Triggering Examples
 
 ```swift
@@ -319,6 +430,69 @@ struct MyView: View {
 struct MyView: View {
     var body: some View {
         ↓Image(systemName: "circle.plus")
+    }
+}
+```
+
+```swift
+struct StatusView: View {
+    let statusIcon: UIImage
+    var body: some View {
+        HStack {
+            ↓Image(uiImage: statusIcon)
+                .foregroundColor(.green)
+            Text("Status")
+        }
+    }
+}
+```
+
+```swift
+struct PreferencesView: View {
+    var body: some View {
+        VStack {
+            ↓Image(nsImage: NSImage(named: "gear") ?? NSImage())
+                .resizable()
+                .frame(width: 24, height: 24)
+            Text("Settings")
+        }
+    }
+}
+```
+
+```swift
+struct FaviconView: View {
+    let favicon: UIImage?
+    var body: some View {
+        ↓Image(uiImage: favicon ?? UIImage())
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 16, height: 16)
+    }
+}
+```
+
+```swift
+struct IconGrid: View {
+    var body: some View {
+        HStack {
+            ↓Image(uiImage: loadedImage)
+                .resizable()
+            ↓Image(systemName: "star.fill")
+                .foregroundColor(.yellow)
+        }.accessibilityElement(children: .combine)
+    }
+}
+```
+
+```swift
+struct CardView: View {
+    var body: some View {
+        VStack {
+            ↓Image(uiImage: backgroundImage)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+            Text("Card Content")
+        }.accessibilityElement(children: .contain)
     }
 }
 ```

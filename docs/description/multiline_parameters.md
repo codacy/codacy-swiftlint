@@ -425,12 +425,34 @@ func foo(param1: Int, param2: Bool, param3: [String]) { }
 
 ```swift
 //
+// max_number_of_single_line_parameters: 2
+//
+
+func foo(param1: Int, param2: Bool) { }
+
+```
+
+```swift
+//
 // max_number_of_single_line_parameters: 3
 //
 
 func foo(param1: Int,
          param2: Bool,
          param3: [String]) { }
+
+```
+
+```swift
+//
+// max_number_of_single_line_parameters: 2
+//
+
+func foo(
+    param1: Int,
+    param2: Bool,
+    param3: [String]
+) { }
 
 ```
 
@@ -622,7 +644,16 @@ func ↓foo(param1: Int, param2: Bool, param3: [String]) { }
 // max_number_of_single_line_parameters: 3
 //
 
-func ↓foo(param1: Int,
-          param2: Bool, param3: [String]) { }
+ func ↓foo(param1: Int,
+           param2: Bool, param3: [String]) { }
+
+```
+
+```swift
+//
+// max_number_of_single_line_parameters: 2
+//
+
+func ↓foo(param1: Int, param2: Bool, param3: [String]) { }
 
 ```

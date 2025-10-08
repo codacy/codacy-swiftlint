@@ -71,11 +71,11 @@ let name: String //
 ## Triggering Examples
 
 ```swift
-let name: String 
+let name: String↓ 
 
 ```
 
 ```swift
-/* */ let name: String 
+/* */ let name: String↓ 
 
 ```
