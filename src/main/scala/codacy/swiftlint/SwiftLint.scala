@@ -57,7 +57,7 @@ object SwiftLint extends Tool {
     }
   }
 
-  private def commandToRun(configOpt: Option[String], file: String): List[String] = {
+  private def commandToRun(configOpt: Option[String], files: List[String]): List[String] = {
     val baseCmd = List("swiftlint", "lint", "--quiet", "--reporter", "json")
 
     val configCmd = configOpt match {
@@ -65,7 +65,8 @@ object SwiftLint extends Tool {
         baseCmd ++ List("--config", opt)
       case None => baseCmd
     }
-    configCmd :+ file
+
+    configCmd ++ files
   }
 
   private def runToolCommand(
@@ -107,17 +108,17 @@ object SwiftLint extends Tool {
 
       val cfgOpt = configsFromCodacyConfiguration(configuration)
 
-      filesToLint.flatMap { file =>
-        val command: List[String] = commandToRun(cfgOpt, file)
+      val command: List[String] = commandToRun(cfgOpt, filesToLint)
 
-        val fileCommandAnalysisResult = runToolCommand(command, source, cfgOpt)
-        fileCommandAnalysisResult match {
-          case Success(res) => res
-          case Failure(exception) =>
-            List(
-              FileError(Source.File(file), Some(ErrorMessage(s"Failed to analyse file $file: ${exception.getMessage}")))
+      runToolCommand(command, source, cfgOpt) match {
+        case Success(res) => res
+        case Failure(exception) =>
+          List(
+            FileError(
+              Source.File(source.path),
+              Some(ErrorMessage(s"Failed to analyse source ${source.path}: ${exception.getMessage}"))
             )
-        }
+          )
       }
     }
   }
