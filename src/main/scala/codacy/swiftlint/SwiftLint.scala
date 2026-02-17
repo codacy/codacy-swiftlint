@@ -3,12 +3,11 @@ package codacy.swiftlint
 import java.nio.file.{Path, Paths}
 
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
-import com.codacy.plugins.api.{ErrorMessage, Options, Source}
+import com.codacy.plugins.api.{Options, Source}
 import com.codacy.tools.scala.seed.utils.{CommandRunner, FileHelper}
 import com.codacy.tools.scala.seed.utils.ToolHelper._
 import play.api.libs.json._
 import better.files._
-import com.codacy.plugins.api.results.Result.FileError
 
 import scala.util.{Failure, Properties, Success, Try}
 
@@ -57,7 +56,7 @@ object SwiftLint extends Tool {
     }
   }
 
-  private def commandToRun(configOpt: Option[String], file: String): List[String] = {
+  private def commandToRun(configOpt: Option[String], files: List[String]): List[String] = {
     val baseCmd = List("swiftlint", "lint", "--quiet", "--reporter", "json")
 
     val configCmd = configOpt match {
@@ -65,7 +64,8 @@ object SwiftLint extends Tool {
         baseCmd ++ List("--config", opt)
       case None => baseCmd
     }
-    configCmd :+ file
+
+    configCmd ++ files
   }
 
   private def runToolCommand(
@@ -102,24 +102,14 @@ object SwiftLint extends Tool {
       options: Map[Options.Key, Options.Value]
   )(implicit specification: Tool.Specification): Try[List[Result]] = {
     Try {
-
       val filesToLint = listOfFilesToLint(files, source)
 
       val cfgOpt = configsFromCodacyConfiguration(configuration)
 
-      filesToLint.flatMap { file =>
-        val command: List[String] = commandToRun(cfgOpt, file)
+      val command: List[String] = commandToRun(cfgOpt, filesToLint)
 
-        val fileCommandAnalysisResult = runToolCommand(command, source, cfgOpt)
-        fileCommandAnalysisResult match {
-          case Success(res) => res
-          case Failure(exception) =>
-            List(
-              FileError(Source.File(file), Some(ErrorMessage(s"Failed to analyse file $file: ${exception.getMessage}")))
-            )
-        }
-      }
-    }
+      runToolCommand(command, source, cfgOpt)
+    }.flatten
   }
 
   private def writeConfigFile(patternsToLint: List[Pattern.Definition]): Path = {
