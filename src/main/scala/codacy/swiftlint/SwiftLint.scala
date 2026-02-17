@@ -3,12 +3,11 @@ package codacy.swiftlint
 import java.nio.file.{Path, Paths}
 
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
-import com.codacy.plugins.api.{ErrorMessage, Options, Source}
+import com.codacy.plugins.api.{Options, Source}
 import com.codacy.tools.scala.seed.utils.{CommandRunner, FileHelper}
 import com.codacy.tools.scala.seed.utils.ToolHelper._
 import play.api.libs.json._
 import better.files._
-import com.codacy.plugins.api.results.Result.FileError
 
 import scala.util.{Failure, Properties, Success, Try}
 
@@ -103,24 +102,14 @@ object SwiftLint extends Tool {
       options: Map[Options.Key, Options.Value]
   )(implicit specification: Tool.Specification): Try[List[Result]] = {
     Try {
-
       val filesToLint = listOfFilesToLint(files, source)
 
       val cfgOpt = configsFromCodacyConfiguration(configuration)
 
       val command: List[String] = commandToRun(cfgOpt, filesToLint)
 
-      runToolCommand(command, source, cfgOpt) match {
-        case Success(res) => res
-        case Failure(exception) =>
-          List(
-            FileError(
-              Source.File(source.path),
-              Some(ErrorMessage(s"Failed to analyse source ${source.path}: ${exception.getMessage}"))
-            )
-          )
-      }
-    }
+      runToolCommand(command, source, cfgOpt)
+    }.flatten
   }
 
   private def writeConfigFile(patternsToLint: List[Pattern.Definition]): Path = {
